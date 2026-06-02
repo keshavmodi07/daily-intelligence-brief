@@ -55,17 +55,25 @@ git remote add origin https://github.com/YOUR_USERNAME/daily-intelligence-brief.
 git push -u origin main
 ```
 
-### 2. Set Up Gmail App Password
+### 2. Set Up Email (SendGrid — recommended)
 
-Gmail requires an **App Password** (not your regular password) for SMTP.
+Gmail App Passwords are **not available on all accounts** (common if 2-Step Verification isn't enabled, or on school/work accounts). **SendGrid** is free (100 emails/day) and only needs an API key.
 
-1. Go to your [Google Account](https://myaccount.google.com/)
-2. Navigate to **Security**
-3. Enable **2-Step Verification** if not already enabled
-4. Search for **App passwords** (or go to [App passwords](https://myaccount.google.com/apppasswords))
-5. Select app: **Mail**, device: **Other** (name it "Daily Intelligence Brief")
-6. Click **Generate**
-7. Copy the 16-character password (spaces don't matter)
+1. Sign up at [sendgrid.com](https://signup.sendgrid.com/) (free)
+2. Go to **Settings → Sender Authentication → Single Sender Verification**
+3. Add and verify `founder.effinova@gmail.com` (check inbox for verification link)
+4. Go to **Settings → API Keys → Create API Key**
+5. Name it `Daily Brief`, enable **Mail Send** permission, copy the key (`SG....`)
+
+<details>
+<summary>Alternative: Gmail App Password (if available on your account)</summary>
+
+1. Enable **2-Step Verification** at [Google Security](https://myaccount.google.com/security)
+2. Go to [App passwords](https://myaccount.google.com/apppasswords)
+3. Generate a password for Mail → Other ("Daily Intelligence Brief")
+4. Set `EMAIL_PROVIDER=gmail` and use `GMAIL_EMAIL` + `GMAIL_APP_PASSWORD` secrets instead
+
+</details>
 
 ### 3. Configure GitHub Secrets
 
@@ -74,9 +82,9 @@ In your GitHub repository, go to **Settings → Secrets and variables → Action
 | Secret Name | Value | Required |
 |---|---|---|
 | `OPENAI_API_KEY` | Your OpenAI API key (`sk-...`) | Yes |
-| `GMAIL_EMAIL` | Gmail address used to send (e.g. `you@gmail.com`) | Yes |
-| `GMAIL_APP_PASSWORD` | 16-character Gmail App Password | Yes |
-| `RECIPIENT_EMAIL` | Where to receive the briefing (can be same as GMAIL_EMAIL) | Yes |
+| `RECIPIENT_EMAIL` | Where to receive the briefing | Yes |
+| `SENDGRID_API_KEY` | SendGrid API key (`SG....`) | Yes |
+| `SENDER_EMAIL` | Verified sender email (e.g. `founder.effinova@gmail.com`) | Yes |
 | `OPENAI_MODEL` | OpenAI model override (default: `gpt-4o`) | No |
 
 ### 4. Enable GitHub Actions
@@ -148,7 +156,7 @@ Each daily run uses one OpenAI Responses API call with web search. Typical cost 
 | Problem | Fix |
 |---|---|
 | Workflow doesn't run on schedule | Scheduled workflows only run on the default branch (`main`). Confirm the workflow file is on `main`. |
-| Email not received | Check spam. Verify `GMAIL_APP_PASSWORD` is an App Password, not your regular password. Confirm 2-Step Verification is on. |
+| Email not received | Check spam. Verify sender email in SendGrid. Confirm `SENDGRID_API_KEY` has Mail Send permission. |
 | OpenAI error | Verify `OPENAI_API_KEY` is valid and billing is enabled. Check Actions logs for the exact error. |
 | Empty briefing | Check Actions logs. The model may have failed to search — retry manually. |
 

@@ -143,8 +143,50 @@ def markdown_to_html(md_text: str) -> str:
 </html>"""
 
 
-def send_email(subject: str, html_body: str, plain_body: str) -> None:
-    """Send the briefing via Gmail SMTP."""
+def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
+    """Send the briefing via SendGrid API (free tier, no App Password needed)."""
+    import json
+    import urllib.error
+    import urllib.request
+
+    payload = {
+        "personalizations": [{"to": [{"email": config.RECIPIENT_EMAIL}]}],
+        "from": {
+            "email": config.SENDER_EMAIL,
+            "name": "Daily Intelligence Brief",
+        },
+        "subject": subject,
+        "content": [
+            {"type": "text/plain", "value": plain_body},
+            {"type": "text/html", "value": html_body},
+        ],
+    }
+
+    req = urllib.request.Request(
+        "https://api.sendgrid.com/v3/mail/send",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {config.SENDGRID_API_KEY}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+
+    logger.info("Sending email via SendGrid to %s", config.RECIPIENT_EMAIL)
+
+    try:
+        with urllib.request.urlopen(req, timeout=30) as response:
+            if response.status not in (200, 202):
+                raise RuntimeError(f"SendGrid returned status {response.status}")
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"SendGrid error {exc.code}: {body}") from exc
+
+    logger.info("Email sent successfully via SendGrid")
+
+
+def send_email_gmail(subject: str, html_body: str, plain_body: str) -> None:
+    """Send the briefing via Gmail SMTP (requires App Password)."""
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = config.GMAIL_EMAIL
@@ -153,7 +195,7 @@ def send_email(subject: str, html_body: str, plain_body: str) -> None:
     msg.attach(MIMEText(plain_body, "plain", "utf-8"))
     msg.attach(MIMEText(html_body, "html", "utf-8"))
 
-    logger.info("Sending email to %s", config.RECIPIENT_EMAIL)
+    logger.info("Sending email via Gmail to %s", config.RECIPIENT_EMAIL)
 
     with smtplib.SMTP(config.GMAIL_SMTP_HOST, config.GMAIL_SMTP_PORT) as server:
         server.ehlo()
@@ -162,7 +204,15 @@ def send_email(subject: str, html_body: str, plain_body: str) -> None:
         server.login(config.GMAIL_EMAIL, config.GMAIL_APP_PASSWORD)
         server.sendmail(config.GMAIL_EMAIL, config.RECIPIENT_EMAIL, msg.as_string())
 
-    logger.info("Email sent successfully")
+    logger.info("Email sent successfully via Gmail")
+
+
+def send_email(subject: str, html_body: str, plain_body: str) -> None:
+    """Send the briefing using the configured email provider."""
+    if config.EMAIL_PROVIDER == "sendgrid":
+        send_email_sendgrid(subject, html_body, plain_body)
+    else:
+        send_email_gmail(subject, html_body, plain_body)
 
 
 def main() -> int:
