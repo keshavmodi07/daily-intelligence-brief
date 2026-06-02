@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent
 PROMPT_FILE = BASE_DIR / "prompt.txt"
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o")
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL") or "gpt-4o"
 
 GMAIL_EMAIL = os.environ.get("GMAIL_EMAIL", "")
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
