@@ -6,13 +6,12 @@ No VPS. No paid infrastructure except OpenAI API usage.
 
 ## What It Does
 
-Every day at **7:00 AM IST**, GitHub Actions:
+Every day at **7:00 AM IST**, GitHub Actions runs **two intelligence agents**:
 
-1. Calls the OpenAI Responses API with **web search** enabled
-2. Searches for important developments from the previous 24 hours
-3. Analyzes and scores them against your audience profile
-4. Generates a structured intelligence briefing
-5. Emails it to your inbox as clean, mobile-friendly HTML
+1. **Builder Intelligence Officer** — AI, startups, venture capital, developer tools, founder opportunities
+2. **Strategic Intelligence Officer** — India, geopolitics, economics, manufacturing, energy, defence, supply chains
+
+Both briefs are combined into **one email** with a clear separator between them.
 
 You can also trigger a run manually from the **Actions** tab at any time.
 
@@ -20,12 +19,13 @@ You can also trigger a run manually from the **Actions** tab at any time.
 
 ```
 daily-intelligence-brief/
-├── main.py                          # Orchestrates generation and email delivery
-├── config.py                        # Environment variable configuration
-├── prompt.txt                       # Configurable intelligence officer prompt
-├── requirements.txt                 # Python dependencies
-├── .env.example                     # Local development environment template
-├── .github/workflows/daily_brief.yml # GitHub Actions workflow
+├── main.py                            # Runs both agents, combines, emails
+├── config.py                          # Environment variable configuration
+├── prompt_builder.txt                 # Builder Intelligence Officer prompt
+├── prompt_strategic.txt               # Strategic Intelligence Officer prompt
+├── requirements.txt                   # Python dependencies
+├── .env.example                       # Local development environment template
+├── .github/workflows/daily_brief.yml  # GitHub Actions workflow
 └── README.md
 ```
 
@@ -137,7 +137,7 @@ export $(grep -v '^#' .env | xargs) && python main.py
 
 ## Customizing the Briefing
 
-Edit `prompt.txt` to change the intelligence officer's focus areas, scoring criteria, report sections, or audience profile. Changes take effect on the next run — no code changes needed.
+Edit `prompt_builder.txt` or `prompt_strategic.txt` to change each agent's focus, scoring criteria, or report sections. Changes take effect on the next run — no code changes needed.
 
 To use a different OpenAI model, set the `OPENAI_MODEL` secret (or env var locally). Models that support the Responses API with web search (e.g. `gpt-4o`) are recommended.
 
@@ -149,7 +149,7 @@ To use a different OpenAI model, set the `OPENAI_MODEL` secret (or env var local
 
 ## Cost Estimate
 
-Each daily run uses one OpenAI Responses API call with web search. Typical cost is roughly **$0.05–$0.30 per briefing** depending on model and search depth. GitHub Actions free tier (2,000 minutes/month) is more than sufficient.
+Each daily run uses two OpenAI Responses API calls with web search. Typical cost is roughly **$0.10–$0.60 per day** depending on model and search depth. GitHub Actions free tier (2,000 minutes/month) is more than sufficient.
 
 ## Troubleshooting
 

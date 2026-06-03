@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Daily Intelligence Brief — generate and email a personalized briefing."""
+"""Daily Intelligence Brief — generate and email personalized briefings."""
 
 from __future__ import annotations
 
@@ -23,24 +23,53 @@ logger = logging.getLogger(__name__)
 
 IST = timezone(timedelta(hours=5, minutes=30))
 
+AGENTS = (
+    {
+        "name": "Builder",
+        "prompt_file": config.PROMPT_BUILDER_FILE,
+        "search_focus": (
+            "AI, startups, venture capital, technology, open source, software, SaaS, "
+            "robotics, developer tools, emerging business models, consumer technology, "
+            "and enterprise technology"
+        ),
+    },
+    {
+        "name": "Strategic",
+        "prompt_file": config.PROMPT_STRATEGIC_FILE,
+        "search_focus": (
+            "India, geopolitics, economics, infrastructure, manufacturing, defence, "
+            "energy, semiconductors, trade, supply chains, industrial policy, logistics, "
+            "demographics, science and engineering, and ongoing wars with strategic impact"
+        ),
+    },
+)
+
 
 def today_ist() -> datetime:
     return datetime.now(IST)
 
 
-def generate_brief(client: OpenAI, instructions: str, date_str: str) -> str:
-    """Use OpenAI Responses API with web search to produce the briefing."""
+def generate_brief(
+    client: OpenAI,
+    instructions: str,
+    date_str: str,
+    agent_name: str,
+    search_focus: str,
+) -> str:
+    """Use OpenAI Responses API with web search to produce one briefing."""
     user_input = (
-        f"Generate today's Daily Intelligence Brief for {date_str}. "
-        "Search the web for the most important developments from the previous 24 hours "
-        "across AI, startups, venture capital, technology, economics, geopolitics, "
-        "manufacturing, defence, semiconductors, energy, science, India, the United States, "
-        "and China. "
+        f"Generate today's {agent_name} Intelligence Brief for {date_str}. "
+        f"Search the web for the most important developments from the previous 24 hours in "
+        f"{search_focus}. "
         "Follow the prompt structure exactly. Use markdown formatting with clear headers "
         "and bullet points. Cite sources where possible."
     )
 
-    logger.info("Requesting briefing from OpenAI (model=%s, web_search=enabled)", config.OPENAI_MODEL)
+    logger.info(
+        "Requesting %s brief from OpenAI (model=%s, web_search=enabled)",
+        agent_name,
+        config.OPENAI_MODEL,
+    )
 
     response = client.responses.create(
         model=config.OPENAI_MODEL,
@@ -51,10 +80,17 @@ def generate_brief(client: OpenAI, instructions: str, date_str: str) -> str:
 
     brief = response.output_text
     if not brief or not brief.strip():
-        raise RuntimeError("OpenAI returned an empty briefing.")
+        raise RuntimeError(f"OpenAI returned an empty {agent_name} briefing.")
 
-    logger.info("Briefing generated (%d characters)", len(brief))
+    logger.info("%s brief generated (%d characters)", agent_name, len(brief))
     return brief.strip()
+
+
+def combine_briefs(briefs: list[str], date_str: str) -> str:
+    """Merge multiple agent briefs into one document."""
+    header = f"# DAILY INTELLIGENCE BRIEF\n\n*{date_str} — Builder + Strategic Reports*\n"
+    separator = "\n\n---\n\n"
+    return header + separator.join(briefs)
 
 
 def markdown_to_html(md_text: str) -> str:
@@ -115,8 +151,8 @@ def markdown_to_html(md_text: str) -> str:
     }}
     hr {{
       border: none;
-      border-top: 1px solid #e2e8f0;
-      margin: 24px 0;
+      border-top: 2px solid #e2e8f0;
+      margin: 32px 0;
     }}
     a {{
       color: #2563eb;
@@ -144,7 +180,7 @@ def markdown_to_html(md_text: str) -> str:
 
 
 def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
-    """Send the briefing via SendGrid API (free tier, no App Password needed)."""
+    """Send the briefing via SendGrid API."""
     import json
     import urllib.error
     import urllib.request
@@ -186,7 +222,7 @@ def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
 
 
 def send_email_gmail(subject: str, html_body: str, plain_body: str) -> None:
-    """Send the briefing via Gmail SMTP (requires App Password)."""
+    """Send the briefing via Gmail SMTP."""
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = config.GMAIL_EMAIL
@@ -226,16 +262,28 @@ def main() -> int:
     subject = f"Daily Intelligence Brief - {date_str}"
 
     try:
-        instructions = config.load_prompt()
         client = OpenAI(api_key=config.OPENAI_API_KEY)
-        brief_md = generate_brief(client, instructions, date_str)
-        html_body = markdown_to_html(brief_md)
-        send_email(subject, html_body, brief_md)
+        briefs: list[str] = []
+
+        for agent in AGENTS:
+            instructions = config.load_prompt(agent["prompt_file"])
+            brief = generate_brief(
+                client,
+                instructions,
+                date_str,
+                agent["name"],
+                agent["search_focus"],
+            )
+            briefs.append(brief)
+
+        combined_md = combine_briefs(briefs, date_str)
+        html_body = markdown_to_html(combined_md)
+        send_email(subject, html_body, combined_md)
     except Exception:
         logger.exception("Failed to generate or send daily briefing")
         return 1
 
-    logger.info("Daily Intelligence Brief completed for %s", date_str)
+    logger.info("Daily Intelligence Brief completed for %s (2 agents)", date_str)
     return 0
 
 

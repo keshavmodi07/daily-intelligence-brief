@@ -4,7 +4,9 @@ import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-PROMPT_FILE = BASE_DIR / "prompt.txt"
+
+PROMPT_BUILDER_FILE = BASE_DIR / "prompt_builder.txt"
+PROMPT_STRATEGIC_FILE = BASE_DIR / "prompt_strategic.txt"
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL") or "gpt-4o"
@@ -54,8 +56,8 @@ def validate() -> None:
         )
 
 
-def load_prompt() -> str:
-    """Load the intelligence briefing prompt from prompt.txt."""
-    if not PROMPT_FILE.exists():
-        raise FileNotFoundError(f"Prompt file not found: {PROMPT_FILE}")
-    return PROMPT_FILE.read_text(encoding="utf-8")
+def load_prompt(path: Path) -> str:
+    """Load a prompt file."""
+    if not path.exists():
+        raise FileNotFoundError(f"Prompt file not found: {path}")
+    return path.read_text(encoding="utf-8")
