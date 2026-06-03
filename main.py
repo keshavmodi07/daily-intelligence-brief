@@ -182,6 +182,7 @@ def markdown_to_html(md_text: str) -> str:
 def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
     """Send the briefing via SendGrid API."""
     import json
+    import time
     import urllib.error
     import urllib.request
 
@@ -198,27 +199,35 @@ def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
         ],
     }
 
-    req = urllib.request.Request(
-        "https://api.sendgrid.com/v3/mail/send",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {config.SENDGRID_API_KEY}",
-            "Content-Type": "application/json",
-        },
-        method="POST",
-    )
+    data = json.dumps(payload).encode("utf-8")
+    headers = {
+        "Authorization": f"Bearer {config.SENDGRID_API_KEY}",
+        "Content-Type": "application/json",
+    }
 
     logger.info("Sending email via SendGrid to %s", config.RECIPIENT_EMAIL)
 
-    try:
-        with urllib.request.urlopen(req, timeout=30) as response:
-            if response.status not in (200, 202):
-                raise RuntimeError(f"SendGrid returned status {response.status}")
-    except urllib.error.HTTPError as exc:
-        body = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"SendGrid error {exc.code}: {body}") from exc
+    last_error: Exception | None = None
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            "https://api.sendgrid.com/v3/mail/send",
+            data=data,
+            headers=headers,
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as response:
+                if response.status not in (200, 202):
+                    raise RuntimeError(f"SendGrid returned status {response.status}")
+            logger.info("Email sent successfully via SendGrid")
+            return
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
+            last_error = exc
+            logger.warning("SendGrid attempt %d failed: %s", attempt, exc)
+            if attempt < 3:
+                time.sleep(5 * attempt)
 
-    logger.info("Email sent successfully via SendGrid")
+    raise RuntimeError(f"SendGrid failed after 3 attempts: {last_error}") from last_error
 
 
 def send_email_gmail(subject: str, html_body: str, plain_body: str) -> None:
