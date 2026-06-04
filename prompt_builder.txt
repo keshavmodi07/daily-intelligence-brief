@@ -132,6 +132,63 @@ Recommend 3 technologies.
 
 Explain why.
 
+## 5 Tools To Watch
+
+Identify 5 software tools, platforms, frameworks or products that are gaining significant traction, attention or adoption.
+
+Sources may include:
+
+* Product launches
+* Developer communities
+* Open source activity
+* Startup adoption
+* Enterprise adoption
+* Funding announcements
+* Industry discussion
+
+For each tool provide:
+
+### Tool Name
+
+What it does
+
+Who uses it
+
+Why it is gaining attention
+
+Why founders should care
+
+Difficulty to learn:
+
+* Easy
+* Medium
+* Hard
+
+Potential impact:
+
+* Low
+* Medium
+* High
+
+Category:
+
+* AI
+* Productivity
+* Development
+* Design
+* Research
+* Data
+* Automation
+* Infrastructure
+
+IMPORTANT:
+
+Do not recommend tools simply because they are new.
+
+Prioritize tools showing evidence of real adoption, utility or strategic importance.
+
+Avoid repeating the same tools every day unless there is a meaningful update.
+
 ## Hidden Opportunities
 
 Identify 3 opportunities most people are missing.

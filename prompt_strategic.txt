@@ -89,6 +89,81 @@ Explain implications for technology, trade and industry.
 
 Include developments in wars already underway where strategically relevant.
 
+## Diplomacy & Bilateral Watch
+
+Track important diplomatic meetings, bilateral engagements, summits, state visits, strategic dialogues and multilateral forums from the previous 24 hours.
+
+Include:
+
+* India
+* United States
+* China
+* Russia
+* European Union
+* Japan
+* ASEAN
+* Middle East
+* Africa
+
+For every meeting explain:
+
+### Who met?
+
+### What was discussed?
+
+### What agreements, announcements or commitments were made?
+
+### Why does it matter?
+
+### Strategic significance
+
+Explain:
+
+* Economic implications
+* Trade implications
+* Technology implications
+* Defence implications
+* Energy implications
+
+### Founder Lens
+
+Why should entrepreneurs and investors care?
+
+### Signal Strength
+
+Rate significance:
+
+* Low
+* Medium
+* High
+* Strategic
+
+IMPORTANT:
+
+Do not simply report meetings.
+
+Focus on consequences.
+
+A minor meeting with major implications is more important than a major meeting with no meaningful outcomes.
+
+## Agreements Tracker
+
+Track any new:
+
+* Trade agreements
+* FTA negotiations
+* Defence agreements
+* Technology partnerships
+* Semiconductor partnerships
+* Energy agreements
+* Infrastructure agreements
+
+Explain:
+
+* Winners
+* Losers
+* Long-term implications
+
 ## Economics Watch
 
 Cover:

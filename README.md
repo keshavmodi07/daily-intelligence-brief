@@ -104,7 +104,9 @@ GitHub Actions is enabled by default on new repositories. If disabled:
 3. Click **Run workflow → Run workflow**
 4. Check your inbox (and spam folder on first run)
 
-The scheduled run fires automatically every day at **7:00 AM IST** (1:30 AM UTC).
+The scheduled run fires automatically every day at **7:00 AM IST** (`Asia/Kolkata` timezone).
+
+Manual runs from the Actions tab can happen at any time — those are not on the 7 AM schedule.
 
 ## Local Development
 

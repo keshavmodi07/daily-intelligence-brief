@@ -2,8 +2,9 @@ name: Daily Intelligence Brief
 
 on:
   schedule:
-    # 7:00 AM IST = 1:30 AM UTC (IST is UTC+5:30)
-    - cron: "30 1 * * *"
+    # 7:00 AM IST — uses Asia/Kolkata timezone directly
+    - cron: "0 7 * * *"
+      timezone: Asia/Kolkata
   workflow_dispatch:
 
 jobs:
