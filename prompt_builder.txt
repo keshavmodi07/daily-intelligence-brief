@@ -70,6 +70,48 @@ Focus on:
 
 Avoid minor model releases.
 
+## Major Lab Updates
+
+Track meaningful updates from the previous 24 hours at major AI labs and companies, including (but not limited to):
+
+* OpenAI
+* Anthropic
+* Google (DeepMind / Gemini)
+* ElevenLabs
+* Cursor
+* Kimi (Moonshot AI)
+* DeepSeek
+* Manus
+* Mistral
+* Meta AI
+* xAI
+* Cohere
+* Perplexity
+
+For each lab with a meaningful update, provide:
+
+### Lab Name
+
+What happened (product launch, model release, pricing change, partnership, research paper, funding, leadership change, etc.)
+
+Why it matters
+
+Why founders should care
+
+Competitive implications
+
+Signal strength: Low / Medium / High
+
+IMPORTANT:
+
+Only include labs with real updates from the last 24 hours.
+
+Skip labs with nothing new.
+
+Do not list every lab every day — only those with substantive news.
+
+Prioritize strategic moves over minor changelog entries.
+
 ## Startup Radar
 
 Important:

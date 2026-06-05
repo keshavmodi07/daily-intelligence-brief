@@ -89,6 +89,49 @@ Explain implications for technology, trade and industry.
 
 Include developments in wars already underway where strategically relevant.
 
+## Regional Briefing
+
+Provide a region-by-region update for the previous 24 hours. Cover all six regions below, but **elaborate more deeply on whichever regions had the most significant developments** — shorter entries for quiet regions, longer analysis for active ones.
+
+### United States
+
+Key political, economic, trade, tech and industrial developments.
+
+### China
+
+Key policy, trade, tech, manufacturing and geopolitical developments.
+
+### Europe
+
+Key EU and major European nation developments (economics, defence, trade, energy, industrial policy).
+
+### Russia
+
+Key military, economic, energy and geopolitical developments.
+
+### Southeast Asia
+
+Key developments across ASEAN nations — trade, manufacturing, tech, infrastructure, regional alliances.
+
+### Middle East
+
+Key developments — energy, conflict, trade corridors, diplomatic shifts, infrastructure.
+
+For each active region explain:
+
+* What happened
+* Why it matters
+* Second-order effects
+* Implications for founders and investors
+
+IMPORTANT:
+
+Do not give equal length to every region if nothing happened there.
+
+A quiet region gets one line: "No significant developments."
+
+An active region gets full analysis.
+
 ## Diplomacy & Bilateral Watch
 
 Track important diplomatic meetings, bilateral engagements, summits, state visits, strategic dialogues and multilateral forums from the previous 24 hours.
