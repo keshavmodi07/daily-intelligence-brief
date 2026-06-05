@@ -190,13 +190,22 @@ def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
         "personalizations": [{"to": [{"email": config.RECIPIENT_EMAIL}]}],
         "from": {
             "email": config.SENDER_EMAIL,
-            "name": "Daily Intelligence Brief",
+            "name": "Keshav — Daily Intelligence Brief",
         },
+        "reply_to": {"email": config.SENDER_EMAIL, "name": "Daily Intelligence Brief"},
         "subject": subject,
+        "headers": {
+            "List-Unsubscribe": f"<mailto:{config.SENDER_EMAIL}?subject=unsubscribe>",
+            "X-Entity-Ref-ID": f"daily-brief-{today_ist().strftime('%Y-%m-%d')}",
+        },
+        "categories": ["daily-intelligence-brief"],
         "content": [
             {"type": "text/plain", "value": plain_body},
             {"type": "text/html", "value": html_body},
         ],
+        "mail_settings": {
+            "footer": {"enable": False},
+        },
     }
 
     data = json.dumps(payload).encode("utf-8")

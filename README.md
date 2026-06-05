@@ -104,7 +104,7 @@ GitHub Actions is enabled by default on new repositories. If disabled:
 3. Click **Run workflow → Run workflow**
 4. Check your inbox (and spam folder on first run)
 
-The scheduled run fires automatically every day at **7:00 AM IST** (`Asia/Kolkata` timezone).
+The scheduled run targets **~7:00 AM IST** delivery. GitHub Actions often delays scheduled jobs by 4–5 hours during peak load, so the workflow runs at **2:25 AM IST** (compensated) with a **7:00 AM IST backup**. Only one email is sent per day.
 
 Manual runs from the Actions tab can happen at any time — those are not on the 7 AM schedule.
 
@@ -158,7 +158,8 @@ Each daily run uses two OpenAI Responses API calls with web search. Typical cost
 | Problem | Fix |
 |---|---|
 | Workflow doesn't run on schedule | Scheduled workflows only run on the default branch (`main`). Confirm the workflow file is on `main`. |
-| Email not received | Check spam. Verify sender email in SendGrid. Confirm `SENDGRID_API_KEY` has Mail Send permission. |
+| Email arrives at ~11 AM instead of 7 AM | GitHub Actions schedule delay (known issue). Fixed by running at 2:25 AM IST with compensation. |
+| Email goes to spam | Mark as **Not spam** once. Add `founder.effinova@gmail.com` to Google Contacts. Create a Gmail filter: From `founder.effinova@gmail.com` → Never send to spam. For best deliverability, complete SendGrid domain authentication for `effinova.com`. |
 | OpenAI error | Verify `OPENAI_API_KEY` is valid and billing is enabled. Check Actions logs for the exact error. |
 | Empty briefing | Check Actions logs. The model may have failed to search — retry manually. |
 

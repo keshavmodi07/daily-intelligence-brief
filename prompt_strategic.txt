@@ -74,6 +74,45 @@ Explain:
 
 Why this matters for India's growth over the next decade.
 
+## India Policy Radar
+
+Whenever India announces from the previous 24 hours:
+
+* PLI (Production Linked Incentive) schemes
+* Manufacturing incentives
+* Industrial policy
+* Semiconductor policy
+* Defence localization initiatives
+* Energy initiatives
+
+For each relevant announcement, automatically identify and explain:
+
+### Policy Summary
+
+What was announced and who it targets.
+
+### Likely Winners
+
+Companies, sectors and regions most likely to benefit.
+
+### Startup Opportunities
+
+Specific startup ideas or niches this policy opens up for students, solo founders or small teams.
+
+### Businesses That May Emerge
+
+New business categories, supply chain players or service providers likely to appear because of this policy.
+
+### Founder Action
+
+What a young founder should do this week if they want to position for this opportunity.
+
+IMPORTANT:
+
+If no major India policy announcements occurred in the last 24 hours, state that clearly and briefly analyze the most recent active scheme still creating opportunities.
+
+Do not skip this section — always provide actionable India policy intelligence.
+
 ## Geopolitics & Power
 
 Focus on:

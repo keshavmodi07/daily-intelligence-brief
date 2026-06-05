@@ -2,7 +2,11 @@ name: Daily Intelligence Brief
 
 on:
   schedule:
-    # 7:00 AM IST — uses Asia/Kolkata timezone directly
+    # GitHub Actions scheduled jobs are often delayed 4–5 hours during peak load.
+    # Primary run at 2:25 AM IST compensates so delivery lands ~7:00 AM IST.
+    - cron: "25 2 * * *"
+      timezone: Asia/Kolkata
+    # Backup at 7:00 AM IST — skipped if primary already sent today.
     - cron: "0 7 * * *"
       timezone: Asia/Kolkata
   workflow_dispatch:
@@ -16,16 +20,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Get IST date
+        run: echo "IST_DATE=$(TZ=Asia/Kolkata date +%Y-%m-%d)" >> "$GITHUB_ENV"
+
+      - name: Check if brief already sent today
+        id: check-sent
+        uses: actions/cache/restore@v4
+        with:
+          path: .sent-marker
+          key: brief-sent-${{ env.IST_DATE }}
+
       - name: Set up Python 3.11
+        if: steps.check-sent.outputs.cache-hit != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
 
       - name: Install dependencies
+        if: steps.check-sent.outputs.cache-hit != 'true'
         run: pip install -r requirements.txt
 
       - name: Generate and send daily briefing
+        if: steps.check-sent.outputs.cache-hit != 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
@@ -33,3 +50,18 @@ jobs:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
         run: python main.py
+
+      - name: Mark brief as sent today
+        if: success() && steps.check-sent.outputs.cache-hit != 'true'
+        run: echo "sent" > .sent-marker
+
+      - name: Save sent marker
+        if: success() && steps.check-sent.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: .sent-marker
+          key: brief-sent-${{ env.IST_DATE }}
+
+      - name: Already sent today
+        if: steps.check-sent.outputs.cache-hit == 'true'
+        run: echo "Brief already sent for ${{ env.IST_DATE }}, skipping."
