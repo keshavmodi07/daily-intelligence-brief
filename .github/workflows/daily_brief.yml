@@ -25,24 +25,25 @@ jobs:
 
       - name: Check if brief already sent today
         id: check-sent
+        if: github.event_name == 'schedule'
         uses: actions/cache/restore@v4
         with:
           path: .sent-marker
           key: brief-sent-${{ env.IST_DATE }}
 
       - name: Set up Python 3.11
-        if: steps.check-sent.outputs.cache-hit != 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.check-sent.outputs.cache-hit != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
 
       - name: Install dependencies
-        if: steps.check-sent.outputs.cache-hit != 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.check-sent.outputs.cache-hit != 'true'
         run: pip install -r requirements.txt
 
       - name: Generate and send daily briefing
-        if: steps.check-sent.outputs.cache-hit != 'true'
+        if: github.event_name == 'workflow_dispatch' || steps.check-sent.outputs.cache-hit != 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
@@ -52,16 +53,16 @@ jobs:
         run: python main.py
 
       - name: Mark brief as sent today
-        if: success() && steps.check-sent.outputs.cache-hit != 'true'
+        if: success() && (github.event_name == 'workflow_dispatch' || steps.check-sent.outputs.cache-hit != 'true')
         run: echo "sent" > .sent-marker
 
       - name: Save sent marker
-        if: success() && steps.check-sent.outputs.cache-hit != 'true'
+        if: success() && (github.event_name == 'workflow_dispatch' || steps.check-sent.outputs.cache-hit != 'true')
         uses: actions/cache/save@v4
         with:
           path: .sent-marker
           key: brief-sent-${{ env.IST_DATE }}
 
       - name: Already sent today
-        if: steps.check-sent.outputs.cache-hit == 'true'
+        if: github.event_name == 'schedule' && steps.check-sent.outputs.cache-hit == 'true'
         run: echo "Brief already sent for ${{ env.IST_DATE }}, skipping."
