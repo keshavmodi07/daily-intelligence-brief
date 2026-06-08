@@ -28,18 +28,20 @@ AGENTS = (
         "name": "Builder",
         "prompt_file": config.PROMPT_BUILDER_FILE,
         "search_focus": (
-            "AI, startups, venture capital, technology, open source, software, SaaS, "
-            "robotics, developer tools, emerging business models, consumer technology, "
-            "and enterprise technology"
+            "AI labs and tech companies individually (OpenAI, Anthropic, Google, Microsoft, "
+            "Nvidia, Meta, ElevenLabs, Mistral, DeepSeek, Hugging Face, etc.), startups, "
+            "venture capital, technology conferences, product launches, model releases, "
+            "open source, software, SaaS, robotics, and developer tools — strict 72-hour recency"
         ),
     },
     {
         "name": "Strategic",
         "prompt_file": config.PROMPT_STRATEGIC_FILE,
         "search_focus": (
-            "India, geopolitics, economics, infrastructure, manufacturing, defence, "
-            "energy, semiconductors, trade, supply chains, industrial policy, logistics, "
-            "demographics, science and engineering, and ongoing wars with strategic impact"
+            "India GDP and RBI, White House, US State Department, US DoD, Indian PMO, "
+            "MEA India, NATO, Kremlin, Ukraine, Israel, geopolitics, diplomacy, defence, "
+            "economics, manufacturing, energy, semiconductors, trade, and ongoing wars — "
+            "strict 72-hour recency, official data releases prioritized"
         ),
     },
 )
@@ -59,10 +61,17 @@ def generate_brief(
     """Use OpenAI Responses API with web search to produce one briefing."""
     user_input = (
         f"Generate today's {agent_name} Intelligence Brief for {date_str}. "
-        f"Search the web for the most important developments from the previous 24 hours in "
+        f"Today's date is {date_str} — use this to enforce the 72-hour recency rule strictly. "
+        "STEP 1: Run the Critical Events Check from the prompt — search specifically for each "
+        "listed category before writing anything else. "
+        f"STEP 2: Search the web with targeted queries (not generic news searches) for "
         f"{search_focus}. "
+        "Search major companies and institutions individually by name. "
+        "Verify the original event date for every development — exclude anything where the "
+        "underlying event occurred more than 72 hours ago, even if republished today. "
+        "Prioritize important developments over merely interesting ones. "
         "Follow the prompt structure exactly. Use markdown formatting with clear headers "
-        "and bullet points. Cite sources where possible."
+        "and bullet points. Cite sources with dates where possible."
     )
 
     logger.info(
