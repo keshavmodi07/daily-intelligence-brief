@@ -27,21 +27,21 @@ AGENTS = (
     {
         "name": "Builder",
         "prompt_file": config.PROMPT_BUILDER_FILE,
-        "search_focus": (
-            "AI labs and tech companies individually (OpenAI, Anthropic, Google, Microsoft, "
-            "Nvidia, Meta, ElevenLabs, Mistral, DeepSeek, Hugging Face, etc.), startups, "
-            "venture capital, technology conferences, product launches, model releases, "
-            "open source, software, SaaS, robotics, and developer tools — strict 72-hour recency"
+        "audit_focus": (
+            "Tier 1 AI (OpenAI, Anthropic, Google DeepMind, Google Cloud, Microsoft, Nvidia, "
+            "Meta AI, xAI, ElevenLabs, Midjourney, Perplexity, Hugging Face, Mistral, Alibaba Qwen), "
+            "major tech events (Build, I/O, GTC, WWDC, CES, re:Invent, Meta Connect), "
+            "product/API launches, acquisitions, major funding, open source"
         ),
     },
     {
         "name": "Strategic",
         "prompt_file": config.PROMPT_STRATEGIC_FILE,
-        "search_focus": (
-            "India GDP and RBI, White House, US State Department, US DoD, Indian PMO, "
-            "MEA India, NATO, Kremlin, Ukraine, Israel, geopolitics, diplomacy, defence, "
-            "economics, manufacturing, energy, semiconductors, trade, and ongoing wars — "
-            "strict 72-hour recency, official data releases prioritized"
+        "audit_focus": (
+            "India GDP, inflation, RBI, PMI, fiscal announcements; Fed, ECB, US CPI, China GDP; "
+            "India infrastructure, PLI, semiconductors, defence manufacturing; White House, DoD, "
+            "State Dept, PMO, MEA, NATO, EU, Israel, Ukraine, Russia, China; diplomacy last 7 days; "
+            "Russia-Ukraine, Middle East, China-Taiwan, India-China conflicts"
         ),
     },
 )
@@ -51,31 +51,77 @@ def today_ist() -> datetime:
     return datetime.now(IST)
 
 
-def generate_brief(
+def run_critical_audit(
     client: OpenAI,
-    instructions: str,
-    date_str: str,
+    protocol: str,
     agent_name: str,
-    search_focus: str,
+    date_str: str,
+    audit_focus: str,
 ) -> str:
-    """Use OpenAI Responses API with web search to produce one briefing."""
+    """Stage 1 (Search) + Stage 2 (Critical Event Audit) via web search."""
+    instructions = (
+        f"{protocol}\n\n"
+        f"You are running Stages 1 and 2 for the {agent_name} Intelligence Officer."
+    )
     user_input = (
-        f"Generate today's {agent_name} Intelligence Brief for {date_str}. "
-        f"Today's date is {date_str} — use this to enforce the 72-hour recency rule strictly. "
-        "STEP 1: Run the Critical Events Check from the prompt — search specifically for each "
-        "listed category before writing anything else. "
-        f"STEP 2: Search the web with targeted queries (not generic news searches) for "
-        f"{search_focus}. "
-        "Search major companies and institutions individually by name. "
-        "Verify the original event date for every development — exclude anything where the "
-        "underlying event occurred more than 72 hours ago, even if republished today. "
-        "Prioritize important developments over merely interesting ones. "
-        "Follow the prompt structure exactly. Use markdown formatting with clear headers "
-        "and bullet points. Cite sources with dates where possible."
+        f"Today is {date_str}. Execute Stage 1 (Search) and Stage 2 (Critical Event Audit).\n\n"
+        f"Focus areas for this agent: {audit_focus}\n\n"
+        "STAGE 1 — SEARCH:\n"
+        "Individually search every Tier 1 source and category relevant to this agent. "
+        "Do not use generic news queries. Search each company and institution by name.\n\n"
+        "STAGE 2 — CRITICAL EVENT AUDIT:\n"
+        "Run the Final Verification Checklist. For each item report: FOUND (with date and summary) "
+        "or NOT FOUND. If a Tier 1 event occurred but you have not found it yet, keep searching.\n\n"
+        "Output a structured audit report only — do NOT write the full newsletter yet."
     )
 
     logger.info(
-        "Requesting %s brief from OpenAI (model=%s, web_search=enabled)",
+        "Stage 1+2: %s critical audit (model=%s, web_search=enabled)",
+        agent_name,
+        config.OPENAI_MODEL,
+    )
+
+    response = client.responses.create(
+        model=config.OPENAI_MODEL,
+        instructions=instructions,
+        input=user_input,
+        tools=[{"type": "web_search"}],
+    )
+
+    audit = response.output_text
+    if not audit or not audit.strip():
+        raise RuntimeError(f"OpenAI returned an empty {agent_name} audit.")
+
+    logger.info("%s audit completed (%d characters)", agent_name, len(audit))
+    return audit.strip()
+
+
+def write_brief(
+    client: OpenAI,
+    agent_prompt: str,
+    protocol: str,
+    audit_report: str,
+    date_str: str,
+    agent_name: str,
+) -> str:
+    """Stage 3: Write the full briefing using the audit report."""
+    instructions = f"{protocol}\n\n{agent_prompt}"
+    user_input = (
+        f"Today is {date_str}. Execute Stage 3: Write the full {agent_name} Intelligence Brief.\n\n"
+        "Use the Critical Event Audit below. Every FOUND Tier 1 event MUST appear prominently "
+        "in the newsletter. Do not omit GDP, major launches, or major escalations if they "
+        "were found in the audit.\n\n"
+        "Apply Recency Rule (72-hour primary, 14-day secondary) and Diversification Rule.\n\n"
+        "--- CRITICAL EVENT AUDIT (Stages 1+2) ---\n"
+        f"{audit_report}\n"
+        "--- END AUDIT ---\n\n"
+        "Follow the output format in your prompt exactly. Use markdown with clear headers "
+        "and bullet points. Include the Critical Events Audit section at the top. "
+        "Cite sources with dates where possible."
+    )
+
+    logger.info(
+        "Stage 3: Writing %s brief (model=%s, web_search=enabled)",
         agent_name,
         config.OPENAI_MODEL,
     )
@@ -91,8 +137,21 @@ def generate_brief(
     if not brief or not brief.strip():
         raise RuntimeError(f"OpenAI returned an empty {agent_name} briefing.")
 
-    logger.info("%s brief generated (%d characters)", agent_name, len(brief))
+    logger.info("%s brief written (%d characters)", agent_name, len(brief))
     return brief.strip()
+
+
+def generate_brief(
+    client: OpenAI,
+    agent_prompt: str,
+    protocol: str,
+    date_str: str,
+    agent_name: str,
+    audit_focus: str,
+) -> str:
+    """Run the full 3-stage pipeline for one agent."""
+    audit = run_critical_audit(client, protocol, agent_name, date_str, audit_focus)
+    return write_brief(client, agent_prompt, protocol, audit, date_str, agent_name)
 
 
 def combine_briefs(briefs: list[str], date_str: str) -> str:
@@ -290,16 +349,18 @@ def main() -> int:
 
     try:
         client = OpenAI(api_key=config.OPENAI_API_KEY)
+        protocol = config.load_prompt(config.PROTOCOL_FILE)
         briefs: list[str] = []
 
         for agent in AGENTS:
-            instructions = config.load_prompt(agent["prompt_file"])
+            agent_prompt = config.load_prompt(agent["prompt_file"])
             brief = generate_brief(
                 client,
-                instructions,
+                agent_prompt,
+                protocol,
                 date_str,
                 agent["name"],
-                agent["search_focus"],
+                agent["audit_focus"],
             )
             briefs.append(brief)
 

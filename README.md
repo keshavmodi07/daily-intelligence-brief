@@ -21,6 +21,7 @@ You can also trigger a run manually from the **Actions** tab at any time.
 daily-intelligence-brief/
 ├── main.py                            # Runs both agents, combines, emails
 ├── config.py                          # Environment variable configuration
+├── prompt_protocol.txt                # Critical Intelligence Protocol (Tier 1 checks)
 ├── prompt_builder.txt                 # Builder Intelligence Officer prompt
 ├── prompt_strategic.txt               # Strategic Intelligence Officer prompt
 ├── requirements.txt                   # Python dependencies
@@ -151,7 +152,7 @@ To use a different OpenAI model, set the `OPENAI_MODEL` secret (or env var local
 
 ## Cost Estimate
 
-Each daily run uses two OpenAI Responses API calls with web search. Typical cost is roughly **$0.10–$0.60 per day** depending on model and search depth. GitHub Actions free tier (2,000 minutes/month) is more than sufficient.
+Each daily run uses a 3-stage pipeline per agent (Search → Audit → Write), four OpenAI calls total with web search. Typical cost is roughly **$0.20–$1.00 per day** depending on model and search depth. GitHub Actions free tier (2,000 minutes/month) is more than sufficient.
 
 ## Troubleshooting
 
