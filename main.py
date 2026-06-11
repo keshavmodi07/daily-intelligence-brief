@@ -38,10 +38,11 @@ AGENTS = (
         "name": "Strategic",
         "prompt_file": config.PROMPT_STRATEGIC_FILE,
         "audit_focus": (
-            "India GDP, inflation, RBI, PMI, fiscal announcements; Fed, ECB, US CPI, China GDP; "
-            "India infrastructure, PLI, semiconductors, defence manufacturing; White House, DoD, "
-            "State Dept, PMO, MEA, NATO, EU, Israel, Ukraine, Russia, China; diplomacy last 7 days; "
-            "Russia-Ukraine, Middle East, China-Taiwan, India-China conflicts"
+            "India: GDP, RBI, PMO, Cabinet, infrastructure, railways, ports, airports, PLI, "
+            "semiconductors, defence manufacturing, energy, logistics; Global economics: GDP, "
+            "inflation, PMI, Fed, ECB, IMF, World Bank; Geopolitics: Russia-Ukraine, Middle East, "
+            "China-Taiwan, India-China, India-Pakistan, US, China, EU, ASEAN; AI labs for strategic "
+            "tech impact; diplomacy last 7 days; 3 verification attempts per empty category"
         ),
     },
 )
