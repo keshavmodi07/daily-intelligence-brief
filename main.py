@@ -38,11 +38,12 @@ AGENTS = (
         "name": "Strategic",
         "prompt_file": config.PROMPT_STRATEGIC_FILE,
         "audit_focus": (
-            "India: GDP, RBI, PMO, Cabinet, infrastructure, railways, ports, airports, PLI, "
-            "semiconductors, defence manufacturing, energy, logistics; Global economics: GDP, "
-            "inflation, PMI, Fed, ECB, IMF, World Bank; Geopolitics: Russia-Ukraine, Middle East, "
-            "China-Taiwan, India-China, India-Pakistan, US, China, EU, ASEAN; AI labs for strategic "
-            "tech impact; diplomacy last 7 days; 3 verification attempts per empty category"
+            "India: GDP, inflation, RBI, PMO, Cabinet, NHAI, MoRTH, Ministry of Railways, "
+            "Ministry of Defence, DPIIT, PLI, semiconductors, defence procurement; Infrastructure: "
+            "Vande Bharat, bullet trains, DFC, expressways, Bharatmala, Sagarmala, ports, airports, "
+            "Zojila/Z-Morh/Atal/strategic tunnels; Economics: Fed, ECB, IMF, World Bank, PMI; "
+            "Geopolitics: Russia-Ukraine, Middle East, Israel, Iran, China-Taiwan, India-China, "
+            "ASEAN, US-China, diplomacy last 7 days; AI labs for strategic tech impact"
         ),
     },
 )
