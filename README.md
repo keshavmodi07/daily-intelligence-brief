@@ -6,12 +6,14 @@ No VPS. No paid infrastructure except OpenAI API usage.
 
 ## What It Does
 
-Every day at **7:00 AM IST**, GitHub Actions runs **two intelligence agents**:
+Every day at **~7:00 AM IST**, GitHub Actions runs a **4-stage intelligence pipeline**:
 
-1. **Builder Intelligence Officer** — AI, startups, venture capital, developer tools, founder opportunities
-2. **Strategic Intelligence Officer** — India, geopolitics, economics, manufacturing, energy, defence, supply chains
+1. **Research** — broad + targeted searches across all Tier 1 categories
+2. **Critical Event Verification** — mandatory checklist (GDP, RBI, conflicts, AI launches, etc.)
+3. **Memory Comparison** — compare against `memory.json` and `watchlist.json` (NEW / UPDATED / UNCHANGED)
+4. **Report Generation** — Builder + Strategic briefs, then memory is updated and committed to the repo
 
-Both briefs are combined into **one email** with a clear separator between them.
+Both briefs are combined into **one email**. The system remembers what it reported and avoids repeating unchanged topics for 14 days.
 
 You can also trigger a run manually from the **Actions** tab at any time.
 
@@ -19,9 +21,13 @@ You can also trigger a run manually from the **Actions** tab at any time.
 
 ```
 daily-intelligence-brief/
-├── main.py                            # Runs both agents, combines, emails
+├── main.py                            # 4-stage pipeline orchestrator
+├── memory.py                          # Memory load/save/merge helpers
+├── memory.json                        # Persistent topic memory (auto-updated)
+├── watchlist.json                     # Long-term project watchlist
 ├── config.py                          # Environment variable configuration
-├── prompt_protocol.txt                # Critical Intelligence Protocol (Tier 1 checks)
+├── prompt_protocol.txt                # Critical Intelligence Protocol
+├── prompt_output.txt                  # Shared platform output sections
 ├── prompt_builder.txt                 # Builder Intelligence Officer prompt
 ├── prompt_strategic.txt               # Strategic Intelligence Officer prompt
 ├── requirements.txt                   # Python dependencies
@@ -152,7 +158,7 @@ To use a different OpenAI model, set the `OPENAI_MODEL` secret (or env var local
 
 ## Cost Estimate
 
-Each daily run uses a 3-stage pipeline per agent (Search → Audit → Write), four OpenAI calls total with web search. Typical cost is roughly **$0.20–$1.00 per day** depending on model and search depth. GitHub Actions free tier (2,000 minutes/month) is more than sufficient.
+Each daily run uses six OpenAI API calls (4 with web search + memory update + 2 report writes). Typical cost is roughly **$0.30–$1.50 per day** depending on model and search depth. GitHub Actions free tier (2,000 minutes/month) is more than sufficient.
 
 ## Troubleshooting
 

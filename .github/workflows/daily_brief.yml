@@ -2,19 +2,19 @@ name: Daily Intelligence Brief
 
 on:
   schedule:
-    # GitHub Actions scheduled jobs are often delayed 4–5 hours during peak load.
-    # Primary run at 2:25 AM IST compensates so delivery lands ~7:00 AM IST.
     - cron: "25 2 * * *"
       timezone: Asia/Kolkata
-    # Backup at 7:00 AM IST — skipped if primary already sent today.
     - cron: "0 7 * * *"
       timezone: Asia/Kolkata
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   send-brief:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 55
 
     steps:
       - name: Checkout repository
@@ -51,6 +51,15 @@ jobs:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
         run: python main.py
+
+      - name: Commit memory updates
+        if: success() && (github.event_name == 'workflow_dispatch' || steps.check-sent.outputs.cache-hit != 'true')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add memory.json
+          git diff --staged --quiet || git commit -m "chore: update intelligence memory [skip ci]"
+          git push
 
       - name: Mark brief as sent today
         if: success() && (github.event_name == 'workflow_dispatch' || steps.check-sent.outputs.cache-hit != 'true')

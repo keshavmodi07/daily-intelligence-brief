@@ -8,6 +8,9 @@ BASE_DIR = Path(__file__).resolve().parent
 PROMPT_BUILDER_FILE = BASE_DIR / "prompt_builder.txt"
 PROMPT_STRATEGIC_FILE = BASE_DIR / "prompt_strategic.txt"
 PROTOCOL_FILE = BASE_DIR / "prompt_protocol.txt"
+OUTPUT_RULES_FILE = BASE_DIR / "prompt_output.txt"
+MEMORY_FILE = BASE_DIR / "memory.json"
+WATCHLIST_FILE = BASE_DIR / "watchlist.json"
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL") or "gpt-4o"

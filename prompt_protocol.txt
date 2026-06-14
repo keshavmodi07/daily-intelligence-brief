@@ -217,7 +217,9 @@ Never include an event merely because a new article discussed an old topic.
 
 No company may dominate the report unless the event is extraordinary.
 
-No single company should occupy more than 30% of the Builder Brief.
+No single company should occupy more than 25% of the Builder Brief.
+
+No single topic should occupy more than 25% of the Strategic Brief.
 
 Maintain diversity across:
 
@@ -252,8 +254,32 @@ Failure to include critical developments is worse than including fewer stories.
 
 ---
 
-## THREE-STAGE PROCESS
+## MEMORY SYSTEM
 
-Stage 1: Search — individually query every Tier 1 source and category above.
-Stage 2: Critical Event Audit — run the Final Verification Checklist; list what was found and what is still missing.
-Stage 3: Write Newsletter — produce the full briefing only after Stages 1 and 2 are complete.
+Persistent memory is stored in memory.json. Watchlist items in watchlist.json.
+
+Before generating reports, compare new findings against memory.
+
+Classify each topic: NEW, UPDATED, UNCHANGED.
+
+Do NOT repeat topics reported in the last 14 days unless:
+* a milestone occurred
+* a new announcement happened
+* a major consequence emerged
+* a strategic change happened
+
+Report WHAT CHANGED, not WHAT EXISTS.
+
+Bad: "India has 99.6% railway electrification."
+Good: "India crossed 99.8% electrification after adding X km this month."
+
+Watchlist items: only report meaningful progress.
+
+---
+
+## FOUR-STAGE PIPELINE
+
+Stage 1: Research — broad, targeted, and verification searches across all categories.
+Stage 2: Critical Event Verification — mandatory checklist; nothing Tier 1 can be missed.
+Stage 3: Memory Comparison — compare against memory.json and watchlist.json; NEW/UPDATED/UNCHANGED.
+Stage 4: Report Generation — write briefs using verification + memory comparison; update memory after send.

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Daily Intelligence Brief — generate and email personalized briefings."""
+"""Daily Intelligence Brief — persistent intelligence platform."""
 
 from __future__ import annotations
 
+import json
 import logging
 import smtplib
 import sys
+import time
 from datetime import datetime, timezone, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -14,6 +16,7 @@ import markdown
 from openai import OpenAI
 
 import config
+import memory as mem
 
 logging.basicConfig(
     level=logging.INFO,
@@ -23,28 +26,34 @@ logger = logging.getLogger(__name__)
 
 IST = timezone(timedelta(hours=5, minutes=30))
 
+RESEARCH_CATEGORIES = """
+AI: OpenAI, Anthropic, Google DeepMind, Google Cloud, Microsoft, Nvidia, Meta AI, xAI,
+Perplexity, Mistral, Alibaba Qwen, ElevenLabs, Midjourney, Hugging Face
+
+India: PMO, Cabinet, Ministry of Railways, Ministry of Defence, Ministry of Commerce,
+DPIIT, Ministry of Power, NHAI, MoRTH
+
+Infrastructure: Railways, DFCs, Bullet Trains, Vande Bharat, Metro, Airports, Ports,
+Freight Corridors, Logistics Parks, Industrial Corridors, Tunnels (Zojila, Z-Morh, Atal)
+
+Manufacturing: Semiconductors, New Factories, Defence Manufacturing, PLI, Supply Chains
+
+Economics: GDP, Inflation, PMI, RBI, Fed, ECB, IMF, OECD, World Bank, Trade
+
+Geopolitics: Russia-Ukraine, Middle East, Israel, Iran, China, Taiwan, India-China,
+India-Pakistan, ASEAN, NATO, White House, Pentagon, EU
+"""
+
 AGENTS = (
     {
         "name": "Builder",
         "prompt_file": config.PROMPT_BUILDER_FILE,
-        "audit_focus": (
-            "Tier 1 AI (OpenAI, Anthropic, Google DeepMind, Google Cloud, Microsoft, Nvidia, "
-            "Meta AI, xAI, ElevenLabs, Midjourney, Perplexity, Hugging Face, Mistral, Alibaba Qwen), "
-            "major tech events (Build, I/O, GTC, WWDC, CES, re:Invent, Meta Connect), "
-            "product/API launches, acquisitions, major funding, open source"
-        ),
+        "diversification": "No single company may occupy more than 25% of this brief.",
     },
     {
         "name": "Strategic",
         "prompt_file": config.PROMPT_STRATEGIC_FILE,
-        "audit_focus": (
-            "India: GDP, inflation, RBI, PMO, Cabinet, NHAI, MoRTH, Ministry of Railways, "
-            "Ministry of Defence, DPIIT, PLI, semiconductors, defence procurement; Infrastructure: "
-            "Vande Bharat, bullet trains, DFC, expressways, Bharatmala, Sagarmala, ports, airports, "
-            "Zojila/Z-Morh/Atal/strategic tunnels; Economics: Fed, ECB, IMF, World Bank, PMI; "
-            "Geopolitics: Russia-Ukraine, Middle East, Israel, Iran, China-Taiwan, India-China, "
-            "ASEAN, US-China, diplomacy last 7 days; AI labs for strategic tech impact"
-        ),
+        "diversification": "No single topic may occupy more than 25% of this brief.",
     },
 )
 
@@ -53,123 +62,192 @@ def today_ist() -> datetime:
     return datetime.now(IST)
 
 
-def run_critical_audit(
+def call_openai(
+    client: OpenAI,
+    instructions: str,
+    user_input: str,
+    *,
+    use_web_search: bool = True,
+    label: str = "openai",
+) -> str:
+    kwargs: dict = {
+        "model": config.OPENAI_MODEL,
+        "instructions": instructions,
+        "input": user_input,
+    }
+    if use_web_search:
+        kwargs["tools"] = [{"type": "web_search"}]
+
+    logger.info("%s (model=%s, web_search=%s)", label, config.OPENAI_MODEL, use_web_search)
+    response = client.responses.create(**kwargs)
+    text = response.output_text
+    if not text or not text.strip():
+        raise RuntimeError(f"Empty response from {label}")
+    logger.info("%s completed (%d characters)", label, len(text))
+    return text.strip()
+
+
+def run_stage1_research(client: OpenAI, protocol: str, date_str: str) -> str:
+    instructions = f"{protocol}\n\nYou are executing Stage 1 — Research."
+    user_input = (
+        f"Today is {date_str}.\n\n"
+        "STAGE 1 — RESEARCH\n\n"
+        "Search broadly, then specifically, then verify. Never stop after one search.\n"
+        "Minimum 3 verification attempts for any category that appears empty.\n\n"
+        f"Search ALL categories:\n{RESEARCH_CATEGORIES}\n\n"
+        "For each category report findings with: source, original event date, summary.\n"
+        "Do NOT write the newsletter. Output structured research notes only."
+    )
+    return call_openai(client, instructions, user_input, label="Stage 1: Research")
+
+
+def run_stage2_verification(
+    client: OpenAI, protocol: str, research: str, date_str: str
+) -> str:
+    instructions = f"{protocol}\n\nYou are executing Stage 2 — Critical Event Verification."
+    user_input = (
+        f"Today is {date_str}.\n\n"
+        "STAGE 2 — CRITICAL EVENT VERIFICATION\n\n"
+        "Using the research below, verify every checklist item:\n\n"
+        "India: GDP, inflation, RBI, Cabinet, infrastructure approvals, defence procurement, "
+        "semiconductor announcements, manufacturing investments\n"
+        "AI: major launches, model releases, conferences, acquisitions, funding\n"
+        "Geopolitics: wars, escalations, diplomatic meetings, trade/defence agreements, sanctions\n\n"
+        "For each item: FOUND (date + summary) or NOT FOUND (after 3+ search attempts).\n"
+        "If a major development occurred it MUST be marked FOUND.\n\n"
+        f"--- STAGE 1 RESEARCH ---\n{research}\n--- END ---\n\n"
+        "Continue searching if critical items are missing. Output verification report only."
+    )
+    return call_openai(
+        client, instructions, user_input, label="Stage 2: Critical Event Verification"
+    )
+
+
+def run_stage3_memory_comparison(
     client: OpenAI,
     protocol: str,
-    agent_name: str,
+    research: str,
+    verification: str,
+    memory_data: dict,
+    watchlist: dict,
     date_str: str,
-    audit_focus: str,
 ) -> str:
-    """Stage 1 (Search) + Stage 2 (Critical Event Audit) via web search."""
     instructions = (
-        f"{protocol}\n\n"
-        f"You are running Stages 1 and 2 for the {agent_name} Intelligence Officer."
+        f"{protocol}\n\nYou are executing Stage 3 — Memory Comparison.\n\n"
+        "MEMORY RULES:\n"
+        "- Do NOT repeat topics from last 14 days unless: milestone, new announcement, "
+        "major consequence, or strategic change occurred.\n"
+        "- Report WHAT CHANGED, not WHAT EXISTS.\n"
+        "- Watchlist items: only report meaningful progress.\n"
+        "- Classify each relevant topic: NEW, UPDATED, or UNCHANGED.\n"
+        "- UNCHANGED topics should NOT appear in the final newsletter unless a watchlist "
+        "item had meaningful progress."
     )
     user_input = (
-        f"Today is {date_str}. Execute Stage 1 (Search) and Stage 2 (Critical Event Audit).\n\n"
-        f"Focus areas for this agent: {audit_focus}\n\n"
-        "STAGE 1 — SEARCH:\n"
-        "Individually search every Tier 1 source and category relevant to this agent. "
-        "Do not use generic news queries. Search each company and institution by name.\n\n"
-        "STAGE 2 — CRITICAL EVENT AUDIT:\n"
-        "Run the Final Verification Checklist. For each item report: FOUND (with date and summary) "
-        "or NOT FOUND. If a Tier 1 event occurred but you have not found it yet, keep searching.\n\n"
-        "Output a structured audit report only — do NOT write the full newsletter yet."
+        f"Today is {date_str}.\n\n"
+        "STAGE 3 — MEMORY COMPARISON\n\n"
+        f"--- MEMORY.JSON ---\n{mem.format_for_prompt(memory_data)}\n--- END ---\n\n"
+        f"--- WATCHLIST.JSON ---\n{mem.format_for_prompt(watchlist)}\n--- END ---\n\n"
+        f"--- STAGE 1 RESEARCH ---\n{research}\n--- END ---\n\n"
+        f"--- STAGE 2 VERIFICATION ---\n{verification}\n--- END ---\n\n"
+        "For every memory topic and watchlist item touched today, output:\n"
+        "- Topic\n- Status: NEW / UPDATED / UNCHANGED\n- What changed (if UPDATED/NEW)\n"
+        "- Include in newsletter: YES / NO\n- Reason\n\n"
+        "Also identify: Missed Yesterday — major events that should have been in yesterday's "
+        "report but were not in memory.\n\n"
+        "Output structured comparison only — not the full newsletter."
+    )
+    return call_openai(
+        client, instructions, user_input, label="Stage 3: Memory Comparison"
     )
 
-    logger.info(
-        "Stage 1+2: %s critical audit (model=%s, web_search=enabled)",
-        agent_name,
-        config.OPENAI_MODEL,
-    )
 
-    response = client.responses.create(
-        model=config.OPENAI_MODEL,
-        instructions=instructions,
-        input=user_input,
-        tools=[{"type": "web_search"}],
-    )
-
-    audit = response.output_text
-    if not audit or not audit.strip():
-        raise RuntimeError(f"OpenAI returned an empty {agent_name} audit.")
-
-    logger.info("%s audit completed (%d characters)", agent_name, len(audit))
-    return audit.strip()
-
-
-def write_brief(
+def run_stage4_report(
     client: OpenAI,
     agent_prompt: str,
     protocol: str,
-    audit_report: str,
+    output_rules: str,
+    verification: str,
+    memory_comparison: str,
     date_str: str,
     agent_name: str,
+    diversification: str,
 ) -> str:
-    """Stage 3: Write the full briefing using the audit report."""
-    instructions = f"{protocol}\n\n{agent_prompt}"
+    instructions = f"{protocol}\n\n{agent_prompt}\n\n{output_rules}"
     user_input = (
-        f"Today is {date_str}. Execute Stage 3: Write the full {agent_name} Intelligence Brief.\n\n"
-        "Use the Critical Event Audit below. Every FOUND Tier 1 event MUST appear prominently "
-        "in the newsletter. Do not omit GDP, major launches, or major escalations if they "
-        "were found in the audit.\n\n"
-        "Apply Recency Rule (72-hour primary, 14-day secondary) and Diversification Rule.\n\n"
-        "--- CRITICAL EVENT AUDIT (Stages 1+2) ---\n"
-        f"{audit_report}\n"
-        "--- END AUDIT ---\n\n"
-        "Follow the output format in your prompt exactly. Use markdown with clear headers "
-        "and bullet points. Include the Critical Events Audit section at the top. "
-        "Cite sources with dates where possible."
+        f"Today is {date_str}. Execute Stage 4 — Report Generation for {agent_name}.\n\n"
+        f"{diversification}\n\n"
+        "MANDATORY RULES:\n"
+        "- Every FOUND Tier 1 event from verification MUST appear.\n"
+        "- Only include NEW and UPDATED topics from memory comparison (not UNCHANGED).\n"
+        "- Report WHAT CHANGED, never restate existence without new information.\n"
+        "- GDP, RBI, major conflicts, major launches cannot be omitted if FOUND.\n\n"
+        f"--- STAGE 2 VERIFICATION ---\n{verification}\n--- END ---\n\n"
+        f"--- STAGE 3 MEMORY COMPARISON ---\n{memory_comparison}\n--- END ---\n\n"
+        "Follow output format exactly. Include platform sections: What Changed Since Yesterday, "
+        "Source Quality Score, Missed Yesterday (if any). Cite sources with dates."
+    )
+    return call_openai(
+        client,
+        instructions,
+        user_input,
+        label=f"Stage 4: {agent_name} Report",
     )
 
-    logger.info(
-        "Stage 3: Writing %s brief (model=%s, web_search=enabled)",
-        agent_name,
-        config.OPENAI_MODEL,
-    )
 
-    response = client.responses.create(
-        model=config.OPENAI_MODEL,
-        instructions=instructions,
-        input=user_input,
-        tools=[{"type": "web_search"}],
-    )
-
-    brief = response.output_text
-    if not brief or not brief.strip():
-        raise RuntimeError(f"OpenAI returned an empty {agent_name} briefing.")
-
-    logger.info("%s brief written (%d characters)", agent_name, len(brief))
-    return brief.strip()
-
-
-def generate_brief(
+def update_memory(
     client: OpenAI,
-    agent_prompt: str,
-    protocol: str,
+    memory_data: dict,
+    verification: str,
+    memory_comparison: str,
+    briefs: list[str],
     date_str: str,
-    agent_name: str,
-    audit_focus: str,
-) -> str:
-    """Run the full 3-stage pipeline for one agent."""
-    audit = run_critical_audit(client, protocol, agent_name, date_str, audit_focus)
-    return write_brief(client, agent_prompt, protocol, audit, date_str, agent_name)
+) -> dict:
+    instructions = (
+        "You maintain persistent intelligence memory. "
+        "Output ONLY valid JSON — no markdown, no commentary."
+    )
+    user_input = (
+        f"Today is {date_str}. Update memory based on today's intelligence run.\n\n"
+        f"Current memory:\n{mem.format_for_prompt(memory_data)}\n\n"
+        f"Verification:\n{verification}\n\n"
+        f"Memory comparison:\n{memory_comparison}\n\n"
+        f"Reports generated:\n{chr(10).join(briefs)}\n\n"
+        'Return JSON: {"topics": [{"topic": "", "category": "", '
+        '"last_reported_date": "YYYY-MM-DD", "importance": "high|medium|low", '
+        '"status": "NEW|UPDATED|UNCHANGED|monitoring", '
+        '"expected_next_event": "", "last_summary": "one line max"}]}\n'
+        "Include all previously tracked topics plus any new ones from today."
+    )
+    raw = call_openai(
+        client,
+        instructions,
+        user_input,
+        use_web_search=False,
+        label="Memory update",
+    )
+    try:
+        updated = mem.extract_json_object(raw)
+        return mem.merge_memory(memory_data, updated, date_str)
+    except (json.JSONDecodeError, ValueError) as exc:
+        logger.warning("Memory update parse failed, keeping existing memory: %s", exc)
+        memory_data["last_updated"] = date_str
+        return memory_data
 
 
 def combine_briefs(briefs: list[str], date_str: str) -> str:
-    """Merge multiple agent briefs into one document."""
-    header = f"# DAILY INTELLIGENCE BRIEF\n\n*{date_str} — Builder + Strategic Reports*\n"
-    separator = "\n\n---\n\n"
-    return header + separator.join(briefs)
+    header = (
+        f"# DAILY INTELLIGENCE BRIEF\n\n"
+        f"*{date_str} — Builder + Strategic Reports | Intelligence Platform v4*\n"
+    )
+    return header + "\n\n---\n\n".join(briefs)
 
 
 def markdown_to_html(md_text: str) -> str:
-    """Convert markdown briefing to mobile-friendly HTML."""
     body_html = markdown.markdown(
         md_text,
         extensions=["extra", "sane_lists", "nl2br"],
     )
-
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,58 +264,17 @@ def markdown_to_html(md_text: str) -> str:
       padding: 20px 16px;
       background: #ffffff;
     }}
-    h1 {{
-      font-size: 1.5rem;
-      border-bottom: 2px solid #2563eb;
-      padding-bottom: 8px;
-      margin-top: 0;
-      color: #1e40af;
-    }}
-    h2 {{
-      font-size: 1.2rem;
-      color: #1e3a5f;
-      margin-top: 28px;
-      margin-bottom: 12px;
-      border-left: 4px solid #2563eb;
-      padding-left: 12px;
-    }}
-    h3 {{
-      font-size: 1.05rem;
-      color: #334155;
-      margin-top: 20px;
-    }}
-    p {{
-      margin: 0 0 12px 0;
-    }}
-    ul, ol {{
-      margin: 0 0 16px 0;
-      padding-left: 24px;
-    }}
-    li {{
-      margin-bottom: 6px;
-    }}
-    strong {{
-      color: #0f172a;
-    }}
-    hr {{
-      border: none;
-      border-top: 2px solid #e2e8f0;
-      margin: 32px 0;
-    }}
-    a {{
-      color: #2563eb;
-      text-decoration: none;
-    }}
-    a:hover {{
-      text-decoration: underline;
-    }}
-    .footer {{
-      margin-top: 32px;
-      padding-top: 16px;
-      border-top: 1px solid #e2e8f0;
-      font-size: 0.85rem;
-      color: #64748b;
-    }}
+    h1 {{ font-size: 1.5rem; border-bottom: 2px solid #2563eb; padding-bottom: 8px; margin-top: 0; color: #1e40af; }}
+    h2 {{ font-size: 1.2rem; color: #1e3a5f; margin-top: 28px; margin-bottom: 12px; border-left: 4px solid #2563eb; padding-left: 12px; }}
+    h3 {{ font-size: 1.05rem; color: #334155; margin-top: 20px; }}
+    p {{ margin: 0 0 12px 0; }}
+    ul, ol {{ margin: 0 0 16px 0; padding-left: 24px; }}
+    li {{ margin-bottom: 6px; }}
+    strong {{ color: #0f172a; }}
+    hr {{ border: none; border-top: 2px solid #e2e8f0; margin: 32px 0; }}
+    a {{ color: #2563eb; text-decoration: none; }}
+    a:hover {{ text-decoration: underline; }}
+    .footer {{ margin-top: 32px; padding-top: 16px; border-top: 1px solid #e2e8f0; font-size: 0.85rem; color: #64748b; }}
   </style>
 </head>
 <body>
@@ -250,18 +287,12 @@ def markdown_to_html(md_text: str) -> str:
 
 
 def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
-    """Send the briefing via SendGrid API."""
-    import json
-    import time
     import urllib.error
     import urllib.request
 
     payload = {
         "personalizations": [{"to": [{"email": config.RECIPIENT_EMAIL}]}],
-        "from": {
-            "email": config.SENDER_EMAIL,
-            "name": "Keshav — Daily Intelligence Brief",
-        },
+        "from": {"email": config.SENDER_EMAIL, "name": "Keshav — Daily Intelligence Brief"},
         "reply_to": {"email": config.SENDER_EMAIL, "name": "Daily Intelligence Brief"},
         "subject": subject,
         "headers": {
@@ -273,19 +304,14 @@ def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
             {"type": "text/plain", "value": plain_body},
             {"type": "text/html", "value": html_body},
         ],
-        "mail_settings": {
-            "footer": {"enable": False},
-        },
+        "mail_settings": {"footer": {"enable": False}},
     }
-
     data = json.dumps(payload).encode("utf-8")
     headers = {
         "Authorization": f"Bearer {config.SENDGRID_API_KEY}",
         "Content-Type": "application/json",
     }
-
     logger.info("Sending email via SendGrid to %s", config.RECIPIENT_EMAIL)
-
     last_error: Exception | None = None
     for attempt in range(1, 4):
         req = urllib.request.Request(
@@ -305,34 +331,27 @@ def send_email_sendgrid(subject: str, html_body: str, plain_body: str) -> None:
             logger.warning("SendGrid attempt %d failed: %s", attempt, exc)
             if attempt < 3:
                 time.sleep(5 * attempt)
-
     raise RuntimeError(f"SendGrid failed after 3 attempts: {last_error}") from last_error
 
 
 def send_email_gmail(subject: str, html_body: str, plain_body: str) -> None:
-    """Send the briefing via Gmail SMTP."""
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = config.GMAIL_EMAIL
     msg["To"] = config.RECIPIENT_EMAIL
-
     msg.attach(MIMEText(plain_body, "plain", "utf-8"))
     msg.attach(MIMEText(html_body, "html", "utf-8"))
-
     logger.info("Sending email via Gmail to %s", config.RECIPIENT_EMAIL)
-
     with smtplib.SMTP(config.GMAIL_SMTP_HOST, config.GMAIL_SMTP_PORT) as server:
         server.ehlo()
         server.starttls()
         server.ehlo()
         server.login(config.GMAIL_EMAIL, config.GMAIL_APP_PASSWORD)
         server.sendmail(config.GMAIL_EMAIL, config.RECIPIENT_EMAIL, msg.as_string())
-
     logger.info("Email sent successfully via Gmail")
 
 
 def send_email(subject: str, html_body: str, plain_body: str) -> None:
-    """Send the briefing using the configured email provider."""
     if config.EMAIL_PROVIDER == "sendgrid":
         send_email_sendgrid(subject, html_body, plain_body)
     else:
@@ -352,28 +371,47 @@ def main() -> int:
     try:
         client = OpenAI(api_key=config.OPENAI_API_KEY)
         protocol = config.load_prompt(config.PROTOCOL_FILE)
-        briefs: list[str] = []
+        output_rules = config.load_prompt(config.OUTPUT_RULES_FILE)
+        memory_data = mem.load_memory(config.MEMORY_FILE)
+        watchlist = mem.load_watchlist(config.WATCHLIST_FILE)
 
+        research = run_stage1_research(client, protocol, date_str)
+        verification = run_stage2_verification(client, protocol, research, date_str)
+        memory_comparison = run_stage3_memory_comparison(
+            client, protocol, research, verification, memory_data, watchlist, date_str
+        )
+
+        briefs: list[str] = []
         for agent in AGENTS:
             agent_prompt = config.load_prompt(agent["prompt_file"])
-            brief = generate_brief(
+            brief = run_stage4_report(
                 client,
                 agent_prompt,
                 protocol,
+                output_rules,
+                verification,
+                memory_comparison,
                 date_str,
                 agent["name"],
-                agent["audit_focus"],
+                agent["diversification"],
             )
             briefs.append(brief)
 
         combined_md = combine_briefs(briefs, date_str)
         html_body = markdown_to_html(combined_md)
         send_email(subject, html_body, combined_md)
+
+        updated_memory = update_memory(
+            client, memory_data, verification, memory_comparison, briefs, date_str
+        )
+        mem.save_json(config.MEMORY_FILE, updated_memory)
+        logger.info("Memory updated (%d topics tracked)", len(updated_memory.get("topics", [])))
+
     except Exception:
         logger.exception("Failed to generate or send daily briefing")
         return 1
 
-    logger.info("Daily Intelligence Brief completed for %s (2 agents)", date_str)
+    logger.info("Daily Intelligence Brief completed for %s (4-stage pipeline)", date_str)
     return 0
 
 

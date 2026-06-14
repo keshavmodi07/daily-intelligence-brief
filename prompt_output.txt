@@ -1,0 +1,39 @@
+# PLATFORM OUTPUT SECTIONS
+
+Every report MUST include these sections (use Stage 3 memory comparison data):
+
+## What Changed Since Yesterday
+
+For major tracked topics show status:
+
+* NEW — first time reporting this topic
+* UPDATED — meaningful change since last report
+* UNCHANGED — do not include in body sections (list here only for transparency)
+
+Focus the report body on NEW and UPDATED items only.
+
+---
+
+## Source Quality Score
+
+* Sources reviewed: [number]
+* High confidence stories: [count + brief list]
+* Medium confidence stories: [count + brief list]
+
+---
+
+## Missed Yesterday
+
+If a major event should have been covered yesterday but was not, mention it here with explanation.
+
+If nothing was missed, state: "No major omissions identified."
+
+---
+
+## Today's Alpha
+
+One insight only. Maximum 50 words.
+
+The single most important thing from this entire report.
+
+If I remember only one thing today, this is it.

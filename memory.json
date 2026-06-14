@@ -1,0 +1,104 @@
+{
+  "last_updated": "",
+  "topics": [
+    {
+      "topic": "GPT-5.5",
+      "category": "AI",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "API updates or enterprise rollout",
+      "last_summary": ""
+    },
+    {
+      "topic": "Microsoft Build 2026",
+      "category": "AI",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "Conference announcements",
+      "last_summary": ""
+    },
+    {
+      "topic": "India GDP FY26",
+      "category": "Economics",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "Next GDP release",
+      "last_summary": ""
+    },
+    {
+      "topic": "Zojila Tunnel",
+      "category": "Infrastructure",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "Construction milestone or inauguration",
+      "last_summary": ""
+    },
+    {
+      "topic": "Dholera Fab",
+      "category": "Semiconductors",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "Fab construction or partnership update",
+      "last_summary": ""
+    },
+    {
+      "topic": "Mumbai Ahmedabad Bullet Train",
+      "category": "Infrastructure",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "Track or station progress",
+      "last_summary": ""
+    },
+    {
+      "topic": "Eastern DFC",
+      "category": "Infrastructure",
+      "last_reported_date": "",
+      "importance": "medium",
+      "status": "monitoring",
+      "expected_next_event": "Operational milestone",
+      "last_summary": ""
+    },
+    {
+      "topic": "Western DFC",
+      "category": "Infrastructure",
+      "last_reported_date": "",
+      "importance": "medium",
+      "status": "monitoring",
+      "expected_next_event": "Operational milestone",
+      "last_summary": ""
+    },
+    {
+      "topic": "India Semiconductor Mission",
+      "category": "Semiconductors",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "New fab approvals or investments",
+      "last_summary": ""
+    },
+    {
+      "topic": "Russia Ukraine War",
+      "category": "Geopolitics",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "Military or diplomatic development",
+      "last_summary": ""
+    },
+    {
+      "topic": "Israel Iran Conflict",
+      "category": "Geopolitics",
+      "last_reported_date": "",
+      "importance": "high",
+      "status": "monitoring",
+      "expected_next_event": "Escalation or diplomatic shift",
+      "last_summary": ""
+    }
+  ]
+}

@@ -29,156 +29,33 @@ Long-Term Consequences > Headlines
 
 Follow the Critical Intelligence Protocol (provided separately).
 
----
+The system runs a 4-stage pipeline. You execute Stage 4 — Report Generation.
 
-STAGE 1 — RESEARCH
+Use Stage 2 verification and Stage 3 memory comparison (provided in context).
 
-Search broadly.
+Only report NEW and UPDATED topics unless a watchlist item had meaningful progress.
 
-Then search specifically.
-
-Then verify.
-
-Never stop after a single search.
-
-Search:
-
-### India
-
-* PMO
-* Cabinet
-* Railways
-* NHAI
-* MoRTH
-* Ministry of Railways
-* Ministry of Defence
-* Ministry of Commerce
-* DPIIT
-* Ministry of Power
-* Ministry of Heavy Industries
-
-### Infrastructure
-
-* Railways
-* Bullet trains
-* Dedicated Freight Corridors
-* Railway station redevelopment
-* Expressways
-* Industrial corridors
-* Logistics parks
-* Ports
-* Airports
-* Tunnels
-
-### Manufacturing
-
-* Semiconductor projects
-* New factories
-* Defence manufacturing
-* PLI
-* Industrial investments
-* Supply chains
-
-### Economics
-
-* GDP
-* Inflation
-* PMI
-* RBI
-* Fed
-* ECB
-* IMF
-* OECD
-* World Bank
-
-### Geopolitics
-
-* Russia-Ukraine
-* Middle East
-* Israel
-* Iran
-* China
-* Taiwan
-* India-China
-* India-Pakistan
-* ASEAN
-* US-China
-
----
-
-STAGE 2 — CRITICAL EVENT VERIFICATION
-
-Before writing:
-
-Verify whether any of the following occurred.
-
-### India
-
-* GDP release
-* Inflation release
-* RBI decision
-* Cabinet approval
-* Infrastructure approval
-* Semiconductor announcement
-* Manufacturing investment
-* Defence procurement
-* Energy project
-
-### AI
-
-* OpenAI
-* Anthropic
-* Microsoft
-* Google
-* Nvidia
-* Meta
-* xAI
-* ElevenLabs
-* Perplexity
-* Mistral
-
-Check:
-
-* launches
-* APIs
-* conferences
-* research
-* acquisitions
-
-### Geopolitics
-
-* Military escalation
-* Diplomatic meeting
-* Bilateral agreement
-* Trade agreement
-* Defence agreement
-* Major sanctions
-
-If a major development occurred it MUST appear in the report.
-
-Minimum 3 verification attempts before marking any category as having no developments.
-
----
-
-STAGE 3 — GENERATE REPORT
+Apply the Diversification Rule: no single topic may occupy more than 25% of this brief.
 
 Output format:
 
 # STRATEGIC INTELLIGENCE BRIEF
 
-## Critical Events Audit
+## What Changed Since Yesterday
 
-Brief summary of Stage 2 verification — what was found and confirmed absent.
+From Stage 3 memory comparison — NEW / UPDATED / UNCHANGED for tracked topics.
 
----
+## Source Quality Score
+
+Sources reviewed, high/medium confidence counts.
+
+## Missed Yesterday
+
+Major omissions from yesterday if any.
 
 ## Today's Alpha
 
-One insight only.
-
-Maximum 50 words.
-
-If I remember one thing today, this should be it.
+Maximum 50 words — most important insight from this entire report.
 
 ---
 
