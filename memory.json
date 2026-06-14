@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-06-14",
+  "last_updated": "2026-06-15",
   "topics": [
     {
       "topic": "Apple's Siri AI",
       "category": "AI",
       "last_reported_date": "2026-06-08",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Further product enhancements or integrations",
       "last_summary": "Launched at WWDC 2026 with enhanced capabilities."
     },
@@ -15,7 +15,7 @@
       "category": "Economics",
       "last_reported_date": "2026-06-09",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Implementation updates",
       "last_summary": "Infrastructure projects in MMR worth ₹22,611 crore approved."
     },
@@ -24,7 +24,7 @@
       "category": "Semiconductors",
       "last_reported_date": "",
       "importance": "high",
-      "status": "monitoring",
+      "status": "UNCHANGED",
       "expected_next_event": "Fab construction or partnership update",
       "last_summary": ""
     },
@@ -33,52 +33,79 @@
       "category": "Infrastructure",
       "last_reported_date": "",
       "importance": "medium",
-      "status": "monitoring",
+      "status": "UNCHANGED",
       "expected_next_event": "Operational milestone",
       "last_summary": ""
     },
     {
       "topic": "GPT-5.5",
       "category": "AI",
-      "last_reported_date": "",
+      "last_reported_date": "2026-06-14",
       "importance": "high",
-      "status": "monitoring",
-      "expected_next_event": "API updates or enterprise rollout",
-      "last_summary": ""
+      "status": "NEW",
+      "expected_next_event": "Further API updates or enterprise rollout",
+      "last_summary": "Released with enhanced contextual understanding and reduced power consumption."
+    },
+    {
+      "topic": "India China Tensions",
+      "category": "Geopolitics",
+      "last_reported_date": "2026-06-14",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Further diplomatic or military developments",
+      "last_summary": "Increased border tensions with reported military build-ups."
     },
     {
       "topic": "India GDP FY26",
       "category": "Economics",
-      "last_reported_date": "",
+      "last_reported_date": "2026-06-15",
       "importance": "high",
-      "status": "monitoring",
+      "status": "NEW",
       "expected_next_event": "Next GDP release",
-      "last_summary": ""
+      "last_summary": "India's GDP growth reported at 7.2% for Q1 2026."
     },
     {
       "topic": "India Semiconductor Mission",
       "category": "Semiconductors",
-      "last_reported_date": "",
+      "last_reported_date": "2026-06-14",
       "importance": "high",
-      "status": "monitoring",
+      "status": "NEW",
       "expected_next_event": "New fab approvals or investments",
-      "last_summary": ""
+      "last_summary": "Partnership announced for semiconductor manufacturing in Gujarat."
+    },
+    {
+      "topic": "India US Defense Agreement",
+      "category": "Geopolitics",
+      "last_reported_date": "2026-06-13",
+      "importance": "high",
+      "status": "UPDATED",
+      "expected_next_event": "Further strategic developments",
+      "last_summary": "New agreement focusing on joint development and technological cooperation in aerospace."
     },
     {
       "topic": "Israel Iran Conflict",
       "category": "Geopolitics",
       "last_reported_date": "",
       "importance": "high",
-      "status": "monitoring",
+      "status": "UNCHANGED",
       "expected_next_event": "Escalation or diplomatic shift",
       "last_summary": ""
+    },
+    {
+      "topic": "Kolkata to Chennai Freight Corridor",
+      "category": "Infrastructure",
+      "last_reported_date": "2026-06-14",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Construction updates or progress",
+      "last_summary": "Approval of a new dedicated freight corridor."
     },
     {
       "topic": "Microsoft Build 2026",
       "category": "AI",
       "last_reported_date": "",
       "importance": "high",
-      "status": "monitoring",
+      "status": "UNCHANGED",
       "expected_next_event": "Conference announcements",
       "last_summary": ""
     },
@@ -87,34 +114,43 @@
       "category": "Infrastructure",
       "last_reported_date": "",
       "importance": "high",
-      "status": "monitoring",
+      "status": "UNCHANGED",
       "expected_next_event": "Track or station progress",
       "last_summary": ""
+    },
+    {
+      "topic": "Nvidia RTX A6000 GPU Launch",
+      "category": "Technology",
+      "last_reported_date": "2026-06-14",
+      "importance": "medium",
+      "status": "NEW",
+      "expected_next_event": "Market reaction and sales updates",
+      "last_summary": "Launched a high-performance GPU optimized for AI workloads."
     },
     {
       "topic": "OpenAI Acquisitions and IPO Preparations",
       "category": "AI",
       "last_reported_date": "2026-06-11",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "IPO filings and market strategy announcements",
       "last_summary": "OpenAI acquired Ona and prepared for an IPO."
     },
     {
       "topic": "Russia Ukraine War",
       "category": "Geopolitics",
-      "last_reported_date": "2026-06-13",
+      "last_reported_date": "2026-06-14",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Military or diplomatic development",
-      "last_summary": "Drone strike in Russia; further escalations documented."
+      "last_summary": "New peace talks initiated, mediated by the EU."
     },
     {
       "topic": "US GDP Q1 2026",
       "category": "Economics",
       "last_reported_date": "2026-06-14",
       "importance": "medium",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Q2 2026 GDP release",
       "last_summary": "Recent data shows economic trends crucial for global market strategies."
     },
@@ -123,7 +159,7 @@
       "category": "Infrastructure",
       "last_reported_date": "",
       "importance": "medium",
-      "status": "monitoring",
+      "status": "UNCHANGED",
       "expected_next_event": "Operational milestone",
       "last_summary": ""
     },
@@ -132,7 +168,7 @@
       "category": "Infrastructure",
       "last_reported_date": "",
       "importance": "high",
-      "status": "monitoring",
+      "status": "UNCHANGED",
       "expected_next_event": "Construction milestone or inauguration",
       "last_summary": ""
     }
