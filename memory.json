@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16",
+  "last_updated": "2026-06-17",
   "topics": [
     {
       "topic": "Apple's Siri AI",
@@ -18,6 +18,15 @@
       "status": "UNCHANGED",
       "expected_next_event": "Implementation updates",
       "last_summary": "Infrastructure projects in MMR worth ₹22,611 crore approved."
+    },
+    {
+      "topic": "Computex 2026 / NVIDIA Highlights",
+      "category": "Technology",
+      "last_reported_date": "2026-06-01",
+      "importance": "medium",
+      "status": "NEW",
+      "expected_next_event": "Follow-up announcements",
+      "last_summary": "Key NVIDIA announcements at Computex 2026."
     },
     {
       "topic": "Dholera Fab",
@@ -117,6 +126,33 @@
       "status": "UNCHANGED",
       "expected_next_event": "Track or station progress",
       "last_summary": ""
+    },
+    {
+      "topic": "NVIDIA RTX Pro 6000 GPU Pricing",
+      "category": "Technology",
+      "last_reported_date": "2026-06-13",
+      "importance": "medium",
+      "status": "NEW",
+      "expected_next_event": "Market reaction to pricing changes",
+      "last_summary": "Increased pricing by 55% due to AI demand."
+    },
+    {
+      "topic": "NVIDIA RTX Spark Superchip",
+      "category": "AI",
+      "last_reported_date": "2026-06-01",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Market adoption updates",
+      "last_summary": "Announced at Computex 2026, enhancing AI capabilities for Windows PCs."
+    },
+    {
+      "topic": "NVIDIA Texas Factory Upgrade",
+      "category": "Technology",
+      "last_reported_date": "2026-06-16",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Construction or deployment updates",
+      "last_summary": "$2 billion partnership for AI factory infrastructure."
     },
     {
       "topic": "Nvidia RTX A6000 GPU Launch",
