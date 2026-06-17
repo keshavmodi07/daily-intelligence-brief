@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-18",
   "topics": [
     {
       "topic": "Apple's Siri AI",
@@ -24,7 +24,7 @@
       "category": "Technology",
       "last_reported_date": "2026-06-01",
       "importance": "medium",
-      "status": "NEW",
+      "status": "UPDATED",
       "expected_next_event": "Follow-up announcements",
       "last_summary": "Key NVIDIA announcements at Computex 2026."
     },
@@ -47,11 +47,20 @@
       "last_summary": ""
     },
     {
+      "topic": "Federal Reserve Holds Rates",
+      "category": "Economics",
+      "last_reported_date": "2026-06-18",
+      "importance": "high",
+      "status": "UPDATED",
+      "expected_next_event": "Further economic analysis",
+      "last_summary": "The Fed kept rates unchanged amid inflation concerns."
+    },
+    {
       "topic": "GPT-5.5",
       "category": "AI",
       "last_reported_date": "2026-06-14",
       "importance": "high",
-      "status": "NEW",
+      "status": "UPDATED",
       "expected_next_event": "Further API updates or enterprise rollout",
       "last_summary": "Released with enhanced contextual understanding and reduced power consumption."
     },
@@ -60,7 +69,7 @@
       "category": "Geopolitics",
       "last_reported_date": "2026-06-14",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Further diplomatic or military developments",
       "last_summary": "Increased border tensions with reported military build-ups."
     },
@@ -69,7 +78,7 @@
       "category": "Economics",
       "last_reported_date": "2026-06-15",
       "importance": "high",
-      "status": "NEW",
+      "status": "UPDATED",
       "expected_next_event": "Next GDP release",
       "last_summary": "India's GDP growth reported at 7.2% for Q1 2026."
     },
@@ -78,7 +87,7 @@
       "category": "Semiconductors",
       "last_reported_date": "2026-06-14",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "New fab approvals or investments",
       "last_summary": "Partnership announced for semiconductor manufacturing in Gujarat."
     },
@@ -87,7 +96,7 @@
       "category": "Geopolitics",
       "last_reported_date": "2026-06-13",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Further strategic developments",
       "last_summary": "New agreement focusing on joint development and technological cooperation in aerospace."
     },
@@ -105,7 +114,7 @@
       "category": "Infrastructure",
       "last_reported_date": "2026-06-14",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Construction updates or progress",
       "last_summary": "Approval of a new dedicated freight corridor."
     },
@@ -128,11 +137,29 @@
       "last_summary": ""
     },
     {
+      "topic": "NVIDIA & SK hynix Partnership",
+      "category": "AI",
+      "last_reported_date": "2026-06-18",
+      "importance": "high",
+      "status": "UPDATED",
+      "expected_next_event": "Development updates",
+      "last_summary": "Partnership to advance memory for AI factories."
+    },
+    {
+      "topic": "NVIDIA DRIVE Hyperion Expansion",
+      "category": "Technology",
+      "last_reported_date": "2026-06-18",
+      "importance": "medium",
+      "status": "NEW",
+      "expected_next_event": "Adoption updates",
+      "last_summary": "Expansion of autonomous vehicle platform."
+    },
+    {
       "topic": "NVIDIA RTX Pro 6000 GPU Pricing",
       "category": "Technology",
       "last_reported_date": "2026-06-13",
       "importance": "medium",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Market reaction to pricing changes",
       "last_summary": "Increased pricing by 55% due to AI demand."
     },
@@ -141,16 +168,25 @@
       "category": "AI",
       "last_reported_date": "2026-06-01",
       "importance": "high",
-      "status": "NEW",
+      "status": "UPDATED",
       "expected_next_event": "Market adoption updates",
       "last_summary": "Announced at Computex 2026, enhancing AI capabilities for Windows PCs."
+    },
+    {
+      "topic": "NVIDIA Supply Constraints Easing",
+      "category": "Technology",
+      "last_reported_date": "2026-06-18",
+      "importance": "medium",
+      "status": "NEW",
+      "expected_next_event": "Manufacturing updates",
+      "last_summary": "Announcement of increased manufacturing capacity."
     },
     {
       "topic": "NVIDIA Texas Factory Upgrade",
       "category": "Technology",
       "last_reported_date": "2026-06-16",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Construction or deployment updates",
       "last_summary": "$2 billion partnership for AI factory infrastructure."
     },
@@ -159,7 +195,7 @@
       "category": "Technology",
       "last_reported_date": "2026-06-14",
       "importance": "medium",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Market reaction and sales updates",
       "last_summary": "Launched a high-performance GPU optimized for AI workloads."
     },
@@ -173,11 +209,20 @@
       "last_summary": "OpenAI acquired Ona and prepared for an IPO."
     },
     {
+      "topic": "Rumor: GPT-5.6 Expected Soon",
+      "category": "AI",
+      "last_reported_date": "2026-06-18",
+      "importance": "medium",
+      "status": "NEW",
+      "expected_next_event": "Official announcement",
+      "last_summary": "Speculation about upcoming version and its impact."
+    },
+    {
       "topic": "Russia Ukraine War",
       "category": "Geopolitics",
       "last_reported_date": "2026-06-14",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Military or diplomatic development",
       "last_summary": "New peace talks initiated, mediated by the EU."
     },
