@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-06-18",
+  "last_updated": "2026-06-19",
   "topics": [
+    {
+      "topic": "Anthropic AI Model Launch",
+      "category": "AI",
+      "last_reported_date": "2026-06-17",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Adoption and integration updates",
+      "last_summary": "Launch of a new AI model with enhanced language understanding."
+    },
     {
       "topic": "Apple's Siri AI",
       "category": "AI",
@@ -13,18 +22,36 @@
     {
       "topic": "Cabinet Decisions on Infrastructure Projects",
       "category": "Economics",
-      "last_reported_date": "2026-06-09",
+      "last_reported_date": "2026-06-18",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Implementation updates",
-      "last_summary": "Infrastructure projects in MMR worth ₹22,611 crore approved."
+      "last_summary": "Approval of a new industrial corridor project to boost manufacturing and infrastructure."
+    },
+    {
+      "topic": "Chennai International Terminal Inauguration",
+      "category": "Infrastructure",
+      "last_reported_date": "2026-06-18",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Operational updates",
+      "last_summary": "Opening of a new international terminal."
+    },
+    {
+      "topic": "China-Taiwan Military Activity",
+      "category": "Geopolitics",
+      "last_reported_date": "2026-06-18",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Further military or diplomatic actions",
+      "last_summary": "Increased military activity in Taiwan Strait."
     },
     {
       "topic": "Computex 2026 / NVIDIA Highlights",
       "category": "Technology",
       "last_reported_date": "2026-06-01",
       "importance": "medium",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Follow-up announcements",
       "last_summary": "Key NVIDIA announcements at Computex 2026."
     },
@@ -51,18 +78,36 @@
       "category": "Economics",
       "last_reported_date": "2026-06-18",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Further economic analysis",
       "last_summary": "The Fed kept rates unchanged amid inflation concerns."
+    },
+    {
+      "topic": "GDP India FY26",
+      "category": "Economics",
+      "last_reported_date": "2026-06-18",
+      "importance": "high",
+      "status": "UPDATED",
+      "expected_next_event": "Next GDP release",
+      "last_summary": "India experienced a 7.5% GDP growth rate in the last quarter."
     },
     {
       "topic": "GPT-5.5",
       "category": "AI",
       "last_reported_date": "2026-06-14",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Further API updates or enterprise rollout",
       "last_summary": "Released with enhanced contextual understanding and reduced power consumption."
+    },
+    {
+      "topic": "Google DeepMind Collaborative AI",
+      "category": "AI",
+      "last_reported_date": "2026-06-16",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Further research or application updates",
+      "last_summary": "Research breakthrough in collaborative AI for improved decision-making."
     },
     {
       "topic": "India China Tensions",
@@ -85,11 +130,11 @@
     {
       "topic": "India Semiconductor Mission",
       "category": "Semiconductors",
-      "last_reported_date": "2026-06-14",
+      "last_reported_date": "2026-06-17",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "New fab approvals or investments",
-      "last_summary": "Partnership announced for semiconductor manufacturing in Gujarat."
+      "last_summary": "New semiconductor fabrication unit opened by a major international chip manufacturer."
     },
     {
       "topic": "India US Defense Agreement",
@@ -141,7 +186,7 @@
       "category": "AI",
       "last_reported_date": "2026-06-18",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Development updates",
       "last_summary": "Partnership to advance memory for AI factories."
     },
@@ -150,7 +195,7 @@
       "category": "Technology",
       "last_reported_date": "2026-06-18",
       "importance": "medium",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Adoption updates",
       "last_summary": "Expansion of autonomous vehicle platform."
     },
@@ -168,7 +213,7 @@
       "category": "AI",
       "last_reported_date": "2026-06-01",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Market adoption updates",
       "last_summary": "Announced at Computex 2026, enhancing AI capabilities for Windows PCs."
     },
@@ -177,7 +222,7 @@
       "category": "Technology",
       "last_reported_date": "2026-06-18",
       "importance": "medium",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Manufacturing updates",
       "last_summary": "Announcement of increased manufacturing capacity."
     },
@@ -202,29 +247,29 @@
     {
       "topic": "OpenAI Acquisitions and IPO Preparations",
       "category": "AI",
-      "last_reported_date": "2026-06-11",
+      "last_reported_date": "2026-06-18",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "IPO filings and market strategy announcements",
-      "last_summary": "OpenAI acquired Ona and prepared for an IPO."
+      "last_summary": "Developer API for latest model unveiled."
     },
     {
       "topic": "Rumor: GPT-5.6 Expected Soon",
       "category": "AI",
       "last_reported_date": "2026-06-18",
       "importance": "medium",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Official announcement",
       "last_summary": "Speculation about upcoming version and its impact."
     },
     {
       "topic": "Russia Ukraine War",
       "category": "Geopolitics",
-      "last_reported_date": "2026-06-14",
+      "last_reported_date": "2026-06-17",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Military or diplomatic development",
-      "last_summary": "New peace talks initiated, mediated by the EU."
+      "last_summary": "Temporary ceasefire agreement reached."
     },
     {
       "topic": "US GDP Q1 2026",
@@ -234,6 +279,15 @@
       "status": "UNCHANGED",
       "expected_next_event": "Q2 2026 GDP release",
       "last_summary": "Recent data shows economic trends crucial for global market strategies."
+    },
+    {
+      "topic": "Vande Bharat Express Corridor Completion",
+      "category": "Infrastructure",
+      "last_reported_date": "2026-06-18",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Operational updates",
+      "last_summary": "Completion of a new rail corridor enhancing connectivity."
     },
     {
       "topic": "Western DFC",
