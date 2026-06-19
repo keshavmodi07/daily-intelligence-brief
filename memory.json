@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-06-19",
+  "last_updated": "2026-06-20",
   "topics": [
     {
       "topic": "Anthropic AI Model Launch",
       "category": "AI",
       "last_reported_date": "2026-06-17",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Adoption and integration updates",
       "last_summary": "Launch of a new AI model with enhanced language understanding."
     },
@@ -33,18 +33,18 @@
       "category": "Infrastructure",
       "last_reported_date": "2026-06-18",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Operational updates",
       "last_summary": "Opening of a new international terminal."
     },
     {
       "topic": "China-Taiwan Military Activity",
       "category": "Geopolitics",
-      "last_reported_date": "2026-06-18",
+      "last_reported_date": "2026-06-20",
       "importance": "high",
-      "status": "NEW",
+      "status": "UPDATED",
       "expected_next_event": "Further military or diplomatic actions",
-      "last_summary": "Increased military activity in Taiwan Strait."
+      "last_summary": "Escalation with military exercises near Taiwan."
     },
     {
       "topic": "Computex 2026 / NVIDIA Highlights",
@@ -94,9 +94,9 @@
     {
       "topic": "GPT-5.5",
       "category": "AI",
-      "last_reported_date": "2026-06-14",
+      "last_reported_date": "2026-06-20",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Further API updates or enterprise rollout",
       "last_summary": "Released with enhanced contextual understanding and reduced power consumption."
     },
@@ -105,7 +105,7 @@
       "category": "AI",
       "last_reported_date": "2026-06-16",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Further research or application updates",
       "last_summary": "Research breakthrough in collaborative AI for improved decision-making."
     },
@@ -123,7 +123,7 @@
       "category": "Economics",
       "last_reported_date": "2026-06-15",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Next GDP release",
       "last_summary": "India's GDP growth reported at 7.2% for Q1 2026."
     },
@@ -132,7 +132,7 @@
       "category": "Semiconductors",
       "last_reported_date": "2026-06-17",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "New fab approvals or investments",
       "last_summary": "New semiconductor fabrication unit opened by a major international chip manufacturer."
     },
@@ -144,6 +144,15 @@
       "status": "UNCHANGED",
       "expected_next_event": "Further strategic developments",
       "last_summary": "New agreement focusing on joint development and technological cooperation in aerospace."
+    },
+    {
+      "topic": "India-France Defense Deal",
+      "category": "Geopolitics",
+      "last_reported_date": "2026-06-20",
+      "importance": "high",
+      "status": "UPDATED",
+      "expected_next_event": "Further strategic developments",
+      "last_summary": "$4 billion deal for advanced fighter jets."
     },
     {
       "topic": "Israel Iran Conflict",
@@ -236,6 +245,15 @@
       "last_summary": "$2 billion partnership for AI factory infrastructure."
     },
     {
+      "topic": "Nvidia Ada GPU Architecture",
+      "category": "Technology",
+      "last_reported_date": "2026-06-20",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Market adoption updates",
+      "last_summary": "Unveiling of new GPU architecture with improvements for AI and gaming."
+    },
+    {
       "topic": "Nvidia RTX A6000 GPU Launch",
       "category": "Technology",
       "last_reported_date": "2026-06-14",
@@ -249,9 +267,18 @@
       "category": "AI",
       "last_reported_date": "2026-06-18",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "IPO filings and market strategy announcements",
       "last_summary": "Developer API for latest model unveiled."
+    },
+    {
+      "topic": "RBI Repo Rate Decision",
+      "category": "Economics",
+      "last_reported_date": "2026-06-20",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Next monetary policy review",
+      "last_summary": "RBI maintained the repo rate at 6%."
     },
     {
       "topic": "Rumor: GPT-5.6 Expected Soon",
@@ -265,11 +292,20 @@
     {
       "topic": "Russia Ukraine War",
       "category": "Geopolitics",
-      "last_reported_date": "2026-06-17",
+      "last_reported_date": "2026-06-20",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Military or diplomatic development",
-      "last_summary": "Temporary ceasefire agreement reached."
+      "last_summary": "Progress in ceasefire talks with humanitarian corridors established."
+    },
+    {
+      "topic": "SMIC Factory in India",
+      "category": "Semiconductors",
+      "last_reported_date": "2026-06-20",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Construction updates",
+      "last_summary": "SMIC plans a new semiconductor factory in India."
     },
     {
       "topic": "US GDP Q1 2026",
@@ -285,7 +321,7 @@
       "category": "Infrastructure",
       "last_reported_date": "2026-06-18",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Operational updates",
       "last_summary": "Completion of a new rail corridor enhancing connectivity."
     },
