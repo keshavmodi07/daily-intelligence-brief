@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20",
+  "last_updated": "2026-06-21",
   "topics": [
     {
       "topic": "Anthropic AI Model Launch",
@@ -105,18 +105,27 @@
       "category": "AI",
       "last_reported_date": "2026-06-16",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Further research or application updates",
       "last_summary": "Research breakthrough in collaborative AI for improved decision-making."
     },
     {
+      "topic": "Gujarat Semiconductor Plant Investment",
+      "category": "Semiconductors",
+      "last_reported_date": "2026-06-20",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Construction updates",
+      "last_summary": "$2 billion investment announced."
+    },
+    {
       "topic": "India China Tensions",
       "category": "Geopolitics",
-      "last_reported_date": "2026-06-14",
+      "last_reported_date": "2026-06-19",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Further diplomatic or military developments",
-      "last_summary": "Increased border tensions with reported military build-ups."
+      "last_summary": "High-level talks held to ease border tensions and mutual troop de-escalation agreement."
     },
     {
       "topic": "India GDP FY26",
@@ -155,6 +164,15 @@
       "last_summary": "$4 billion deal for advanced fighter jets."
     },
     {
+      "topic": "India-France Drone Technology Partnership",
+      "category": "Geopolitics",
+      "last_reported_date": "2026-06-19",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Further strategic developments",
+      "last_summary": "Announced new collaboration on advanced drone technology."
+    },
+    {
       "topic": "Israel Iran Conflict",
       "category": "Geopolitics",
       "last_reported_date": "",
@@ -184,11 +202,11 @@
     {
       "topic": "Mumbai Ahmedabad Bullet Train",
       "category": "Infrastructure",
-      "last_reported_date": "",
+      "last_reported_date": "2026-06-20",
       "importance": "high",
-      "status": "UNCHANGED",
-      "expected_next_event": "Track or station progress",
-      "last_summary": ""
+      "status": "UPDATED",
+      "expected_next_event": "Operational updates",
+      "last_summary": "Completion of high-speed rail line reducing travel time by 50%."
     },
     {
       "topic": "NVIDIA & SK hynix Partnership",
@@ -274,11 +292,11 @@
     {
       "topic": "RBI Repo Rate Decision",
       "category": "Economics",
-      "last_reported_date": "2026-06-20",
+      "last_reported_date": "2026-06-21",
       "importance": "high",
-      "status": "NEW",
+      "status": "UPDATED",
       "expected_next_event": "Next monetary policy review",
-      "last_summary": "RBI maintained the repo rate at 6%."
+      "last_summary": "RBI maintained the repo rate at 6%, focusing on inflation stability amidst global market volatility."
     },
     {
       "topic": "Rumor: GPT-5.6 Expected Soon",
