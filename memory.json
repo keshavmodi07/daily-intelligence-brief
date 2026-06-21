@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "topics": [
     {
       "topic": "Anthropic AI Model Launch",
@@ -22,11 +22,11 @@
     {
       "topic": "Cabinet Decisions on Infrastructure Projects",
       "category": "Economics",
-      "last_reported_date": "2026-06-18",
+      "last_reported_date": "2026-06-21",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Implementation updates",
-      "last_summary": "Approval of a new industrial corridor project to boost manufacturing and infrastructure."
+      "last_summary": "Economic relief package for MSMEs announced."
     },
     {
       "topic": "Chennai International Terminal Inauguration",
@@ -44,7 +44,7 @@
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Further military or diplomatic actions",
-      "last_summary": "Escalation with military exercises near Taiwan."
+      "last_summary": "Increased military activity by China near Taiwan."
     },
     {
       "topic": "Computex 2026 / NVIDIA Highlights",
@@ -85,38 +85,38 @@
     {
       "topic": "GDP India FY26",
       "category": "Economics",
-      "last_reported_date": "2026-06-18",
+      "last_reported_date": "2026-06-21",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Next GDP release",
-      "last_summary": "India experienced a 7.5% GDP growth rate in the last quarter."
+      "last_summary": "India’s Q1 2026 GDP growth reported at 7.0%."
     },
     {
       "topic": "GPT-5.5",
       "category": "AI",
       "last_reported_date": "2026-06-20",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Further API updates or enterprise rollout",
       "last_summary": "Released with enhanced contextual understanding and reduced power consumption."
     },
     {
       "topic": "Google DeepMind Collaborative AI",
       "category": "AI",
-      "last_reported_date": "2026-06-16",
+      "last_reported_date": "2026-06-20",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Further research or application updates",
-      "last_summary": "Research breakthrough in collaborative AI for improved decision-making."
+      "last_summary": "New AI model surpassing human performance in strategy games."
     },
     {
       "topic": "Gujarat Semiconductor Plant Investment",
       "category": "Semiconductors",
-      "last_reported_date": "2026-06-20",
+      "last_reported_date": "2026-06-18",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Construction updates",
-      "last_summary": "$2 billion investment announced."
+      "last_summary": "Talks with a Taiwanese semiconductor company for a Gujarat plant."
     },
     {
       "topic": "India China Tensions",
@@ -125,16 +125,25 @@
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Further diplomatic or military developments",
-      "last_summary": "High-level talks held to ease border tensions and mutual troop de-escalation agreement."
+      "last_summary": "High-level talks to de-escalate border skirmishes in the Galwan Valley."
     },
     {
       "topic": "India GDP FY26",
       "category": "Economics",
-      "last_reported_date": "2026-06-15",
+      "last_reported_date": "2026-06-21",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Next GDP release",
-      "last_summary": "India's GDP growth reported at 7.2% for Q1 2026."
+      "last_summary": "India's GDP growth reported at 7.0% for Q1 2026."
+    },
+    {
+      "topic": "India Inflation May 2026",
+      "category": "Economics",
+      "last_reported_date": "2026-06-20",
+      "importance": "high",
+      "status": "UPDATED",
+      "expected_next_event": "June 2026 inflation data release",
+      "last_summary": "Inflation eased to 4.5% in May 2026."
     },
     {
       "topic": "India Semiconductor Mission",
@@ -157,11 +166,11 @@
     {
       "topic": "India-France Defense Deal",
       "category": "Geopolitics",
-      "last_reported_date": "2026-06-20",
+      "last_reported_date": "2026-06-19",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Further strategic developments",
-      "last_summary": "$4 billion deal for advanced fighter jets."
+      "last_summary": "New cooperation focus on advanced military technologies."
     },
     {
       "topic": "India-France Drone Technology Partnership",
@@ -265,9 +274,9 @@
     {
       "topic": "Nvidia Ada GPU Architecture",
       "category": "Technology",
-      "last_reported_date": "2026-06-20",
+      "last_reported_date": "2026-06-19",
       "importance": "high",
-      "status": "NEW",
+      "status": "UPDATED",
       "expected_next_event": "Market adoption updates",
       "last_summary": "Unveiling of new GPU architecture with improvements for AI and gaming."
     },
@@ -283,18 +292,18 @@
     {
       "topic": "OpenAI Acquisitions and IPO Preparations",
       "category": "AI",
-      "last_reported_date": "2026-06-18",
+      "last_reported_date": "2026-06-21",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "IPO filings and market strategy announcements",
-      "last_summary": "Developer API for latest model unveiled."
+      "last_summary": "OpenAI launched GPT-5 with enhanced natural language understanding."
     },
     {
       "topic": "RBI Repo Rate Decision",
       "category": "Economics",
       "last_reported_date": "2026-06-21",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Next monetary policy review",
       "last_summary": "RBI maintained the repo rate at 6%, focusing on inflation stability amidst global market volatility."
     },
@@ -310,18 +319,18 @@
     {
       "topic": "Russia Ukraine War",
       "category": "Geopolitics",
-      "last_reported_date": "2026-06-20",
+      "last_reported_date": "2026-06-21",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Military or diplomatic development",
-      "last_summary": "Progress in ceasefire talks with humanitarian corridors established."
+      "last_summary": "Peace negotiations stalled over territorial disputes."
     },
     {
       "topic": "SMIC Factory in India",
       "category": "Semiconductors",
       "last_reported_date": "2026-06-20",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Construction updates",
       "last_summary": "SMIC plans a new semiconductor factory in India."
     },
