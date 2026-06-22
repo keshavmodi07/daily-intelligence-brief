@@ -4,11 +4,11 @@
     {
       "topic": "Anthropic AI Model Launch",
       "category": "AI",
-      "last_reported_date": "2026-06-17",
+      "last_reported_date": "2026-06-20",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Adoption and integration updates",
-      "last_summary": "Launch of a new AI model with enhanced language understanding."
+      "last_summary": "Breakthrough in AI safety research aligning with human values."
     },
     {
       "topic": "Apple's Siri AI",
@@ -22,11 +22,11 @@
     {
       "topic": "Cabinet Decisions on Infrastructure Projects",
       "category": "Economics",
-      "last_reported_date": "2026-06-21",
+      "last_reported_date": "2026-06-20",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Implementation updates",
-      "last_summary": "Economic relief package for MSMEs announced."
+      "last_summary": "New initiatives to boost digital infrastructure in rural areas announced."
     },
     {
       "topic": "Chennai International Terminal Inauguration",
@@ -44,7 +44,7 @@
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Further military or diplomatic actions",
-      "last_summary": "Increased military activity by China near Taiwan."
+      "last_summary": "Increased military activity around Taiwan Strait."
     },
     {
       "topic": "Computex 2026 / NVIDIA Highlights",
@@ -67,11 +67,11 @@
     {
       "topic": "Eastern DFC",
       "category": "Infrastructure",
-      "last_reported_date": "",
+      "last_reported_date": "2026-06-21",
       "importance": "medium",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Operational milestone",
-      "last_summary": ""
+      "last_summary": "Approval for a new freight corridor to enhance logistics."
     },
     {
       "topic": "Federal Reserve Holds Rates",
@@ -87,7 +87,7 @@
       "category": "Economics",
       "last_reported_date": "2026-06-21",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Next GDP release",
       "last_summary": "India’s Q1 2026 GDP growth reported at 7.0%."
     },
@@ -112,11 +112,20 @@
     {
       "topic": "Gujarat Semiconductor Plant Investment",
       "category": "Semiconductors",
-      "last_reported_date": "2026-06-18",
+      "last_reported_date": "2026-06-21",
       "importance": "high",
-      "status": "UNCHANGED",
+      "status": "UPDATED",
       "expected_next_event": "Construction updates",
-      "last_summary": "Talks with a Taiwanese semiconductor company for a Gujarat plant."
+      "last_summary": "US-based semiconductor company to establish a manufacturing unit in Gujarat."
+    },
+    {
+      "topic": "IMF Growth Projections for India",
+      "category": "Economics",
+      "last_reported_date": "2026-06-21",
+      "importance": "high",
+      "status": "UPDATED",
+      "expected_next_event": "Economic analysis updates",
+      "last_summary": "IMF reports stable growth projections with improvements in manufacturing and services."
     },
     {
       "topic": "India China Tensions",
@@ -132,7 +141,7 @@
       "category": "Economics",
       "last_reported_date": "2026-06-21",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "Next GDP release",
       "last_summary": "India's GDP growth reported at 7.0% for Q1 2026."
     },
@@ -141,7 +150,7 @@
       "category": "Economics",
       "last_reported_date": "2026-06-20",
       "importance": "high",
-      "status": "UPDATED",
+      "status": "UNCHANGED",
       "expected_next_event": "June 2026 inflation data release",
       "last_summary": "Inflation eased to 4.5% in May 2026."
     },
@@ -177,7 +186,7 @@
       "category": "Geopolitics",
       "last_reported_date": "2026-06-19",
       "importance": "high",
-      "status": "NEW",
+      "status": "UNCHANGED",
       "expected_next_event": "Further strategic developments",
       "last_summary": "Announced new collaboration on advanced drone technology."
     },
@@ -272,11 +281,20 @@
       "last_summary": "$2 billion partnership for AI factory infrastructure."
     },
     {
-      "topic": "Nvidia Ada GPU Architecture",
+      "topic": "Nvidia AI GPUs",
       "category": "Technology",
       "last_reported_date": "2026-06-19",
       "importance": "high",
       "status": "UPDATED",
+      "expected_next_event": "Market adoption updates",
+      "last_summary": "Introduction of new AI GPUs for energy efficiency."
+    },
+    {
+      "topic": "Nvidia Ada GPU Architecture",
+      "category": "Technology",
+      "last_reported_date": "2026-06-19",
+      "importance": "high",
+      "status": "UNCHANGED",
       "expected_next_event": "Market adoption updates",
       "last_summary": "Unveiling of new GPU architecture with improvements for AI and gaming."
     },
@@ -290,13 +308,31 @@
       "last_summary": "Launched a high-performance GPU optimized for AI workloads."
     },
     {
+      "topic": "OpenAI & Google Cloud Partnership",
+      "category": "AI",
+      "last_reported_date": "2026-06-20",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Integration updates",
+      "last_summary": "Partnership for integrated AI technologies."
+    },
+    {
       "topic": "OpenAI Acquisitions and IPO Preparations",
       "category": "AI",
       "last_reported_date": "2026-06-21",
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "IPO filings and market strategy announcements",
-      "last_summary": "OpenAI launched GPT-5 with enhanced natural language understanding."
+      "last_summary": "Released new API update enhancing GPT-5 model fine-tuning capabilities."
+    },
+    {
+      "topic": "PM Modi's Diplomatic Visits",
+      "category": "Geopolitics",
+      "last_reported_date": "2026-06-19",
+      "importance": "high",
+      "status": "NEW",
+      "expected_next_event": "Follow-up discussions",
+      "last_summary": "Planned visits to Australia and Japan for trade and defense discussions."
     },
     {
       "topic": "RBI Repo Rate Decision",
@@ -323,7 +359,7 @@
       "importance": "high",
       "status": "UPDATED",
       "expected_next_event": "Military or diplomatic development",
-      "last_summary": "Peace negotiations stalled over territorial disputes."
+      "last_summary": "Ceasefire negotiations continue amid skirmishes."
     },
     {
       "topic": "SMIC Factory in India",
