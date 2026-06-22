@@ -1,175 +1,244 @@
-# Daily Intelligence Brief
+# personal-intelligence-platform
 
-An automated daily intelligence briefing system that runs in GitHub Actions every morning and emails you a personalized intelligence report.
+A source-driven Daily Intelligence Brief system that scouts RSS and official sources first, then uses OpenAI to turn evidence into structured candidate events and write two daily email briefings:
 
-No VPS. No paid infrastructure except OpenAI API usage.
+- Builder Intelligence Brief
+- Strategic Intelligence Brief
 
-## What It Does
+It is designed to report what changed, avoid stale repeats, include quiet official-source updates, and keep costs low.
 
-Every day at **~7:00 AM IST**, GitHub Actions runs a **4-stage intelligence pipeline**:
+## Pipeline
 
-1. **Research** — broad + targeted searches across all Tier 1 categories
-2. **Critical Event Verification** — mandatory checklist (GDP, RBI, conflicts, AI launches, etc.)
-3. **Memory Comparison** — compare against `memory.json` and `watchlist.json` (NEW / UPDATED / UNCHANGED)
-4. **Report Generation** — Builder + Strategic briefs, then memory is updated and committed to the repo
+1. Source Scouting: RSS-first collection from `data/sources.yaml`
+2. Content Extraction: `requests` + `BeautifulSoup` fallback for article text
+3. Candidate Event Creation: OpenAI converts raw articles into structured events
+4. Critical Event Verification: must-not-miss coverage checks plus targeted fallback web search
+5. Memory Comparison: NEW / UPDATED / UNCHANGED against `data/memory.json`
+6. Ranking and Deduplication: removes duplicates and suppresses unchanged repeats
+7. Report Generation: Builder and Strategic briefs
+8. Email Delivery: Gmail SMTP or SendGrid
+9. Memory Update: updates memory and saves markdown/JSON history
 
-Both briefs are combined into **one email**. The system remembers what it reported and avoids repeating unchanged topics for 14 days.
+## Files
 
-You can also trigger a run manually from the **Actions** tab at any time.
-
-## Project Structure
-
+```text
+main.py
+config.py
+requirements.txt
+.env.example
+README.md
+prompts/
+  builder_prompt.txt
+  strategic_prompt.txt
+data/
+  sources.yaml
+  watchlist.yaml
+  memory.json
+  history/
+.github/workflows/daily_brief.yml
 ```
-daily-intelligence-brief/
-├── main.py                            # 4-stage pipeline orchestrator
-├── memory.py                          # Memory load/save/merge helpers
-├── memory.json                        # Persistent topic memory (auto-updated)
-├── watchlist.json                     # Long-term project watchlist
-├── config.py                          # Environment variable configuration
-├── prompt_protocol.txt                # Critical Intelligence Protocol
-├── prompt_output.txt                  # Shared platform output sections
-├── prompt_builder.txt                 # Builder Intelligence Officer prompt
-├── prompt_strategic.txt               # Strategic Intelligence Officer prompt
-├── requirements.txt                   # Python dependencies
-├── .env.example                       # Local development environment template
-├── .github/workflows/daily_brief.yml  # GitHub Actions workflow
-└── README.md
-```
 
-## Prerequisites
-
-- A [GitHub](https://github.com) account
-- An [OpenAI API key](https://platform.openai.com/api-keys) with billing enabled
-- A Gmail account with 2-Step Verification enabled
-
-## Quick Start
-
-### 1. Create the GitHub Repository
+## Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/daily-intelligence-brief.git
-cd daily-intelligence-brief
-```
-
-Or push this folder to a new repo:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: Daily Intelligence Brief"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/daily-intelligence-brief.git
-git push -u origin main
-```
-
-### 2. Set Up Email (SendGrid — recommended)
-
-Gmail App Passwords are **not available on all accounts** (common if 2-Step Verification isn't enabled, or on school/work accounts). **SendGrid** is free (100 emails/day) and only needs an API key.
-
-1. Sign up at [sendgrid.com](https://signup.sendgrid.com/) (free)
-2. Go to **Settings → Sender Authentication → Single Sender Verification**
-3. Add and verify `founder.effinova@gmail.com` (check inbox for verification link)
-4. Go to **Settings → API Keys → Create API Key**
-5. Name it `Daily Brief`, enable **Mail Send** permission, copy the key (`SG....`)
-
-<details>
-<summary>Alternative: Gmail App Password (if available on your account)</summary>
-
-1. Enable **2-Step Verification** at [Google Security](https://myaccount.google.com/security)
-2. Go to [App passwords](https://myaccount.google.com/apppasswords)
-3. Generate a password for Mail → Other ("Daily Intelligence Brief")
-4. Set `EMAIL_PROVIDER=gmail` and use `GMAIL_EMAIL` + `GMAIL_APP_PASSWORD` secrets instead
-
-</details>
-
-### 3. Configure GitHub Secrets
-
-In your GitHub repository, go to **Settings → Secrets and variables → Actions → New repository secret** and add:
-
-| Secret Name | Value | Required |
-|---|---|---|
-| `OPENAI_API_KEY` | Your OpenAI API key (`sk-...`) | Yes |
-| `RECIPIENT_EMAIL` | Where to receive the briefing | Yes |
-| `SENDGRID_API_KEY` | SendGrid API key (`SG....`) | Yes |
-| `SENDER_EMAIL` | Verified sender email (e.g. `founder.effinova@gmail.com`) | Yes |
-| `OPENAI_MODEL` | OpenAI model override (default: `gpt-4o`) | No |
-
-### 4. Enable GitHub Actions
-
-GitHub Actions is enabled by default on new repositories. If disabled:
-
-1. Go to **Settings → Actions → General**
-2. Select **Allow all actions and reusable workflows**
-3. Save
-
-### 5. Test It
-
-**Manual run:**
-
-1. Go to the **Actions** tab in your repository
-2. Select **Daily Intelligence Brief**
-3. Click **Run workflow → Run workflow**
-4. Check your inbox (and spam folder on first run)
-
-The scheduled run targets **~7:00 AM IST** delivery. GitHub Actions often delays scheduled jobs by 4–5 hours during peak load, so the workflow runs at **2:25 AM IST** (compensated) with a **7:00 AM IST backup**. Only one email is sent per day.
-
-Manual runs from the Actions tab can happen at any time — those are not on the 7 AM schedule.
-
-## Local Development
-
-```bash
-# Create virtual environment
 python -m venv .venv
-
-# Activate (Windows)
 .venv\Scripts\activate
-
-# Activate (macOS/Linux)
-source .venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Copy and fill in environment variables
-cp .env.example .env
-# Edit .env with your credentials
-
-# Load env vars and run (Windows PowerShell)
-Get-Content .env | ForEach-Object {
-  if ($_ -match '^([^#=]+)=(.*)$') { [Environment]::SetEnvironmentVariable($matches[1], $matches[2], 'Process') }
-}
-python main.py
-
-# Load env vars and run (macOS/Linux)
-export $(grep -v '^#' .env | xargs) && python main.py
+copy .env.example .env
 ```
 
-## Customizing the Briefing
+Fill `.env` with:
 
-Edit `prompt_builder.txt` or `prompt_strategic.txt` to change each agent's focus, scoring criteria, or report sections. Changes take effect on the next run — no code changes needed.
+```text
+OPENAI_API_KEY=
+EMAIL_PROVIDER=sendgrid
+RECIPIENT_EMAIL=
+FROM_EMAIL=
+SENDGRID_API_KEY=
+```
 
-To use a different OpenAI model, set the `OPENAI_MODEL` secret (or env var locally). Models that support the Responses API with web search (e.g. `gpt-4o`) are recommended.
+For Brevo instead:
 
-## Email Format
+```text
+EMAIL_PROVIDER=brevo
+RECIPIENT_EMAIL=
+FROM_EMAIL=
+BREVO_SMTP_LOGIN=
+BREVO_SMTP_KEY=
+```
 
-- **Subject:** `Daily Intelligence Brief - YYYY-MM-DD`
-- **Body:** Clean HTML with section headers, bullet points, and mobile-friendly styling
-- A plain-text version is included as a fallback
+For Gmail instead:
 
-## Cost Estimate
+```text
+EMAIL_PROVIDER=gmail
+RECIPIENT_EMAIL=
+FROM_EMAIL=
+GMAIL_EMAIL=
+GMAIL_APP_PASSWORD=
+```
 
-Each daily run uses six OpenAI API calls (4 with web search + memory update + 2 report writes). Typical cost is roughly **$0.30–$1.50 per day** depending on model and search depth. GitHub Actions free tier (2,000 minutes/month) is more than sufficient.
+## Gmail App Password
 
-## Troubleshooting
+1. Enable 2-Step Verification on your Google account.
+2. Go to Google Account Security.
+3. Create an app password for Mail.
+4. Set `GMAIL_EMAIL` and `GMAIL_APP_PASSWORD`.
 
-| Problem | Fix |
+Some work/school Google accounts block app passwords. Use SendGrid in that case.
+
+## Brevo SMTP
+
+1. Verify your sender email or domain in Brevo.
+2. In Brevo, open SMTP & API settings.
+3. Copy the SMTP login and SMTP key.
+4. Set `EMAIL_PROVIDER=brevo`, `FROM_EMAIL`, `BREVO_SMTP_LOGIN`, and `BREVO_SMTP_KEY`.
+
+Brevo uses `smtp-relay.brevo.com` on port `587` by default.
+
+## Run Locally
+
+PowerShell:
+
+```powershell
+Get-Content .env | ForEach-Object {
+  if ($_ -match '^([^#=]+)=(.*)$') {
+    [Environment]::SetEnvironmentVariable($matches[1], $matches[2], 'Process')
+  }
+}
+python main.py --dry-run
+```
+
+`--dry-run` runs the full intelligence pipeline and saves history, but does not send email.
+
+## GitHub Actions
+
+The workflow runs at `01:30 UTC`, which is `07:00 IST`, and also supports manual `workflow_dispatch`.
+
+Add repository secrets:
+
+| Secret | Required |
 |---|---|
-| Workflow doesn't run on schedule | Scheduled workflows only run on the default branch (`main`). Confirm the workflow file is on `main`. |
-| Email arrives at ~11 AM instead of 7 AM | GitHub Actions schedule delay (known issue). Fixed by running at 2:25 AM IST with compensation. |
-| Email goes to spam | Mark as **Not spam** once. Add `founder.effinova@gmail.com` to Google Contacts. Create a Gmail filter: From `founder.effinova@gmail.com` → Never send to spam. For best deliverability, complete SendGrid domain authentication for `effinova.com`. |
-| OpenAI error | Verify `OPENAI_API_KEY` is valid and billing is enabled. Check Actions logs for the exact error. |
-| Empty briefing | Check Actions logs. The model may have failed to search — retry manually. |
+| `OPENAI_API_KEY` | Yes |
+| `RECIPIENT_EMAIL` | Yes |
+| `FROM_EMAIL` | Yes |
+| `SENDGRID_API_KEY` | If using SendGrid |
+| `BREVO_SMTP_LOGIN` | If using Brevo |
+| `BREVO_SMTP_KEY` | If using Brevo |
+| `GMAIL_EMAIL` | If using Gmail |
+| `GMAIL_APP_PASSWORD` | If using Gmail |
 
-## License
+Optional repository variables:
 
-MIT
+| Variable | Default |
+|---|---|
+| `OPENAI_MODEL` | `gpt-4.1-mini` |
+| `EMAIL_PROVIDER` | `sendgrid` |
+
+## Add RSS Sources
+
+Edit `data/sources.yaml`:
+
+```yaml
+groups:
+  AI:
+    - name: Example Official Blog
+      rss_url: https://example.com/feed.xml
+      url: https://example.com/news
+      official: true
+```
+
+For pages without RSS:
+
+```yaml
+    - name: Example Press Page
+      kind: html
+      url: https://example.com/press
+      official: true
+      selectors: ["article a", "h2 a", "a"]
+```
+
+Broken sources are skipped gracefully with a warning.
+
+## Add Watchlist Topics
+
+Edit `data/watchlist.yaml`:
+
+```yaml
+AI:
+  - OpenAI
+  - Anthropic
+```
+
+Watchlist topics influence scoring and memory comparison. Unchanged watchlist items may appear only in a compact unchanged list.
+
+## Memory
+
+`data/memory.json` uses this schema:
+
+```json
+{
+  "topic": "",
+  "category": "",
+  "first_seen": "",
+  "last_reported": "",
+  "last_checked": "",
+  "status": "",
+  "last_summary": "",
+  "expected_next_event": "",
+  "importance": "",
+  "source_urls": []
+}
+```
+
+Before reporting, candidates are classified as:
+
+- `NEW`
+- `UPDATED`
+- `UNCHANGED`
+
+Items reported in the last 14 days are suppressed unless there is a real update.
+
+## Must-Not-Miss Verification
+
+The verifier checks required areas across AI, economics, geopolitics, and India. If a category has no candidate events, the platform runs targeted OpenAI web-search fallback when available. If nothing is found, it logs `not found after verification` rather than assuming nothing happened.
+
+## Outputs
+
+Each run saves:
+
+- `data/history/YYYY-MM-DD.md`
+- `data/history/YYYY-MM-DD.json`
+- updated `data/memory.json`
+
+Email subject:
+
+```text
+Daily Intelligence Brief - YYYY-MM-DD
+```
+
+## Cost Controls
+
+The system avoids generic broad search. It first scouts sources locally, sends only selected article evidence to OpenAI, and caps fallback searches.
+
+Useful knobs:
+
+- `MAX_ITEMS_PER_SOURCE`
+- `MAX_ARTICLES_FOR_EVENT_EXTRACTION`
+- `MAX_EVENTS_FOR_PROMPT`
+- `MAX_FALLBACK_QUERIES`
+- `LOOKBACK_DAYS`
+- `OPENAI_MODEL`
+
+## Verify
+
+```bash
+python -m py_compile main.py config.py
+python - <<'PY'
+import json, yaml
+from pathlib import Path
+yaml.safe_load(Path("data/sources.yaml").read_text())
+yaml.safe_load(Path("data/watchlist.yaml").read_text())
+json.loads(Path("data/memory.json").read_text())
+print("ok")
+PY
+```

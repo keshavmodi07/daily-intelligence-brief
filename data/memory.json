@@ -1,0 +1,151 @@
+{
+  "project": "personal-intelligence-platform",
+  "last_updated": "",
+  "suppression_days": 14,
+  "topics": [
+    {
+      "topic": "OpenAI",
+      "category": "AI",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Model, product, API, safety, enterprise, or infrastructure update",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Anthropic",
+      "category": "AI",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Model, API, enterprise, safety, or funding update",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "India GDP",
+      "category": "Economics",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Next official GDP or macro release",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "RBI decision",
+      "category": "Economics",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Rate decision, inflation update, liquidity action, or regulatory change",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Zojila Tunnel",
+      "category": "India Infrastructure",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Construction milestone or inauguration",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Mumbai Ahmedabad Bullet Train",
+      "category": "India Infrastructure",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Track, station, bridge, trial, or contract milestone",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Eastern DFC",
+      "category": "India Infrastructure",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Operational, freight, or connectivity milestone",
+      "importance": "medium",
+      "source_urls": []
+    },
+    {
+      "topic": "Western DFC",
+      "category": "India Infrastructure",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Operational, freight, or connectivity milestone",
+      "importance": "medium",
+      "source_urls": []
+    },
+    {
+      "topic": "India Semiconductor Mission",
+      "category": "Semiconductors",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Fab approval, investment, incentive, or production milestone",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Dholera Fab",
+      "category": "Semiconductors",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Construction, equipment, partnership, or production milestone",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Russia-Ukraine war",
+      "category": "Geopolitics",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Military, sanctions, energy, or diplomatic shift",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Israel-Iran conflict",
+      "category": "Geopolitics",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Escalation, ceasefire, proxy, sanctions, or diplomatic shift",
+      "importance": "high",
+      "source_urls": []
+    }
+  ]
+}

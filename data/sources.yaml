@@ -1,0 +1,655 @@
+groups:
+  AI:
+    - name: OpenAI News
+      rss_url: https://openai.com/news/rss.xml
+      url: https://openai.com/news/
+      official: true
+    - name: Anthropic News
+      rss_url: https://www.anthropic.com/news/rss.xml
+      url: https://www.anthropic.com/news
+      official: true
+    - name: Google DeepMind Blog
+      rss_url: https://deepmind.google/discover/blog/rss.xml
+      url: https://deepmind.google/discover/blog/
+      official: true
+    - name: Google AI Blog
+      rss_url: https://blog.google/technology/ai/rss/
+      url: https://blog.google/technology/ai/
+      official: true
+    - name: Microsoft AI Blog
+      rss_url: https://blogs.microsoft.com/ai/feed/
+      url: https://blogs.microsoft.com/ai/
+      official: true
+    - name: Nvidia Blog
+      rss_url: https://blogs.nvidia.com/feed/
+      url: https://blogs.nvidia.com/
+      official: true
+    - name: Meta AI Blog
+      rss_url: https://ai.meta.com/blog/rss/
+      url: https://ai.meta.com/blog/
+      official: true
+    - name: xAI News
+      kind: html
+      url: https://x.ai/news
+      official: true
+      selectors: ["article a", "h2 a", "a[href*='/news']"]
+    - name: ElevenLabs Blog
+      rss_url: https://elevenlabs.io/blog/rss.xml
+      url: https://elevenlabs.io/blog
+      official: true
+    - name: Hugging Face Blog
+      rss_url: https://huggingface.co/blog/feed.xml
+      url: https://huggingface.co/blog
+      official: true
+    - name: Mistral News
+      rss_url: https://mistral.ai/news/rss.xml
+      url: https://mistral.ai/news/
+      official: true
+    - name: Alibaba Qwen Updates
+      kind: html
+      url: https://qwenlm.github.io/blog/
+      official: true
+      selectors: ["article a", "h2 a", "h3 a"]
+    - name: Perplexity Blog
+      rss_url: https://www.perplexity.ai/hub/blog/rss.xml
+      url: https://www.perplexity.ai/hub/blog
+      official: true
+    - name: Midjourney Announcements
+      kind: html
+      url: https://www.midjourney.com/updates
+      official: true
+      selectors: ["article a", "h2 a", "a[href*='updates']"]
+
+  Startups:
+    - name: TechCrunch Startups
+      rss_url: https://techcrunch.com/category/startups/feed/
+      url: https://techcrunch.com/category/startups/
+    - name: Crunchbase News
+      rss_url: https://news.crunchbase.com/feed/
+      url: https://news.crunchbase.com/
+    - name: YC Blog
+      rss_url: https://www.ycombinator.com/blog/rss
+      url: https://www.ycombinator.com/blog
+      official: true
+    - name: The Information
+      kind: html
+      url: https://www.theinformation.com/
+      enabled: false
+    - name: VentureBeat AI
+      rss_url: https://venturebeat.com/category/ai/feed/
+      url: https://venturebeat.com/category/ai/
+
+  Technology:
+    - name: Ars Technica
+      rss_url: https://feeds.arstechnica.com/arstechnica/index
+      url: https://arstechnica.com/
+    - name: MIT Technology Review
+      rss_url: https://www.technologyreview.com/feed/
+      url: https://www.technologyreview.com/
+    - name: IEEE Spectrum
+      rss_url: https://spectrum.ieee.org/rss/fulltext
+      url: https://spectrum.ieee.org/
+
+  Developer Tools:
+    - name: GitHub Blog
+      rss_url: https://github.blog/feed/
+      url: https://github.blog/
+      official: true
+    - name: Vercel Blog
+      rss_url: https://vercel.com/atom
+      url: https://vercel.com/blog
+      official: true
+    - name: Cloudflare Blog
+      rss_url: https://blog.cloudflare.com/rss/
+      url: https://blog.cloudflare.com/
+      official: true
+
+  Space:
+    - name: NASA
+      rss_url: https://www.nasa.gov/news-release/feed/
+      url: https://www.nasa.gov/news/
+      official: true
+    - name: ISRO
+      rss_url: https://www.isro.gov.in/ISRO_EN_RSS.xml
+      url: https://www.isro.gov.in/
+      official: true
+    - name: ESA
+      rss_url: https://www.esa.int/rssfeed/Our_Activities/Space_News
+      url: https://www.esa.int/Newsroom
+      official: true
+    - name: SpaceX Updates
+      kind: html
+      url: https://www.spacex.com/updates/
+      official: true
+      selectors: ["article a", "h2 a", "a[href*='/updates']"]
+    - name: Rocket Lab
+      rss_url: https://www.rocketlabusa.com/updates/rss/
+      url: https://www.rocketlabusa.com/updates/
+      official: true
+    - name: Blue Origin
+      kind: html
+      url: https://www.blueorigin.com/news
+      official: true
+      selectors: ["article a", "h2 a", "a[href*='/news']"]
+    - name: SpaceNews
+      rss_url: https://spacenews.com/feed/
+      url: https://spacenews.com/
+
+  Science:
+    - name: Nature News
+      rss_url: https://www.nature.com/nature.rss
+      url: https://www.nature.com/news
+    - name: Science Magazine News
+      rss_url: https://www.science.org/rss/news_current.xml
+      url: https://www.science.org/news
+    - name: MIT Technology Review
+      rss_url: https://www.technologyreview.com/feed/
+      url: https://www.technologyreview.com/
+    - name: arXiv AI
+      rss_url: https://export.arxiv.org/rss/cs.AI
+      url: https://arxiv.org/list/cs.AI/recent
+    - name: arXiv Machine Learning
+      rss_url: https://export.arxiv.org/rss/cs.LG
+      url: https://arxiv.org/list/cs.LG/recent
+    - name: arXiv Astrophysics
+      rss_url: https://export.arxiv.org/rss/astro-ph
+      url: https://arxiv.org/list/astro-ph/recent
+    - name: arXiv High Energy Physics
+      rss_url: https://export.arxiv.org/rss/hep-ph
+      url: https://arxiv.org/list/hep-ph/recent
+
+  India Official:
+    - name: PIB
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://pib.gov.in/
+      official: true
+    - name: PMO India
+      rss_url: https://www.pmindia.gov.in/en/feed/
+      url: https://www.pmindia.gov.in/en/news_updates/
+      official: true
+    - name: Cabinet Decisions
+      kind: html
+      url: https://pib.gov.in/newsite/cabinet.aspx
+      official: true
+      selectors: ["a[href*='PressReleasePage']", "table a"]
+    - name: Ministry of Railways
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://railways.gov.in/
+      official: true
+    - name: Ministry of Road Transport and Highways
+      rss_url: https://morth.nic.in/rss.xml
+      url: https://morth.nic.in/
+      official: true
+    - name: NHAI
+      kind: html
+      url: https://nhai.gov.in/
+      official: true
+      selectors: ["a[href*='press']", "a[href*='media']", "a"]
+    - name: Ministry of Defence
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://mod.gov.in/news
+      official: true
+    - name: Ministry of Commerce
+      rss_url: https://commerce.gov.in/feed/
+      url: https://commerce.gov.in/press-releases/
+      official: true
+    - name: DPIIT
+      kind: html
+      url: https://dpiit.gov.in/whats-new
+      official: true
+      selectors: ["a"]
+    - name: Ministry of Power
+      rss_url: https://powermin.gov.in/rss.xml
+      url: https://powermin.gov.in/
+      official: true
+    - name: Ministry of Coal
+      rss_url: https://coal.nic.in/rss.xml
+      url: https://coal.nic.in/
+      official: true
+    - name: Ministry of Petroleum
+      rss_url: https://mopng.gov.in/en/rss.xml
+      url: https://mopng.gov.in/
+      official: true
+    - name: ISRO
+      rss_url: https://www.isro.gov.in/ISRO_EN_RSS.xml
+      url: https://www.isro.gov.in/
+      official: true
+    - name: RBI
+      rss_url: https://www.rbi.org.in/pressreleases_rss.xml
+      url: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx
+      official: true
+    - name: Ministry of Finance
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://finmin.gov.in/
+      official: true
+
+  Indian Railways:
+    - name: Ministry of Railways
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://railways.gov.in/
+      official: true
+    - name: DFCCIL
+      kind: html
+      url: https://dfccil.com/Home/DynemicPages?MenuId=50
+      official: true
+      selectors: ["a"]
+    - name: RVNL
+      kind: html
+      url: https://rvnl.org/en/pages/news
+      official: true
+      selectors: ["a"]
+    - name: IRCON
+      kind: html
+      url: https://www.ircon.org/index.php?lang=en
+      official: true
+      selectors: ["a"]
+    - name: NHSRCL
+      kind: html
+      url: https://nhsrcl.in/en/media/press-release
+      official: true
+      selectors: ["a"]
+    - name: Rail Vikas Updates
+      kind: html
+      url: https://rvnl.org/
+      official: true
+      selectors: ["a"]
+    - name: Station Redevelopment Updates
+      kind: html
+      url: https://www.rlindia.com/
+      official: true
+      selectors: ["a"]
+
+  Infrastructure:
+    - name: NHAI
+      kind: html
+      url: https://nhai.gov.in/
+      official: true
+      selectors: ["a[href*='press']", "a[href*='media']", "a"]
+    - name: MoRTH
+      rss_url: https://morth.nic.in/rss.xml
+      url: https://morth.nic.in/
+      official: true
+    - name: Sagarmala
+      kind: html
+      url: https://sagarmala.gov.in/
+      official: true
+      selectors: ["a"]
+    - name: Bharatmala
+      kind: html
+      url: https://morth.nic.in/bharatmala-pariyojana
+      official: true
+      selectors: ["a"]
+    - name: Airports Authority of India
+      kind: html
+      url: https://www.aai.aero/en/media/press-releases
+      official: true
+      selectors: ["a"]
+    - name: Indian Ports Association
+      kind: html
+      url: https://www.ipa.nic.in/
+      official: true
+      selectors: ["a"]
+    - name: Metro Rail News
+      rss_url: https://www.metrorailnews.in/feed/
+      url: https://www.metrorailnews.in/
+    - name: Industrial Corridor
+      kind: html
+      url: https://www.nicdc.in/
+      official: true
+      selectors: ["a"]
+    - name: Logistics Parks
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://dpiit.gov.in/logistics
+      official: true
+
+  Economics:
+    - name: RBI
+      rss_url: https://www.rbi.org.in/pressreleases_rss.xml
+      url: https://www.rbi.org.in/
+      official: true
+    - name: IMF
+      rss_url: https://www.imf.org/en/News/RSS
+      url: https://www.imf.org/en/News
+      official: true
+    - name: World Bank
+      rss_url: https://www.worldbank.org/en/news/all?format=rss
+      url: https://www.worldbank.org/en/news
+      official: true
+    - name: OECD
+      rss_url: https://www.oecd.org/newsroom/publicationsdocuments/bydate/rss.xml
+      url: https://www.oecd.org/newsroom/
+      official: true
+    - name: WTO
+      rss_url: https://www.wto.org/english/news_e/news_e.rss
+      url: https://www.wto.org/english/news_e/news_e.htm
+      official: true
+    - name: US Fed
+      rss_url: https://www.federalreserve.gov/feeds/press_all.xml
+      url: https://www.federalreserve.gov/newsevents/pressreleases.htm
+      official: true
+    - name: ECB
+      rss_url: https://www.ecb.europa.eu/rss/press.html
+      url: https://www.ecb.europa.eu/press/html/index.en.html
+      official: true
+    - name: China NBS
+      kind: html
+      url: https://www.stats.gov.cn/english/PressRelease/
+      official: true
+      selectors: ["a"]
+
+  Geopolitics:
+    - name: Reuters World
+      rss_url: https://www.reutersagency.com/feed/?best-topics=world&post_type=best
+      url: https://www.reuters.com/world/
+    - name: AP World
+      rss_url: https://apnews.com/hub/world-news?output=rss
+      url: https://apnews.com/hub/world-news
+    - name: White House
+      rss_url: https://www.whitehouse.gov/feed/
+      url: https://www.whitehouse.gov/briefing-room/
+      official: true
+    - name: US State Department
+      rss_url: https://www.state.gov/rss-feed/press-releases/feed/
+      url: https://www.state.gov/press-releases/
+      official: true
+    - name: Pentagon
+      rss_url: https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&Category=16349&max=20
+      url: https://www.defense.gov/News/Releases/
+      official: true
+    - name: NATO
+      rss_url: https://www.nato.int/cps/en/natohq/news.xml
+      url: https://www.nato.int/cps/en/natohq/news.htm
+      official: true
+    - name: European Commission
+      rss_url: https://ec.europa.eu/commission/presscorner/api/rss?language=en
+      url: https://ec.europa.eu/commission/presscorner/home/en
+      official: true
+    - name: MEA India
+      rss_url: https://www.mea.gov.in/rss-feeds.htm?feed=pressrelease
+      url: https://www.mea.gov.in/press-releases.htm
+      official: true
+    - name: Kremlin
+      rss_url: http://en.kremlin.ru/events/president/news/feed
+      url: http://en.kremlin.ru/events/president/news
+      official: true
+    - name: Ukraine Government
+      rss_url: https://www.kmu.gov.ua/en/rss
+      url: https://www.kmu.gov.ua/en/news
+      official: true
+    - name: Israeli Government
+      rss_url: https://www.gov.il/en/departments/news/rss
+      url: https://www.gov.il/en/departments/news
+      official: true
+    - name: Iran Government
+      kind: html
+      url: https://irangov.ir/
+      official: true
+      selectors: ["a"]
+    - name: China MFA
+      kind: html
+      url: https://www.mfa.gov.cn/eng/xw/
+      official: true
+      selectors: ["a"]
+    - name: China State Council
+      rss_url: http://english.www.gov.cn/rss/topnews.xml
+      url: https://english.www.gov.cn/news/topnews/
+      official: true
+    - name: UN News
+      rss_url: https://news.un.org/feed/subscribe/en/news/all/rss.xml
+      url: https://news.un.org/en/
+      official: true
+
+  India Domestic Politics:
+    - name: Election Commission of India
+      kind: html
+      url: https://www.eci.gov.in/
+      official: true
+      selectors: ["a[href*='press']", "a[href*='media']", "a[href*='current']", "a"]
+    - name: Parliament of India
+      kind: html
+      url: https://sansad.in/ls
+      official: true
+      selectors: ["a"]
+    - name: Rajya Sabha
+      kind: html
+      url: https://sansad.in/rs
+      official: true
+      selectors: ["a"]
+    - name: PIB
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://pib.gov.in/
+      official: true
+    - name: Government of Maharashtra
+      kind: html
+      url: https://www.maharashtra.gov.in/
+      official: true
+      selectors: ["a"]
+    - name: Government of Gujarat
+      kind: html
+      url: https://gujaratindia.gov.in/media/news.htm
+      official: true
+      selectors: ["a"]
+    - name: Government of Uttar Pradesh
+      kind: html
+      url: https://up.gov.in/en
+      official: true
+      selectors: ["a"]
+    - name: Government of Karnataka
+      kind: html
+      url: https://www.karnataka.gov.in/
+      official: true
+      selectors: ["a"]
+    - name: Government of Tamil Nadu
+      kind: html
+      url: https://www.tn.gov.in/pressrelease
+      official: true
+      selectors: ["a"]
+
+  US Domestic Politics:
+    - name: White House
+      rss_url: https://www.whitehouse.gov/feed/
+      url: https://www.whitehouse.gov/briefing-room/
+      official: true
+    - name: Congress
+      rss_url: https://www.congress.gov/rss/most-viewed-bills.xml
+      url: https://www.congress.gov/
+      official: true
+    - name: Supreme Court
+      kind: html
+      url: https://www.supremecourt.gov/opinions/slipopinion/26
+      official: true
+      selectors: ["a"]
+    - name: Federal Register
+      rss_url: https://www.federalregister.gov/documents/search.rss
+      url: https://www.federalregister.gov/
+      official: true
+
+  China Domestic Politics:
+    - name: China State Council
+      rss_url: http://english.www.gov.cn/rss/topnews.xml
+      url: https://english.www.gov.cn/news/topnews/
+      official: true
+    - name: China NBS
+      kind: html
+      url: https://www.stats.gov.cn/english/PressRelease/
+      official: true
+      selectors: ["a"]
+    - name: China Ministry of Foreign Affairs
+      kind: html
+      url: https://www.mfa.gov.cn/eng/xw/
+      official: true
+      selectors: ["a"]
+
+  Russia Domestic Politics:
+    - name: Kremlin
+      rss_url: http://en.kremlin.ru/events/president/news/feed
+      url: http://en.kremlin.ru/events/president/news
+      official: true
+    - name: State Duma
+      kind: html
+      url: http://duma.gov.ru/en/news/
+      official: true
+      selectors: ["a"]
+
+  Israel Domestic Politics:
+    - name: Israel PMO
+      kind: html
+      url: https://www.gov.il/en/departments/news?OfficeId=9b6a3c1e-2f93-48ff-80f5-d7edba93d376
+      official: true
+      selectors: ["a"]
+    - name: Knesset
+      kind: html
+      url: https://main.knesset.gov.il/en/news/pages/default.aspx
+      official: true
+      selectors: ["a"]
+
+  Iran Domestic Politics:
+    - name: Iran Government
+      kind: html
+      url: https://irangov.ir/
+      official: true
+      selectors: ["a"]
+    - name: Iran Ministry of Foreign Affairs
+      kind: html
+      url: https://en.mfa.gov.ir/
+      official: true
+      selectors: ["a"]
+
+  EU Politics:
+    - name: European Commission
+      rss_url: https://ec.europa.eu/commission/presscorner/api/rss?language=en
+      url: https://ec.europa.eu/commission/presscorner/home/en
+      official: true
+    - name: European Council
+      rss_url: https://www.consilium.europa.eu/en/rss/
+      url: https://www.consilium.europa.eu/en/press/
+      official: true
+    - name: European Parliament
+      rss_url: https://www.europarl.europa.eu/rss/doc/press-releases/en.xml
+      url: https://www.europarl.europa.eu/news/en/press-room
+      official: true
+    - name: ECB
+      rss_url: https://www.ecb.europa.eu/rss/press.html
+      url: https://www.ecb.europa.eu/press/html/index.en.html
+      official: true
+
+  Defence:
+    - name: Indian Ministry of Defence
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://mod.gov.in/news
+      official: true
+    - name: Pentagon Contracts
+      rss_url: https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&Category=16350&max=20
+      url: https://www.defense.gov/News/Contracts/
+      official: true
+    - name: NATO News
+      rss_url: https://www.nato.int/cps/en/natohq/news.xml
+      url: https://www.nato.int/cps/en/natohq/news.htm
+      official: true
+
+  Energy:
+    - name: Ministry of Power India
+      rss_url: https://powermin.gov.in/rss.xml
+      url: https://powermin.gov.in/
+      official: true
+    - name: Ministry of Petroleum India
+      rss_url: https://mopng.gov.in/en/rss.xml
+      url: https://mopng.gov.in/
+      official: true
+    - name: IEA
+      rss_url: https://www.iea.org/rss/news
+      url: https://www.iea.org/news
+      official: true
+    - name: US Energy Department
+      rss_url: https://www.energy.gov/news/rss.xml
+      url: https://www.energy.gov/news
+      official: true
+
+  Manufacturing:
+    - name: DPIIT
+      kind: html
+      url: https://dpiit.gov.in/whats-new
+      official: true
+      selectors: ["a"]
+    - name: Manufacturing Dive
+      rss_url: https://www.manufacturingdive.com/feeds/news/
+      url: https://www.manufacturingdive.com/
+    - name: Semiconductor Engineering
+      rss_url: https://semiengineering.com/feed/
+      url: https://semiengineering.com/
+
+  Semiconductors:
+    - name: Nvidia Blog
+      rss_url: https://blogs.nvidia.com/feed/
+      url: https://blogs.nvidia.com/
+      official: true
+    - name: TSMC News
+      kind: html
+      url: https://pr.tsmc.com/english/news
+      official: true
+      selectors: ["a"]
+    - name: Intel News
+      rss_url: https://www.intel.com/content/www/us/en/newsroom/feed.xml
+      url: https://www.intel.com/content/www/us/en/newsroom/home.html
+      official: true
+    - name: India Semiconductor Mission
+      kind: html
+      url: https://www.ism.gov.in/
+      official: true
+      selectors: ["a"]
+
+  Logistics:
+    - name: DPIIT Logistics
+      kind: html
+      url: https://dpiit.gov.in/logistics
+      official: true
+      selectors: ["a"]
+    - name: FreightWaves
+      rss_url: https://www.freightwaves.com/news/feed
+      url: https://www.freightwaves.com/news
+    - name: Journal of Commerce
+      rss_url: https://www.joc.com/rss.xml
+      url: https://www.joc.com/
+
+  Industrial Policy:
+    - name: PIB Industrial Policy
+      rss_url: https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3
+      url: https://pib.gov.in/
+      official: true
+    - name: US Commerce Department
+      rss_url: https://www.commerce.gov/news/rss.xml
+      url: https://www.commerce.gov/news
+      official: true
+    - name: European Commission Press
+      rss_url: https://ec.europa.eu/commission/presscorner/api/rss?language=en
+      url: https://ec.europa.eu/commission/presscorner/home/en
+      official: true
+
+  Diplomacy:
+    - name: MEA India
+      rss_url: https://www.mea.gov.in/rss-feeds.htm?feed=pressrelease
+      url: https://www.mea.gov.in/press-releases.htm
+      official: true
+    - name: US State Department
+      rss_url: https://www.state.gov/rss-feed/press-releases/feed/
+      url: https://www.state.gov/press-releases/
+      official: true
+    - name: China MFA
+      kind: html
+      url: https://www.mfa.gov.cn/eng/xw/
+      official: true
+      selectors: ["a"]
+
+  Bilateral Relations:
+    - name: MEA India Bilateral
+      rss_url: https://www.mea.gov.in/rss-feeds.htm?feed=pressrelease
+      url: https://www.mea.gov.in/bilateral-documents.htm
+      official: true
+    - name: White House Statements
+      rss_url: https://www.whitehouse.gov/feed/
+      url: https://www.whitehouse.gov/briefing-room/statements-releases/
+      official: true
+    - name: European External Action Service
+      rss_url: https://www.eeas.europa.eu/rss_en
+      url: https://www.eeas.europa.eu/
+      official: true
