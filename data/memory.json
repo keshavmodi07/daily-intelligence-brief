@@ -1,26 +1,14 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "",
+  "last_updated": "2026-06-23",
   "suppression_days": 14,
   "topics": [
-    {
-      "topic": "OpenAI",
-      "category": "AI",
-      "first_seen": "",
-      "last_reported": "",
-      "last_checked": "",
-      "status": "monitoring",
-      "last_summary": "",
-      "expected_next_event": "Model, product, API, safety, enterprise, or infrastructure update",
-      "importance": "high",
-      "source_urls": []
-    },
     {
       "topic": "Anthropic",
       "category": "AI",
       "first_seen": "",
       "last_reported": "",
-      "last_checked": "",
+      "last_checked": "2026-06-23",
       "status": "monitoring",
       "last_summary": "",
       "expected_next_event": "Model, API, enterprise, safety, or funding update",
@@ -28,11 +16,25 @@
       "source_urls": []
     },
     {
+      "topic": "European Central Bank discusses monetary policy amid geopolitical tensions and supply shoc",
+      "category": "Economics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "ECB President Christine Lagarde addressed the European Parliament's Committee on Economic and Monetary Affairs, highlighting the impact of the Middle East conflict on euro area economic activity and inflation. The ECB projects slower domestic demand and growth but expects consumption to remain a key",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260622~b060a27b78.en.html"
+      ]
+    },
+    {
       "topic": "India GDP",
       "category": "Economics",
       "first_seen": "",
       "last_reported": "",
-      "last_checked": "",
+      "last_checked": "2026-06-23",
       "status": "monitoring",
       "last_summary": "",
       "expected_next_event": "Next official GDP or macro release",
@@ -44,7 +46,7 @@
       "category": "Economics",
       "first_seen": "",
       "last_reported": "",
-      "last_checked": "",
+      "last_checked": "2026-06-23",
       "status": "monitoring",
       "last_summary": "",
       "expected_next_event": "Rate decision, inflation update, liquidity action, or regulatory change",
@@ -52,74 +54,32 @@
       "source_urls": []
     },
     {
-      "topic": "Zojila Tunnel",
-      "category": "India Infrastructure",
-      "first_seen": "",
-      "last_reported": "",
-      "last_checked": "",
-      "status": "monitoring",
-      "last_summary": "",
-      "expected_next_event": "Construction milestone or inauguration",
+      "topic": "Reserve Bank of India releases June 2026 Bulletin and imposes monetary penalties on cooper",
+      "category": "Economics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The Reserve Bank of India released its June 2026 Bulletin covering economic analysis and statistics. Additionally, RBI imposed monetary penalties on several cooperative banks in Maharashtra, Karnataka, Andhra Pradesh, and Uttar Pradesh for non-compliance with banking regulations related to loans, ad",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "importance": "high",
-      "source_urls": []
+      "source_urls": [
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62992",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62991",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62990",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62989",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62988"
+      ]
     },
     {
-      "topic": "Mumbai Ahmedabad Bullet Train",
-      "category": "India Infrastructure",
+      "topic": "Israel-Iran conflict",
+      "category": "Geopolitics",
       "first_seen": "",
       "last_reported": "",
-      "last_checked": "",
+      "last_checked": "2026-06-23",
       "status": "monitoring",
       "last_summary": "",
-      "expected_next_event": "Track, station, bridge, trial, or contract milestone",
-      "importance": "high",
-      "source_urls": []
-    },
-    {
-      "topic": "Eastern DFC",
-      "category": "India Infrastructure",
-      "first_seen": "",
-      "last_reported": "",
-      "last_checked": "",
-      "status": "monitoring",
-      "last_summary": "",
-      "expected_next_event": "Operational, freight, or connectivity milestone",
-      "importance": "medium",
-      "source_urls": []
-    },
-    {
-      "topic": "Western DFC",
-      "category": "India Infrastructure",
-      "first_seen": "",
-      "last_reported": "",
-      "last_checked": "",
-      "status": "monitoring",
-      "last_summary": "",
-      "expected_next_event": "Operational, freight, or connectivity milestone",
-      "importance": "medium",
-      "source_urls": []
-    },
-    {
-      "topic": "India Semiconductor Mission",
-      "category": "Semiconductors",
-      "first_seen": "",
-      "last_reported": "",
-      "last_checked": "",
-      "status": "monitoring",
-      "last_summary": "",
-      "expected_next_event": "Fab approval, investment, incentive, or production milestone",
-      "importance": "high",
-      "source_urls": []
-    },
-    {
-      "topic": "Dholera Fab",
-      "category": "Semiconductors",
-      "first_seen": "",
-      "last_reported": "",
-      "last_checked": "",
-      "status": "monitoring",
-      "last_summary": "",
-      "expected_next_event": "Construction, equipment, partnership, or production milestone",
+      "expected_next_event": "Escalation, ceasefire, proxy, sanctions, or diplomatic shift",
       "importance": "high",
       "source_urls": []
     },
@@ -128,7 +88,7 @@
       "category": "Geopolitics",
       "first_seen": "",
       "last_reported": "",
-      "last_checked": "",
+      "last_checked": "2026-06-23",
       "status": "monitoring",
       "last_summary": "",
       "expected_next_event": "Military, sanctions, energy, or diplomatic shift",
@@ -136,16 +96,255 @@
       "source_urls": []
     },
     {
-      "topic": "Israel-Iran conflict",
+      "topic": "State Duma condemns Kiev regime for drone attack on pedagogical college in Starobelsk, cal",
       "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The Russian State Duma condemned the drone attack by the Kiev regime on a pedagogical college in Starobelsk, Lugansk People's Republic, which killed 21 students and wounded 65. The Duma accused Zelensky's regime of using terrorist attacks to distract from corruption scandals and called on internatio",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "http://duma.gov.ru/en/news/63622/",
+        "http://duma.gov.ru/en/news/63621/",
+        "http://duma.gov.ru/en/news/63652/",
+        "http://duma.gov.ru/en/news/63621/"
+      ]
+    },
+    {
+      "topic": "UN agencies warn of rising Ebola cases in Democratic Republic of the Congo, children at hi",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "UN agencies reported that confirmed Ebola cases have surpassed 1,000 in eastern DRC, with nearly three million children and adolescents at risk. Children represent 15% of cases and over 25% of deaths, with many orphaned and in need of psychosocial support. Challenges include insecurity, limited acce",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167783"
+      ]
+    },
+    {
+      "topic": "UN highlights risks of AI gender bias and calls for inclusive AI governance",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "UN Women warned that AI technologies are reproducing gender stereotypes and amplifying online abuse, with studies showing significant gender and racial bias in AI systems. The organization urged governments, companies, and developers to embed gender equality in AI design, deployment, and governance ",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167776"
+      ]
+    },
+    {
+      "topic": "UN warns of worsening humanitarian crisis in Sudan amid drone attacks in El Obeid",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The UN Office for the Coordination of Humanitarian Affairs (OCHA) reported escalating violence in and around El Obeid, Sudan, including drone attacks targeting power and fuel stations, medical facilities, and bridges. These attacks have disrupted essential services and worsened humanitarian conditio",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167781"
+      ]
+    },
+    {
+      "topic": "Eastern DFC",
+      "category": "India Infrastructure",
       "first_seen": "",
       "last_reported": "",
-      "last_checked": "",
+      "last_checked": "2026-06-23",
       "status": "monitoring",
       "last_summary": "",
-      "expected_next_event": "Escalation, ceasefire, proxy, sanctions, or diplomatic shift",
+      "expected_next_event": "Operational, freight, or connectivity milestone",
+      "importance": "medium",
+      "source_urls": []
+    },
+    {
+      "topic": "Mumbai Ahmedabad Bullet Train",
+      "category": "India Infrastructure",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "2026-06-23",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Track, station, bridge, trial, or contract milestone",
       "importance": "high",
       "source_urls": []
+    },
+    {
+      "topic": "Western DFC",
+      "category": "India Infrastructure",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "2026-06-23",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Operational, freight, or connectivity milestone",
+      "importance": "medium",
+      "source_urls": []
+    },
+    {
+      "topic": "Zojila Tunnel",
+      "category": "India Infrastructure",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "2026-06-23",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Construction milestone or inauguration",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Eastern and Western Dedicated Freight Corridors project funding and development updates",
+      "category": "Infrastructure",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The Dedicated Freight Corridor Corporation of India Limited (DFCCIL) continues development of the Eastern and Western Dedicated Freight Corridors (EDFC and WDFC), with funding from multilateral agencies, Ministry of Railways equity, and public-private partnerships. New corridors including East West,",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://dfccil.com/Home/DynemicPages?MenuId=78",
+        "https://dfccil.com/Home/DynemicPages?MenuId=3",
+        "https://dfccil.com/Home/DynemicPages?MenuId=284",
+        "https://www.ireps.gov.in/"
+      ]
+    },
+    {
+      "topic": "Dholera Fab",
+      "category": "Semiconductors",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "2026-06-23",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Construction, equipment, partnership, or production milestone",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "India Semiconductor Mission",
+      "category": "Semiconductors",
+      "first_seen": "",
+      "last_reported": "",
+      "last_checked": "2026-06-23",
+      "status": "monitoring",
+      "last_summary": "",
+      "expected_next_event": "Fab approval, investment, incentive, or production milestone",
+      "importance": "high",
+      "source_urls": []
+    },
+    {
+      "topic": "Botswana to sign Artemis Accords at NASA Headquarters",
+      "category": "Space",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The Republic of Botswana will sign the Artemis Accords during a ceremony at NASA Headquarters in Washington on June 25. The Accords establish principles for safe, transparent, and coordinated civil space exploration on the Moon, Mars, and beyond. Botswana becomes the 68th country to join the Artemis",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/news-release/nasa-invites-media-to-botswana-artemis-accords-signing-ceremony/"
+      ]
+    },
+    {
+      "topic": "NASA schedules sounding rocket launch carrying student experiments from Wallops Flight Fac",
+      "category": "Space",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "NASA's Wallops Flight Facility plans to launch a sounding rocket on June 24 carrying nearly 50 student-developed experiments from 38 university and community college teams as part of the RockSatX and RockOn programs. This combined mission provides hands-on aerospace experience, with experiments rang",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/centers-and-facilities/wallops/nasa-sounding-rocket-to-launch-student-experiments/"
+      ]
+    },
+    {
+      "topic": "Rocket Lab sets new record with 16",
+      "category": "Space",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "Rocket Lab launched the VICTUS HAZE mission for the U.S. Space Force just 16 hours and 42 minutes after receiving the launch notice, beating the previous record by over 10 hours. The mission included the deployment of the Pioneer spacecraft, which is now conducting complex orbital maneuvers for Rend",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://rocketlabcorp.com/updates/victus-haze/"
+      ]
+    },
+    {
+      "topic": "Nvidia",
+      "category": "Technology",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "Eco Wave Power, supported by NVIDIA AI infrastructure and digital twins, is advancing technology that converts ocean wave energy into clean electricity using existing marine infrastructure. This approach allows deployment closer to power demand centers, such as ports and industrial zones, addressing",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/"
+      ]
+    },
+    {
+      "topic": "OpenAI",
+      "category": "Technology",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "OpenAI introduced Daybreak, a suite of tools including Codex Security and GPT-5.5-Cyber, designed to help organizations find, validate, and patch software vulnerabilities at scale. The initiative includes partnerships with Trail of Bits, HackerOne, and Calif to assist open-source maintainers in vuln",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/daybreak-securing-the-world",
+        "https://openai.com/index/patch-the-planet"
+      ]
+    },
+    {
+      "topic": "Samsung Electronics deploys ChatGPT Enterprise and Codex globally to enhance employee prod",
+      "category": "Technology",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "Samsung Electronics has deployed ChatGPT Enterprise and Codex to its employees worldwide, including all employees in Korea and the Device eXperience division globally. The AI tools are used for a broad range of tasks from software development to marketing and manufacturing, aiming to boost productiv",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment"
+      ]
+    },
+    {
+      "topic": "xAI",
+      "category": "Technology",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "xAI announced expanded availability of Grok AI models on platforms including Amazon Bedrock and Databricks Agent Bricks. New releases include Grok Imagine Video 1.5 with improved video generation, Grok Build 0.1 coding model in public beta, and Grok integrations for Microsoft Word, PowerPoint, and E",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-amazon-bedrock",
+        "https://x.ai/news/grok-databricks",
+        "https://x.ai/news/grok-imagine-1-5",
+        "https://x.ai/news/grok-imagine-video-1-5",
+        "https://x.ai/news/grok-etoro"
+      ]
     }
   ]
 }
