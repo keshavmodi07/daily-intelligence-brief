@@ -16,6 +16,76 @@
       "source_urls": []
     },
     {
+      "topic": "Nvidia",
+      "category": "AI",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "At the ISC conference, NVIDIA unveiled software tools including DAQIRI, ALCHEMI NIM microservices, and the upcoming cuPhoton reference code, which accelerate AI workloads in chemistry, materials science, and astronomy by orders of magnitude using GPU acceleration.",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/ai-for-science-software-cuda/"
+      ]
+    },
+    {
+      "topic": "OpenAI",
+      "category": "AI",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "OpenAI, in partnership with Trail of Bits, launched Patch the Planet, a Daybreak initiative to assist open-source maintainers in identifying, validating, and patching software vulnerabilities using AI and expert human review. The program aims to reduce the burden on maintainers by providing security",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/patch-the-planet"
+      ]
+    },
+    {
+      "topic": "Samsung Electronics deploys ChatGPT Enterprise and Codex globally to enhance productivity",
+      "category": "AI",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "UPDATED",
+      "last_summary": "Samsung Electronics has rolled out ChatGPT Enterprise and Codex to employees worldwide, including all employees in Korea and the Device eXperience division globally. The deployment supports a wide range of functions such as software development, marketing, and manufacturing to boost productivity and",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment"
+      ]
+    },
+    {
+      "topic": "xAI",
+      "category": "AI",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "xAI added the /goal command to Grok Build, enabling autonomous execution of long-running coding tasks. The agent plans, breaks down objectives, executes, and verifies completion with user interaction for steering and monitoring.",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/introducing-goal"
+      ]
+    },
+    {
+      "topic": "European Parliament approves updated EU directive to combat child sexual abuse crimes",
+      "category": "EU Politics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The European Parliament agreed on modernizing the EU legal framework against child sexual abuse, criminalizing new technological offenses including AI-generated abuse material, extending prosecution limitation periods, and enhancing victim support.",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.europarl.europa.eu/news/en/press-room/20260622IPR45906/"
+      ]
+    },
+    {
       "topic": "European Central Bank discusses monetary policy amid geopolitical tensions and supply shoc",
       "category": "Economics",
       "first_seen": "2026-06-23",
@@ -72,6 +142,34 @@
       ]
     },
     {
+      "topic": "European Parliament backs military mobility plans to facilitate transport of military asse",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The European Parliament's Transport and Security Committees approved new rules to support the transport of military equipment, troops, and assets across the EU. Measures include creating a secure digital system for managing permissions, speeding up transport approvals, and upgrading infrastructure t",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.europarl.europa.eu/news/en/press-room/20260622IPR45908/"
+      ]
+    },
+    {
+      "topic": "European Parliament endorses modernized EU",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The European Parliament's Foreign Affairs and International Trade Committees endorsed an upgraded EU-Mexico global agreement to enhance political cooperation, increase trade by removing tariffs, protect climate and labour rights, and support small businesses.",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.europarl.europa.eu/news/en/press-room/20260622IPR45909/"
+      ]
+    },
+    {
       "topic": "Israel-Iran conflict",
       "category": "Geopolitics",
       "first_seen": "",
@@ -113,6 +211,20 @@
       ]
     },
     {
+      "topic": "UN Secretary",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "At the UN High-Level Meeting on HIV/AIDS, leaders warned that progress against HIV is slowing due to financial pressures and shrinking support. Renewed action is urged to expand prevention, treatment, protect human rights, and increase financing to end AIDS as a public health threat by 2030.",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167780"
+      ]
+    },
+    {
       "topic": "UN agencies warn of rising Ebola cases in Democratic Republic of the Congo, children at hi",
       "category": "Geopolitics",
       "first_seen": "2026-06-23",
@@ -141,6 +253,34 @@
       ]
     },
     {
+      "topic": "UN human rights office warns of worsening humanitarian crisis in Myanmar amid aid decline",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The UN human rights office reported that reductions in humanitarian aid are exacerbating suffering in Myanmar after five years of conflict-related violence. The report highlights ongoing military attacks, human rights violations, and the impact of aid cuts on civilian protection efforts.",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167777"
+      ]
+    },
+    {
+      "topic": "UN officials highlight progress and ongoing needs in Syria amid calls for recovery support",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "UN officials reported signs of progress in Syria after over a decade of crisis but emphasized that humanitarian needs remain acute. They called for sustained humanitarian action, political will, and investment to support recovery, safe returns, and sustainable livelihoods.",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167779"
+      ]
+    },
+    {
       "topic": "UN warns of worsening humanitarian crisis in Sudan amid drone attacks in El Obeid",
       "category": "Geopolitics",
       "first_seen": "2026-06-23",
@@ -155,6 +295,20 @@
       ]
     },
     {
+      "topic": "DFCCIL advances business development with expressions of interest for cargo terminals and ",
+      "category": "India Infrastructure",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "DFCCIL issued expressions of interest for utilization of Joint Parcel Product – Rapid Cargo Service on Western Dedicated Freight Corridor and for development of Bulk Cement Handling Terminals and Gati Shakti Cargo Terminals on DFCCIL land. Consultant empanelments for survey, construction, and mainte",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://dfccil.com/Home/DynemicPages?MenuId=284"
+      ]
+    },
+    {
       "topic": "Eastern DFC",
       "category": "India Infrastructure",
       "first_seen": "",
@@ -165,6 +319,20 @@
       "expected_next_event": "Operational, freight, or connectivity milestone",
       "importance": "medium",
       "source_urls": []
+    },
+    {
+      "topic": "Eastern and Western Dedicated Freight Corridors cost estimate approved with funding detail",
+      "category": "India Infrastructure",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The Cabinet Committee on Economic Affairs approved a cost estimate of Rs. 81,459 crore for Eastern and Western Dedicated Freight Corridors, including land costs. Funding includes debt from bilateral/multilateral agencies, equity from Ministry of Railways, and public-private partnerships with a 3:1 d",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://dfccil.com/Home/DynemicPages?MenuId=78"
+      ]
     },
     {
       "topic": "Mumbai Ahmedabad Bullet Train",
@@ -201,6 +369,37 @@
       "expected_next_event": "Construction milestone or inauguration",
       "importance": "high",
       "source_urls": []
+    },
+    {
+      "topic": "Reserve Bank of India imposes monetary penalties on cooperative banks for regulatory non",
+      "category": "India Official",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "RBI imposed monetary penalties ranging from ₹1 lakh to ₹5 lakh on Hutatma Sahakari Bank Ltd., Shimoga District Co-operative Central Bank Ltd., Chittoor District Co-operative Central Bank Ltd., and Sultanpur Jilla Sahkari Bank Ltd. for contraventions of banking regulations and non-compliance with RBI",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62991",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62990",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62989",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62988"
+      ]
+    },
+    {
+      "topic": "Reserve Bank of India releases June 2026 Bulletin highlighting economic growth and inflati",
+      "category": "India Official",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "NEW",
+      "last_summary": "The RBI released its June 2026 Bulletin reporting 7.8% GDP growth in Q4 2025-26 driven by private consumption and fixed investment. Inflation remained anchored despite a May uptick. The external sector showed resilience supported by FDI inflows and foreign exchange reserves.",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62992"
+      ]
     },
     {
       "topic": "Eastern and Western Dedicated Freight Corridors project funding and development updates",
@@ -272,46 +471,31 @@
       ]
     },
     {
-      "topic": "Rocket Lab sets new record with 16",
+      "topic": "NASA schedules spacewalk on June 30 to repair Canadarm2 wrist joint on ISS",
       "category": "Space",
       "first_seen": "2026-06-23",
       "last_reported": "2026-06-23",
       "last_checked": "2026-06-23",
       "status": "NEW",
-      "last_summary": "Rocket Lab launched the VICTUS HAZE mission for the U.S. Space Force just 16 hours and 42 minutes after receiving the launch notice, beating the previous record by over 10 hours. The mission included the deployment of the Pioneer spacecraft, which is now conducting complex orbital maneuvers for Rend",
+      "last_summary": "NASA astronauts will perform a spacewalk on June 30 to replace a malfunctioning wrist joint on the Canadarm2 robotic arm aboard the International Space Station. The repair is necessary after elevated motor current was detected on May 27, and the spacewalk is expected to last about six and a half hou",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/news-release/nasa-to-cover-us-spacewalk-95-host-preview-news-conference/"
+      ]
+    },
+    {
+      "topic": "Rocket Lab sets new record with 16",
+      "category": "Space",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-23",
+      "last_checked": "2026-06-23",
+      "status": "UPDATED",
+      "last_summary": "Rocket Lab launched the VICTUS HAZE mission for the U.S. Space Force just 16 hours and 42 minutes after receiving the launch notice, beating the previous record by over 10 hours. The mission includes on-orbit operations conducting rendezvous and proximity maneuvers to simulate threat-response scenar",
       "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "importance": "high",
       "source_urls": [
         "https://rocketlabcorp.com/updates/victus-haze/"
-      ]
-    },
-    {
-      "topic": "Nvidia",
-      "category": "Technology",
-      "first_seen": "2026-06-23",
-      "last_reported": "2026-06-23",
-      "last_checked": "2026-06-23",
-      "status": "NEW",
-      "last_summary": "Eco Wave Power, supported by NVIDIA AI infrastructure and digital twins, is advancing technology that converts ocean wave energy into clean electricity using existing marine infrastructure. This approach allows deployment closer to power demand centers, such as ports and industrial zones, addressing",
-      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
-      "importance": "high",
-      "source_urls": [
-        "https://blogs.nvidia.com/blog/eco-wave-power-ai-digital-twins/"
-      ]
-    },
-    {
-      "topic": "OpenAI",
-      "category": "Technology",
-      "first_seen": "2026-06-23",
-      "last_reported": "2026-06-23",
-      "last_checked": "2026-06-23",
-      "status": "NEW",
-      "last_summary": "OpenAI introduced Daybreak, a suite of tools including Codex Security and GPT-5.5-Cyber, designed to help organizations find, validate, and patch software vulnerabilities at scale. The initiative includes partnerships with Trail of Bits, HackerOne, and Calif to assist open-source maintainers in vuln",
-      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
-      "importance": "high",
-      "source_urls": [
-        "https://openai.com/index/daybreak-securing-the-world",
-        "https://openai.com/index/patch-the-planet"
       ]
     },
     {
@@ -326,24 +510,6 @@
       "importance": "high",
       "source_urls": [
         "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment"
-      ]
-    },
-    {
-      "topic": "xAI",
-      "category": "Technology",
-      "first_seen": "2026-06-23",
-      "last_reported": "2026-06-23",
-      "last_checked": "2026-06-23",
-      "status": "NEW",
-      "last_summary": "xAI announced expanded availability of Grok AI models on platforms including Amazon Bedrock and Databricks Agent Bricks. New releases include Grok Imagine Video 1.5 with improved video generation, Grok Build 0.1 coding model in public beta, and Grok integrations for Microsoft Word, PowerPoint, and E",
-      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
-      "importance": "high",
-      "source_urls": [
-        "https://x.ai/news/grok-amazon-bedrock",
-        "https://x.ai/news/grok-databricks",
-        "https://x.ai/news/grok-imagine-1-5",
-        "https://x.ai/news/grok-imagine-video-1-5",
-        "https://x.ai/news/grok-etoro"
       ]
     }
   ]
