@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-06-23",
+  "last_updated": "2026-06-24",
   "suppression_days": 14,
   "topics": [
     {
@@ -14,34 +14,6 @@
       "expected_next_event": "Model, API, enterprise, safety, or funding update",
       "importance": "high",
       "source_urls": []
-    },
-    {
-      "topic": "Nvidia",
-      "category": "AI",
-      "first_seen": "2026-06-23",
-      "last_reported": "2026-06-23",
-      "last_checked": "2026-06-23",
-      "status": "NEW",
-      "last_summary": "At the ISC conference, NVIDIA unveiled software tools including DAQIRI, ALCHEMI NIM microservices, and the upcoming cuPhoton reference code, which accelerate AI workloads in chemistry, materials science, and astronomy by orders of magnitude using GPU acceleration.",
-      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
-      "importance": "high",
-      "source_urls": [
-        "https://blogs.nvidia.com/blog/ai-for-science-software-cuda/"
-      ]
-    },
-    {
-      "topic": "OpenAI",
-      "category": "AI",
-      "first_seen": "2026-06-23",
-      "last_reported": "2026-06-23",
-      "last_checked": "2026-06-23",
-      "status": "NEW",
-      "last_summary": "OpenAI, in partnership with Trail of Bits, launched Patch the Planet, a Daybreak initiative to assist open-source maintainers in identifying, validating, and patching software vulnerabilities using AI and expert human review. The program aims to reduce the burden on maintainers by providing security",
-      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
-      "importance": "high",
-      "source_urls": [
-        "https://openai.com/index/patch-the-planet"
-      ]
     },
     {
       "topic": "Samsung Electronics deploys ChatGPT Enterprise and Codex globally to enhance productivity",
@@ -83,6 +55,21 @@
       "importance": "high",
       "source_urls": [
         "https://www.europarl.europa.eu/news/en/press-room/20260622IPR45906/"
+      ]
+    },
+    {
+      "topic": "ECB Officials Address Economic Impact of Middle East Conflict on Euro Area",
+      "category": "Economics",
+      "first_seen": "2026-06-24",
+      "last_reported": "2026-06-24",
+      "last_checked": "2026-06-24",
+      "status": "NEW",
+      "last_summary": "European Central Bank officials Philip R. Lane and Christine Lagarde discussed the economic and monetary policy implications of the Middle East conflict. They noted a slowdown in euro area growth, particularly in services, and highlighted risks from energy price shocks and geopolitical tensions. The",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260623~c112a749e2.en.html",
+        "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260622~b060a27b78.en.html"
       ]
     },
     {
@@ -208,6 +195,34 @@
         "http://duma.gov.ru/en/news/63621/",
         "http://duma.gov.ru/en/news/63652/",
         "http://duma.gov.ru/en/news/63621/"
+      ]
+    },
+    {
+      "topic": "UN Independent Commission Finds Israeli Forces Deliberately Target Palestinian Children",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-24",
+      "last_reported": "2026-06-24",
+      "last_checked": "2026-06-24",
+      "status": "NEW",
+      "last_summary": "A UN independent commission of inquiry reported that Israeli authorities and security forces have deliberately targeted Palestinian children in Gaza and the West Bank, resulting in genocide and atrocity crimes in Gaza and war crimes in the West Bank. The report highlights ongoing violations since th",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167790"
+      ]
+    },
+    {
+      "topic": "UN Launches Evacuation Plan for Seafarers Stranded in Strait of Hormuz",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-24",
+      "last_reported": "2026-06-24",
+      "last_checked": "2026-06-24",
+      "status": "NEW",
+      "last_summary": "The International Maritime Organization (IMO) announced the start of an evacuation plan for over 11,000 seafarers stranded in the Strait of Hormuz. The operation is coordinated with Iran, Oman, the United States, and other coastal states to ensure safe navigation and humanitarian relief following mo",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167793"
       ]
     },
     {
@@ -402,6 +417,22 @@
       ]
     },
     {
+      "topic": "Eastern and Western Dedicated Freight Corridors Funding and Development Updates",
+      "category": "Infrastructure",
+      "first_seen": "2026-06-24",
+      "last_reported": "2026-06-24",
+      "last_checked": "2026-06-24",
+      "status": "UPDATED",
+      "last_summary": "The Dedicated Freight Corridor Corporation of India Limited (DFCCIL) continues development of the Eastern and Western Dedicated Freight Corridors with approved funding of Rs. 81,459 crore, including construction and land costs. Funding sources include debt from bilateral/multilateral agencies, equit",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://dfccil.com/Home/DynemicPages?MenuId=78",
+        "https://dfccil.com/Home/DynemicPages?MenuId=3",
+        "https://dfccil.com/Home/DynemicPages?MenuId=284"
+      ]
+    },
+    {
       "topic": "Eastern and Western Dedicated Freight Corridors project funding and development updates",
       "category": "Infrastructure",
       "first_seen": "2026-06-23",
@@ -485,6 +516,20 @@
       ]
     },
     {
+      "topic": "Rocket Lab Sets New Responsive Space Launch Record for U.S. Space Force Mission",
+      "category": "Space",
+      "first_seen": "2026-06-24",
+      "last_reported": "2026-06-24",
+      "last_checked": "2026-06-24",
+      "status": "UPDATED",
+      "last_summary": "Rocket Lab launched the U.S. Space Force's VICTUS HAZE mission just 16 hours and 42 minutes after receiving the launch notice, beating the previous record by over 10 hours. The mission included design, build, launch, and 24/7 on-orbit operations of the Pioneer spacecraft, which is conducting complex",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://rocketlabcorp.com/updates/victus-haze/"
+      ]
+    },
+    {
       "topic": "Rocket Lab sets new record with 16",
       "category": "Space",
       "first_seen": "2026-06-23",
@@ -496,6 +541,34 @@
       "importance": "high",
       "source_urls": [
         "https://rocketlabcorp.com/updates/victus-haze/"
+      ]
+    },
+    {
+      "topic": "Nvidia",
+      "category": "Technology",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-24",
+      "last_checked": "2026-06-24",
+      "status": "NEW",
+      "last_summary": "NVIDIA and Amazon Web Services (AWS) announced a collaboration to improve AI system deployment at production scale. The partnership introduces Amazon EC2 G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs, offering up to 4.6x AI inference performance compared to previous gener",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/"
+      ]
+    },
+    {
+      "topic": "OpenAI",
+      "category": "Technology",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-24",
+      "last_checked": "2026-06-24",
+      "status": "NEW",
+      "last_summary": "Oracle reported laying off 21,000 workers in the fiscal year ending May 31, 2026, attributing the reductions partly to AI technology adoption. Concurrently, Oracle is investing billions in data center infrastructure to support AI workloads, planning to raise $45-50 billion in 2026 through debt and e",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/"
       ]
     },
     {
