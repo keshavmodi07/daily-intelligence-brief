@@ -9,6 +9,9 @@ AI:
   - ElevenLabs
   - Mistral
   - Perplexity
+  - OpenAI hardware
+  - AI inference chips
+  - AI agents
 
 India Infrastructure:
   - Zojila Tunnel
@@ -26,6 +29,7 @@ India Infrastructure:
   - Indian Railways electrification
   - logistics parks
   - industrial corridors
+  - Dholera
 
 Semiconductors:
   - Dholera Fab
@@ -54,3 +58,10 @@ Geopolitics:
   - India-China border
   - India-Pakistan tensions
   - US-China trade/tech war
+
+Space:
+  - Artemis
+  - Artemis Accords
+  - ISRO Gaganyaan
+  - Chandrayaan
+  - Rocket Lab responsive launch

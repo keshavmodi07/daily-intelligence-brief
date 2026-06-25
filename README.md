@@ -19,6 +19,8 @@ It is designed to report what changed, avoid stale repeats, include quiet offici
 8. Email Delivery: Gmail SMTP or SendGrid
 9. Memory Update: updates memory and saves markdown/JSON history
 
+The system also maintains project/story stages, an emerging story tracker, silent signals, and an implication engine for major stories.
+
 ## Files
 
 ```text
@@ -186,7 +188,12 @@ Watchlist topics influence scoring and memory comparison. Unchanged watchlist it
   "last_summary": "",
   "expected_next_event": "",
   "importance": "",
-  "source_urls": []
+  "source_urls": [],
+  "timeline": ["announcement", "approval", "construction", "operations"],
+  "current_stage": "",
+  "stage_history": [],
+  "expected_next_milestone": "",
+  "emerging_story": {}
 }
 ```
 
@@ -197,6 +204,28 @@ Before reporting, candidates are classified as:
 - `UNCHANGED`
 
 Items reported in the last 14 days are suppressed unless there is a real update.
+
+For tracked projects, memory checks whether the story advanced to a new stage. If a project is still at the same stage, it is suppressed as unchanged or shown only in the compact project tracker.
+
+## Analysis Framework
+
+Major stories are prompted through a consistent implication engine:
+
+- What happened
+- Why it matters
+- Immediate implications
+- Second-order implications
+- Who benefits
+- Who loses
+- Founder opportunity
+- Investor takeaway
+- India implication
+- Probability
+- What most people are missing
+- 5 Whys
+- Strategic consequence scores
+
+If evidence is weak, the brief should label the implication as a plausible hypothesis rather than a likely outcome.
 
 ## Must-Not-Miss Verification
 

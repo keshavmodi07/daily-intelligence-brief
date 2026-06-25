@@ -168,6 +168,16 @@ MUST_NOT_MISS: dict[str, list[str]] = {
     ],
 }
 
+DEFAULT_TIMELINES: dict[str, list[str]] = {
+    "AI": ["rumor", "announcement", "preview", "developer access", "enterprise rollout", "customer adoption", "second generation"],
+    "Semiconductors": ["announcement", "approval", "engineering samples", "fab construction", "pilot production", "mass production", "customer adoption"],
+    "India Infrastructure": ["proposal", "DPR", "approval", "land acquisition", "tender", "construction", "trial", "operations"],
+    "Infrastructure": ["proposal", "DPR", "approval", "land acquisition", "tender", "construction", "trial", "operations"],
+    "Defence": ["requirement", "RFI", "tender", "negotiation", "contract", "prototype", "testing", "induction"],
+    "Space": ["announcement", "design", "assembly", "testing", "launch window", "launch", "operations", "follow-on mission"],
+    "Geopolitics": ["stable", "tension", "escalating", "crisis", "ceasefire talks", "de-escalating", "settlement"],
+}
+
 
 @dataclasses.dataclass(slots=True)
 class Source:
@@ -228,6 +238,23 @@ class CandidateEvent:
     memory_reason: str = ""
     watchlist_hits: list[str] = dataclasses.field(default_factory=list)
     official_source: bool = False
+    project: str = ""
+    story_stage: str = ""
+    previous_stage: str = ""
+    stage_advanced: bool = False
+    expected_next_milestone: str = ""
+    silent_signal: bool = False
+    first_order_implication: str = ""
+    second_order_implication: str = ""
+    who_benefits: list[str] = dataclasses.field(default_factory=list)
+    who_loses: list[str] = dataclasses.field(default_factory=list)
+    founder_opportunity: str = ""
+    investor_takeaway: str = ""
+    india_implication: str = ""
+    probability: str = "medium"
+    what_most_people_are_missing: str = ""
+    five_whys: list[str] = dataclasses.field(default_factory=list)
+    consequence_scores: dict[str, float] = dataclasses.field(default_factory=dict)
 
     @property
     def final_score(self) -> float:
@@ -594,8 +621,16 @@ def candidate_event_creation(client: OpenAI, articles: list[Article], watchlist:
         f"Today is {date_str} IST.\n"
         "Create candidate events with this exact schema:\n"
         "{event_id,title,category,subcategory,source_urls,event_date,summary,why_it_matters,entities,countries,"
-        "confidence,importance_score,founder_relevance_score,long_term_score,freshness_score}\n"
+        "confidence,importance_score,founder_relevance_score,long_term_score,freshness_score,"
+        "project,story_stage,previous_stage,stage_advanced,expected_next_milestone,silent_signal,"
+        "first_order_implication,second_order_implication,who_benefits,who_loses,founder_opportunity,"
+        "investor_takeaway,india_implication,probability,what_most_people_are_missing,five_whys,consequence_scores}\n"
         "Scores are 0-100. confidence is high, medium, or low. event_id may be blank if unsure.\n"
+        "consequence_scores is an object with economic, technological, geopolitical, founder_relevance, india_relevance, and long_term_impact, each 0-10.\n"
+        "story_stage should be a compact stage such as announcement, consultation, approval, funding, engineering samples, construction, launch, mass production, adoption, escalation, de-escalation, or no_change.\n"
+        "stage_advanced must be true only if the article shows a concrete new milestone versus prior stage/context.\n"
+        "silent_signal should be true for quiet official/procurement/standards/consultation/research/project updates that are not front-page news but may matter later.\n"
+        "Use first-order, second-order, founder, investor, India, and 5 Whys reasoning. If an implication is not supported, label it as a plausible hypothesis.\n"
         "Merge duplicate articles about the same event. Report only actual changes/developments.\n\n"
         f"WATCHLIST:\n{json.dumps(watchlist, ensure_ascii=False)}\n\n"
         f"RAW ARTICLES JSONL:\n{article_digest(selected_articles)}"
@@ -637,6 +672,34 @@ def normalize_events(raw_events: list[dict[str, Any]], articles: list[Article] |
                 long_term_score=as_float(item.get("long_term_score")),
                 freshness_score=as_float(item.get("freshness_score")),
                 official_source=official,
+                project=normalize_text(str(item.get("project") or ""))[:160],
+                story_stage=normalize_text(str(item.get("story_stage") or ""))[:120],
+                previous_stage=normalize_text(str(item.get("previous_stage") or ""))[:120],
+                stage_advanced=bool(item.get("stage_advanced", False)),
+                expected_next_milestone=normalize_text(str(item.get("expected_next_milestone") or ""))[:300],
+                silent_signal=bool(item.get("silent_signal", False)),
+                first_order_implication=normalize_text(str(item.get("first_order_implication") or ""))[:500],
+                second_order_implication=normalize_text(str(item.get("second_order_implication") or ""))[:500],
+                who_benefits=[str(v) for v in as_list(item.get("who_benefits"))][:8],
+                who_loses=[str(v) for v in as_list(item.get("who_loses"))][:8],
+                founder_opportunity=normalize_text(str(item.get("founder_opportunity") or ""))[:500],
+                investor_takeaway=normalize_text(str(item.get("investor_takeaway") or ""))[:500],
+                india_implication=normalize_text(str(item.get("india_implication") or ""))[:500],
+                probability=str(item.get("probability") or "medium").lower(),
+                what_most_people_are_missing=normalize_text(str(item.get("what_most_people_are_missing") or ""))[:700],
+                five_whys=[str(v) for v in as_list(item.get("five_whys"))][:5],
+                consequence_scores={
+                    key: as_float(value)
+                    for key, value in (item.get("consequence_scores") or {}).items()
+                    if key in {
+                        "economic",
+                        "technological",
+                        "geopolitical",
+                        "founder_relevance",
+                        "india_relevance",
+                        "long_term_impact",
+                    }
+                },
             )
         )
     logger.info("Normalized %d candidate events", len(events))
@@ -703,7 +766,10 @@ def targeted_fallback_search(client: OpenAI, missing: list[str], date_str: str) 
         f"{config.LOOKBACK_DAYS} days. Use official or reputable sources when available.\n\n"
         f"Topics:\n{json.dumps(queries, indent=2)}\n\n"
         "candidate_events schema: event_id,title,category,subcategory,source_urls,event_date,summary,why_it_matters,"
-        "entities,countries,confidence,importance_score,founder_relevance_score,long_term_score,freshness_score.\n"
+        "entities,countries,confidence,importance_score,founder_relevance_score,long_term_score,freshness_score,"
+        "project,story_stage,previous_stage,stage_advanced,expected_next_milestone,silent_signal,"
+        "first_order_implication,second_order_implication,who_benefits,who_loses,founder_opportunity,"
+        "investor_takeaway,india_implication,probability,what_most_people_are_missing,five_whys,consequence_scores.\n"
         "verification_notes schema: topic,status,evidence_or_reason."
     )
     try:
@@ -741,7 +807,40 @@ def critical_event_verification(client: OpenAI, events: list[CandidateEvent], da
 
 
 def memory_topic_text(topic: dict[str, Any]) -> str:
-    return " ".join(str(topic.get(key, "")) for key in ("topic", "category", "status", "last_summary", "expected_next_event"))
+    return " ".join(
+        str(topic.get(key, ""))
+        for key in (
+            "topic",
+            "category",
+            "status",
+            "current_stage",
+            "last_summary",
+            "expected_next_event",
+            "expected_next_milestone",
+        )
+    )
+
+
+def event_project_name(event: CandidateEvent) -> str:
+    if event.project:
+        return event.project
+    if event.watchlist_hits:
+        return event.watchlist_hits[0]
+    if event.entities:
+        return event.entities[0]
+    return re.sub(r"[:|-].*$", "", event.title).strip()[:90]
+
+
+def default_timeline(category: str) -> list[str]:
+    return DEFAULT_TIMELINES.get(category, ["announcement", "development", "milestone", "adoption", "next generation"])
+
+
+def stage_index(stage: str, timeline: list[str]) -> int:
+    normalized = stage.lower().strip()
+    for idx, item in enumerate(timeline):
+        if item.lower().strip() == normalized:
+            return idx
+    return -1
 
 
 def memory_comparison(events: list[CandidateEvent], memory: dict[str, Any], watchlist: dict[str, Any], date_str: str) -> list[CandidateEvent]:
@@ -754,7 +853,7 @@ def memory_comparison(events: list[CandidateEvent], memory: dict[str, Any], watc
         event.watchlist_hits = [term for term in watch_terms if term.lower() in f"{event.title} {event.summary}".lower()]
         best = None
         best_sim = 0.0
-        event_text = f"{event.title} {event.summary} {' '.join(event.entities)} {' '.join(event.watchlist_hits)}"
+        event_text = f"{event.title} {event.summary} {event.project} {event.story_stage} {' '.join(event.entities)} {' '.join(event.watchlist_hits)}"
         for topic in topics:
             sim = similarity(event_text, memory_topic_text(topic))
             if sim > best_sim:
@@ -773,13 +872,23 @@ def memory_comparison(events: list[CandidateEvent], memory: dict[str, Any], watc
         except ValueError:
             pass
 
+        timeline = [str(item) for item in best.get("timeline", [])] or default_timeline(str(best.get("category") or event.category))
+        previous_stage = str(best.get("current_stage") or "")
+        event.previous_stage = event.previous_stage or previous_stage
+        old_idx = stage_index(previous_stage, timeline)
+        new_idx = stage_index(event.story_stage, timeline)
+        stage_advanced = event.stage_advanced or (new_idx >= 0 and old_idx >= 0 and new_idx > old_idx)
+        event.stage_advanced = stage_advanced
         changed_language = any(term in f"{event.title} {event.summary}".lower() for term in CHANGE_TERMS)
-        if last_reported and last_reported >= recent_cutoff and not changed_language:
+        if last_reported and last_reported >= recent_cutoff and not changed_language and not stage_advanced:
             event.memory_status = "UNCHANGED"
-            event.memory_reason = f"Similar to '{best.get('topic')}' reported on {last_reported_raw}; no clear new change."
+            event.memory_reason = f"Project/story '{best.get('topic')}' remains at stage '{previous_stage or 'unknown'}'; no clear stage advance since {last_reported_raw}."
         else:
             event.memory_status = "UPDATED"
-            event.memory_reason = f"Updates memory topic '{best.get('topic')}'."
+            if stage_advanced:
+                event.memory_reason = f"Advances '{best.get('topic')}' from '{previous_stage or 'unknown'}' to '{event.story_stage}'."
+            else:
+                event.memory_reason = f"Updates memory topic '{best.get('topic')}'."
     return events
 
 
@@ -808,10 +917,64 @@ def rank_and_deduplicate(events: list[CandidateEvent]) -> tuple[list[CandidateEv
     return selected, unchanged_watchlist[: config.MAX_UNCHANGED_WATCHLIST_ITEMS]
 
 
+def project_tracker(events: list[CandidateEvent], unchanged: list[CandidateEvent]) -> list[dict[str, Any]]:
+    tracked: dict[str, dict[str, Any]] = {}
+    for event in events + unchanged:
+        name = event_project_name(event)
+        if not name:
+            continue
+        current = tracked.get(name)
+        row = {
+            "project": name,
+            "category": event.category,
+            "status": event.memory_status,
+            "current_stage": event.story_stage or "unknown",
+            "previous_stage": event.previous_stage,
+            "stage_advanced": event.stage_advanced,
+            "latest_change": event.summary,
+            "expected_next_milestone": event.expected_next_milestone,
+            "source_urls": event.source_urls[:3],
+        }
+        if not current or event.final_score > current.get("_score", 0):
+            row["_score"] = event.final_score
+            tracked[name] = row
+    rows = []
+    for row in tracked.values():
+        row.pop("_score", None)
+        rows.append(row)
+    return rows[:30]
+
+
+def emerging_story_tracker(events: list[CandidateEvent]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for event in events:
+        if event.category not in {"Geopolitics", "India Infrastructure", "Infrastructure", "AI", "Semiconductors", "Defence", "Space"}:
+            continue
+        rows.append(
+            {
+                "story": event_project_name(event),
+                "stage": event.story_stage or "unknown",
+                "yesterday_or_previous": event.previous_stage or "unknown",
+                "today": event.summary,
+                "confidence": event.confidence,
+                "expected_next_milestone": event.expected_next_milestone,
+                "source_urls": event.source_urls[:3],
+            }
+        )
+    return rows[:20]
+
+
 def event_digest(events: list[CandidateEvent], unchanged: list[CandidateEvent], verification_notes: list[dict[str, str]]) -> str:
     payload = {
         "events": [dataclasses.asdict(event) | {"final_score": round(event.final_score, 2)} for event in events],
         "unchanged_watchlist_items": [dataclasses.asdict(event) for event in unchanged],
+        "project_tracker": project_tracker(events, unchanged),
+        "emerging_story_tracker": emerging_story_tracker(events),
+        "silent_signals": [
+            dataclasses.asdict(event) | {"final_score": round(event.final_score, 2)}
+            for event in events
+            if event.silent_signal
+        ][:12],
         "verification_notes": verification_notes,
     }
     return json.dumps(payload, indent=2, ensure_ascii=False)
@@ -968,10 +1131,12 @@ def email_delivery(markdown_body: str, date_str: str, dry_run: bool) -> None:
 def normalize_memory(memory: dict[str, Any]) -> dict[str, Any]:
     normalized = {"topics": []}
     for item in memory.get("topics", []):
+        category = item.get("category", "")
+        timeline = [str(value) for value in item.get("timeline", [])] or default_timeline(str(category))
         normalized["topics"].append(
             {
                 "topic": item.get("topic", ""),
-                "category": item.get("category", ""),
+                "category": category,
                 "first_seen": item.get("first_seen", item.get("last_reported_date", "")),
                 "last_reported": item.get("last_reported", item.get("last_reported_date", "")),
                 "last_checked": item.get("last_checked", ""),
@@ -980,6 +1145,11 @@ def normalize_memory(memory: dict[str, Any]) -> dict[str, Any]:
                 "expected_next_event": item.get("expected_next_event", ""),
                 "importance": item.get("importance", "medium"),
                 "source_urls": item.get("source_urls", item.get("last_sources", [])),
+                "timeline": timeline,
+                "current_stage": item.get("current_stage", ""),
+                "stage_history": item.get("stage_history", []),
+                "expected_next_milestone": item.get("expected_next_milestone", item.get("expected_next_event", "")),
+                "emerging_story": item.get("emerging_story", {}),
             }
         )
     return normalized
@@ -990,9 +1160,21 @@ def memory_update(memory: dict[str, Any], events: list[CandidateEvent], date_str
     normalized = normalize_memory(memory)
     by_topic = {item["topic"].lower(): item for item in normalized["topics"] if item.get("topic")}
     for event in events[: config.MAX_MEMORY_EVENTS]:
-        topic = event.watchlist_hits[0] if event.watchlist_hits else re.sub(r"[:|-].*$", "", event.title).strip()[:90]
+        topic = event_project_name(event)
         key = topic.lower()
         existing = by_topic.get(key, {})
+        timeline = [str(value) for value in existing.get("timeline", [])] or default_timeline(event.category)
+        current_stage = event.story_stage or existing.get("current_stage") or (timeline[0] if timeline else "")
+        stage_history = list(existing.get("stage_history", []))
+        if current_stage and (not stage_history or stage_history[-1].get("stage") != current_stage):
+            stage_history.append(
+                {
+                    "date": date_str,
+                    "stage": current_stage,
+                    "summary": event.summary[:220],
+                    "source_urls": event.source_urls[:3],
+                }
+            )
         by_topic[key] = {
             "topic": topic,
             "category": event.category,
@@ -1001,9 +1183,21 @@ def memory_update(memory: dict[str, Any], events: list[CandidateEvent], date_str
             "last_checked": date_str,
             "status": event.memory_status,
             "last_summary": event.summary[:300],
-            "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+            "expected_next_event": event.expected_next_milestone
+            or existing.get("expected_next_event")
+            or "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
             "importance": "high" if event.importance_score >= 70 or event.long_term_score >= 70 else "medium",
             "source_urls": event.source_urls[:5],
+            "timeline": timeline,
+            "current_stage": current_stage,
+            "stage_history": stage_history[-10:],
+            "expected_next_milestone": event.expected_next_milestone,
+            "emerging_story": {
+                "stage": current_stage,
+                "previous_stage": event.previous_stage,
+                "confidence": event.confidence,
+                "expected_next_milestone": event.expected_next_milestone,
+            },
         }
     for item in by_topic.values():
         if not item.get("last_checked"):

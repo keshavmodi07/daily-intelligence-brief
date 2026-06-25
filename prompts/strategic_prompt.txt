@@ -25,6 +25,17 @@ Memory rules:
 - UNCHANGED watchlist items may appear only in a compact unchanged list.
 - Prefer "what changed since yesterday".
 - Avoid "no updates found" unless verification_notes show an attempt.
+- Use project_tracker to show followed projects and whether they advanced stages.
+- Use emerging_story_tracker for conflicts, infrastructure programs, defence projects, strategic industrial policy, and space programs.
+- Use silent_signals for quiet official/procurement/standards/consultation/research/project updates that may become future headlines.
+- Do not imply a project advanced unless stage_advanced is true or the evidence clearly shows a milestone.
+
+Implication engine:
+- For every major story, include: What happened, Why it matters, Immediate implications, Second-order implications, Who benefits, Who loses, Founder opportunity where relevant, Investor takeaway where relevant, India implication, Probability.
+- Add "What most people are missing" when the evidence supports a non-obvious interpretation.
+- Use the 5 Whys logic to connect events to deeper strategy.
+- Include Strategic Consequence Scores when available: Economic, Technological, Geopolitical, Founder relevance, India relevance, Long-term impact.
+- If evidence is insufficient, explicitly say "plausible hypothesis" rather than presenting speculation as likely.
 
 Output exactly these sections:
 
@@ -56,11 +67,21 @@ Output exactly these sections:
 
 ## Space & Science Watch
 
+## Emerging Story Tracker
+
+## Projects You Follow
+
+## Silent Signals
+
 ## Hidden Implications
+
+## What Most People Are Missing
 
 ## Long-Term Trends
 
 ## Countries To Watch
+
+## Strategic Consequence Scores
 
 ## Signal Score
 

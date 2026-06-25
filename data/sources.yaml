@@ -104,6 +104,24 @@ groups:
       url: https://blog.cloudflare.com/
       official: true
 
+  Business:
+    - name: Reuters Business
+      rss_url: https://news.google.com/rss/search?q=site%3Areuters.com%2Fbusiness&hl=en-US&gl=US&ceid=US%3Aen
+      url: https://www.reuters.com/business/
+    - name: Bloomberg Business
+      rss_url: https://news.google.com/rss/search?q=site%3Abloomberg.com%20%28business%20OR%20markets%20OR%20technology%20OR%20supply%20chains%20OR%20semiconductors%29&hl=en-US&gl=US&ceid=US%3Aen
+      url: https://www.bloomberg.com/
+    - name: Financial Times Companies
+      rss_url: https://www.ft.com/companies?format=rss
+      url: https://www.ft.com/companies
+    - name: Financial Times Markets
+      rss_url: https://www.ft.com/markets?format=rss
+      url: https://www.ft.com/markets
+    - name: The Information
+      kind: html
+      url: https://www.theinformation.com/
+      enabled: false
+
   Space:
     - name: NASA
       rss_url: https://www.nasa.gov/news-release/feed/
@@ -157,6 +175,23 @@ groups:
     - name: arXiv High Energy Physics
       rss_url: https://export.arxiv.org/rss/hep-ph
       url: https://arxiv.org/list/hep-ph/recent
+
+  Think Tanks:
+    - name: CSIS
+      rss_url: https://www.csis.org/rss.xml
+      url: https://www.csis.org/analysis
+    - name: Brookings Institution
+      rss_url: https://www.brookings.edu/feed/
+      url: https://www.brookings.edu/
+    - name: Carnegie Endowment
+      rss_url: https://carnegieendowment.org/rss/solr/?fa=feeds.all
+      url: https://carnegieendowment.org/
+    - name: Chatham House
+      rss_url: https://www.chathamhouse.org/rss.xml
+      url: https://www.chathamhouse.org/
+    - name: Observer Research Foundation
+      rss_url: https://www.orfonline.org/feed
+      url: https://www.orfonline.org/
 
   India Official:
     - name: PIB
