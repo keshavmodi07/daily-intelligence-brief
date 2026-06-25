@@ -1,4 +1,7 @@
 {
+  "project": "personal-intelligence-platform",
+  "last_updated": "2026-06-26",
+  "suppression_days": 14,
   "topics": [
     {
       "topic": "Anthropic",
@@ -314,6 +317,49 @@
       "emerging_story": {}
     },
     {
+      "topic": "Disaster Relief",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "NEW",
+      "last_summary": "Two powerful earthquakes of magnitudes 7.2 and 7.5 struck Venezuela causing at least 164 deaths and widespread destruction around Caracas. The UN and international community have rapidly mobilized aid, search and rescue teams to assist victims and support emergency response efforts.",
+      "expected_next_event": "Ongoing rescue operations and humanitarian aid delivery",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167806",
+        "https://news.un.org/feed/view/en/story/2026/06/1167805"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "escalation",
+          "summary": "Two powerful earthquakes of magnitudes 7.2 and 7.5 struck Venezuela causing at least 164 deaths and widespread destruction around Caracas. The UN and international community have rapidly mobilized aid, search and rescue ",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167806",
+            "https://news.un.org/feed/view/en/story/2026/06/1167805"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Ongoing rescue operations and humanitarian aid delivery",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Ongoing rescue operations and humanitarian aid delivery"
+      }
+    },
+    {
       "topic": "European Parliament backs military mobility plans to facilitate transport of military asse",
       "category": "Geopolitics",
       "first_seen": "2026-06-23",
@@ -391,6 +437,47 @@
       "stage_history": [],
       "expected_next_milestone": "Escalation, ceasefire, proxy, sanctions, or diplomatic shift",
       "emerging_story": {}
+    },
+    {
+      "topic": "Middle East Peace Process",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "NEW",
+      "last_summary": "UN peacekeepers in southern Lebanon reported no airstrikes or new missile fire since June 19 ceasefire, but the situation remains fragile with Israeli drone overflights and ongoing military operations. Meanwhile, humanitarian challenges persist in Gaza and evacuation operations continue in the Strai",
+      "expected_next_event": "Progress in peace negotiations and reduction of hostilities",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167811"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "de-escalation",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "de-escalation",
+          "summary": "UN peacekeepers in southern Lebanon reported no airstrikes or new missile fire since June 19 ceasefire, but the situation remains fragile with Israeli drone overflights and ongoing military operations. Meanwhile, humanit",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167811"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Progress in peace negotiations and reduction of hostilities",
+      "emerging_story": {
+        "stage": "de-escalation",
+        "previous_stage": "escalation",
+        "confidence": "high",
+        "expected_next_milestone": "Progress in peace negotiations and reduction of hostilities"
+      }
     },
     {
       "topic": "Russia-Ukraine war",
@@ -1021,31 +1108,6 @@
       "emerging_story": {}
     },
     {
-      "topic": "Dholera Fab",
-      "category": "Semiconductors",
-      "first_seen": "",
-      "last_reported": "",
-      "last_checked": "2026-06-23",
-      "status": "monitoring",
-      "last_summary": "",
-      "expected_next_event": "Construction, equipment, partnership, or production milestone",
-      "importance": "high",
-      "source_urls": [],
-      "timeline": [
-        "announcement",
-        "approval",
-        "engineering samples",
-        "fab construction",
-        "pilot production",
-        "mass production",
-        "customer adoption"
-      ],
-      "current_stage": "",
-      "stage_history": [],
-      "expected_next_milestone": "Construction, equipment, partnership, or production milestone",
-      "emerging_story": {}
-    },
-    {
       "topic": "India Semiconductor Mission",
       "category": "Semiconductors",
       "first_seen": "",
@@ -1125,6 +1187,48 @@
       "emerging_story": {}
     },
     {
+      "topic": "Artemis Accords",
+      "category": "Space",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "NEW",
+      "last_summary": "Botswana signed the Artemis Accords during a ceremony at NASA headquarters, becoming the sixth African nation to join the international agreement promoting peaceful, transparent, and responsible space exploration. Botswana’s participation builds on its history of collaboration with the US in space-b",
+      "expected_next_event": "Botswana’s active participation in Artemis missions and space activities",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/organizations/oiir/nasa-welcomes-botswana-as-68th-artemis-accords-signatory/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "approval",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "approval",
+          "summary": "Botswana signed the Artemis Accords during a ceremony at NASA headquarters, becoming the sixth African nation to join the international agreement promoting peaceful, transparent, and responsible space exploration. Botswa",
+          "source_urls": [
+            "https://www.nasa.gov/organizations/oiir/nasa-welcomes-botswana-as-68th-artemis-accords-signatory/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Botswana’s active participation in Artemis missions and space activities",
+      "emerging_story": {
+        "stage": "approval",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Botswana’s active participation in Artemis missions and space activities"
+      }
+    },
+    {
       "topic": "Botswana to sign Artemis Accords at NASA Headquarters",
       "category": "Space",
       "first_seen": "2026-06-23",
@@ -1179,6 +1283,50 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "NASA Earth Science Missions",
+      "category": "Space",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "NEW",
+      "last_summary": "NASA selected Rocket Lab to provide launch services for two Earth science missions: PolSIR, which will study ice clouds in tropical and subtropical regions using two CubeSats, and TSIS-2, which will measure solar irradiance. The missions will be launched via three dedicated Electron rocket launches ",
+      "expected_next_event": "Launch of PolSIR and TSIS-2 missions in 2027",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/missions/tsis-2/nasa-selects-rocket-lab-to-launch-sun-earth-science-missions/",
+        "https://rocketlabcorp.com/updates/nasa-selects-rocket-lab-to-launch-sun-earth-sciences-missions/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "approval",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "approval",
+          "summary": "NASA selected Rocket Lab to provide launch services for two Earth science missions: PolSIR, which will study ice clouds in tropical and subtropical regions using two CubeSats, and TSIS-2, which will measure solar irradia",
+          "source_urls": [
+            "https://www.nasa.gov/missions/tsis-2/nasa-selects-rocket-lab-to-launch-sun-earth-science-missions/",
+            "https://rocketlabcorp.com/updates/nasa-selects-rocket-lab-to-launch-sun-earth-sciences-missions/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Launch of PolSIR and TSIS-2 missions in 2027",
+      "emerging_story": {
+        "stage": "approval",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Launch of PolSIR and TSIS-2 missions in 2027"
+      }
     },
     {
       "topic": "NASA schedules sounding rocket launch carrying student experiments from Wallops Flight Fac",
@@ -1349,6 +1497,172 @@
       "emerging_story": {}
     },
     {
+      "topic": "AI Agents",
+      "category": "Technology",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "NEW",
+      "last_summary": "Vercel released AI SDK 7, a major update expanding capabilities for building, running, integrating, and observing AI agents across multiple modalities including text, audio, image, and video. It supports all major providers and introduces new features such as reasoning control, tool approvals, telem",
+      "expected_next_event": "widespread adoption and integration in developer tools",
+      "importance": "high",
+      "source_urls": [
+        "https://vercel.com/changelog/ai-sdk-7"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "announcement",
+          "summary": "OpenAI published research demonstrating how AI agents, particularly Codex, are enabling longer, more complex tasks and expanding productivity across various roles, including non-technical departments. The adoption of age",
+          "source_urls": [
+            "https://openai.com/index/how-agents-are-transforming-work"
+          ]
+        },
+        {
+          "date": "2026-06-26",
+          "stage": "launch",
+          "summary": "Vercel released AI SDK 7, a major update expanding capabilities for building, running, integrating, and observing AI agents across multiple modalities including text, audio, image, and video. It supports all major provid",
+          "source_urls": [
+            "https://vercel.com/changelog/ai-sdk-7"
+          ]
+        }
+      ],
+      "expected_next_milestone": "widespread adoption and integration in developer tools",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "engineering samples",
+        "confidence": "high",
+        "expected_next_milestone": "widespread adoption and integration in developer tools"
+      }
+    },
+    {
+      "topic": "Autonomous Vehicles",
+      "category": "Technology",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "NEW",
+      "last_summary": "The UN Economic Commission for Europe’s World Forum approved the first global regulatory framework for fully autonomous driving systems (ADS), establishing common safety requirements, validation methods, and continuous performance monitoring to ensure safe deployment of self-driving vehicles worldwi",
+      "expected_next_event": "Implementation of regulations by member states and manufacturers",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167797"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "approval",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "approval",
+          "summary": "The UN Economic Commission for Europe’s World Forum approved the first global regulatory framework for fully autonomous driving systems (ADS), establishing common safety requirements, validation methods, and continuous p",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167797"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Implementation of regulations by member states and manufacturers",
+      "emerging_story": {
+        "stage": "approval",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Implementation of regulations by member states and manufacturers"
+      }
+    },
+    {
+      "topic": "Dholera Fab",
+      "category": "Technology",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "UPDATED",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on deploying ASML’s advanced lithography tools and solutions for Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes talent development, supply chain, and research initi",
+      "expected_next_event": "deployment of lithography tools and fab ramp-up",
+      "importance": "high",
+      "source_urls": [
+        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+      ],
+      "timeline": [
+        "announcement",
+        "approval",
+        "engineering samples",
+        "fab construction",
+        "pilot production",
+        "mass production",
+        "customer adoption"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "announcement",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on deploying ASML’s advanced lithography tools and solutions for Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, Indi",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        }
+      ],
+      "expected_next_milestone": "deployment of lithography tools and fab ramp-up",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "deployment of lithography tools and fab ramp-up"
+      }
+    },
+    {
+      "topic": "OpenAI Hardware",
+      "category": "Technology",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "NEW",
+      "last_summary": "OpenAI and Broadcom announced Jalapeño, a custom AI inference chip designed specifically for large language model (LLM) inference, aiming to improve performance, efficiency, and scalability of AI systems. Engineering samples are running workloads including GPT-5.3-Codex-Spark, showing promising perf",
+      "expected_next_event": "mass production and deployment in OpenAI data centers",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "engineering samples",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "engineering samples",
+          "summary": "OpenAI and Broadcom announced Jalapeño, a custom AI inference chip designed specifically for large language model (LLM) inference, aiming to improve performance, efficiency, and scalability of AI systems. Engineering sam",
+          "source_urls": [
+            "https://openai.com/index/openai-broadcom-jalapeno-inference-chip"
+          ]
+        }
+      ],
+      "expected_next_milestone": "mass production and deployment in OpenAI data centers",
+      "emerging_story": {
+        "stage": "engineering samples",
+        "previous_stage": "funding",
+        "confidence": "high",
+        "expected_next_milestone": "mass production and deployment in OpenAI data centers"
+      }
+    },
+    {
       "topic": "Samsung Electronics deploys ChatGPT Enterprise and Codex globally to enhance employee prod",
       "category": "Technology",
       "first_seen": "2026-06-23",
@@ -1372,9 +1686,51 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "TSMC Semiconductor Manufacturing",
+      "category": "Technology",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "status": "NEW",
+      "last_summary": "TSMC announced record consolidated revenue of NT$1,134.10 billion and net income of NT$572.48 billion for Q1 2026, driven by strong demand for leading-edge process technologies including 3nm, 5nm, and 7nm nodes. The company also approved a capital injection of up to US$20 billion for its Arizona fab",
+      "expected_next_event": "Ramp-up of A13 technology and Arizona fab construction",
+      "importance": "high",
+      "source_urls": [
+        "https://pr.tsmc.com/english/news/3297",
+        "https://pr.tsmc.com/english/news/3311",
+        "https://pr.tsmc.com/english/news/3305",
+        "https://pr.tsmc.com/english/news/3302",
+        "https://pr.tsmc.com/english/news/3294"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "announcement",
+          "summary": "TSMC announced record consolidated revenue of NT$1,134.10 billion and net income of NT$572.48 billion for Q1 2026, driven by strong demand for leading-edge process technologies including 3nm, 5nm, and 7nm nodes. The comp",
+          "source_urls": [
+            "https://pr.tsmc.com/english/news/3297",
+            "https://pr.tsmc.com/english/news/3311",
+            "https://pr.tsmc.com/english/news/3305"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Ramp-up of A13 technology and Arizona fab construction",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "funding",
+        "confidence": "high",
+        "expected_next_milestone": "Ramp-up of A13 technology and Arizona fab construction"
+      }
     }
-  ],
-  "project": "personal-intelligence-platform",
-  "last_updated": "2026-06-25",
-  "suppression_days": 14
+  ]
 }
