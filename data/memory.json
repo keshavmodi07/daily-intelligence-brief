@@ -1,8 +1,49 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-06-26",
+  "last_updated": "2026-06-27",
   "suppression_days": 14,
   "topics": [
+    {
+      "topic": "AI SDK",
+      "category": "AI",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "status": "UPDATED",
+      "last_summary": "Vercel released AI SDK 7, a major update expanding capabilities for building, running, integrating, and observing AI agents across multiple modalities including text, audio, image, and video. It supports all major AI providers and introduces new features such as reasoning control, tool approvals, te",
+      "expected_next_event": "widespread adoption and integration in developer tools",
+      "importance": "high",
+      "source_urls": [
+        "https://vercel.com/changelog/ai-sdk-7"
+      ],
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "launch",
+          "summary": "Vercel released AI SDK 7, a major update expanding capabilities for building, running, integrating, and observing AI agents across multiple modalities including text, audio, image, and video. It supports all major AI pro",
+          "source_urls": [
+            "https://vercel.com/changelog/ai-sdk-7"
+          ]
+        }
+      ],
+      "expected_next_milestone": "widespread adoption and integration in developer tools",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "engineering samples",
+        "confidence": "high",
+        "expected_next_milestone": "widespread adoption and integration in developer tools"
+      }
+    },
     {
       "topic": "Anthropic",
       "category": "AI",
@@ -27,6 +68,47 @@
       "stage_history": [],
       "expected_next_milestone": "Model, API, enterprise, safety, or funding update",
       "emerging_story": {}
+    },
+    {
+      "topic": "GPT-5.6",
+      "category": "AI",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "status": "NEW",
+      "last_summary": "OpenAI announced a limited preview of the GPT-5.6 series, including the flagship Sol model with enhanced coding, science, and cybersecurity capabilities, and the most advanced safety stack to date. The preview is initially available to a small group of trusted partners with plans for broader release",
+      "expected_next_event": "general availability and wider adoption",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/previewing-gpt-5-6-sol"
+      ],
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "launch",
+          "summary": "OpenAI announced a limited preview of the GPT-5.6 series, including the flagship Sol model with enhanced coding, science, and cybersecurity capabilities, and the most advanced safety stack to date. The preview is initial",
+          "source_urls": [
+            "https://openai.com/index/previewing-gpt-5-6-sol"
+          ]
+        }
+      ],
+      "expected_next_milestone": "general availability and wider adoption",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "general availability and wider adoption"
+      }
     },
     {
       "topic": "Nvidia",
@@ -480,6 +562,47 @@
       }
     },
     {
+      "topic": "Romanian Economic Development",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "status": "NEW",
+      "last_summary": "The European Commission approved Romanian government measures providing state aid to the national investment and development bank Banca de Investiții și Dezvoltare S.A. (BID), supporting its role in economic development.",
+      "expected_next_event": "implementation of state aid measures",
+      "importance": "high",
+      "source_urls": [
+        "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1453"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "approval",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "approval",
+          "summary": "The European Commission approved Romanian government measures providing state aid to the national investment and development bank Banca de Investiții și Dezvoltare S.A. (BID), supporting its role in economic development.",
+          "source_urls": [
+            "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1453"
+          ]
+        }
+      ],
+      "expected_next_milestone": "implementation of state aid measures",
+      "emerging_story": {
+        "stage": "approval",
+        "previous_stage": "proposal",
+        "confidence": "high",
+        "expected_next_milestone": "implementation of state aid measures"
+      }
+    },
+    {
       "topic": "Russia-Ukraine war",
       "category": "Geopolitics",
       "first_seen": "",
@@ -533,6 +656,88 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Strait of Hormuz Evacuation",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "status": "NEW",
+      "last_summary": "The UN's International Maritime Organization evacuated approximately 2,500 stranded seafarers from the Persian Gulf before suspending the operation due to an attack on a commercial vessel near the Strait of Hormuz. The attack raised concerns over safe passage and disrupted the evacuation effort amid",
+      "expected_next_event": "resumption of evacuation or diplomatic resolution",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167818"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "escalation",
+          "summary": "The UN's International Maritime Organization evacuated approximately 2,500 stranded seafarers from the Persian Gulf before suspending the operation due to an attack on a commercial vessel near the Strait of Hormuz. The a",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167818"
+          ]
+        }
+      ],
+      "expected_next_milestone": "resumption of evacuation or diplomatic resolution",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "evacuation operation",
+        "confidence": "high",
+        "expected_next_milestone": "resumption of evacuation or diplomatic resolution"
+      }
+    },
+    {
+      "topic": "Sudan Conflict Monitoring",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "status": "NEW",
+      "last_summary": "A senior UN official warned that the opportunity to prevent a major escalation of fighting in El Obeid, Sudan, is rapidly closing as drone attacks increase and the Rapid Support Forces expand their presence. The conflict between Sudanese Armed Forces and RSF has intensified, risking civilian safety ",
+      "expected_next_event": "international diplomatic intervention or ceasefire",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167821"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "escalation",
+          "summary": "A senior UN official warned that the opportunity to prevent a major escalation of fighting in El Obeid, Sudan, is rapidly closing as drone attacks increase and the Rapid Support Forces expand their presence. The conflict",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167821"
+          ]
+        }
+      ],
+      "expected_next_milestone": "international diplomatic intervention or ceasefire",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "ongoing conflict",
+        "confidence": "high",
+        "expected_next_milestone": "international diplomatic intervention or ceasefire"
+      }
     },
     {
       "topic": "UN Independent Commission Finds Israeli Forces Deliberately Target Palestinian Children",
@@ -1108,6 +1313,47 @@
       "emerging_story": {}
     },
     {
+      "topic": "Dholera Semiconductor Fab",
+      "category": "Semiconductors",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "status": "UPDATED",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment of ASML's advanced lithography tools and joint efforts on talent development an",
+      "expected_next_event": "construction start and equipment installation",
+      "importance": "high",
+      "source_urls": [
+        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+      ],
+      "timeline": [
+        "announcement",
+        "approval",
+        "engineering samples",
+        "fab construction",
+        "pilot production",
+        "mass production",
+        "customer adoption"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "announcement",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        }
+      ],
+      "expected_next_milestone": "construction start and equipment installation",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "construction start and equipment installation"
+      }
+    },
+    {
       "topic": "India Semiconductor Mission",
       "category": "Semiconductors",
       "first_seen": "",
@@ -1226,6 +1472,48 @@
         "previous_stage": "consultation",
         "confidence": "high",
         "expected_next_milestone": "Botswana’s active participation in Artemis missions and space activities"
+      }
+    },
+    {
+      "topic": "Artemis Human Lander Challenge",
+      "category": "Space",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "status": "NEW",
+      "last_summary": "NASA announced the top student-developed solutions for environmental control and life support systems in future crewed lunar landers as part of the 2026 Human Lander Challenge. The competition involved university teams designing systems to enhance reliability and performance for Artemis program miss",
+      "expected_next_event": "technology integration into Artemis lander designs",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-announces-winners-for-2026-human-lander-challenge/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "announcement",
+          "summary": "NASA announced the top student-developed solutions for environmental control and life support systems in future crewed lunar landers as part of the 2026 Human Lander Challenge. The competition involved university teams d",
+          "source_urls": [
+            "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-announces-winners-for-2026-human-lander-challenge/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "technology integration into Artemis lander designs",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "competition",
+        "confidence": "high",
+        "expected_next_milestone": "technology integration into Artemis lander designs"
       }
     },
     {
@@ -1495,6 +1783,48 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "StriX Satellite Constellation",
+      "category": "Space",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "status": "NEW",
+      "last_summary": "Rocket Lab successfully launched the tenth dedicated satellite for Synspective's StriX constellation using its Electron rocket from New Zealand. The constellation uses synthetic aperture radar technology for Earth observation and now includes ten operational satellites, all launched by Electron.",
+      "expected_next_event": "next satellite launches to complete constellation",
+      "importance": "high",
+      "source_urls": [
+        "https://rocketlabcorp.com/updates/rocket-lab-completes-10th-consecutive-launch-with-100-mission-success-for-synspective/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "launch",
+          "summary": "Rocket Lab successfully launched the tenth dedicated satellite for Synspective's StriX constellation using its Electron rocket from New Zealand. The constellation uses synthetic aperture radar technology for Earth observ",
+          "source_urls": [
+            "https://rocketlabcorp.com/updates/rocket-lab-completes-10th-consecutive-launch-with-100-mission-success-for-synspective/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "next satellite launches to complete constellation",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "construction",
+        "confidence": "high",
+        "expected_next_milestone": "next satellite launches to complete constellation"
+      }
     },
     {
       "topic": "AI Agents",
