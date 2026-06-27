@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-06-27",
+  "last_updated": "2026-06-28",
   "suppression_days": 14,
   "topics": [
     {
@@ -521,6 +521,47 @@
       "emerging_story": {}
     },
     {
+      "topic": "MONUSCO Peace Mission",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-06-28",
+      "last_checked": "2026-06-28",
+      "status": "NEW",
+      "last_summary": "James Swan, head of the UN mission in the DRC, urged parties involved in peace processes for eastern DRC to maintain momentum and fully implement commitments following peace agreements signed in Washington and Qatar. The security situation remains unstable with ongoing clashes involving multiple arm",
+      "expected_next_event": "Full implementation of peace agreements and reduction in hostilities",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167824"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "consultation",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "consultation",
+          "summary": "James Swan, head of the UN mission in the DRC, urged parties involved in peace processes for eastern DRC to maintain momentum and fully implement commitments following peace agreements signed in Washington and Qatar. The",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167824"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Full implementation of peace agreements and reduction in hostilities",
+      "emerging_story": {
+        "stage": "consultation",
+        "previous_stage": "agreement signing",
+        "confidence": "high",
+        "expected_next_milestone": "Full implementation of peace agreements and reduction in hostilities"
+      }
+    },
+    {
       "topic": "Middle East Peace Process",
       "category": "Geopolitics",
       "first_seen": "2026-06-26",
@@ -1011,6 +1052,47 @@
       "emerging_story": {}
     },
     {
+      "topic": "Venezuela Earthquake Response",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-06-28",
+      "last_checked": "2026-06-28",
+      "status": "NEW",
+      "last_summary": "Following twin earthquakes in Venezuela on June 24, the UN coordinated deployment of 44 international urban search and rescue teams comprising 2,245 specialists and 140 search dogs from 27 countries to assist in locating survivors. The death toll has surpassed 1,400 with extensive physical damage es",
+      "expected_next_event": "Continued rescue operations and humanitarian aid delivery",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167825"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "escalation",
+          "summary": "Following twin earthquakes in Venezuela on June 24, the UN coordinated deployment of 44 international urban search and rescue teams comprising 2,245 specialists and 140 search dogs from 27 countries to assist in locating",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167825"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Continued rescue operations and humanitarian aid delivery",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "disaster occurrence",
+        "confidence": "high",
+        "expected_next_milestone": "Continued rescue operations and humanitarian aid delivery"
+      }
+    },
+    {
       "topic": "Cabinet Committee on Economic Affairs Approves Cost Estimate for Eastern and Western Dedic",
       "category": "India Infrastructure",
       "first_seen": "2026-06-25",
@@ -1433,6 +1515,48 @@
       "emerging_story": {}
     },
     {
+      "topic": "Artemis",
+      "category": "Space",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-06-28",
+      "last_checked": "2026-06-28",
+      "status": "UPDATED",
+      "last_summary": "NASA announced the top student-developed solutions for environmental control and life support systems in future crewed lunar landers as part of the 2026 Human Lander Challenge, marking the culmination of months of research supporting the Artemis program aiming for lunar return in 2028.",
+      "expected_next_event": "Integration of winning technologies into lunar lander development",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-announces-winners-for-2026-human-lander-challenge/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "announcement",
+          "summary": "NASA announced the top student-developed solutions for environmental control and life support systems in future crewed lunar landers as part of the 2026 Human Lander Challenge, marking the culmination of months of resear",
+          "source_urls": [
+            "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-announces-winners-for-2026-human-lander-challenge/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Integration of winning technologies into lunar lander development",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "competition",
+        "confidence": "high",
+        "expected_next_milestone": "Integration of winning technologies into lunar lander development"
+      }
+    },
+    {
       "topic": "Artemis Accords",
       "category": "Space",
       "first_seen": "2026-06-26",
@@ -1785,6 +1909,48 @@
       "emerging_story": {}
     },
     {
+      "topic": "StriX Constellation",
+      "category": "Space",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-06-28",
+      "last_checked": "2026-06-28",
+      "status": "UPDATED",
+      "last_summary": "Rocket Lab successfully launched the tenth dedicated satellite for Synspective's StriX synthetic aperture radar (SAR) Earth observation constellation, maintaining a 100% mission success rate. The launch took place from New Zealand to a 552 km low Earth orbit.",
+      "expected_next_event": "Continued deployment of remaining satellites to complete constellation",
+      "importance": "high",
+      "source_urls": [
+        "https://rocketlabcorp.com/updates/rocket-lab-completes-10th-consecutive-launch-with-100-mission-success-for-synspective/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "launch",
+          "summary": "Rocket Lab successfully launched the tenth dedicated satellite for Synspective's StriX synthetic aperture radar (SAR) Earth observation constellation, maintaining a 100% mission success rate. The launch took place from N",
+          "source_urls": [
+            "https://rocketlabcorp.com/updates/rocket-lab-completes-10th-consecutive-launch-with-100-mission-success-for-synspective/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Continued deployment of remaining satellites to complete constellation",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "mission planning",
+        "confidence": "high",
+        "expected_next_milestone": "Continued deployment of remaining satellites to complete constellation"
+      }
+    },
+    {
       "topic": "StriX Satellite Constellation",
       "category": "Space",
       "first_seen": "2026-06-27",
@@ -1916,11 +2082,11 @@
       "topic": "Dholera Fab",
       "category": "Technology",
       "first_seen": "2026-06-26",
-      "last_reported": "2026-06-26",
-      "last_checked": "2026-06-26",
+      "last_reported": "2026-06-28",
+      "last_checked": "2026-06-28",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on deploying ASML’s advanced lithography tools and solutions for Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes talent development, supply chain, and research initi",
-      "expected_next_event": "deployment of lithography tools and fab ramp-up",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance India's semiconductor manufacturing ecosystem by deploying ASML's advanced lithography tools for Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes talent development, supply chai",
+      "expected_next_event": "Deployment of ASML lithography tools and ramp-up of Dholera fab",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
@@ -1945,12 +2111,90 @@
           ]
         }
       ],
-      "expected_next_milestone": "deployment of lithography tools and fab ramp-up",
+      "expected_next_milestone": "Deployment of ASML lithography tools and ramp-up of Dholera fab",
       "emerging_story": {
         "stage": "announcement",
-        "previous_stage": "consultation",
+        "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "deployment of lithography tools and fab ramp-up"
+        "expected_next_milestone": "Deployment of ASML lithography tools and ramp-up of Dholera fab"
+      }
+    },
+    {
+      "topic": "GPT-5.6 AI Model",
+      "category": "Technology",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-06-28",
+      "last_checked": "2026-06-28",
+      "status": "UPDATED",
+      "last_summary": "OpenAI announced a limited preview of the GPT-5.6 series, including the flagship Sol model with enhanced capabilities in coding, science, and cybersecurity, paired with the most advanced safety stack to date. The preview is initially available to a small group of trusted partners as part of governme",
+      "expected_next_event": "General availability of GPT-5.6 models",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/previewing-gpt-5-6-sol"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "announcement",
+          "summary": "OpenAI announced a limited preview of the GPT-5.6 series, including the flagship Sol model with enhanced capabilities in coding, science, and cybersecurity, paired with the most advanced safety stack to date. The preview",
+          "source_urls": [
+            "https://openai.com/index/previewing-gpt-5-6-sol"
+          ]
+        }
+      ],
+      "expected_next_milestone": "General availability of GPT-5.6 models",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "development",
+        "confidence": "high",
+        "expected_next_milestone": "General availability of GPT-5.6 models"
+      }
+    },
+    {
+      "topic": "Grok Build",
+      "category": "Technology",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-06-28",
+      "last_checked": "2026-06-28",
+      "status": "NEW",
+      "last_summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partners across the stack and supports open contributions.",
+      "expected_next_event": "Growth of plugin ecosystem and increased adoption",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-plugin-marketplace"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "launch",
+          "summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partner",
+          "source_urls": [
+            "https://x.ai/news/grok-plugin-marketplace"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Growth of plugin ecosystem and increased adoption",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Growth of plugin ecosystem and increased adoption"
       }
     },
     {
@@ -2060,6 +2304,45 @@
         "previous_stage": "funding",
         "confidence": "high",
         "expected_next_milestone": "Ramp-up of A13 technology and Arizona fab construction"
+      }
+    },
+    {
+      "topic": "UFS 5.0",
+      "category": "Technology",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-06-28",
+      "last_checked": "2026-06-28",
+      "status": "NEW",
+      "last_summary": "Samsung Electronics announced the development of the industry's fastest Universal Flash Storage (UFS) 5.0 solution, achieving a data transfer speed of 10.8GB/s. This advancement enables faster storage and processing for mobile AI applications with enhanced power efficiency and smaller package size.",
+      "expected_next_event": "Mass production and integration into mobile devices",
+      "importance": "high",
+      "source_urls": [
+        "https://news.samsungsemiconductor.com/global/samsung-unveils-industrys-most-powerful-ufs-5-0-solution-for-next-gen-on-device-ai-applications"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "announcement",
+          "summary": "Samsung Electronics announced the development of the industry's fastest Universal Flash Storage (UFS) 5.0 solution, achieving a data transfer speed of 10.8GB/s. This advancement enables faster storage and processing for ",
+          "source_urls": [
+            "https://news.samsungsemiconductor.com/global/samsung-unveils-industrys-most-powerful-ufs-5-0-solution-for-next-gen-on-device-ai-applications"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Mass production and integration into mobile devices",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "development",
+        "confidence": "high",
+        "expected_next_milestone": "Mass production and integration into mobile devices"
       }
     }
   ]
