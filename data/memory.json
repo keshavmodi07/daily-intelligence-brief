@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-06-28",
+  "last_updated": "2026-06-29",
   "suppression_days": 14,
   "topics": [
     {
@@ -223,6 +223,45 @@
       "emerging_story": {}
     },
     {
+      "topic": "Disaster Response",
+      "category": "Disaster",
+      "first_seen": "2026-06-29",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
+      "status": "UPDATED",
+      "last_summary": "Following twin earthquakes in northern Venezuela on June 24, over 2,000 rescue workers from 27 countries have been deployed to assist in locating survivors under rubble. The death toll has surpassed 1,400 with thousands injured, and the estimated physical damage is approximately $6.7 billion.",
+      "expected_next_event": "Continued rescue operations and humanitarian aid delivery",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167825"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-06-29",
+          "stage": "escalation",
+          "summary": "Following twin earthquakes in northern Venezuela on June 24, over 2,000 rescue workers from 27 countries have been deployed to assist in locating survivors under rubble. The death toll has surpassed 1,400 with thousands ",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167825"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Continued rescue operations and humanitarian aid delivery",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "earthquake occurrence",
+        "confidence": "high",
+        "expected_next_milestone": "Continued rescue operations and humanitarian aid delivery"
+      }
+    },
+    {
       "topic": "European Parliament approves updated EU directive to combat child sexual abuse crimes",
       "category": "EU Politics",
       "first_seen": "2026-06-23",
@@ -399,6 +438,49 @@
       "emerging_story": {}
     },
     {
+      "topic": "Government Securities Auctions",
+      "category": "Finance",
+      "first_seen": "2026-06-29",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
+      "status": "NEW",
+      "last_summary": "The Reserve Bank of India announced the auction calendar and details for 91-day, 182-day, and 364-day Treasury Bills for the quarter July to September 2026, with notified amounts totaling ₹24,000 crore per auction date. State governments have also offered to sell government stock totaling ₹13,600 cr",
+      "expected_next_event": "Successful auction and settlement of treasury bills",
+      "importance": "high",
+      "source_urls": [
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63026",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63025",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63030"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-29",
+          "stage": "announcement",
+          "summary": "The Reserve Bank of India announced the auction calendar and details for 91-day, 182-day, and 364-day Treasury Bills for the quarter July to September 2026, with notified amounts totaling ₹24,000 crore per auction date. ",
+          "source_urls": [
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63026",
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63025",
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63030"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Successful auction and settlement of treasury bills",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "",
+        "confidence": "high",
+        "expected_next_milestone": "Successful auction and settlement of treasury bills"
+      }
+    },
+    {
       "topic": "Disaster Relief",
       "category": "Geopolitics",
       "first_seen": "2026-06-26",
@@ -494,6 +576,47 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Fuel Supply Management",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-29",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
+      "status": "NEW",
+      "last_summary": "Russian President Vladimir Putin chaired a meeting in the Kremlin to discuss measures ensuring uninterrupted fuel supply to Russian regions, covering supply to car owners, businesses, enterprises, and socially significant organizations. Key government ministers and energy company executives attended",
+      "expected_next_event": "Implementation of measures to ensure fuel supply continuity",
+      "importance": "high",
+      "source_urls": [
+        "http://en.kremlin.ru/events/president/news/80174"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "consultation",
+      "stage_history": [
+        {
+          "date": "2026-06-29",
+          "stage": "consultation",
+          "summary": "Russian President Vladimir Putin chaired a meeting in the Kremlin to discuss measures ensuring uninterrupted fuel supply to Russian regions, covering supply to car owners, businesses, enterprises, and socially significan",
+          "source_urls": [
+            "http://en.kremlin.ru/events/president/news/80174"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Implementation of measures to ensure fuel supply continuity",
+      "emerging_story": {
+        "stage": "consultation",
+        "previous_stage": "",
+        "confidence": "high",
+        "expected_next_milestone": "Implementation of measures to ensure fuel supply continuity"
+      }
     },
     {
       "topic": "Israel-Iran conflict",
@@ -1518,11 +1641,11 @@
       "topic": "Artemis",
       "category": "Space",
       "first_seen": "2026-06-28",
-      "last_reported": "2026-06-28",
-      "last_checked": "2026-06-28",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
       "status": "UPDATED",
-      "last_summary": "NASA announced the top student-developed solutions for environmental control and life support systems in future crewed lunar landers as part of the 2026 Human Lander Challenge, marking the culmination of months of research supporting the Artemis program aiming for lunar return in 2028.",
-      "expected_next_event": "Integration of winning technologies into lunar lander development",
+      "last_summary": "NASA announced the top student-developed solutions for environmental control and life support systems in future crewed lunar landers as part of the 2026 Human Lander Challenge, supporting the Artemis program's goal to return astronauts to the Moon by 2028.",
+      "expected_next_event": "Further development and integration of winning technologies into Artemis landers",
       "importance": "high",
       "source_urls": [
         "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-announces-winners-for-2026-human-lander-challenge/"
@@ -1548,12 +1671,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Integration of winning technologies into lunar lander development",
+      "expected_next_milestone": "Further development and integration of winning technologies into Artemis landers",
       "emerging_story": {
         "stage": "announcement",
         "previous_stage": "competition",
         "confidence": "high",
-        "expected_next_milestone": "Integration of winning technologies into lunar lander development"
+        "expected_next_milestone": "Further development and integration of winning technologies into Artemis landers"
       }
     },
     {
@@ -1667,6 +1790,48 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Cryogenic Fluid Management",
+      "category": "Space",
+      "first_seen": "2026-06-29",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
+      "status": "NEW",
+      "last_summary": "NASA tested a new cryocoupler device designed to enable in-orbit refueling of spacecraft with cryogenic propellants, a critical technology for future deep space missions requiring spacecraft to refuel in Earth orbit before traveling further into the solar system.",
+      "expected_next_event": "Demonstration of in-orbit refueling with cryocoupler",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/nasa-tests-new-refuel-device-for-future-in-space-refueling-missions/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "testing",
+      "stage_history": [
+        {
+          "date": "2026-06-29",
+          "stage": "testing",
+          "summary": "NASA tested a new cryocoupler device designed to enable in-orbit refueling of spacecraft with cryogenic propellants, a critical technology for future deep space missions requiring spacecraft to refuel in Earth orbit befo",
+          "source_urls": [
+            "https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/nasa-tests-new-refuel-device-for-future-in-space-refueling-missions/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Demonstration of in-orbit refueling with cryocoupler",
+      "emerging_story": {
+        "stage": "testing",
+        "previous_stage": "development",
+        "confidence": "high",
+        "expected_next_milestone": "Demonstration of in-orbit refueling with cryocoupler"
+      }
     },
     {
       "topic": "NASA Artemis II Mission Success Shapes Moon to Mars Exploration Path",
@@ -1954,11 +2119,11 @@
       "topic": "StriX Satellite Constellation",
       "category": "Space",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-06-27",
-      "last_checked": "2026-06-27",
-      "status": "NEW",
-      "last_summary": "Rocket Lab successfully launched the tenth dedicated satellite for Synspective's StriX constellation using its Electron rocket from New Zealand. The constellation uses synthetic aperture radar technology for Earth observation and now includes ten operational satellites, all launched by Electron.",
-      "expected_next_event": "next satellite launches to complete constellation",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
+      "status": "UPDATED",
+      "last_summary": "Rocket Lab successfully launched the tenth dedicated satellite for Synspective, a Japan-based Earth observation company, marking 100% mission success for all Synspective launches. The StriX constellation now includes ten operational satellites using synthetic aperture radar technology.",
+      "expected_next_event": "Completion of Synspective constellation deployment by end of decade",
       "importance": "high",
       "source_urls": [
         "https://rocketlabcorp.com/updates/rocket-lab-completes-10th-consecutive-launch-with-100-mission-success-for-synspective/"
@@ -1984,12 +2149,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "next satellite launches to complete constellation",
+      "expected_next_milestone": "Completion of Synspective constellation deployment by end of decade",
       "emerging_story": {
         "stage": "launch",
-        "previous_stage": "construction",
+        "previous_stage": "mission planning",
         "confidence": "high",
-        "expected_next_milestone": "next satellite launches to complete constellation"
+        "expected_next_milestone": "Completion of Synspective constellation deployment by end of decade"
       }
     },
     {
@@ -2082,10 +2247,10 @@
       "topic": "Dholera Fab",
       "category": "Technology",
       "first_seen": "2026-06-26",
-      "last_reported": "2026-06-28",
-      "last_checked": "2026-06-28",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance India's semiconductor manufacturing ecosystem by deploying ASML's advanced lithography tools for Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes talent development, supply chai",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance India's semiconductor manufacturing ecosystem by deploying ASML's advanced lithography tools at Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes talent development, supply chain",
       "expected_next_event": "Deployment of ASML lithography tools and ramp-up of Dholera fab",
       "importance": "high",
       "source_urls": [
@@ -2162,11 +2327,11 @@
       "topic": "Grok Build",
       "category": "Technology",
       "first_seen": "2026-06-28",
-      "last_reported": "2026-06-28",
-      "last_checked": "2026-06-28",
-      "status": "NEW",
-      "last_summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partners across the stack and supports open contributions.",
-      "expected_next_event": "Growth of plugin ecosystem and increased adoption",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
+      "status": "UPDATED",
+      "last_summary": "xAI launched the Grok Build Plugin Marketplace, integrated into Grok Build, allowing users to browse, install, and update plugins directly from the terminal. The marketplace includes plugins from partners across the stack and supports easy sharing and submission of new plugins.",
+      "expected_next_event": "Growth in plugin ecosystem and adoption by developers",
       "importance": "high",
       "source_urls": [
         "https://x.ai/news/grok-plugin-marketplace"
@@ -2189,12 +2354,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Growth of plugin ecosystem and increased adoption",
+      "expected_next_milestone": "Growth in plugin ecosystem and adoption by developers",
       "emerging_story": {
         "stage": "launch",
         "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "Growth of plugin ecosystem and increased adoption"
+        "expected_next_milestone": "Growth in plugin ecosystem and adoption by developers"
       }
     },
     {
@@ -2310,14 +2475,14 @@
       "topic": "UFS 5.0",
       "category": "Technology",
       "first_seen": "2026-06-28",
-      "last_reported": "2026-06-28",
-      "last_checked": "2026-06-28",
-      "status": "NEW",
-      "last_summary": "Samsung Electronics announced the development of the industry's fastest Universal Flash Storage (UFS) 5.0 solution, achieving a data transfer speed of 10.8GB/s. This advancement enables faster storage and processing for mobile AI applications with enhanced power efficiency and smaller package size.",
-      "expected_next_event": "Mass production and integration into mobile devices",
+      "last_reported": "2026-06-29",
+      "last_checked": "2026-06-29",
+      "status": "UPDATED",
+      "last_summary": "Samsung Electronics announced the development of the industry's fastest Universal Flash Storage (UFS) 5.0 solution, achieving data transfer speeds of 10.8GB/s, optimized for next-generation on-device AI applications with enhanced power efficiency and smaller package size.",
+      "expected_next_event": "Mass production and adoption in next-generation mobile devices",
       "importance": "high",
       "source_urls": [
-        "https://news.samsungsemiconductor.com/global/samsung-unveils-industrys-most-powerful-ufs-5-0-solution-for-next-gen-on-device-ai-applications"
+        "https://news.samsungsemiconductor.com/global/samsung-unveils-industrys-most-powerful-ufs-5-0-solution-for-next-gen-on-device-ai-applications/"
       ],
       "timeline": [
         "announcement",
@@ -2326,7 +2491,7 @@
         "adoption",
         "next generation"
       ],
-      "current_stage": "announcement",
+      "current_stage": "launch",
       "stage_history": [
         {
           "date": "2026-06-28",
@@ -2335,14 +2500,22 @@
           "source_urls": [
             "https://news.samsungsemiconductor.com/global/samsung-unveils-industrys-most-powerful-ufs-5-0-solution-for-next-gen-on-device-ai-applications"
           ]
+        },
+        {
+          "date": "2026-06-29",
+          "stage": "launch",
+          "summary": "Samsung Electronics announced the development of the industry's fastest Universal Flash Storage (UFS) 5.0 solution, achieving data transfer speeds of 10.8GB/s, optimized for next-generation on-device AI applications with",
+          "source_urls": [
+            "https://news.samsungsemiconductor.com/global/samsung-unveils-industrys-most-powerful-ufs-5-0-solution-for-next-gen-on-device-ai-applications/"
+          ]
         }
       ],
-      "expected_next_milestone": "Mass production and integration into mobile devices",
+      "expected_next_milestone": "Mass production and adoption in next-generation mobile devices",
       "emerging_story": {
-        "stage": "announcement",
+        "stage": "launch",
         "previous_stage": "development",
         "confidence": "high",
-        "expected_next_milestone": "Mass production and integration into mobile devices"
+        "expected_next_milestone": "Mass production and adoption in next-generation mobile devices"
       }
     }
   ]
