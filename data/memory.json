@@ -1,8 +1,49 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-06-30",
   "suppression_days": 14,
   "topics": [
+    {
+      "topic": "AI Gateway Voice Integration",
+      "category": "AI",
+      "first_seen": "2026-06-30",
+      "last_reported": "2026-06-30",
+      "last_checked": "2026-06-30",
+      "status": "NEW",
+      "last_summary": "AI Gateway now supports realtime voice, text-to-speech, and speech-to-text functionalities with models from OpenAI and xAI, enabling developers to build two-way voice agents and live conversations with low latency. These features are in beta and integrated into AI SDK 7.",
+      "expected_next_event": "Wider adoption and feature enhancements",
+      "importance": "high",
+      "source_urls": [
+        "https://vercel.com/blog/realtime-voice-agents-on-ai-gateway"
+      ],
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-30",
+          "stage": "launch",
+          "summary": "AI Gateway now supports realtime voice, text-to-speech, and speech-to-text functionalities with models from OpenAI and xAI, enabling developers to build two-way voice agents and live conversations with low latency. These",
+          "source_urls": [
+            "https://vercel.com/blog/realtime-voice-agents-on-ai-gateway"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Wider adoption and feature enhancements",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Wider adoption and feature enhancements"
+      }
+    },
     {
       "topic": "AI SDK",
       "category": "AI",
@@ -70,6 +111,47 @@
       "emerging_story": {}
     },
     {
+      "topic": "Claude AI Deployment",
+      "category": "AI",
+      "first_seen": "2026-06-30",
+      "last_reported": "2026-06-30",
+      "last_checked": "2026-06-30",
+      "status": "NEW",
+      "last_summary": "Anthropic’s Claude AI models are now generally available on Microsoft Azure, running on NVIDIA GB300 Blackwell Ultra GPUs. This deployment enables Azure-native enterprises to build autonomous and domain-specific AI agents with improved inference performance and efficiency, reducing total cost of own",
+      "expected_next_event": "Enterprise adoption and integration expansion",
+      "importance": "high",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/"
+      ],
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-30",
+          "stage": "launch",
+          "summary": "Anthropic’s Claude AI models are now generally available on Microsoft Azure, running on NVIDIA GB300 Blackwell Ultra GPUs. This deployment enables Azure-native enterprises to build autonomous and domain-specific AI agent",
+          "source_urls": [
+            "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Enterprise adoption and integration expansion",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Enterprise adoption and integration expansion"
+      }
+    },
+    {
       "topic": "GPT-5.6",
       "category": "AI",
       "first_seen": "2026-06-27",
@@ -108,6 +190,53 @@
         "previous_stage": "consultation",
         "confidence": "high",
         "expected_next_milestone": "general availability and wider adoption"
+      }
+    },
+    {
+      "topic": "Grok AI Platform Expansion",
+      "category": "AI",
+      "first_seen": "2026-06-30",
+      "last_reported": "2026-06-30",
+      "last_checked": "2026-06-30",
+      "status": "NEW",
+      "last_summary": "xAI has launched the Grok Build Plugin Marketplace, enabling installation and updates of plugins for Grok Build coding agents. Grok models are now integrated with platforms like Kilo Code, Databricks Agent Bricks, and Interactive Brokers. New features include autonomous long-running task execution (",
+      "expected_next_event": "Broader adoption and new integrations",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-plugin-marketplace",
+        "https://x.ai/news/grok-kilocode",
+        "https://x.ai/news/grok-databricks",
+        "https://x.ai/news/grok-gopuff",
+        "https://x.ai/news/introducing-goal"
+      ],
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-30",
+          "stage": "launch",
+          "summary": "xAI has launched the Grok Build Plugin Marketplace, enabling installation and updates of plugins for Grok Build coding agents. Grok models are now integrated with platforms like Kilo Code, Databricks Agent Bricks, and In",
+          "source_urls": [
+            "https://x.ai/news/grok-plugin-marketplace",
+            "https://x.ai/news/grok-kilocode",
+            "https://x.ai/news/grok-databricks"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Broader adoption and new integrations",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Broader adoption and new integrations"
       }
     },
     {
@@ -767,6 +896,47 @@
       }
     },
     {
+      "topic": "Russia-Ukraine Conflict",
+      "category": "Geopolitics",
+      "first_seen": "2026-06-30",
+      "last_reported": "2026-06-30",
+      "last_checked": "2026-06-30",
+      "status": "NEW",
+      "last_summary": "Missile and drone attacks in the Russia-Ukraine conflict killed at least a dozen civilians over the weekend, with strikes targeting critical energy infrastructure causing widespread power outages affecting millions. The UN condemned the attacks and highlighted the humanitarian toll, especially durin",
+      "expected_next_event": "Further international diplomatic or humanitarian responses",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167833"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-06-30",
+          "stage": "escalation",
+          "summary": "Missile and drone attacks in the Russia-Ukraine conflict killed at least a dozen civilians over the weekend, with strikes targeting critical energy infrastructure causing widespread power outages affecting millions. The ",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167833"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Further international diplomatic or humanitarian responses",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "escalation",
+        "confidence": "high",
+        "expected_next_milestone": "Further international diplomatic or humanitarian responses"
+      }
+    },
+    {
       "topic": "Russia-Ukraine war",
       "category": "Geopolitics",
       "first_seen": "",
@@ -1178,14 +1348,14 @@
       "topic": "Venezuela Earthquake Response",
       "category": "Geopolitics",
       "first_seen": "2026-06-28",
-      "last_reported": "2026-06-28",
-      "last_checked": "2026-06-28",
+      "last_reported": "2026-06-30",
+      "last_checked": "2026-06-30",
       "status": "NEW",
-      "last_summary": "Following twin earthquakes in Venezuela on June 24, the UN coordinated deployment of 44 international urban search and rescue teams comprising 2,245 specialists and 140 search dogs from 27 countries to assist in locating survivors. The death toll has surpassed 1,400 with extensive physical damage es",
-      "expected_next_event": "Continued rescue operations and humanitarian aid delivery",
+      "last_summary": "Powerful earthquakes in central-northern Venezuela on June 24 caused at least 1,719 deaths and thousands of injuries, with extensive structural damage and displacement. The UN is coordinating humanitarian assistance and search and rescue operations amid ongoing aftershocks and challenging conditions",
+      "expected_next_event": "Continued rescue efforts and humanitarian aid delivery",
       "importance": "high",
       "source_urls": [
-        "https://news.un.org/feed/view/en/story/2026/06/1167825"
+        "https://news.un.org/feed/view/en/story/2026/06/1167837"
       ],
       "timeline": [
         "stable",
@@ -1207,12 +1377,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Continued rescue operations and humanitarian aid delivery",
+      "expected_next_milestone": "Continued rescue efforts and humanitarian aid delivery",
       "emerging_story": {
         "stage": "escalation",
-        "previous_stage": "disaster occurrence",
+        "previous_stage": "escalation",
         "confidence": "high",
-        "expected_next_milestone": "Continued rescue operations and humanitarian aid delivery"
+        "expected_next_milestone": "Continued rescue efforts and humanitarian aid delivery"
       }
     },
     {
@@ -1521,11 +1691,11 @@
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-06-27",
-      "last_checked": "2026-06-27",
+      "last_reported": "2026-06-30",
+      "last_checked": "2026-06-30",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment of ASML's advanced lithography tools and joint efforts on talent development an",
-      "expected_next_event": "construction start and equipment installation",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASML’s advanced lithography tools and developing domestic talent and supply chains.",
+      "expected_next_event": "Deployment of lithography tools and fab ramp-up",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
@@ -1539,7 +1709,7 @@
         "mass production",
         "customer adoption"
       ],
-      "current_stage": "announcement",
+      "current_stage": "consultation",
       "stage_history": [
         {
           "date": "2026-06-27",
@@ -1548,14 +1718,22 @@
           "source_urls": [
             "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
           ]
+        },
+        {
+          "date": "2026-06-30",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASM",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
         }
       ],
-      "expected_next_milestone": "construction start and equipment installation",
+      "expected_next_milestone": "Deployment of lithography tools and fab ramp-up",
       "emerging_story": {
-        "stage": "announcement",
-        "previous_stage": "consultation",
+        "stage": "consultation",
+        "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "construction start and equipment installation"
+        "expected_next_milestone": "Deployment of lithography tools and fab ramp-up"
       }
     },
     {
@@ -1609,6 +1787,47 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Sustainability and AI Strategy",
+      "category": "Semiconductors",
+      "first_seen": "2026-06-30",
+      "last_reported": "2026-06-30",
+      "last_checked": "2026-06-30",
+      "status": "NEW",
+      "last_summary": "Samsung Electronics released its 2026 Sustainability Report detailing progress on environmental, social, and governance strategies, including water stewardship, renewable energy transition, and AI advancement. The Device eXperience Division transitioned 94.8% of energy consumption to renewables and ",
+      "expected_next_event": "Further renewable energy adoption and AI innovation",
+      "importance": "high",
+      "source_urls": [
+        "https://news.samsungsemiconductor.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts/"
+      ],
+      "timeline": [
+        "announcement",
+        "approval",
+        "engineering samples",
+        "fab construction",
+        "pilot production",
+        "mass production",
+        "customer adoption"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-30",
+          "stage": "announcement",
+          "summary": "Samsung Electronics released its 2026 Sustainability Report detailing progress on environmental, social, and governance strategies, including water stewardship, renewable energy transition, and AI advancement. The Device",
+          "source_urls": [
+            "https://news.samsungsemiconductor.com/global/samsung-electronics-releases-2026-sustainability-report-expanding-water-replenishment-efforts/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Further renewable energy adoption and AI innovation",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Further renewable energy adoption and AI innovation"
+      }
     },
     {
       "topic": "Tata Electronics and ASML Announce Strategic Partnership for Dholera 300mm Semiconductor F",
@@ -2072,6 +2291,48 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "SBIC-NASA Initiative",
+      "category": "Space",
+      "first_seen": "2026-06-30",
+      "last_reported": "2026-06-30",
+      "last_checked": "2026-06-30",
+      "status": "NEW",
+      "last_summary": "NASA and the U.S. Small Business Administration launched the SBIC-NASA Initiative to increase investment in American manufacturers and technology providers critical to space exploration, supporting sustained presence on the Moon and Mars. The initiative leverages SBA’s Small Business Investment Comp",
+      "expected_next_event": "Increased private investment and technology development",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/news-release/nasa-sba-announce-new-initiative-to-scale-american-space-economy/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-06-30",
+          "stage": "announcement",
+          "summary": "NASA and the U.S. Small Business Administration launched the SBIC-NASA Initiative to increase investment in American manufacturers and technology providers critical to space exploration, supporting sustained presence on ",
+          "source_urls": [
+            "https://www.nasa.gov/news-release/nasa-sba-announce-new-initiative-to-scale-american-space-economy/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Increased private investment and technology development",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Increased private investment and technology development"
+      }
     },
     {
       "topic": "StriX Constellation",
