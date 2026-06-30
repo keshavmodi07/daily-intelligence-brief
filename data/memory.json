@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-06-30",
+  "last_updated": "2026-07-01",
   "suppression_days": 14,
   "topics": [
     {
@@ -152,6 +152,90 @@
       }
     },
     {
+      "topic": "Claude Science",
+      "category": "AI",
+      "first_seen": "2026-07-01",
+      "last_reported": "2026-07-01",
+      "last_checked": "2026-07-01",
+      "status": "NEW",
+      "last_summary": "Anthropic announced Claude Science, a new AI workbench designed to support scientific research in computational biology and drug development. Claude Science integrates with NVIDIA BioNeMo Agent Toolkit, enabling accelerated workflows and models for life sciences researchers. The product is now avail",
+      "expected_next_event": "Wider adoption and integration in pharmaceutical research pipelines",
+      "importance": "high",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/claude-science-bionemo-agent-toolkit/",
+        "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/"
+      ],
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-01",
+          "stage": "launch",
+          "summary": "Anthropic announced Claude Science, a new AI workbench designed to support scientific research in computational biology and drug development. Claude Science integrates with NVIDIA BioNeMo Agent Toolkit, enabling accelera",
+          "source_urls": [
+            "https://blogs.nvidia.com/blog/claude-science-bionemo-agent-toolkit/",
+            "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Wider adoption and integration in pharmaceutical research pipelines",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Wider adoption and integration in pharmaceutical research pipelines"
+      }
+    },
+    {
+      "topic": "Claude on Azure",
+      "category": "AI",
+      "first_seen": "2026-07-01",
+      "last_reported": "2026-07-01",
+      "last_checked": "2026-07-01",
+      "status": "UPDATED",
+      "last_summary": "Anthropic’s Claude AI models are now generally available on Microsoft Foundry hosted on Azure, running on NVIDIA GB300 Blackwell Ultra GPUs. This enables enterprises to build autonomous and domain-specific AI agents with improved inference performance and efficiency, reducing total cost of ownership",
+      "expected_next_event": "Enterprise adoption growth and expanded AI agent capabilities",
+      "importance": "high",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/"
+      ],
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-01",
+          "stage": "launch",
+          "summary": "Anthropic’s Claude AI models are now generally available on Microsoft Foundry hosted on Azure, running on NVIDIA GB300 Blackwell Ultra GPUs. This enables enterprises to build autonomous and domain-specific AI agents with",
+          "source_urls": [
+            "https://blogs.nvidia.com/blog/anthropic-nvidia-gb300-blackwell-ultra-microsoft-azure/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Enterprise adoption growth and expanded AI agent capabilities",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "funding",
+        "confidence": "high",
+        "expected_next_milestone": "Enterprise adoption growth and expanded AI agent capabilities"
+      }
+    },
+    {
       "topic": "GPT-5.6",
       "category": "AI",
       "first_seen": "2026-06-27",
@@ -190,6 +274,49 @@
         "previous_stage": "consultation",
         "confidence": "high",
         "expected_next_milestone": "general availability and wider adoption"
+      }
+    },
+    {
+      "topic": "GeneBench-Pro",
+      "category": "AI",
+      "first_seen": "2026-07-01",
+      "last_reported": "2026-07-01",
+      "last_checked": "2026-07-01",
+      "status": "NEW",
+      "last_summary": "OpenAI launched GeneBench-Pro, a research-level benchmark designed to evaluate AI agents' ability to perform complex, judgment-heavy tasks in computational biology, genomics, and translational medicine. The benchmark tests AI's capacity to handle ambiguity, revise assumptions, and make consequential",
+      "expected_next_event": "Adoption by AI research and life sciences communities",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/introducing-genebench-pro",
+        "https://openai.com/index/genebench-pro/case-studies"
+      ],
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-01",
+          "stage": "launch",
+          "summary": "OpenAI launched GeneBench-Pro, a research-level benchmark designed to evaluate AI agents' ability to perform complex, judgment-heavy tasks in computational biology, genomics, and translational medicine. The benchmark tes",
+          "source_urls": [
+            "https://openai.com/index/introducing-genebench-pro",
+            "https://openai.com/index/genebench-pro/case-studies"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Adoption by AI research and life sciences communities",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Adoption by AI research and life sciences communities"
       }
     },
     {
@@ -607,6 +734,47 @@
         "previous_stage": "",
         "confidence": "high",
         "expected_next_milestone": "Successful auction and settlement of treasury bills"
+      }
+    },
+    {
+      "topic": "Conflict Impact Monitoring",
+      "category": "Geopolitics",
+      "first_seen": "2026-07-01",
+      "last_reported": "2026-07-01",
+      "last_checked": "2026-07-01",
+      "status": "UPDATED",
+      "last_summary": "The UN reported that missile and drone attacks in Russia and Ukraine have killed at least a dozen civilians over a weekend amid ongoing long-range strikes. Ukrainian authorities reported civilian casualties and injuries from Russian attacks on Dnipro, while Russian authorities reported casualties fr",
+      "expected_next_event": "Further humanitarian assessments and aid delivery",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/06/1167833"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-07-01",
+          "stage": "escalation",
+          "summary": "The UN reported that missile and drone attacks in Russia and Ukraine have killed at least a dozen civilians over a weekend amid ongoing long-range strikes. Ukrainian authorities reported civilian casualties and injuries ",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/06/1167833"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Further humanitarian assessments and aid delivery",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Further humanitarian assessments and aid delivery"
       }
     },
     {
@@ -1345,6 +1513,49 @@
       "emerging_story": {}
     },
     {
+      "topic": "Ukraine Support Loan",
+      "category": "Geopolitics",
+      "first_seen": "2026-07-01",
+      "last_reported": "2026-07-01",
+      "last_checked": "2026-07-01",
+      "status": "NEW",
+      "last_summary": "The European Commission began disbursing €3.9 billion as the first payment under the first tranche of approximately €6 billion dedicated to drone procurement for Ukraine. This funding is part of the €90 billion Ukraine Support Loan aimed at enhancing Ukraine's military capabilities to withstand Russ",
+      "expected_next_event": "Delivery and deployment of drones in Ukraine",
+      "importance": "high",
+      "source_urls": [
+        "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1490",
+        "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1487"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-01",
+          "stage": "funding",
+          "summary": "The European Commission began disbursing €3.9 billion as the first payment under the first tranche of approximately €6 billion dedicated to drone procurement for Ukraine. This funding is part of the €90 billion Ukraine S",
+          "source_urls": [
+            "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1490",
+            "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1487"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Delivery and deployment of drones in Ukraine",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "approval",
+        "confidence": "high",
+        "expected_next_milestone": "Delivery and deployment of drones in Ukraine"
+      }
+    },
+    {
       "topic": "Venezuela Earthquake Response",
       "category": "Geopolitics",
       "first_seen": "2026-06-28",
@@ -1691,11 +1902,11 @@
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-06-30",
-      "last_checked": "2026-06-30",
+      "last_reported": "2026-07-01",
+      "last_checked": "2026-07-01",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASML’s advanced lithography tools and developing domestic talent and supply chains.",
-      "expected_next_event": "Deployment of lithography tools and fab ramp-up",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes collaboration on talent de",
+      "expected_next_event": "Fab construction and equipment installation",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
@@ -1709,7 +1920,7 @@
         "mass production",
         "customer adoption"
       ],
-      "current_stage": "consultation",
+      "current_stage": "approval",
       "stage_history": [
         {
           "date": "2026-06-27",
@@ -1726,14 +1937,22 @@
           "source_urls": [
             "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
           ]
+        },
+        {
+          "date": "2026-07-01",
+          "stage": "approval",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconduc",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
         }
       ],
-      "expected_next_milestone": "Deployment of lithography tools and fab ramp-up",
+      "expected_next_milestone": "Fab construction and equipment installation",
       "emerging_story": {
-        "stage": "consultation",
-        "previous_stage": "announcement",
+        "stage": "approval",
+        "previous_stage": "consultation",
         "confidence": "high",
-        "expected_next_milestone": "Deployment of lithography tools and fab ramp-up"
+        "expected_next_milestone": "Fab construction and equipment installation"
       }
     },
     {
@@ -2050,6 +2269,48 @@
         "previous_stage": "development",
         "confidence": "high",
         "expected_next_milestone": "Demonstration of in-orbit refueling with cryocoupler"
+      }
+    },
+    {
+      "topic": "Moon Base Program",
+      "category": "Space",
+      "first_seen": "2026-07-01",
+      "last_reported": "2026-07-01",
+      "last_checked": "2026-07-01",
+      "status": "NEW",
+      "last_summary": "NASA announced the selection of Astrobotic, Firefly Aerospace, and Intuitive Machines to land four new missions on the Moon in late 2028 as part of the agency’s Moon Base Program. The awards total nearly $600 million and will deliver science payloads to support the development of a sustainable lunar",
+      "expected_next_event": "Mission development and launch preparations",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/news-release/nasa-awards-more-moon-base-science-previews-new-opportunities/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-01",
+          "stage": "funding",
+          "summary": "NASA announced the selection of Astrobotic, Firefly Aerospace, and Intuitive Machines to land four new missions on the Moon in late 2028 as part of the agency’s Moon Base Program. The awards total nearly $600 million and",
+          "source_urls": [
+            "https://www.nasa.gov/news-release/nasa-awards-more-moon-base-science-previews-new-opportunities/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Mission development and launch preparations",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "approval",
+        "confidence": "high",
+        "expected_next_milestone": "Mission development and launch preparations"
       }
     },
     {
