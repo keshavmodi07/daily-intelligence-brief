@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-01",
+  "last_updated": "2026-07-02",
   "suppression_days": 14,
   "topics": [
     {
@@ -1899,6 +1899,48 @@
       "emerging_story": {}
     },
     {
+      "topic": "India Infrastructure",
+      "category": "Infrastructure",
+      "first_seen": "2026-07-02",
+      "last_reported": "2026-07-02",
+      "last_checked": "2026-07-02",
+      "status": "UPDATED",
+      "last_summary": "The Cabinet Committee on Economic Affairs approved a cost estimate of Rs. 81,459 crore for the Eastern and Western Dedicated Freight Corridors (DFC), including land costs. Funding is structured with a 3:1 debt-to-equity ratio, involving bilateral/multilateral debt, Ministry of Railways equity, and P",
+      "expected_next_event": "Construction commencement and progress updates on DFC corridors",
+      "importance": "high",
+      "source_urls": [
+        "https://dfccil.com/Home/DynemicPages?MenuId=78"
+      ],
+      "timeline": [
+        "proposal",
+        "DPR",
+        "approval",
+        "land acquisition",
+        "tender",
+        "construction",
+        "trial",
+        "operations"
+      ],
+      "current_stage": "approval",
+      "stage_history": [
+        {
+          "date": "2026-07-02",
+          "stage": "approval",
+          "summary": "The Cabinet Committee on Economic Affairs approved a cost estimate of Rs. 81,459 crore for the Eastern and Western Dedicated Freight Corridors (DFC), including land costs. Funding is structured with a 3:1 debt-to-equity ",
+          "source_urls": [
+            "https://dfccil.com/Home/DynemicPages?MenuId=78"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Construction commencement and progress updates on DFC corridors",
+      "emerging_story": {
+        "stage": "approval",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Construction commencement and progress updates on DFC corridors"
+      }
+    },
+    {
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
@@ -2596,6 +2638,56 @@
       }
     },
     {
+      "topic": "Space",
+      "category": "Space",
+      "first_seen": "2026-07-02",
+      "last_reported": "2026-07-02",
+      "last_checked": "2026-07-02",
+      "status": "NEW",
+      "last_summary": "NASA is recruiting volunteers for a yearlong simulated deep space mission at Johnson Space Center, starting no earlier than August 2027. Participants will live and work in isolated habitats simulating interplanetary environments to study astronaut adaptation and inform future crewed missions to the ",
+      "expected_next_event": "Selection and commencement of the simulated mission",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/humans-in-space/nasa-seeks-volunteers-for-new-yearlong-simulated-moon-mars-mission/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "recruitment",
+      "stage_history": [
+        {
+          "date": "2026-07-02",
+          "stage": "launch",
+          "summary": "NASA's LINK, a robotic servicing spacecraft built by Katalyst Space, launched on July 2, 2026, to rendezvous with and raise the orbit of the Neil Gehrels Swift Observatory. This mission aims to prevent the observatory fr",
+          "source_urls": [
+            "https://www.nasa.gov/image-article/link-spacecraft-set-for-mission-to-boost-nasas-swift-observatory/"
+          ]
+        },
+        {
+          "date": "2026-07-02",
+          "stage": "recruitment",
+          "summary": "NASA is recruiting volunteers for a yearlong simulated deep space mission at Johnson Space Center, starting no earlier than August 2027. Participants will live and work in isolated habitats simulating interplanetary envi",
+          "source_urls": [
+            "https://www.nasa.gov/humans-in-space/nasa-seeks-volunteers-for-new-yearlong-simulated-moon-mars-mission/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Selection and commencement of the simulated mission",
+      "emerging_story": {
+        "stage": "recruitment",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Selection and commencement of the simulated mission"
+      }
+    },
+    {
       "topic": "StriX Constellation",
       "category": "Space",
       "first_seen": "2026-06-28",
@@ -2677,6 +2769,48 @@
         "previous_stage": "mission planning",
         "confidence": "high",
         "expected_next_milestone": "Completion of Synspective constellation deployment by end of decade"
+      }
+    },
+    {
+      "topic": "AI",
+      "category": "Technology",
+      "first_seen": "2026-07-02",
+      "last_reported": "2026-07-02",
+      "last_checked": "2026-07-02",
+      "status": "UPDATED",
+      "last_summary": "Anthropic announced Claude Science, an AI workbench for scientific research that integrates NVIDIA's BioNeMo Agent Toolkit, enabling life sciences researchers to access accelerated AI workflows and models within a natural language interface. This integration facilitates faster and more sophisticated",
+      "expected_next_event": "Adoption and deployment in pharmaceutical research workflows",
+      "importance": "high",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/claude-science-bionemo-agent-toolkit/"
+      ],
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-02",
+          "stage": "announcement",
+          "summary": "The United Nations launched the first global, independent scientific assessment on artificial intelligence, outlining evidence-based opportunities, risks, and impacts across seven key domains. The report calls for urgent",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167853",
+            "https://news.un.org/feed/view/en/story/2026/07/1167848"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Adoption and deployment in pharmaceutical research workflows",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Adoption and deployment in pharmaceutical research workflows"
       }
     },
     {
@@ -2947,6 +3081,45 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Semiconductors",
+      "category": "Technology",
+      "first_seen": "2026-07-02",
+      "last_reported": "2026-07-02",
+      "last_checked": "2026-07-02",
+      "status": "UPDATED",
+      "last_summary": "Samsung Electronics announced record quarterly revenue of KRW 133.9 trillion and operating profit of KRW 57.2 trillion for Q1 2026. The Device Solutions Division saw an 86% quarter-on-quarter sales increase, driven by strong memory business performance and higher average selling prices. The company ",
+      "expected_next_event": "Continued growth in AI-related semiconductor demand and product launches",
+      "importance": "high",
+      "source_urls": [
+        "https://news.samsungsemiconductor.com/global/samsung-electronics-announces-first-quarter-2026-results/"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-02",
+          "stage": "announcement",
+          "summary": "Tata Electronics and ASML announced a strategic partnership through a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Continued growth in AI-related semiconductor demand and product launches",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Continued growth in AI-related semiconductor demand and product launches"
+      }
     },
     {
       "topic": "TSMC Semiconductor Manufacturing",
