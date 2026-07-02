@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-07-03",
   "suppression_days": 14,
   "topics": [
     {
@@ -663,6 +663,49 @@
       "stage_history": [],
       "expected_next_milestone": "Rate decision, inflation update, liquidity action, or regulatory change",
       "emerging_story": {}
+    },
+    {
+      "topic": "Reserve Bank of India",
+      "category": "Economics",
+      "first_seen": "2026-07-03",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
+      "status": "NEW",
+      "last_summary": "The Reserve Bank of India imposed monetary penalties on Nirmal Urban Co-operative Bank Ltd., The N.E. & E.C. Railway Employees’ Multi-State Primary Co-operative Bank Ltd, and Dharmavir Sambhaji Urban Cooperative Bank Ltd. for non-compliance with RBI directions related to exposure limits, credit info",
+      "expected_next_event": "Banks to comply with RBI directions and avoid further penalties",
+      "importance": "medium",
+      "source_urls": [
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63075",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63071",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63070"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "enforcement",
+      "stage_history": [
+        {
+          "date": "2026-07-03",
+          "stage": "enforcement",
+          "summary": "The Reserve Bank of India imposed monetary penalties on Nirmal Urban Co-operative Bank Ltd., The N.E. & E.C. Railway Employees’ Multi-State Primary Co-operative Bank Ltd, and Dharmavir Sambhaji Urban Cooperative Bank Ltd",
+          "source_urls": [
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63075",
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63071",
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63070"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Banks to comply with RBI directions and avoid further penalties",
+      "emerging_story": {
+        "stage": "enforcement",
+        "previous_stage": "",
+        "confidence": "high",
+        "expected_next_milestone": "Banks to comply with RBI directions and avoid further penalties"
+      }
     },
     {
       "topic": "Reserve Bank of India releases June 2026 Bulletin and imposes monetary penalties on cooper",
@@ -1941,6 +1984,45 @@
       }
     },
     {
+      "topic": "EU Energy Infrastructure",
+      "category": "Politics",
+      "first_seen": "2026-07-03",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
+      "status": "NEW",
+      "last_summary": "The European Parliament's Industry, Research and Energy Committee adopted a proposal to accelerate permitting processes for electricity grids, renewable energy projects, storage facilities, and recharging stations across the EU, including shorter deadlines and a single national digital portal.",
+      "expected_next_event": "Implementation of new permitting rules by EU member states",
+      "importance": "high",
+      "source_urls": [
+        "https://www.europarl.europa.eu/news/en/press-room/20260629IPR46207/"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "approval",
+      "stage_history": [
+        {
+          "date": "2026-07-03",
+          "stage": "approval",
+          "summary": "The European Parliament's Industry, Research and Energy Committee adopted a proposal to accelerate permitting processes for electricity grids, renewable energy projects, storage facilities, and recharging stations across",
+          "source_urls": [
+            "https://www.europarl.europa.eu/news/en/press-room/20260629IPR46207/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Implementation of new permitting rules by EU member states",
+      "emerging_story": {
+        "stage": "approval",
+        "previous_stage": "proposal",
+        "confidence": "high",
+        "expected_next_milestone": "Implementation of new permitting rules by EU member states"
+      }
+    },
+    {
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
@@ -2244,6 +2326,48 @@
       }
     },
     {
+      "topic": "Artemis Program",
+      "category": "Space",
+      "first_seen": "2026-07-03",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
+      "status": "NEW",
+      "last_summary": "NASA’s live coverage of the Artemis II mission, including launch, lunar flyby, and splashdown, attracted over 149.4 million views across NASA platforms, setting new agency streaming records and demonstrating strong global public engagement.",
+      "expected_next_event": "Artemis II mission completion and data analysis",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/general/nasas-artemis-ii-breaks-agency-streaming-record/"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-03",
+          "stage": "launch",
+          "summary": "NASA’s live coverage of the Artemis II mission, including launch, lunar flyby, and splashdown, attracted over 149.4 million views across NASA platforms, setting new agency streaming records and demonstrating strong globa",
+          "source_urls": [
+            "https://www.nasa.gov/general/nasas-artemis-ii-breaks-agency-streaming-record/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Artemis II mission completion and data analysis",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "mission planning",
+        "confidence": "high",
+        "expected_next_milestone": "Artemis II mission completion and data analysis"
+      }
+    },
+    {
       "topic": "Botswana to sign Artemis Accords at NASA Headquarters",
       "category": "Space",
       "first_seen": "2026-06-23",
@@ -2538,6 +2662,48 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Ramses Asteroid Mission",
+      "category": "Space",
+      "first_seen": "2026-07-03",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
+      "status": "NEW",
+      "last_summary": "The European Space Agency contracted Spanish company EMXYS to build Don Quijote, the first CubeSat designed to operate on the surface of an asteroid. It will be deployed onto asteroid Apophis by the Ramses mission before its Earth flyby in April 2029.",
+      "expected_next_event": "Development, integration, and testing of Don Quijote CubeSat",
+      "importance": "high",
+      "source_urls": [
+        "https://www.esa.int/Space_Safety/Planetary_Defence/Surface_CubeSat_contracted_for_Ramses_asteroid_mission"
+      ],
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "contracting",
+      "stage_history": [
+        {
+          "date": "2026-07-03",
+          "stage": "contracting",
+          "summary": "The European Space Agency contracted Spanish company EMXYS to build Don Quijote, the first CubeSat designed to operate on the surface of an asteroid. It will be deployed onto asteroid Apophis by the Ramses mission before",
+          "source_urls": [
+            "https://www.esa.int/Space_Safety/Planetary_Defence/Surface_CubeSat_contracted_for_Ramses_asteroid_mission"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Development, integration, and testing of Don Quijote CubeSat",
+      "emerging_story": {
+        "stage": "contracting",
+        "previous_stage": "mission planning",
+        "confidence": "high",
+        "expected_next_milestone": "Development, integration, and testing of Don Quijote CubeSat"
+      }
     },
     {
       "topic": "Rocket Lab Sets New Responsive Space Launch Record for U.S. Space Force Mission",
@@ -2903,11 +3069,11 @@
       "topic": "Dholera Fab",
       "category": "Technology",
       "first_seen": "2026-06-26",
-      "last_reported": "2026-06-29",
-      "last_checked": "2026-06-29",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance India's semiconductor manufacturing ecosystem by deploying ASML's advanced lithography tools at Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes talent development, supply chain",
-      "expected_next_event": "Deployment of ASML lithography tools and ramp-up of Dholera fab",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership focuses on deploying ASML's advanced lithography tools and developing domestic talent, supply c",
+      "expected_next_event": "Deployment of ASML lithography tools and talent development for Dholera fab ramp-up",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
@@ -2932,12 +3098,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Deployment of ASML lithography tools and ramp-up of Dholera fab",
+      "expected_next_milestone": "Deployment of ASML lithography tools and talent development for Dholera fab ramp-up",
       "emerging_story": {
         "stage": "announcement",
         "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "Deployment of ASML lithography tools and ramp-up of Dholera fab"
+        "expected_next_milestone": "Deployment of ASML lithography tools and talent development for Dholera fab ramp-up"
       }
     },
     {
@@ -2983,11 +3149,11 @@
       "topic": "Grok Build",
       "category": "Technology",
       "first_seen": "2026-06-28",
-      "last_reported": "2026-06-29",
-      "last_checked": "2026-06-29",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
       "status": "UPDATED",
-      "last_summary": "xAI launched the Grok Build Plugin Marketplace, integrated into Grok Build, allowing users to browse, install, and update plugins directly from the terminal. The marketplace includes plugins from partners across the stack and supports easy sharing and submission of new plugins.",
-      "expected_next_event": "Growth in plugin ecosystem and adoption by developers",
+      "last_summary": "xAI launched the Grok Build Plugin Marketplace, an integrated platform within Grok Build that allows users to browse, install, and update plugins for agentic coding workflows directly from the terminal.",
+      "expected_next_event": "Expansion of plugin catalog and increased adoption among developers",
       "importance": "high",
       "source_urls": [
         "https://x.ai/news/grok-plugin-marketplace"
@@ -3010,12 +3176,90 @@
           ]
         }
       ],
-      "expected_next_milestone": "Growth in plugin ecosystem and adoption by developers",
+      "expected_next_milestone": "Expansion of plugin catalog and increased adoption among developers",
       "emerging_story": {
         "stage": "launch",
-        "previous_stage": "announcement",
+        "previous_stage": "early beta",
         "confidence": "high",
-        "expected_next_milestone": "Growth in plugin ecosystem and adoption by developers"
+        "expected_next_milestone": "Expansion of plugin catalog and increased adoption among developers"
+      }
+    },
+    {
+      "topic": "Monetization Gateway",
+      "category": "Technology",
+      "first_seen": "2026-07-03",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
+      "status": "NEW",
+      "last_summary": "Cloudflare announced the Monetization Gateway, enabling customers to charge for any resource behind Cloudflare (web pages, datasets, APIs, MCP tools) with payments settling in stablecoins over the x402 open protocol, eliminating the need for building proprietary payment stacks.",
+      "expected_next_event": "Launch and adoption of Monetization Gateway by Cloudflare customers",
+      "importance": "high",
+      "source_urls": [
+        "https://blog.cloudflare.com/monetization-gateway/"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-03",
+          "stage": "announcement",
+          "summary": "Cloudflare announced the Monetization Gateway, enabling customers to charge for any resource behind Cloudflare (web pages, datasets, APIs, MCP tools) with payments settling in stablecoins over the x402 open protocol, eli",
+          "source_urls": [
+            "https://blog.cloudflare.com/monetization-gateway/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Launch and adoption of Monetization Gateway by Cloudflare customers",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "",
+        "confidence": "high",
+        "expected_next_milestone": "Launch and adoption of Monetization Gateway by Cloudflare customers"
+      }
+    },
+    {
+      "topic": "NVIDIA AI Infrastructure",
+      "category": "Technology",
+      "first_seen": "2026-07-03",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
+      "status": "NEW",
+      "last_summary": "NVIDIA introduced a new business model enabling AI cloud providers to procure NVIDIA infrastructure through revenue-sharing and credit-support arrangements, facilitating faster access to large-scale accelerated computing for AI startups and enterprises.",
+      "expected_next_event": "Wider adoption of the new business model by AI cloud providers and startups",
+      "importance": "high",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-03",
+          "stage": "announcement",
+          "summary": "NVIDIA introduced a new business model enabling AI cloud providers to procure NVIDIA infrastructure through revenue-sharing and credit-support arrangements, facilitating faster access to large-scale accelerated computing",
+          "source_urls": [
+            "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Wider adoption of the new business model by AI cloud providers and startups",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "",
+        "confidence": "high",
+        "expected_next_milestone": "Wider adoption of the new business model by AI cloud providers and startups"
       }
     },
     {
@@ -3211,6 +3455,47 @@
         "previous_stage": "development",
         "confidence": "high",
         "expected_next_milestone": "Mass production and adoption in next-generation mobile devices"
+      }
+    },
+    {
+      "topic": "UN AI Governance",
+      "category": "Technology",
+      "first_seen": "2026-07-03",
+      "last_reported": "2026-07-03",
+      "last_checked": "2026-07-03",
+      "status": "NEW",
+      "last_summary": "The UN Independent International Scientific Panel on AI released its preliminary report assessing AI's opportunities, risks, and impacts across seven domains, urging governments to act promptly to establish effective global governance frameworks.",
+      "expected_next_event": "Negotiations on WHO Pandemic Agreement and AI governance frameworks",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/07/1167853",
+        "https://news.un.org/feed/view/en/story/2026/07/1167848"
+      ],
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-03",
+          "stage": "announcement",
+          "summary": "The UN Independent International Scientific Panel on AI released its preliminary report assessing AI's opportunities, risks, and impacts across seven domains, urging governments to act promptly to establish effective glo",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167853",
+            "https://news.un.org/feed/view/en/story/2026/07/1167848"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Negotiations on WHO Pandemic Agreement and AI governance frameworks",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "",
+        "confidence": "high",
+        "expected_next_milestone": "Negotiations on WHO Pandemic Agreement and AI governance frameworks"
       }
     }
   ]
