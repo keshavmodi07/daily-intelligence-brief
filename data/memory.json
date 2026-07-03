@@ -1,4 +1,7 @@
 {
+  "project": "personal-intelligence-platform",
+  "last_updated": "2026-07-04",
+  "suppression_days": 14,
   "topics": [
     {
       "topic": "AI Gateway Voice Integration",
@@ -632,6 +635,46 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Government Debt Management",
+      "category": "Economics",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "status": "UPDATED",
+      "last_summary": "The Reserve Bank of India announced the auction of Government of India Treasury Bills totaling ₹24,000 crore across 91-day, 182-day, and 364-day tenors, scheduled for July 8, 2026, with settlement on July 9, 2026.",
+      "expected_next_event": "Successful auction and settlement",
+      "importance": "medium",
+      "source_urls": [
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63086"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "announcement",
+          "summary": "The Reserve Bank of India announced the auction of Government of India Treasury Bills totaling ₹24,000 crore across 91-day, 182-day, and 364-day tenors, scheduled for July 8, 2026, with settlement on July 9, 2026.",
+          "source_urls": [
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63086"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Successful auction and settlement",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Successful auction and settlement"
+      }
     },
     {
       "topic": "India GDP",
@@ -2082,64 +2125,6 @@
       }
     },
     {
-      "topic": "Dholera Semiconductor Fab",
-      "category": "Semiconductors",
-      "first_seen": "2026-06-27",
-      "last_reported": "2026-07-01",
-      "last_checked": "2026-07-01",
-      "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes collaboration on talent de",
-      "expected_next_event": "Fab construction and equipment installation",
-      "importance": "high",
-      "source_urls": [
-        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-      ],
-      "times_mentioned": 1,
-      "timeline": [
-        "announcement",
-        "approval",
-        "engineering samples",
-        "fab construction",
-        "pilot production",
-        "mass production",
-        "customer adoption"
-      ],
-      "current_stage": "approval",
-      "stage_history": [
-        {
-          "date": "2026-06-27",
-          "stage": "announcement",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        },
-        {
-          "date": "2026-06-30",
-          "stage": "consultation",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASM",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        },
-        {
-          "date": "2026-07-01",
-          "stage": "approval",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconduc",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Fab construction and equipment installation",
-      "emerging_story": {
-        "stage": "approval",
-        "previous_stage": "consultation",
-        "confidence": "high",
-        "expected_next_milestone": "Fab construction and equipment installation"
-      }
-    },
-    {
       "topic": "India Semiconductor Mission",
       "category": "Semiconductors",
       "first_seen": "",
@@ -2396,16 +2381,16 @@
       "topic": "Artemis Program",
       "category": "Space",
       "first_seen": "2026-07-03",
-      "last_reported": "2026-07-03",
-      "last_checked": "2026-07-03",
-      "status": "NEW",
-      "last_summary": "NASA’s live coverage of the Artemis II mission, including launch, lunar flyby, and splashdown, attracted over 149.4 million views across NASA platforms, setting new agency streaming records and demonstrating strong global public engagement.",
-      "expected_next_event": "Artemis II mission completion and data analysis",
+      "last_reported": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "status": "UPDATED",
+      "last_summary": "NASA's live coverage of the Artemis II mission, including launch, lunar flyby, and splashdown, drew over 149 million views across NASA platforms, setting new agency streaming records and demonstrating strong global public engagement.",
+      "expected_next_event": "Artemis III lunar landing mission",
       "importance": "high",
       "source_urls": [
         "https://www.nasa.gov/general/nasas-artemis-ii-breaks-agency-streaming-record/"
       ],
-      "times_mentioned": 1,
+      "times_mentioned": 2,
       "timeline": [
         "announcement",
         "design",
@@ -2427,12 +2412,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Artemis II mission completion and data analysis",
+      "expected_next_milestone": "Artemis III lunar landing mission",
       "emerging_story": {
         "stage": "launch",
-        "previous_stage": "mission planning",
+        "previous_stage": "construction",
         "confidence": "high",
-        "expected_next_milestone": "Artemis II mission completion and data analysis"
+        "expected_next_milestone": "Artemis III lunar landing mission"
       }
     },
     {
@@ -2936,6 +2921,49 @@
       }
     },
     {
+      "topic": "Space Systems Integration",
+      "category": "Space",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "status": "NEW",
+      "last_summary": "Rocket Lab announced a definitive agreement to acquire Iridium Communications for approximately $8 billion, combining Rocket Lab's launch and satellite manufacturing capabilities with Iridium's global satellite communications network and services.",
+      "expected_next_event": "Completion of acquisition and integration of operations",
+      "importance": "high",
+      "source_urls": [
+        "https://rocketlabcorp.com/updates/rocket-lab-to-acquire-iridium-in-historic-deal-creating-a-fully-vertically-integrated-space-powerhouse-primed-for-growth/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "approval",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "approval",
+          "summary": "Rocket Lab announced a definitive agreement to acquire Iridium Communications for approximately $8 billion, combining Rocket Lab's launch and satellite manufacturing capabilities with Iridium's global satellite communica",
+          "source_urls": [
+            "https://rocketlabcorp.com/updates/rocket-lab-to-acquire-iridium-in-historic-deal-creating-a-fully-vertically-integrated-space-powerhouse-primed-for-growth/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Completion of acquisition and integration of operations",
+      "emerging_story": {
+        "stage": "approval",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Completion of acquisition and integration of operations"
+      }
+    },
+    {
       "topic": "StriX Constellation",
       "category": "Space",
       "first_seen": "2026-06-28",
@@ -3192,6 +3220,112 @@
         "previous_stage": "announcement",
         "confidence": "high",
         "expected_next_milestone": "Deployment of ASML lithography tools and talent development for Dholera fab ramp-up"
+      }
+    },
+    {
+      "topic": "Dholera Semiconductor Fab",
+      "category": "Technology",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "status": "UPDATED",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lithography tools and support talent development and supply chain initiatives.",
+      "expected_next_event": "Deployment and ramp-up of lithography tools at Dholera fab",
+      "importance": "high",
+      "source_urls": [
+        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+      ],
+      "times_mentioned": 2,
+      "timeline": [
+        "announcement",
+        "approval",
+        "engineering samples",
+        "fab construction",
+        "pilot production",
+        "mass production",
+        "customer adoption"
+      ],
+      "current_stage": "consultation",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "announcement",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-06-30",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASM",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-07-01",
+          "stage": "approval",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconduc",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-07-04",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lith",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Deployment and ramp-up of lithography tools at Dholera fab",
+      "emerging_story": {
+        "stage": "consultation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Deployment and ramp-up of lithography tools at Dholera fab"
+      }
+    },
+    {
+      "topic": "FlashAttention Kernel",
+      "category": "Technology",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "status": "NEW",
+      "last_summary": "Together AI released FlashAttention-4, an improved attention kernel co-designed with algorithms and hardware optimizations for asymmetric hardware scaling on NVIDIA Blackwell GPUs. It achieves up to 2.7x speed improvements over previous versions, enabling faster Transformer model inference.",
+      "expected_next_event": "Widespread adoption in AI model training and inference frameworks",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/flashattention-4"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "launch",
+          "summary": "Together AI released FlashAttention-4, an improved attention kernel co-designed with algorithms and hardware optimizations for asymmetric hardware scaling on NVIDIA Blackwell GPUs. It achieves up to 2.7x speed improvemen",
+          "source_urls": [
+            "https://www.together.ai/blog/flashattention-4"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Widespread adoption in AI model training and inference frameworks",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "engineering samples",
+        "confidence": "high",
+        "expected_next_milestone": "Widespread adoption in AI model training and inference frameworks"
       }
     },
     {
@@ -3507,6 +3641,46 @@
       }
     },
     {
+      "topic": "Together AI Platform",
+      "category": "Technology",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "status": "NEW",
+      "last_summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of compute capacity to support expected growth in AI compute needs.",
+      "expected_next_event": "Deployment of expanded compute infrastructure and scaling of AI services",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/announcing-our-series-c"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "funding",
+          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Deployment of expanded compute infrastructure and scaling of AI services",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Deployment of expanded compute infrastructure and scaling of AI services"
+      }
+    },
+    {
       "topic": "UFS 5.0",
       "category": "Technology",
       "first_seen": "2026-06-28",
@@ -3596,8 +3770,5 @@
         "expected_next_milestone": "Negotiations on WHO Pandemic Agreement and AI governance frameworks"
       }
     }
-  ],
-  "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-03",
-  "suppression_days": 14
+  ]
 }
