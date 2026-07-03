@@ -24,11 +24,15 @@ Memory rules:
 - Full stories should be NEW or UPDATED.
 - UNCHANGED watchlist items may appear only in a compact unchanged list.
 - Prefer "what changed since yesterday".
-- Avoid "no updates found" unless verification_notes show an attempt.
+- Avoid "no updates found" unless verification_notes or coverage_dashboard show a real verification attempt.
 - Use project_tracker to show followed projects and whether they advanced stages.
 - Use emerging_story_tracker for conflicts, infrastructure programs, defence projects, strategic industrial policy, and space programs.
 - Use silent_signals for quiet official/procurement/standards/consultation/research/project updates that may become future headlines.
 - Do not imply a project advanced unless stage_advanced is true or the evidence clearly shows a milestone.
+- Use coverage_dashboard to expose weak beats instead of hiding them.
+- Render coverage as star-style ratings when useful, using the numeric stars field.
+- If a beat is thin, say "coverage was thin after fallback verification" rather than pretending nothing happened.
+- Use what_i_probably_missed_today to list quiet areas searched but not confidently resolved.
 
 Implication engine:
 - For every major story, include: What happened, Why it matters, Immediate implications, Second-order implications, Who benefits, Who loses, Founder opportunity where relevant, Investor takeaway where relevant, India implication, Probability.
@@ -46,6 +50,8 @@ Output exactly these sections:
 ## What Changed Since Yesterday
 
 ## Executive Summary
+
+## Coverage Dashboard
 
 ## India Growth Tracker
 
@@ -72,6 +78,8 @@ Output exactly these sections:
 ## Projects You Follow
 
 ## Silent Signals
+
+## What I Probably Missed Today
 
 ## Hidden Implications
 

@@ -21,6 +21,8 @@ It is designed to report what changed, avoid stale repeats, include quiet offici
 
 The system also maintains project/story stages, an emerging story tracker, silent signals, and an implication engine for major stories.
 
+It also computes a beat-level coverage dashboard. If a beat is thin after memory suppression, the pipeline runs targeted fallback searches before writing the report. This is designed to prevent one recurring India or AI story from masking weak coverage elsewhere.
+
 ## Files
 
 ```text
@@ -226,6 +228,27 @@ Major stories are prompted through a consistent implication engine:
 - Strategic consequence scores
 
 If evidence is weak, the brief should label the implication as a plausible hypothesis rather than a likely outcome.
+
+## Beat Coverage
+
+The platform checks daily breadth across beats such as AI, India, Infrastructure, Manufacturing, Railways, Defence, Energy, Economics, Space, Science, and Geopolitics.
+
+Each beat has subbeats. For example:
+
+- India: infrastructure, manufacturing, economy, policy, defence, energy
+- AI: models, startups, research, tools, enterprise, hardware
+- Geopolitics: Europe, Middle East, Indo-Pacific, Americas
+
+If a beat scores below `MIN_COVERAGE_STARS`, the system performs targeted fallback searches for quiet official decisions, tenders, approvals, circulars, project milestones, and industrial investments. Results are included in:
+
+- `Coverage Dashboard`
+- `What I Probably Missed Today`
+- `data/history/YYYY-MM-DD.json`
+
+Tune with:
+
+- `MIN_COVERAGE_STARS`
+- `MAX_BEAT_FALLBACK_QUERIES`
 
 ## Must-Not-Miss Verification
 

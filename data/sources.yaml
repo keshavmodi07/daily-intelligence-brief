@@ -103,6 +103,36 @@ groups:
       rss_url: https://blog.cloudflare.com/rss/
       url: https://blog.cloudflare.com/
       official: true
+    - name: Cursor Updates
+      rss_url: https://news.google.com/rss/search?q=site%3Acursor.com%20%28changelog%20OR%20blog%20OR%20release%20OR%20update%29&hl=en-US&gl=US&ceid=US%3Aen
+      url: https://cursor.com/
+      official: true
+    - name: Windsurf Updates
+      rss_url: https://news.google.com/rss/search?q=site%3Awindsurf.com%20OR%20site%3Acodeium.com%20%28Windsurf%20OR%20Codeium%29%20%28release%20OR%20update%20OR%20launch%29&hl=en-US&gl=US&ceid=US%3Aen
+      url: https://windsurf.com/
+      official: true
+    - name: Lovable Blog
+      kind: html
+      url: https://lovable.dev/blog
+      official: true
+      selectors: ["article a", "h2 a", "h3 a", "a[href*='/blog']"]
+    - name: Replit Blog
+      rss_url: https://blog.replit.com/feed.xml
+      url: https://blog.replit.com/
+      official: true
+    - name: Vercel AI Updates
+      rss_url: https://news.google.com/rss/search?q=site%3Avercel.com%20%28AI%20SDK%20OR%20v0%20OR%20AI%20Gateway%20OR%20agents%29&hl=en-US&gl=US&ceid=US%3Aen
+      url: https://vercel.com/ai
+      official: true
+    - name: Groq Blog
+      rss_url: https://wow.groq.com/feed/
+      url: https://groq.com/
+      official: true
+    - name: Together AI Blog
+      kind: html
+      url: https://www.together.ai/blog
+      official: true
+      selectors: ["article a", "h2 a", "h3 a", "a[href*='/blog/']"]
 
   Business:
     - name: Reuters Business

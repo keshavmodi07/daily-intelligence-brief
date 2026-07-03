@@ -49,10 +49,12 @@ MAX_EVENTS_PER_GROUP = int(os.environ.get("MAX_EVENTS_PER_GROUP", "8"))
 MAX_MEMORY_EVENTS = int(os.environ.get("MAX_MEMORY_EVENTS", "35"))
 MAX_UNCHANGED_WATCHLIST_ITEMS = int(os.environ.get("MAX_UNCHANGED_WATCHLIST_ITEMS", "10"))
 MAX_FALLBACK_QUERIES = int(os.environ.get("MAX_FALLBACK_QUERIES", "24"))
+MAX_BEAT_FALLBACK_QUERIES = int(os.environ.get("MAX_BEAT_FALLBACK_QUERIES", "18"))
 
 MIN_EVENT_SCORE = float(os.environ.get("MIN_EVENT_SCORE", "18"))
 MIN_FINAL_SCORE = float(os.environ.get("MIN_FINAL_SCORE", "22"))
 CRITICAL_SCORE_THRESHOLD = float(os.environ.get("CRITICAL_SCORE_THRESHOLD", "38"))
+MIN_COVERAGE_STARS = int(os.environ.get("MIN_COVERAGE_STARS", "3"))
 
 EXTRACT_ARTICLE_TEXT = os.environ.get("EXTRACT_ARTICLE_TEXT", "true").lower() == "true"
 ENABLE_TARGETED_FALLBACK_SEARCH = os.environ.get("ENABLE_TARGETED_FALLBACK_SEARCH", "true").lower() == "true"

@@ -25,6 +25,10 @@ Memory rules:
 - Use project_tracker to show followed projects and whether they advanced stages.
 - Use silent_signals for quiet updates that are not front-page news but may matter later.
 - Do not imply a project advanced unless stage_advanced is true or the evidence clearly shows a milestone.
+- Use coverage_dashboard to show whether AI, startups, tools, hardware, research, and related beats were broad enough.
+- Render coverage as star-style ratings when useful, using the numeric stars field.
+- If coverage is thin, say it was thin after fallback verification; do not write a fake "no updates" conclusion.
+- Use what_i_probably_missed_today for searched-but-unresolved quiet areas.
 
 Implication engine:
 - For every major story, include: What happened, Why it matters, Immediate implications, Second-order implications, Who benefits, Who loses, Founder opportunity, Investor takeaway, India implication when relevant, Probability.
@@ -43,6 +47,8 @@ Output exactly these sections:
 
 ## Executive Summary
 
+## Coverage Dashboard
+
 ## AI Frontier
 
 ## Startup Radar
@@ -60,6 +66,8 @@ Output exactly these sections:
 ## Hidden Opportunities
 
 ## Silent Signals
+
+## What I Probably Missed Today
 
 ## Projects You Follow
 

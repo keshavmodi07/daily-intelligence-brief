@@ -178,6 +178,145 @@ DEFAULT_TIMELINES: dict[str, list[str]] = {
     "Geopolitics": ["stable", "tension", "escalating", "crisis", "ceasefire talks", "de-escalating", "settlement"],
 }
 
+BEAT_REQUIREMENTS: dict[str, dict[str, Any]] = {
+    "AI": {
+        "subbeats": {
+            "models": ["OpenAI", "Anthropic", "DeepMind", "Meta AI", "Mistral", "Qwen", "xAI"],
+            "startups": ["Perplexity", "ElevenLabs", "Groq", "Together AI"],
+            "research": ["arXiv", "paper", "benchmark", "research"],
+            "tools": ["Cursor", "Windsurf", "Lovable", "Replit", "Vercel AI", "developer tool"],
+            "enterprise": ["Microsoft", "Google Cloud", "AWS", "enterprise", "copilot"],
+            "hardware": ["Nvidia", "inference chip", "GPU", "ASIC", "semiconductor"],
+        },
+        "fallback_queries": [
+            "official AI model launches OpenAI Anthropic Google DeepMind Meta Mistral xAI last 2 days",
+            "AI developer tools Cursor Windsurf Lovable Replit Vercel AI product updates last 2 days",
+            "AI infrastructure Groq Together AI Nvidia inference hardware updates last 2 days",
+        ],
+    },
+    "India": {
+        "subbeats": {
+            "infrastructure": ["NHAI", "MoRTH", "expressway", "highway", "metro", "airport", "port", "tunnel"],
+            "manufacturing": ["DPIIT", "Invest India", "factory", "manufacturing", "electronics", "semiconductor"],
+            "economy": ["RBI", "inflation", "GDP", "exports", "GST", "finance ministry"],
+            "policy": ["Cabinet", "PIB", "notification", "scheme", "policy", "consultation"],
+            "defence": ["defence", "DRDO", "procurement", "missile", "aircraft", "shipyard"],
+            "energy": ["renewable", "solar", "wind", "power", "coal", "petroleum", "green hydrogen"],
+        },
+        "fallback_queries": [
+            "site:pib.gov.in India Cabinet approval infrastructure manufacturing energy defence railway today",
+            "site:nhai.gov.in OR site:morth.nic.in India highway expressway tender award project update",
+            "site:powermin.gov.in OR site:mnre.gov.in India renewable power project policy update",
+            "site:mod.gov.in India defence procurement manufacturing contract update",
+        ],
+    },
+    "Infrastructure": {
+        "subbeats": {
+            "highways": ["NHAI", "MoRTH", "highway", "expressway", "Bharatmala"],
+            "railways": ["railway", "DFC", "DFCCIL", "NHSRCL", "station redevelopment", "Vande Bharat"],
+            "metros": ["metro", "urban rail"],
+            "airports_ports": ["airport", "port", "Sagarmala", "AAI"],
+            "industrial_corridors": ["industrial corridor", "logistics park", "NICDC"],
+        },
+        "fallback_queries": [
+            "India infrastructure quiet updates NHAI DFCCIL NHSRCL metro airport port tender award last 2 days",
+            "site:pib.gov.in railways highways airports ports logistics parks India approval tender last 2 days",
+        ],
+    },
+    "Manufacturing": {
+        "subbeats": {
+            "electronics": ["electronics", "mobile", "PLI", "EMS"],
+            "semiconductors": ["semiconductor", "fab", "ATMP", "Dholera", "Micron"],
+            "automotive": ["EV", "battery", "automotive", "auto"],
+            "industrial_policy": ["DPIIT", "industrial policy", "manufacturing"],
+        },
+        "fallback_queries": [
+            "India manufacturing investment factory electronics semiconductor DPIIT Invest India last 2 days",
+            "site:investindia.gov.in India factory investment manufacturing semiconductor electronics update",
+        ],
+    },
+    "Railways": {
+        "subbeats": {
+            "freight": ["DFC", "DFCCIL", "freight corridor"],
+            "high_speed": ["NHSRCL", "bullet train", "high speed rail"],
+            "stations": ["station redevelopment", "Amrit Bharat station"],
+            "rolling_stock": ["Vande Bharat", "locomotive", "coach"],
+        },
+        "fallback_queries": [
+            "Indian Railways DFCCIL NHSRCL Vande Bharat station redevelopment tender update last 2 days",
+            "site:pib.gov.in Ministry of Railways project approval tender milestone last 2 days",
+        ],
+    },
+    "Defence": {
+        "subbeats": {
+            "procurement": ["procurement", "contract", "acquisition", "DAC"],
+            "manufacturing": ["Make in India", "defence manufacturing", "shipyard", "HAL", "BEL"],
+            "programs": ["AMCA", "Tejas", "Project 75I", "missile", "drone"],
+        },
+        "fallback_queries": [
+            "India defence procurement manufacturing contract DRDO HAL BEL last 2 days",
+            "site:mod.gov.in India defence acquisition council procurement contract update",
+        ],
+    },
+    "Energy": {
+        "subbeats": {
+            "renewables": ["renewable", "solar", "wind", "green hydrogen"],
+            "power": ["power ministry", "grid", "transmission", "electricity"],
+            "fuels": ["coal", "petroleum", "gas", "LNG"],
+        },
+        "fallback_queries": [
+            "India energy renewable power coal petroleum green hydrogen project approval last 2 days",
+            "site:powermin.gov.in OR site:mnre.gov.in OR site:coal.nic.in India energy update",
+        ],
+    },
+    "Economics": {
+        "subbeats": {
+            "india_macro": ["RBI", "India GDP", "inflation", "GST", "exports"],
+            "us_europe": ["Fed", "CPI", "ECB", "OECD"],
+            "china": ["China GDP", "China PMI", "NBS"],
+            "global": ["IMF", "World Bank", "WTO"],
+        },
+        "fallback_queries": [
+            "RBI India inflation GDP exports GST official update last 2 days",
+            "IMF World Bank OECD WTO major report economy trade last 2 days",
+        ],
+    },
+    "Space": {
+        "subbeats": {
+            "isro": ["ISRO", "Gaganyaan", "Chandrayaan", "SSLV", "PSLV"],
+            "nasa": ["NASA", "Artemis"],
+            "commercial": ["SpaceX", "Rocket Lab", "Blue Origin"],
+            "europe": ["ESA"],
+        },
+        "fallback_queries": [
+            "ISRO Gaganyaan Chandrayaan launch update official last 2 days",
+            "NASA Artemis ESA Rocket Lab SpaceX launch mission update last 2 days",
+        ],
+    },
+    "Science": {
+        "subbeats": {
+            "papers": ["Nature", "Science", "arXiv", "paper"],
+            "commercialization": ["breakthrough", "prototype", "clinical", "battery", "material"],
+        },
+        "fallback_queries": [
+            "Nature Science arXiv breakthrough battery materials physics AI research last 2 days",
+        ],
+    },
+    "Geopolitics": {
+        "subbeats": {
+            "europe": ["Ukraine", "Russia", "NATO", "EU"],
+            "middle_east": ["Israel", "Iran", "Gaza", "Syria"],
+            "indo_pacific": ["China", "Taiwan", "South China Sea", "India-China"],
+            "americas": ["United States", "White House", "Congress", "Latin America"],
+        },
+        "fallback_queries": [
+            "Reuters AP geopolitics Ukraine NATO sanctions diplomatic meeting last 2 days",
+            "Middle East Israel Iran Gaza ceasefire sanctions diplomacy last 2 days",
+            "Indo-Pacific China Taiwan India China US diplomacy military update last 2 days",
+        ],
+    },
+}
+
 
 @dataclasses.dataclass(slots=True)
 class Source:
@@ -806,6 +945,131 @@ def critical_event_verification(client: OpenAI, events: list[CandidateEvent], da
     return all_events, notes
 
 
+def event_text(event: CandidateEvent) -> str:
+    return " ".join(
+        [
+            event.title,
+            event.category,
+            event.subcategory,
+            event.summary,
+            event.why_it_matters,
+            event.project,
+            " ".join(event.entities),
+            " ".join(event.countries),
+            " ".join(event.source_names),
+        ]
+    ).lower()
+
+
+def event_is_reportable_for_coverage(event: CandidateEvent) -> bool:
+    return (
+        event.memory_status != "UNCHANGED"
+        and event.verification_status != "single_source_monitor"
+        and event.final_score >= config.MIN_FINAL_SCORE
+    )
+
+
+def beat_event_matches(beat: str, event: CandidateEvent) -> bool:
+    text = event_text(event)
+    if beat == "AI":
+        return event.category in {"AI", "Developer Tools", "Startups"} or any(
+            term.lower() in text for term in ("openai", "anthropic", "deepmind", "mistral", "cursor", "windsurf", "replit", "groq")
+        )
+    if beat == "India":
+        return "india" in text or event.category.startswith("India")
+    if beat == "Infrastructure":
+        return event.category in {"Infrastructure", "India Infrastructure", "Indian Railways"} or any(
+            term in text for term in ("highway", "expressway", "railway", "metro", "airport", "port", "tunnel", "logistics")
+        )
+    if beat == "Manufacturing":
+        return event.category in {"Manufacturing", "Semiconductors"} or any(
+            term in text for term in ("manufacturing", "factory", "electronics", "semiconductor", "pli", "fab")
+        )
+    if beat == "Railways":
+        return event.category == "Indian Railways" or any(term in text for term in ("railway", "dfc", "dfccil", "nhsrcl", "vande bharat"))
+    if beat == "Defence":
+        return event.category == "Defence" or any(term in text for term in ("defence", "defense", "military", "drdo", "procurement", "missile"))
+    if beat == "Energy":
+        return event.category == "Energy" or any(term in text for term in ("energy", "power", "renewable", "solar", "wind", "coal", "petroleum"))
+    if beat == "Economics":
+        return event.category == "Economics" or any(term in text for term in ("rbi", "inflation", "gdp", "fed", "ecb", "imf", "world bank"))
+    if beat == "Space":
+        return event.category == "Space" or any(term in text for term in ("isro", "nasa", "esa", "spacex", "rocket lab", "artemis"))
+    if beat == "Science":
+        return event.category == "Science" or any(term in text for term in ("nature", "science", "arxiv", "research", "paper"))
+    if beat == "Geopolitics":
+        return event.category == "Geopolitics" or any(
+            term in text for term in ("ukraine", "russia", "nato", "israel", "iran", "taiwan", "china", "sanction", "diplomacy")
+        )
+    return False
+
+
+def star_bar(score: int) -> str:
+    bounded = max(0, min(5, score))
+    return f"{bounded}/5"
+
+
+def coverage_dashboard(events: list[CandidateEvent]) -> list[dict[str, Any]]:
+    dashboard: list[dict[str, Any]] = []
+    reportable = [event for event in events if event_is_reportable_for_coverage(event)]
+    for beat, spec in BEAT_REQUIREMENTS.items():
+        beat_events = [event for event in reportable if beat_event_matches(beat, event)]
+        covered_subbeats: list[str] = []
+        missing_subbeats: list[str] = []
+        for subbeat, terms in spec["subbeats"].items():
+            if any(any(term.lower() in event_text(event) for term in terms) for event in beat_events):
+                covered_subbeats.append(subbeat)
+            else:
+                missing_subbeats.append(subbeat)
+        subbeat_total = max(1, len(spec["subbeats"]))
+        score = round((len(covered_subbeats) / subbeat_total) * 5)
+        if beat_events and score == 0:
+            score = 1
+        dashboard.append(
+            {
+                "beat": beat,
+                "stars": int(score),
+                "rating": star_bar(int(score)),
+                "reportable_events": len(beat_events),
+                "covered_subbeats": covered_subbeats,
+                "missing_subbeats": missing_subbeats,
+                "status": "adequate" if score >= config.MIN_COVERAGE_STARS else "thin",
+            }
+        )
+    return dashboard
+
+
+def weak_beat_queries(dashboard: list[dict[str, Any]]) -> list[str]:
+    queries: list[str] = []
+    for row in dashboard:
+        if int(row.get("stars", 0)) >= config.MIN_COVERAGE_STARS:
+            continue
+        beat = str(row.get("beat", ""))
+        missing = ", ".join(row.get("missing_subbeats", []))
+        for query in BEAT_REQUIREMENTS.get(beat, {}).get("fallback_queries", []):
+            queries.append(f"{beat} beat thin; missing subbeats: {missing}; query: {query}")
+    return queries[: config.MAX_BEAT_FALLBACK_QUERIES]
+
+
+def beat_coverage_verification(
+    client: OpenAI,
+    events: list[CandidateEvent],
+    date_str: str,
+) -> tuple[list[CandidateEvent], list[dict[str, str]], list[dict[str, Any]]]:
+    logger.info("Stage 4b: beat coverage dashboard")
+    dashboard = coverage_dashboard(events)
+    queries = weak_beat_queries(dashboard)
+    if not queries:
+        return [], [], dashboard
+    logger.info("Stage 4b: fallback search for %d weak beat queries", len(queries))
+    fallback_events, notes = targeted_fallback_search(client, queries, date_str)
+    for note in notes:
+        note["type"] = "beat_coverage"
+    for event in fallback_events:
+        event.silent_signal = event.silent_signal or event.importance_score < 55 or event.official_source
+    return fallback_events, notes, dashboard
+
+
 def memory_topic_text(topic: dict[str, Any]) -> str:
     return " ".join(
         str(topic.get(key, ""))
@@ -817,6 +1081,7 @@ def memory_topic_text(topic: dict[str, Any]) -> str:
             "last_summary",
             "expected_next_event",
             "expected_next_milestone",
+            "times_mentioned",
         )
     )
 
@@ -880,9 +1145,14 @@ def memory_comparison(events: list[CandidateEvent], memory: dict[str, Any], watc
         stage_advanced = event.stage_advanced or (new_idx >= 0 and old_idx >= 0 and new_idx > old_idx)
         event.stage_advanced = stage_advanced
         changed_language = any(term in f"{event.title} {event.summary}".lower() for term in CHANGE_TERMS)
-        if last_reported and last_reported >= recent_cutoff and not changed_language and not stage_advanced:
+        times_mentioned = int(as_float(best.get("times_mentioned"), 0))
+        repeat_heavy_without_milestone = times_mentioned >= 3 and not stage_advanced and not changed_language
+        if (last_reported and last_reported >= recent_cutoff and not changed_language and not stage_advanced) or repeat_heavy_without_milestone:
             event.memory_status = "UNCHANGED"
-            event.memory_reason = f"Project/story '{best.get('topic')}' remains at stage '{previous_stage or 'unknown'}'; no clear stage advance since {last_reported_raw}."
+            event.memory_reason = (
+                f"Project/story '{best.get('topic')}' has been mentioned {times_mentioned} times and remains at "
+                f"stage '{previous_stage or 'unknown'}'; no clear stage advance since {last_reported_raw}."
+            )
         else:
             event.memory_status = "UPDATED"
             if stage_advanced:
@@ -964,10 +1234,27 @@ def emerging_story_tracker(events: list[CandidateEvent]) -> list[dict[str, Any]]
     return rows[:20]
 
 
-def event_digest(events: list[CandidateEvent], unchanged: list[CandidateEvent], verification_notes: list[dict[str, str]]) -> str:
+def probably_missed_today(verification_notes: list[dict[str, str]]) -> list[dict[str, str]]:
+    return [
+        note
+        for note in verification_notes
+        if note.get("type") == "beat_coverage"
+        or "thin" in str(note.get("topic", "")).lower()
+        or "not_found_after" in str(note.get("status", "")).lower()
+    ][:20]
+
+
+def event_digest(
+    events: list[CandidateEvent],
+    unchanged: list[CandidateEvent],
+    verification_notes: list[dict[str, str]],
+    dashboard: list[dict[str, Any]],
+) -> str:
     payload = {
         "events": [dataclasses.asdict(event) | {"final_score": round(event.final_score, 2)} for event in events],
         "unchanged_watchlist_items": [dataclasses.asdict(event) for event in unchanged],
+        "coverage_dashboard": dashboard,
+        "what_i_probably_missed_today": probably_missed_today(verification_notes),
         "project_tracker": project_tracker(events, unchanged),
         "emerging_story_tracker": emerging_story_tracker(events),
         "silent_signals": [
@@ -990,6 +1277,7 @@ def generate_report(
     events: list[CandidateEvent],
     unchanged: list[CandidateEvent],
     verification_notes: list[dict[str, str]],
+    dashboard: list[dict[str, Any]],
     brief_name: str,
     date_str: str,
 ) -> str:
@@ -999,7 +1287,7 @@ def generate_report(
         f"Generate the {brief_name}. Use only the supplied JSON evidence. Cite source names and URLs in text. "
         "Do not invent facts. Do not include unchanged items as full stories. Mention low confidence when applicable. "
         "If a date is unclear, flag it.\n\n"
-        f"INTELLIGENCE_JSON:\n{event_digest(events, unchanged, verification_notes)}"
+        f"INTELLIGENCE_JSON:\n{event_digest(events, unchanged, verification_notes, dashboard)}"
     )
     return call_openai(client, prompt, user_input, brief_name)
 
@@ -1009,6 +1297,7 @@ def report_generation(
     events: list[CandidateEvent],
     unchanged: list[CandidateEvent],
     verification_notes: list[dict[str, str]],
+    dashboard: list[dict[str, Any]],
     date_str: str,
 ) -> tuple[str, str, str]:
     logger.info("Stage 7: report generation")
@@ -1018,6 +1307,7 @@ def report_generation(
         events,
         unchanged,
         verification_notes,
+        dashboard,
         "Builder Intelligence Brief",
         date_str,
     )
@@ -1027,6 +1317,7 @@ def report_generation(
         events,
         unchanged,
         verification_notes,
+        dashboard,
         "Strategic Intelligence Brief",
         date_str,
     )
@@ -1145,6 +1436,7 @@ def normalize_memory(memory: dict[str, Any]) -> dict[str, Any]:
                 "expected_next_event": item.get("expected_next_event", ""),
                 "importance": item.get("importance", "medium"),
                 "source_urls": item.get("source_urls", item.get("last_sources", [])),
+                "times_mentioned": int(as_float(item.get("times_mentioned"), 1)),
                 "timeline": timeline,
                 "current_stage": item.get("current_stage", ""),
                 "stage_history": item.get("stage_history", []),
@@ -1165,6 +1457,7 @@ def memory_update(memory: dict[str, Any], events: list[CandidateEvent], date_str
         existing = by_topic.get(key, {})
         timeline = [str(value) for value in existing.get("timeline", [])] or default_timeline(event.category)
         current_stage = event.story_stage or existing.get("current_stage") or (timeline[0] if timeline else "")
+        times_mentioned = int(as_float(existing.get("times_mentioned"), 0)) + 1
         stage_history = list(existing.get("stage_history", []))
         if current_stage and (not stage_history or stage_history[-1].get("stage") != current_stage):
             stage_history.append(
@@ -1188,6 +1481,7 @@ def memory_update(memory: dict[str, Any], events: list[CandidateEvent], date_str
             or "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
             "importance": "high" if event.importance_score >= 70 or event.long_term_score >= 70 else "medium",
             "source_urls": event.source_urls[:5],
+            "times_mentioned": times_mentioned,
             "timeline": timeline,
             "current_stage": current_stage,
             "stage_history": stage_history[-10:],
@@ -1219,6 +1513,7 @@ def write_history(
     events: list[CandidateEvent],
     unchanged: list[CandidateEvent],
     verification_notes: list[dict[str, str]],
+    dashboard: list[dict[str, Any]],
     builder: str,
     strategic: str,
     date_str: str,
@@ -1235,6 +1530,8 @@ def write_history(
             "events": [dataclasses.asdict(event) | {"final_score": round(event.final_score, 2)} for event in events],
             "unchanged_watchlist_items": [dataclasses.asdict(event) for event in unchanged],
             "verification_notes": verification_notes,
+            "coverage_dashboard": dashboard,
+            "what_i_probably_missed_today": probably_missed_today(verification_notes),
             "builder_brief": builder,
             "strategic_brief": strategic,
         },
@@ -1254,13 +1551,19 @@ def run(dry_run: bool = False, skip_email: bool = False) -> int:
     candidates = candidate_event_creation(client, articles, watchlist, date_str)
     verified, verification_notes = critical_event_verification(client, candidates, date_str)
     compared = memory_comparison(verified, memory, watchlist, date_str)
+    beat_fallback_events, beat_notes, initial_dashboard = beat_coverage_verification(client, compared, date_str)
+    if beat_fallback_events:
+        beat_compared = memory_comparison(beat_fallback_events, memory, watchlist, date_str)
+        compared = dedupe_events(compared + beat_compared)
+    verification_notes.extend(beat_notes)
+    dashboard = coverage_dashboard(compared) if beat_fallback_events else initial_dashboard
     selected, unchanged = rank_and_deduplicate(compared)
 
     if not selected:
         logger.warning("No reportable events survived ranking; report will rely on verification notes.")
 
-    builder, strategic, combined = report_generation(client, selected, unchanged, verification_notes, date_str)
-    write_history(combined, raw_items, articles, selected, unchanged, verification_notes, builder, strategic, date_str)
+    builder, strategic, combined = report_generation(client, selected, unchanged, verification_notes, dashboard, date_str)
+    write_history(combined, raw_items, articles, selected, unchanged, verification_notes, dashboard, builder, strategic, date_str)
     if not skip_email:
         email_delivery(combined, date_str, dry_run)
     memory_update(memory, selected, date_str)
