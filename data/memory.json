@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "suppression_days": 14,
   "topics": [
     {
@@ -373,6 +373,46 @@
         "previous_stage": "announcement",
         "confidence": "high",
         "expected_next_milestone": "Broader adoption and new integrations"
+      }
+    },
+    {
+      "topic": "Grok Build",
+      "category": "AI",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-07-06",
+      "last_checked": "2026-07-06",
+      "status": "UPDATED",
+      "last_summary": "xAI announced the public beta release of Grok Build 0.1, its fastest coding model optimized for agentic coding tasks such as web development and debugging. The model is served at over 100 tokens per second and priced competitively for coding and general agentic use cases.",
+      "expected_next_event": "Wider adoption and integration in developer tools",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-build-0-1"
+      ],
+      "times_mentioned": 2,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "launch",
+          "summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partner",
+          "source_urls": [
+            "https://x.ai/news/grok-plugin-marketplace"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Wider adoption and integration in developer tools",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "funding",
+        "confidence": "high",
+        "expected_next_milestone": "Wider adoption and integration in developer tools"
       }
     },
     {
@@ -2214,19 +2254,19 @@
       }
     },
     {
-      "topic": "Dholera semiconductor fab",
+      "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-07-05",
-      "last_checked": "2026-07-05",
+      "last_reported": "2026-07-06",
+      "last_checked": "2026-07-06",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ 300 mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lithography tools and support talent development and supply chain initiatives.",
-      "expected_next_event": "Deployment and operational ramp-up of lithography tools at Dholera fab",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deploying ASML's advanced lithography tools and developing domestic talent and su",
+      "expected_next_event": "Fab construction and equipment installation",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
       ],
-      "times_mentioned": 3,
+      "times_mentioned": 4,
       "timeline": [
         "announcement",
         "approval",
@@ -2271,12 +2311,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Deployment and operational ramp-up of lithography tools at Dholera fab",
+      "expected_next_milestone": "Fab construction and equipment installation",
       "emerging_story": {
         "stage": "consultation",
-        "previous_stage": "no_change",
+        "previous_stage": "planning",
         "confidence": "high",
-        "expected_next_milestone": "Deployment and operational ramp-up of lithography tools at Dholera fab"
+        "expected_next_milestone": "Fab construction and equipment installation"
       }
     },
     {
@@ -2402,6 +2442,48 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "UFS 5.0 Memory",
+      "category": "Semiconductors",
+      "first_seen": "2026-07-06",
+      "last_reported": "2026-07-06",
+      "last_checked": "2026-07-06",
+      "status": "UPDATED",
+      "last_summary": "Samsung Electronics announced the development of the industry's fastest Universal Flash Storage (UFS) 5.0 solution, achieving a data transfer speed of 10.8 GB/s. This solution is designed to enable faster storage and processing for mobile devices running on-device AI workloads.",
+      "expected_next_event": "Mass production and adoption in mobile devices",
+      "importance": "high",
+      "source_urls": [
+        "https://news.samsungsemiconductor.com/global/samsung-unveils-industrys-most-powerful-ufs-5-0-solution-for-next-gen-on-device-ai-applications"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "approval",
+        "engineering samples",
+        "fab construction",
+        "pilot production",
+        "mass production",
+        "customer adoption"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-06",
+          "stage": "launch",
+          "summary": "Samsung Electronics announced the development of the industry's fastest Universal Flash Storage (UFS) 5.0 solution, achieving a data transfer speed of 10.8 GB/s. This solution is designed to enable faster storage and pro",
+          "source_urls": [
+            "https://news.samsungsemiconductor.com/global/samsung-unveils-industrys-most-powerful-ufs-5-0-solution-for-next-gen-on-device-ai-applications"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Mass production and adoption in mobile devices",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "engineering samples",
+        "confidence": "high",
+        "expected_next_milestone": "Mass production and adoption in mobile devices"
+      }
     },
     {
       "topic": "Artemis",
@@ -3508,6 +3590,46 @@
       }
     },
     {
+      "topic": "FlashAttention Kernel Series",
+      "category": "Technology",
+      "first_seen": "2026-07-06",
+      "last_reported": "2026-07-06",
+      "last_checked": "2026-07-06",
+      "status": "NEW",
+      "last_summary": "Together AI announced FlashAttention-4, a new algorithm and kernel pipelining co-design optimized for NVIDIA Blackwell GPUs. It addresses asymmetric hardware scaling by improving overlap of computation and data movement, reducing shared memory traffic, and hybrid hardware-software softmax exponentia",
+      "expected_next_event": "Adoption in production AI models and libraries",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/flashattention-4"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-06",
+          "stage": "announcement",
+          "summary": "Together AI announced FlashAttention-4, a new algorithm and kernel pipelining co-design optimized for NVIDIA Blackwell GPUs. It addresses asymmetric hardware scaling by improving overlap of computation and data movement,",
+          "source_urls": [
+            "https://www.together.ai/blog/flashattention-4"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Adoption in production AI models and libraries",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "research",
+        "confidence": "high",
+        "expected_next_milestone": "Adoption in production AI models and libraries"
+      }
+    },
+    {
       "topic": "FlashAttention kernel development",
       "category": "Technology",
       "first_seen": "2026-07-05",
@@ -3585,46 +3707,6 @@
         "previous_stage": "development",
         "confidence": "high",
         "expected_next_milestone": "General availability of GPT-5.6 models"
-      }
-    },
-    {
-      "topic": "Grok Build",
-      "category": "Technology",
-      "first_seen": "2026-06-28",
-      "last_reported": "2026-07-03",
-      "last_checked": "2026-07-03",
-      "status": "UPDATED",
-      "last_summary": "xAI launched the Grok Build Plugin Marketplace, an integrated platform within Grok Build that allows users to browse, install, and update plugins for agentic coding workflows directly from the terminal.",
-      "expected_next_event": "Expansion of plugin catalog and increased adoption among developers",
-      "importance": "high",
-      "source_urls": [
-        "https://x.ai/news/grok-plugin-marketplace"
-      ],
-      "times_mentioned": 1,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "launch",
-      "stage_history": [
-        {
-          "date": "2026-06-28",
-          "stage": "launch",
-          "summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partner",
-          "source_urls": [
-            "https://x.ai/news/grok-plugin-marketplace"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Expansion of plugin catalog and increased adoption among developers",
-      "emerging_story": {
-        "stage": "launch",
-        "previous_stage": "early beta",
-        "confidence": "high",
-        "expected_next_milestone": "Expansion of plugin catalog and increased adoption among developers"
       }
     },
     {
@@ -3863,16 +3945,16 @@
       "topic": "Together AI Platform",
       "category": "Technology",
       "first_seen": "2026-07-04",
-      "last_reported": "2026-07-04",
-      "last_checked": "2026-07-04",
-      "status": "NEW",
-      "last_summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of compute capacity to support expected growth in AI compute needs.",
-      "expected_next_event": "Deployment of expanded compute infrastructure and scaling of AI services",
+      "last_reported": "2026-07-06",
+      "last_checked": "2026-07-06",
+      "status": "UPDATED",
+      "last_summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. Additionally, the company secured commitments for over 500 MW of compute capacity to support expected growth in AI compute needs.",
+      "expected_next_event": "Deployment and scaling of compute infrastructure",
       "importance": "high",
       "source_urls": [
         "https://www.together.ai/blog/announcing-our-series-c"
       ],
-      "times_mentioned": 1,
+      "times_mentioned": 2,
       "timeline": [
         "announcement",
         "development",
@@ -3891,12 +3973,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Deployment of expanded compute infrastructure and scaling of AI services",
+      "expected_next_milestone": "Deployment and scaling of compute infrastructure",
       "emerging_story": {
         "stage": "funding",
-        "previous_stage": "no_change",
+        "previous_stage": "consultation",
         "confidence": "high",
-        "expected_next_milestone": "Deployment of expanded compute infrastructure and scaling of AI services"
+        "expected_next_milestone": "Deployment and scaling of compute infrastructure"
       }
     },
     {
