@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-06",
+  "last_updated": "2026-07-07",
   "suppression_days": 14,
   "topics": [
     {
@@ -373,46 +373,6 @@
         "previous_stage": "announcement",
         "confidence": "high",
         "expected_next_milestone": "Broader adoption and new integrations"
-      }
-    },
-    {
-      "topic": "Grok Build",
-      "category": "AI",
-      "first_seen": "2026-06-28",
-      "last_reported": "2026-07-06",
-      "last_checked": "2026-07-06",
-      "status": "UPDATED",
-      "last_summary": "xAI announced the public beta release of Grok Build 0.1, its fastest coding model optimized for agentic coding tasks such as web development and debugging. The model is served at over 100 tokens per second and priced competitively for coding and general agentic use cases.",
-      "expected_next_event": "Wider adoption and integration in developer tools",
-      "importance": "high",
-      "source_urls": [
-        "https://x.ai/news/grok-build-0-1"
-      ],
-      "times_mentioned": 2,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "launch",
-      "stage_history": [
-        {
-          "date": "2026-06-28",
-          "stage": "launch",
-          "summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partner",
-          "source_urls": [
-            "https://x.ai/news/grok-plugin-marketplace"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Wider adoption and integration in developer tools",
-      "emerging_story": {
-        "stage": "launch",
-        "previous_stage": "funding",
-        "confidence": "high",
-        "expected_next_milestone": "Wider adoption and integration in developer tools"
       }
     },
     {
@@ -1106,6 +1066,48 @@
         "previous_stage": "",
         "confidence": "high",
         "expected_next_milestone": "Implementation of measures to ensure fuel supply continuity"
+      }
+    },
+    {
+      "topic": "Global AI Governance",
+      "category": "Geopolitics",
+      "first_seen": "2026-07-07",
+      "last_reported": "2026-07-07",
+      "last_checked": "2026-07-07",
+      "status": "NEW",
+      "last_summary": "UN Secretary-General António Guterres urged the international community to establish comprehensive global controls on Artificial Intelligence, highlighting the shift of powerful AI chips from civilian to battlefield use, including the deployment of 'killer robots'. He emphasized the need for AI safe",
+      "expected_next_event": "International agreements on AI regulation and safety standards",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/07/1167873"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "consultation",
+      "stage_history": [
+        {
+          "date": "2026-07-07",
+          "stage": "consultation",
+          "summary": "UN Secretary-General António Guterres urged the international community to establish comprehensive global controls on Artificial Intelligence, highlighting the shift of powerful AI chips from civilian to battlefield use,",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167873"
+          ]
+        }
+      ],
+      "expected_next_milestone": "International agreements on AI regulation and safety standards",
+      "emerging_story": {
+        "stage": "consultation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "International agreements on AI regulation and safety standards"
       }
     },
     {
@@ -2254,72 +2256,6 @@
       }
     },
     {
-      "topic": "Dholera Semiconductor Fab",
-      "category": "Semiconductors",
-      "first_seen": "2026-06-27",
-      "last_reported": "2026-07-06",
-      "last_checked": "2026-07-06",
-      "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deploying ASML's advanced lithography tools and developing domestic talent and su",
-      "expected_next_event": "Fab construction and equipment installation",
-      "importance": "high",
-      "source_urls": [
-        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-      ],
-      "times_mentioned": 4,
-      "timeline": [
-        "announcement",
-        "approval",
-        "engineering samples",
-        "fab construction",
-        "pilot production",
-        "mass production",
-        "customer adoption"
-      ],
-      "current_stage": "consultation",
-      "stage_history": [
-        {
-          "date": "2026-06-27",
-          "stage": "announcement",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        },
-        {
-          "date": "2026-06-30",
-          "stage": "consultation",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASM",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        },
-        {
-          "date": "2026-07-01",
-          "stage": "approval",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconduc",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        },
-        {
-          "date": "2026-07-04",
-          "stage": "consultation",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lith",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Fab construction and equipment installation",
-      "emerging_story": {
-        "stage": "consultation",
-        "previous_stage": "planning",
-        "confidence": "high",
-        "expected_next_milestone": "Fab construction and equipment installation"
-      }
-    },
-    {
       "topic": "India Semiconductor Mission",
       "category": "Semiconductors",
       "first_seen": "",
@@ -2685,6 +2621,49 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "CAPSTONE Lunar Mission",
+      "category": "Space",
+      "first_seen": "2026-07-07",
+      "last_reported": "2026-07-07",
+      "last_checked": "2026-07-07",
+      "status": "NEW",
+      "last_summary": "NASA's CAPSTONE spacecraft, launched in June 2022, completed a 15-month extended mission testing advanced communications, networking, autonomous navigation, and software-defined satellite technologies in lunar orbit. CAPSTONE validated three-body orbits around the Moon and demonstrated the ability t",
+      "expected_next_event": "Integration of CAPSTONE data into future lunar missions",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/technology/space-comms/nasas-capstone-completes-extended-mission-testing-lunar-technologies/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "mission extension",
+      "stage_history": [
+        {
+          "date": "2026-07-07",
+          "stage": "mission extension",
+          "summary": "NASA's CAPSTONE spacecraft, launched in June 2022, completed a 15-month extended mission testing advanced communications, networking, autonomous navigation, and software-defined satellite technologies in lunar orbit. CAP",
+          "source_urls": [
+            "https://www.nasa.gov/technology/space-comms/nasas-capstone-completes-extended-mission-testing-lunar-technologies/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Integration of CAPSTONE data into future lunar missions",
+      "emerging_story": {
+        "stage": "mission extension",
+        "previous_stage": "launch",
+        "confidence": "high",
+        "expected_next_milestone": "Integration of CAPSTONE data into future lunar missions"
+      }
     },
     {
       "topic": "Cryogenic Fluid Management",
@@ -3377,6 +3356,46 @@
       }
     },
     {
+      "topic": "A13 Process Technology",
+      "category": "Technology",
+      "first_seen": "2026-07-07",
+      "last_reported": "2026-07-07",
+      "last_checked": "2026-07-07",
+      "status": "NEW",
+      "last_summary": "TSMC announced its A13 process technology, a shrink of the A14 node, providing 6% area savings and improved power efficiency and performance. The technology targets next-generation AI, high-performance computing, and mobile applications, with production scheduled for 2029. A13 maintains backward com",
+      "expected_next_event": "Start of high-volume production in 2029",
+      "importance": "high",
+      "source_urls": [
+        "https://pr.tsmc.com/english/news/3302"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-07",
+          "stage": "announcement",
+          "summary": "TSMC announced its A13 process technology, a shrink of the A14 node, providing 6% area savings and improved power efficiency and performance. The technology targets next-generation AI, high-performance computing, and mob",
+          "source_urls": [
+            "https://pr.tsmc.com/english/news/3302"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Start of high-volume production in 2029",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Start of high-volume production in 2029"
+      }
+    },
+    {
       "topic": "AI",
       "category": "Technology",
       "first_seen": "2026-07-02",
@@ -3550,17 +3569,83 @@
       }
     },
     {
-      "topic": "FlashAttention Kernel",
+      "topic": "Dholera Semiconductor Fab",
       "category": "Technology",
-      "first_seen": "2026-07-04",
-      "last_reported": "2026-07-04",
-      "last_checked": "2026-07-04",
-      "status": "NEW",
-      "last_summary": "Together AI released FlashAttention-4, an improved attention kernel co-designed with algorithms and hardware optimizations for asymmetric hardware scaling on NVIDIA Blackwell GPUs. It achieves up to 2.7x speed improvements over previous versions, enabling faster Transformer model inference.",
-      "expected_next_event": "Widespread adoption in AI model training and inference frameworks",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-07-07",
+      "last_checked": "2026-07-07",
+      "status": "UPDATED",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership focuses on deploying ASML's advanced lithography tools and solutions, developing domestic talen",
+      "expected_next_event": "Deployment of lithography tools and fab ramp-up",
       "importance": "high",
       "source_urls": [
-        "https://www.together.ai/blog/flashattention-4"
+        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+      ],
+      "times_mentioned": 5,
+      "timeline": [
+        "announcement",
+        "approval",
+        "engineering samples",
+        "fab construction",
+        "pilot production",
+        "mass production",
+        "customer adoption"
+      ],
+      "current_stage": "consultation",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "announcement",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-06-30",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASM",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-07-01",
+          "stage": "approval",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconduc",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-07-04",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lith",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Deployment of lithography tools and fab ramp-up",
+      "emerging_story": {
+        "stage": "consultation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Deployment of lithography tools and fab ramp-up"
+      }
+    },
+    {
+      "topic": "F/ai Accelerator",
+      "category": "Technology",
+      "first_seen": "2026-07-07",
+      "last_reported": "2026-07-07",
+      "last_checked": "2026-07-07",
+      "status": "NEW",
+      "last_summary": "Station F, a Paris-based startup hub founded by Xavier Niel, is launching the second batch of its F/ai accelerator program in September 2026. The program aims to help AI-focused startups transition from early product stages to revenue generation rapidly. The first cohort was backed by major tech com",
+      "expected_next_event": "Graduation of second cohort startups with revenue milestones",
+      "importance": "high",
+      "source_urls": [
+        "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/"
       ],
       "times_mentioned": 1,
       "timeline": [
@@ -3573,20 +3658,70 @@
       "current_stage": "launch",
       "stage_history": [
         {
+          "date": "2026-07-07",
+          "stage": "launch",
+          "summary": "Station F, a Paris-based startup hub founded by Xavier Niel, is launching the second batch of its F/ai accelerator program in September 2026. The program aims to help AI-focused startups transition from early product sta",
+          "source_urls": [
+            "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Graduation of second cohort startups with revenue milestones",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "no_change",
+        "confidence": "medium",
+        "expected_next_milestone": "Graduation of second cohort startups with revenue milestones"
+      }
+    },
+    {
+      "topic": "FlashAttention Kernel",
+      "category": "Technology",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-07",
+      "last_checked": "2026-07-07",
+      "status": "UPDATED",
+      "last_summary": "Together AI announced FlashAttention-4, a new algorithm and kernel co-design that optimizes attention mechanisms for asymmetric hardware scaling on NVIDIA Blackwell GPUs. FlashAttention-4 improves GPU utilization by overlapping computation and data movement, reducing memory traffic, and using hardwa",
+      "expected_next_event": "Adoption in production AI models and frameworks",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
+        "https://www.together.ai/blog/flashattention-4"
+      ],
+      "times_mentioned": 2,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
           "date": "2026-07-04",
           "stage": "launch",
           "summary": "Together AI released FlashAttention-4, an improved attention kernel co-designed with algorithms and hardware optimizations for asymmetric hardware scaling on NVIDIA Blackwell GPUs. It achieves up to 2.7x speed improvemen",
           "source_urls": [
             "https://www.together.ai/blog/flashattention-4"
           ]
+        },
+        {
+          "date": "2026-07-07",
+          "stage": "announcement",
+          "summary": "Together AI announced FlashAttention-4, a new algorithm and kernel co-design that optimizes attention mechanisms for asymmetric hardware scaling on NVIDIA Blackwell GPUs. FlashAttention-4 improves GPU utilization by over",
+          "source_urls": [
+            "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
+            "https://www.together.ai/blog/flashattention-4"
+          ]
         }
       ],
-      "expected_next_milestone": "Widespread adoption in AI model training and inference frameworks",
+      "expected_next_milestone": "Adoption in production AI models and frameworks",
       "emerging_story": {
-        "stage": "launch",
-        "previous_stage": "engineering samples",
+        "stage": "announcement",
+        "previous_stage": "no_change",
         "confidence": "high",
-        "expected_next_milestone": "Widespread adoption in AI model training and inference frameworks"
+        "expected_next_milestone": "Adoption in production AI models and frameworks"
       }
     },
     {
@@ -3707,6 +3842,46 @@
         "previous_stage": "development",
         "confidence": "high",
         "expected_next_milestone": "General availability of GPT-5.6 models"
+      }
+    },
+    {
+      "topic": "Grok Build",
+      "category": "Technology",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-07-07",
+      "last_checked": "2026-07-07",
+      "status": "UPDATED",
+      "last_summary": "xAI announced the public beta release of Grok Build 0.1, a fast coding model optimized for agentic coding tasks such as web development, debugging, and MCP support. The model delivers over 100 tokens per second and is priced competitively. It powers the Grok Build CLI and is also suitable for genera",
+      "expected_next_event": "Wider adoption and integration with developer tools",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-build-0-1"
+      ],
+      "times_mentioned": 3,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "launch",
+          "summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partner",
+          "source_urls": [
+            "https://x.ai/news/grok-plugin-marketplace"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Wider adoption and integration with developer tools",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Wider adoption and integration with developer tools"
       }
     },
     {
@@ -3945,16 +4120,16 @@
       "topic": "Together AI Platform",
       "category": "Technology",
       "first_seen": "2026-07-04",
-      "last_reported": "2026-07-06",
-      "last_checked": "2026-07-06",
+      "last_reported": "2026-07-07",
+      "last_checked": "2026-07-07",
       "status": "UPDATED",
-      "last_summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. Additionally, the company secured commitments for over 500 MW of compute capacity to support expected growth in AI compute needs.",
+      "last_summary": "Together AI announced the closing of an $800 million Series C funding round led by investors including Aramco Ventures, NVIDIA, Vista Equity, and others. Additionally, the company secured commitments for over 500 MW of compute capacity to support its AI infrastructure growth. Together AI provides an",
       "expected_next_event": "Deployment and scaling of compute infrastructure",
       "importance": "high",
       "source_urls": [
         "https://www.together.ai/blog/announcing-our-series-c"
       ],
-      "times_mentioned": 2,
+      "times_mentioned": 3,
       "timeline": [
         "announcement",
         "development",
@@ -3976,7 +4151,7 @@
       "expected_next_milestone": "Deployment and scaling of compute infrastructure",
       "emerging_story": {
         "stage": "funding",
-        "previous_stage": "consultation",
+        "previous_stage": "no_change",
         "confidence": "high",
         "expected_next_milestone": "Deployment and scaling of compute infrastructure"
       }
