@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-07",
+  "last_updated": "2026-07-08",
   "suppression_days": 14,
   "topics": [
     {
@@ -418,6 +418,48 @@
       }
     },
     {
+      "topic": "Microsoft Foundry",
+      "category": "AI",
+      "first_seen": "2026-07-08",
+      "last_reported": "2026-07-08",
+      "last_checked": "2026-07-08",
+      "status": "NEW",
+      "last_summary": "At Microsoft Build 2026, Microsoft announced Foundry Managed Compute and integration of Hugging Face models on Foundry, enabling one-click deployment of open-weight models onto a managed GPU platform-as-a-service with enterprise-grade security and governance.",
+      "expected_next_event": "Enterprise adoption and production deployments",
+      "importance": "high",
+      "source_urls": [
+        "https://huggingface.co/blog/microsoft/foundry-managed-compute"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-08",
+          "stage": "announcement",
+          "summary": "At Microsoft Build 2026, Microsoft announced Foundry Managed Compute and integration of Hugging Face models on Foundry, enabling one-click deployment of open-weight models onto a managed GPU platform-as-a-service with en",
+          "source_urls": [
+            "https://huggingface.co/blog/microsoft/foundry-managed-compute"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Enterprise adoption and production deployments",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Enterprise adoption and production deployments"
+      }
+    },
+    {
       "topic": "Nvidia",
       "category": "AI",
       "first_seen": "2026-06-23",
@@ -500,6 +542,54 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Together AI Platform",
+      "category": "AI",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-08",
+      "last_checked": "2026-07-08",
+      "status": "NEW",
+      "last_summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloads.",
+      "expected_next_event": "Increased enterprise adoption and compliance audits",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/iso-27001-2022-certification"
+      ],
+      "times_mentioned": 5,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "approval",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "funding",
+          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c"
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "stage": "approval",
+          "summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloa",
+          "source_urls": [
+            "https://www.together.ai/blog/iso-27001-2022-certification"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Increased enterprise adoption and compliance audits",
+      "emerging_story": {
+        "stage": "approval",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Increased enterprise adoption and compliance audits"
+      }
     },
     {
       "topic": "xAI",
@@ -2256,6 +2346,80 @@
       }
     },
     {
+      "topic": "Dholera Semiconductor Fab",
+      "category": "Semiconductors",
+      "first_seen": "2026-06-27",
+      "last_reported": "2026-07-08",
+      "last_checked": "2026-07-08",
+      "status": "UPDATED",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ 300 mm semiconductor fab in Dholera, Gujarat, India, including deployment of ASML’s advanced lithography tools and joint talent and supply chain development.",
+      "expected_next_event": "Deployment and ramp-up of lithography tools at Dholera fab",
+      "importance": "high",
+      "source_urls": [
+        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+      ],
+      "times_mentioned": 6,
+      "timeline": [
+        "announcement",
+        "approval",
+        "engineering samples",
+        "fab construction",
+        "pilot production",
+        "mass production",
+        "customer adoption"
+      ],
+      "current_stage": "partnership",
+      "stage_history": [
+        {
+          "date": "2026-06-27",
+          "stage": "announcement",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-06-30",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASM",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-07-01",
+          "stage": "approval",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconduc",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-07-04",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lith",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "stage": "partnership",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ 300 mm semiconductor fab in Dholera, Gujarat, India, including deployment of ASML’s advanced ",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Deployment and ramp-up of lithography tools at Dholera fab",
+      "emerging_story": {
+        "stage": "partnership",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Deployment and ramp-up of lithography tools at Dholera fab"
+      }
+    },
+    {
       "topic": "India Semiconductor Mission",
       "category": "Semiconductors",
       "first_seen": "",
@@ -2663,6 +2827,49 @@
         "previous_stage": "launch",
         "confidence": "high",
         "expected_next_milestone": "Integration of CAPSTONE data into future lunar missions"
+      }
+    },
+    {
+      "topic": "Commercial Space Stations",
+      "category": "Space",
+      "first_seen": "2026-07-08",
+      "last_reported": "2026-07-08",
+      "last_checked": "2026-07-08",
+      "status": "NEW",
+      "last_summary": "NASA released a draft Request for Proposals seeking feedback from American companies on the next phase of its commercial space stations strategy to ensure a seamless transition of low Earth orbit activities from the International Space Station.",
+      "expected_next_event": "Industry feedback by July 27 and informational briefing on July 9",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/humans-in-space/commercial-space/nasa-seeks-industry-input-on-second-phase-of-commercial-space-stations/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "consultation",
+      "stage_history": [
+        {
+          "date": "2026-07-08",
+          "stage": "consultation",
+          "summary": "NASA released a draft Request for Proposals seeking feedback from American companies on the next phase of its commercial space stations strategy to ensure a seamless transition of low Earth orbit activities from the Inte",
+          "source_urls": [
+            "https://www.nasa.gov/humans-in-space/commercial-space/nasa-seeks-industry-input-on-second-phase-of-commercial-space-stations/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Industry feedback by July 27 and informational briefing on July 9",
+      "emerging_story": {
+        "stage": "consultation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Industry feedback by July 27 and informational briefing on July 9"
       }
     },
     {
@@ -3356,6 +3563,49 @@
       }
     },
     {
+      "topic": "VICTUS HAZE Mission",
+      "category": "Space",
+      "first_seen": "2026-07-08",
+      "last_reported": "2026-07-08",
+      "last_checked": "2026-07-08",
+      "status": "UPDATED",
+      "last_summary": "Rocket Lab successfully completed the U.S. Space Force’s VICTUS HAZE mission, involving design, build, launch, commissioning, and complex rendezvous and proximity operations of a Pioneer spacecraft within record times, demonstrating rapid threat-response capabilities in space.",
+      "expected_next_event": "Further responsive space missions and operational deployments",
+      "importance": "high",
+      "source_urls": [
+        "https://rocketlabcorp.com/updates/rocket-lab-delivers-mission-success-for-space-force-completes-historic-launch-and-on-orbit-satellite-tracking-mission-in-record-time/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-08",
+          "stage": "launch",
+          "summary": "Rocket Lab successfully completed the U.S. Space Force’s VICTUS HAZE mission, involving design, build, launch, commissioning, and complex rendezvous and proximity operations of a Pioneer spacecraft within record times, d",
+          "source_urls": [
+            "https://rocketlabcorp.com/updates/rocket-lab-delivers-mission-success-for-space-force-completes-historic-launch-and-on-orbit-satellite-tracking-mission-in-record-time/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Further responsive space missions and operational deployments",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Further responsive space missions and operational deployments"
+      }
+    },
+    {
       "topic": "A13 Process Technology",
       "category": "Technology",
       "first_seen": "2026-07-07",
@@ -3566,72 +3816,6 @@
         "previous_stage": "announcement",
         "confidence": "high",
         "expected_next_milestone": "Deployment of ASML lithography tools and talent development for Dholera fab ramp-up"
-      }
-    },
-    {
-      "topic": "Dholera Semiconductor Fab",
-      "category": "Technology",
-      "first_seen": "2026-06-27",
-      "last_reported": "2026-07-07",
-      "last_checked": "2026-07-07",
-      "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership focuses on deploying ASML's advanced lithography tools and solutions, developing domestic talen",
-      "expected_next_event": "Deployment of lithography tools and fab ramp-up",
-      "importance": "high",
-      "source_urls": [
-        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-      ],
-      "times_mentioned": 5,
-      "timeline": [
-        "announcement",
-        "approval",
-        "engineering samples",
-        "fab construction",
-        "pilot production",
-        "mass production",
-        "customer adoption"
-      ],
-      "current_stage": "consultation",
-      "stage_history": [
-        {
-          "date": "2026-06-27",
-          "stage": "announcement",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership includes deployment",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        },
-        {
-          "date": "2026-06-30",
-          "stage": "consultation",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to support the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership focuses on deploying ASM",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        },
-        {
-          "date": "2026-07-01",
-          "stage": "approval",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to advance the semiconductor manufacturing ecosystem in India by deploying ASML’s advanced lithography tools for Tata Electronics’ upcoming 300 mm semiconduc",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        },
-        {
-          "date": "2026-07-04",
-          "stage": "consultation",
-          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lith",
-          "source_urls": [
-            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Deployment of lithography tools and fab ramp-up",
-      "emerging_story": {
-        "stage": "consultation",
-        "previous_stage": "no_change",
-        "confidence": "high",
-        "expected_next_milestone": "Deployment of lithography tools and fab ramp-up"
       }
     },
     {
@@ -4114,46 +4298,6 @@
         "previous_stage": "funding",
         "confidence": "high",
         "expected_next_milestone": "Ramp-up of A13 technology and Arizona fab construction"
-      }
-    },
-    {
-      "topic": "Together AI Platform",
-      "category": "Technology",
-      "first_seen": "2026-07-04",
-      "last_reported": "2026-07-07",
-      "last_checked": "2026-07-07",
-      "status": "UPDATED",
-      "last_summary": "Together AI announced the closing of an $800 million Series C funding round led by investors including Aramco Ventures, NVIDIA, Vista Equity, and others. Additionally, the company secured commitments for over 500 MW of compute capacity to support its AI infrastructure growth. Together AI provides an",
-      "expected_next_event": "Deployment and scaling of compute infrastructure",
-      "importance": "high",
-      "source_urls": [
-        "https://www.together.ai/blog/announcing-our-series-c"
-      ],
-      "times_mentioned": 3,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "funding",
-      "stage_history": [
-        {
-          "date": "2026-07-04",
-          "stage": "funding",
-          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
-          "source_urls": [
-            "https://www.together.ai/blog/announcing-our-series-c"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Deployment and scaling of compute infrastructure",
-      "emerging_story": {
-        "stage": "funding",
-        "previous_stage": "no_change",
-        "confidence": "high",
-        "expected_next_milestone": "Deployment and scaling of compute infrastructure"
       }
     },
     {
