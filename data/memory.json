@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-08",
+  "last_updated": "2026-07-09",
   "suppression_days": 14,
   "topics": [
     {
@@ -284,6 +284,48 @@
       }
     },
     {
+      "topic": "GPT-Live Voice Model",
+      "category": "AI",
+      "first_seen": "2026-07-09",
+      "last_reported": "2026-07-09",
+      "last_checked": "2026-07-09",
+      "status": "NEW",
+      "last_summary": "OpenAI introduced GPT-Live, a new generation of voice models that enable natural, full-duplex conversations with AI, allowing simultaneous listening and speaking. GPT-Live uses GPT-5.5 in the background for complex queries and is integrated into ChatGPT Voice, enhancing the naturalness and intellige",
+      "expected_next_event": "API availability and developer adoption",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/introducing-gpt-live"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-09",
+          "stage": "launch",
+          "summary": "OpenAI introduced GPT-Live, a new generation of voice models that enable natural, full-duplex conversations with AI, allowing simultaneous listening and speaking. GPT-Live uses GPT-5.5 in the background for complex queri",
+          "source_urls": [
+            "https://openai.com/index/introducing-gpt-live"
+          ]
+        }
+      ],
+      "expected_next_milestone": "API availability and developer adoption",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "API availability and developer adoption"
+      }
+    },
+    {
       "topic": "GeneBench-Pro",
       "category": "AI",
       "first_seen": "2026-07-01",
@@ -325,6 +367,48 @@
         "previous_stage": "announcement",
         "confidence": "high",
         "expected_next_milestone": "Adoption by AI research and life sciences communities"
+      }
+    },
+    {
+      "topic": "Grok AI Model",
+      "category": "AI",
+      "first_seen": "2026-07-09",
+      "last_reported": "2026-07-09",
+      "last_checked": "2026-07-09",
+      "status": "NEW",
+      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels at real engineering tasks and outperforms comparable leading models. The model ",
+      "expected_next_event": "widespread adoption and integration into developer tools",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-4-5"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-09",
+          "stage": "launch",
+          "summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels",
+          "source_urls": [
+            "https://x.ai/news/grok-4-5"
+          ]
+        }
+      ],
+      "expected_next_milestone": "widespread adoption and integration into developer tools",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "widespread adoption and integration into developer tools"
       }
     },
     {
@@ -544,54 +628,6 @@
       "emerging_story": {}
     },
     {
-      "topic": "Together AI Platform",
-      "category": "AI",
-      "first_seen": "2026-07-04",
-      "last_reported": "2026-07-08",
-      "last_checked": "2026-07-08",
-      "status": "NEW",
-      "last_summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloads.",
-      "expected_next_event": "Increased enterprise adoption and compliance audits",
-      "importance": "high",
-      "source_urls": [
-        "https://www.together.ai/blog/iso-27001-2022-certification"
-      ],
-      "times_mentioned": 5,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "approval",
-      "stage_history": [
-        {
-          "date": "2026-07-04",
-          "stage": "funding",
-          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
-          "source_urls": [
-            "https://www.together.ai/blog/announcing-our-series-c"
-          ]
-        },
-        {
-          "date": "2026-07-08",
-          "stage": "approval",
-          "summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloa",
-          "source_urls": [
-            "https://www.together.ai/blog/iso-27001-2022-certification"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Increased enterprise adoption and compliance audits",
-      "emerging_story": {
-        "stage": "approval",
-        "previous_stage": "no_change",
-        "confidence": "high",
-        "expected_next_milestone": "Increased enterprise adoption and compliance audits"
-      }
-    },
-    {
       "topic": "xAI",
       "category": "AI",
       "first_seen": "2026-06-23",
@@ -622,6 +658,62 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Together AI Platform",
+      "category": "Developer Tools",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-09",
+      "last_checked": "2026-07-09",
+      "status": "UPDATED",
+      "last_summary": "Together AI raised $800 million in Series C funding led by Aramco Ventures, NVIDIA, Vista Equity, and others. The company provides a full-stack AI platform for open-source AI, delivering fast and efficient inference for AI applications and agents. The funding includes commitments for over 500 MW of ",
+      "expected_next_event": "Expansion of compute infrastructure and platform capabilities",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/announcing-our-series-c"
+      ],
+      "times_mentioned": 6,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "funding",
+          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c"
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "stage": "approval",
+          "summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloa",
+          "source_urls": [
+            "https://www.together.ai/blog/iso-27001-2022-certification"
+          ]
+        },
+        {
+          "date": "2026-07-09",
+          "stage": "funding",
+          "summary": "Together AI raised $800 million in Series C funding led by Aramco Ventures, NVIDIA, Vista Equity, and others. The company provides a full-stack AI platform for open-source AI, delivering fast and efficient inference for ",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Expansion of compute infrastructure and platform capabilities",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Expansion of compute infrastructure and platform capabilities"
+      }
     },
     {
       "topic": "Disaster Response",
@@ -1961,6 +2053,51 @@
       "emerging_story": {}
     },
     {
+      "topic": "Dedicated Freight Corridors",
+      "category": "India Infrastructure",
+      "first_seen": "2026-07-05",
+      "last_reported": "2026-07-09",
+      "last_checked": "2026-07-09",
+      "status": "UPDATED",
+      "last_summary": "The Cabinet Committee on Economic Affairs approved the cost estimate of Rs. 81,459 Crs for Eastern and Western Dedicated Freight Corridors (DFC), including land cost. Funding comprises debt from bilateral/multilateral agencies, equity from Ministry of Railways, and Public Private Partnership. Three ",
+      "expected_next_event": "Detailed Project Report (DPR) completion and construction commencement",
+      "importance": "high",
+      "source_urls": [
+        "https://dfccil.com/Home/DynemicPages?MenuId=78"
+      ],
+      "times_mentioned": 2,
+      "timeline": [
+        "proposal",
+        "DPR",
+        "approval",
+        "land acquisition",
+        "tender",
+        "construction",
+        "trial",
+        "operations"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-05",
+          "stage": "funding",
+          "summary": "The Dedicated Freight Corridor Corporation of India Limited (DFCCIL) continues to receive funding for the Eastern and Western Dedicated Freight Corridors, with a total approved cost of Rs. 81,459 crore. Funding sources i",
+          "source_urls": [
+            "https://dfccil.com/Home/DynemicPages?MenuId=78",
+            "https://dfccil.com/Home/DynemicPages?MenuId=3",
+            "https://dfccil.com/Home/DynemicPages?MenuId=284"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Detailed Project Report (DPR) completion and construction commencement",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Detailed Project Report (DPR) completion and construction commencement"
+      }
+    },
+    {
       "topic": "Eastern DFC",
       "category": "India Infrastructure",
       "first_seen": "",
@@ -2153,53 +2290,6 @@
       "emerging_story": {}
     },
     {
-      "topic": "Dedicated Freight Corridors",
-      "category": "Infrastructure",
-      "first_seen": "2026-07-05",
-      "last_reported": "2026-07-05",
-      "last_checked": "2026-07-05",
-      "status": "UPDATED",
-      "last_summary": "The Dedicated Freight Corridor Corporation of India Limited (DFCCIL) continues to receive funding for the Eastern and Western Dedicated Freight Corridors, with a total approved cost of Rs. 81,459 crore. Funding sources include bilateral/multilateral loans, equity from Ministry of Railways, and Publi",
-      "expected_next_event": "Completion of DPRs and commencement of construction on new corridors",
-      "importance": "high",
-      "source_urls": [
-        "https://dfccil.com/Home/DynemicPages?MenuId=78",
-        "https://dfccil.com/Home/DynemicPages?MenuId=3",
-        "https://dfccil.com/Home/DynemicPages?MenuId=284"
-      ],
-      "times_mentioned": 1,
-      "timeline": [
-        "proposal",
-        "DPR",
-        "approval",
-        "land acquisition",
-        "tender",
-        "construction",
-        "trial",
-        "operations"
-      ],
-      "current_stage": "funding",
-      "stage_history": [
-        {
-          "date": "2026-07-05",
-          "stage": "funding",
-          "summary": "The Dedicated Freight Corridor Corporation of India Limited (DFCCIL) continues to receive funding for the Eastern and Western Dedicated Freight Corridors, with a total approved cost of Rs. 81,459 crore. Funding sources i",
-          "source_urls": [
-            "https://dfccil.com/Home/DynemicPages?MenuId=78",
-            "https://dfccil.com/Home/DynemicPages?MenuId=3",
-            "https://dfccil.com/Home/DynemicPages?MenuId=284"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Completion of DPRs and commencement of construction on new corridors",
-      "emerging_story": {
-        "stage": "funding",
-        "previous_stage": "consultation",
-        "confidence": "high",
-        "expected_next_milestone": "Completion of DPRs and commencement of construction on new corridors"
-      }
-    },
-    {
       "topic": "Eastern and Western Dedicated Freight Corridors Funding and Development Updates",
       "category": "Infrastructure",
       "first_seen": "2026-06-24",
@@ -2349,16 +2439,16 @@
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-07-08",
-      "last_checked": "2026-07-08",
+      "last_reported": "2026-07-09",
+      "last_checked": "2026-07-09",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ 300 mm semiconductor fab in Dholera, Gujarat, India, including deployment of ASML’s advanced lithography tools and joint talent and supply chain development.",
-      "expected_next_event": "Deployment and ramp-up of lithography tools at Dholera fab",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes deploying ASML’s advanced lithography tools and developing domestic talent, supply chain, and research",
+      "expected_next_event": "Deployment of lithography tools and fab ramp-up",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
       ],
-      "times_mentioned": 6,
+      "times_mentioned": 7,
       "timeline": [
         "announcement",
         "approval",
@@ -2368,7 +2458,7 @@
         "mass production",
         "customer adoption"
       ],
-      "current_stage": "partnership",
+      "current_stage": "consultation",
       "stage_history": [
         {
           "date": "2026-06-27",
@@ -2409,14 +2499,22 @@
           "source_urls": [
             "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
           ]
+        },
+        {
+          "date": "2026-07-09",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes deploying ASML’s advan",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
         }
       ],
-      "expected_next_milestone": "Deployment and ramp-up of lithography tools at Dholera fab",
+      "expected_next_milestone": "Deployment of lithography tools and fab ramp-up",
       "emerging_story": {
-        "stage": "partnership",
-        "previous_stage": "no_change",
+        "stage": "consultation",
+        "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "Deployment and ramp-up of lithography tools at Dholera fab"
+        "expected_next_milestone": "Deployment of lithography tools and fab ramp-up"
       }
     },
     {
@@ -3196,6 +3294,49 @@
       "emerging_story": {}
     },
     {
+      "topic": "New Horizons Mission",
+      "category": "Space",
+      "first_seen": "2026-07-09",
+      "last_reported": "2026-07-09",
+      "last_checked": "2026-07-09",
+      "status": "NEW",
+      "last_summary": "NASA’s New Horizons spacecraft emerged from a 321-day hibernation period, its longest ever, in good health and ready to transmit science data from the Kuiper Belt beyond Pluto. The spacecraft continues to gather data from its instruments and will begin downlinking health and science data in the comi",
+      "expected_next_event": "Transmission of scientific data from Kuiper Belt objects",
+      "importance": "high",
+      "source_urls": [
+        "https://science.nasa.gov/missions/new-horizons/nasas-new-horizons-spacecraft-wakes-from-hibernation-in-good-health/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-09",
+          "stage": "launch",
+          "summary": "NASA’s New Horizons spacecraft emerged from a 321-day hibernation period, its longest ever, in good health and ready to transmit science data from the Kuiper Belt beyond Pluto. The spacecraft continues to gather data fro",
+          "source_urls": [
+            "https://science.nasa.gov/missions/new-horizons/nasas-new-horizons-spacecraft-wakes-from-hibernation-in-good-health/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Transmission of scientific data from Kuiper Belt objects",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "hibernation",
+        "confidence": "high",
+        "expected_next_milestone": "Transmission of scientific data from Kuiper Belt objects"
+      }
+    },
+    {
       "topic": "Ramses Asteroid Mission",
       "category": "Space",
       "first_seen": "2026-07-03",
@@ -3566,16 +3707,16 @@
       "topic": "VICTUS HAZE Mission",
       "category": "Space",
       "first_seen": "2026-07-08",
-      "last_reported": "2026-07-08",
-      "last_checked": "2026-07-08",
+      "last_reported": "2026-07-09",
+      "last_checked": "2026-07-09",
       "status": "UPDATED",
-      "last_summary": "Rocket Lab successfully completed the U.S. Space Force’s VICTUS HAZE mission, involving design, build, launch, commissioning, and complex rendezvous and proximity operations of a Pioneer spacecraft within record times, demonstrating rapid threat-response capabilities in space.",
+      "last_summary": "Rocket Lab successfully completed the US Space Force’s VICTUS HAZE mission, involving the design, build, and launch of a Pioneer spacecraft within 24 hours’ notice, commissioning within 72 hours, and conducting complex rendezvous and proximity operations on orbit within 84 hours. The mission set rec",
       "expected_next_event": "Further responsive space missions and operational deployments",
       "importance": "high",
       "source_urls": [
         "https://rocketlabcorp.com/updates/rocket-lab-delivers-mission-success-for-space-force-completes-historic-launch-and-on-orbit-satellite-tracking-mission-in-record-time/"
       ],
-      "times_mentioned": 1,
+      "times_mentioned": 2,
       "timeline": [
         "announcement",
         "design",
@@ -3600,9 +3741,49 @@
       "expected_next_milestone": "Further responsive space missions and operational deployments",
       "emerging_story": {
         "stage": "launch",
-        "previous_stage": "no_change",
+        "previous_stage": "construction",
         "confidence": "high",
         "expected_next_milestone": "Further responsive space missions and operational deployments"
+      }
+    },
+    {
+      "topic": "Prime Intellect AI Agent Platform",
+      "category": "Startups",
+      "first_seen": "2026-07-09",
+      "last_reported": "2026-07-09",
+      "last_checked": "2026-07-09",
+      "status": "NEW",
+      "last_summary": "Prime Intellect, founded in 2024, raised $130 million in Series A funding led by Radical Ventures with participation from Nvidia Ventures, Intel Capital, and others. The startup offers a full-stack platform enabling organizations to train and deploy their own agentic AI systems without relying on fr",
+      "expected_next_event": "Platform expansion and enterprise adoption",
+      "importance": "high",
+      "source_urls": [
+        "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-09",
+          "stage": "funding",
+          "summary": "Prime Intellect, founded in 2024, raised $130 million in Series A funding led by Radical Ventures with participation from Nvidia Ventures, Intel Capital, and others. The startup offers a full-stack platform enabling orga",
+          "source_urls": [
+            "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Platform expansion and enterprise adoption",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Platform expansion and enterprise adoption"
       }
     },
     {
