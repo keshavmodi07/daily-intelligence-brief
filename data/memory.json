@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-09",
+  "last_updated": "2026-07-10",
   "suppression_days": 14,
   "topics": [
     {
@@ -284,6 +284,54 @@
       }
     },
     {
+      "topic": "GPT-5.6 AI Model",
+      "category": "AI",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-07-10",
+      "last_checked": "2026-07-10",
+      "status": "NEW",
+      "last_summary": "OpenAI announced GPT-5.6 as the new preferred AI model powering Microsoft 365 Copilot across Word, Excel, PowerPoint, Chat, and Cowork. GPT-5.6 delivers stronger AI capabilities, improved performance per dollar, and enhanced reasoning for complex tasks, enabling users to create higher-quality work p",
+      "expected_next_event": "broader adoption and integration in enterprise applications",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot"
+      ],
+      "times_mentioned": 2,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "announcement",
+          "summary": "OpenAI announced a limited preview of the GPT-5.6 series, including the flagship Sol model with enhanced capabilities in coding, science, and cybersecurity, paired with the most advanced safety stack to date. The preview",
+          "source_urls": [
+            "https://openai.com/index/previewing-gpt-5-6-sol"
+          ]
+        },
+        {
+          "date": "2026-07-10",
+          "stage": "launch",
+          "summary": "OpenAI announced GPT-5.6 as the new preferred AI model powering Microsoft 365 Copilot across Word, Excel, PowerPoint, Chat, and Cowork. GPT-5.6 delivers stronger AI capabilities, improved performance per dollar, and enha",
+          "source_urls": [
+            "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot"
+          ]
+        }
+      ],
+      "expected_next_milestone": "broader adoption and integration in enterprise applications",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "limited preview",
+        "confidence": "high",
+        "expected_next_milestone": "broader adoption and integration in enterprise applications"
+      }
+    },
+    {
       "topic": "GPT-Live Voice Model",
       "category": "AI",
       "first_seen": "2026-07-09",
@@ -373,16 +421,16 @@
       "topic": "Grok AI Model",
       "category": "AI",
       "first_seen": "2026-07-09",
-      "last_reported": "2026-07-09",
-      "last_checked": "2026-07-09",
-      "status": "NEW",
-      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels at real engineering tasks and outperforms comparable leading models. The model ",
-      "expected_next_event": "widespread adoption and integration into developer tools",
+      "last_reported": "2026-07-10",
+      "last_checked": "2026-07-10",
+      "status": "UPDATED",
+      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets across coding, science, engineering, and math, Grok 4.5 excels at real engineering tasks and outperforms comparable leading models. The model wa",
+      "expected_next_event": "mass production and adoption in developer tools",
       "importance": "high",
       "source_urls": [
         "https://x.ai/news/grok-4-5"
       ],
-      "times_mentioned": 1,
+      "times_mentioned": 2,
       "timeline": [
         "rumor",
         "announcement",
@@ -403,12 +451,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "widespread adoption and integration into developer tools",
+      "expected_next_milestone": "mass production and adoption in developer tools",
       "emerging_story": {
         "stage": "launch",
-        "previous_stage": "announcement",
+        "previous_stage": "engineering samples",
         "confidence": "high",
-        "expected_next_milestone": "widespread adoption and integration into developer tools"
+        "expected_next_milestone": "mass production and adoption in developer tools"
       }
     },
     {
@@ -628,51 +676,19 @@
       "emerging_story": {}
     },
     {
-      "topic": "xAI",
-      "category": "AI",
-      "first_seen": "2026-06-23",
-      "last_reported": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "status": "NEW",
-      "last_summary": "xAI has launched the Grok Build Plugin Marketplace, a built-in plugin ecosystem for Grok Build, enabling installation and updates of plugins directly from the terminal. Additionally, xAI and partners have introduced new AI-powered applications including Gopuff's Go shopping assistant powered by Grok",
-      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
-      "importance": "high",
-      "source_urls": [
-        "https://x.ai/news/grok-plugin-marketplace",
-        "https://x.ai/news/grok-gopuff",
-        "https://x.ai/news/grok-kilocode",
-        "https://x.ai/news/introducing-goal",
-        "https://x.ai/news/grok-interactive-brokers"
-      ],
-      "times_mentioned": 1,
-      "timeline": [
-        "rumor",
-        "announcement",
-        "preview",
-        "developer access",
-        "enterprise rollout",
-        "customer adoption",
-        "second generation"
-      ],
-      "current_stage": "",
-      "stage_history": [],
-      "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
-      "emerging_story": {}
-    },
-    {
       "topic": "Together AI Platform",
-      "category": "Developer Tools",
+      "category": "AI",
       "first_seen": "2026-07-04",
-      "last_reported": "2026-07-09",
-      "last_checked": "2026-07-09",
+      "last_reported": "2026-07-10",
+      "last_checked": "2026-07-10",
       "status": "UPDATED",
-      "last_summary": "Together AI raised $800 million in Series C funding led by Aramco Ventures, NVIDIA, Vista Equity, and others. The company provides a full-stack AI platform for open-source AI, delivering fast and efficient inference for AI applications and agents. The funding includes commitments for over 500 MW of ",
-      "expected_next_event": "Expansion of compute infrastructure and platform capabilities",
+      "last_summary": "Together AI announced the closing of an $800 million Series C funding round led by investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The funding will support the expansion of compute capacity and development of their AI platform focused on open-source AI, efficient inference, an",
+      "expected_next_event": "deployment of expanded GPU clusters and new AI model releases",
       "importance": "high",
       "source_urls": [
         "https://www.together.ai/blog/announcing-our-series-c"
       ],
-      "times_mentioned": 6,
+      "times_mentioned": 7,
       "timeline": [
         "announcement",
         "development",
@@ -707,13 +723,45 @@
           ]
         }
       ],
-      "expected_next_milestone": "Expansion of compute infrastructure and platform capabilities",
+      "expected_next_milestone": "deployment of expanded GPU clusters and new AI model releases",
       "emerging_story": {
         "stage": "funding",
         "previous_stage": "consultation",
         "confidence": "high",
-        "expected_next_milestone": "Expansion of compute infrastructure and platform capabilities"
+        "expected_next_milestone": "deployment of expanded GPU clusters and new AI model releases"
       }
+    },
+    {
+      "topic": "xAI",
+      "category": "AI",
+      "first_seen": "2026-06-23",
+      "last_reported": "2026-06-25",
+      "last_checked": "2026-06-25",
+      "status": "NEW",
+      "last_summary": "xAI has launched the Grok Build Plugin Marketplace, a built-in plugin ecosystem for Grok Build, enabling installation and updates of plugins directly from the terminal. Additionally, xAI and partners have introduced new AI-powered applications including Gopuff's Go shopping assistant powered by Grok",
+      "expected_next_event": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-plugin-marketplace",
+        "https://x.ai/news/grok-gopuff",
+        "https://x.ai/news/grok-kilocode",
+        "https://x.ai/news/introducing-goal",
+        "https://x.ai/news/grok-interactive-brokers"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "",
+      "stage_history": [],
+      "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
+      "emerging_story": {}
     },
     {
       "topic": "Disaster Response",
@@ -859,6 +907,46 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Federal Reserve Monetary Policy Task Forces",
+      "category": "Economics",
+      "first_seen": "2026-07-10",
+      "last_reported": "2026-07-10",
+      "last_checked": "2026-07-10",
+      "status": "NEW",
+      "last_summary": "The Federal Reserve announced the leadership and objectives of five task forces aimed at advancing the conduct of monetary policy. These task forces, co-led by external advisers with expertise in economics and business, will independently assess and provide recommendations to improve policymakers' t",
+      "expected_next_event": "task force reports and policy recommendations",
+      "importance": "high",
+      "source_urls": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-10",
+          "stage": "announcement",
+          "summary": "The Federal Reserve announced the leadership and objectives of five task forces aimed at advancing the conduct of monetary policy. These task forces, co-led by external advisers with expertise in economics and business, ",
+          "source_urls": [
+            "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm"
+          ]
+        }
+      ],
+      "expected_next_milestone": "task force reports and policy recommendations",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "planning",
+        "confidence": "high",
+        "expected_next_milestone": "task force reports and policy recommendations"
+      }
     },
     {
       "topic": "Government debt management",
@@ -1400,6 +1488,48 @@
         "previous_stage": "escalation",
         "confidence": "high",
         "expected_next_milestone": "Progress in peace negotiations and reduction of hostilities"
+      }
+    },
+    {
+      "topic": "Peace and Stability in Eastern DRC",
+      "category": "Geopolitics",
+      "first_seen": "2026-07-10",
+      "last_reported": "2026-07-10",
+      "last_checked": "2026-07-10",
+      "status": "NEW",
+      "last_summary": "UN High Commissioner for Human Rights Volker Türk urged the armed forces of the Democratic Republic of the Congo and the Rwanda-backed M23 armed group to cease hostilities amid recent civilian deaths. The conflict, which escalated in 2021, has displaced over eight million people and involved the use",
+      "expected_next_event": "renewed peace negotiations or ceasefire enforcement",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/07/1167906"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-07-10",
+          "stage": "escalation",
+          "summary": "UN High Commissioner for Human Rights Volker Türk urged the armed forces of the Democratic Republic of the Congo and the Rwanda-backed M23 armed group to cease hostilities amid recent civilian deaths. The conflict, which",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167906"
+          ]
+        }
+      ],
+      "expected_next_milestone": "renewed peace negotiations or ceasefire enforcement",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "ongoing conflict",
+        "confidence": "high",
+        "expected_next_milestone": "renewed peace negotiations or ceasefire enforcement"
       }
     },
     {
@@ -2439,16 +2569,16 @@
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-07-09",
-      "last_checked": "2026-07-09",
+      "last_reported": "2026-07-10",
+      "last_checked": "2026-07-10",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes deploying ASML’s advanced lithography tools and developing domestic talent, supply chain, and research",
-      "expected_next_event": "Deployment of lithography tools and fab ramp-up",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics’ upcoming 300mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lithography tools and solutions, and both companies will cooperate on talent dev",
+      "expected_next_event": "installation and commissioning of lithography equipment",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
       ],
-      "times_mentioned": 7,
+      "times_mentioned": 8,
       "timeline": [
         "announcement",
         "approval",
@@ -2509,12 +2639,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Deployment of lithography tools and fab ramp-up",
+      "expected_next_milestone": "installation and commissioning of lithography equipment",
       "emerging_story": {
         "stage": "consultation",
-        "previous_stage": "announcement",
+        "previous_stage": "planning",
         "confidence": "high",
-        "expected_next_milestone": "Deployment of lithography tools and fab ramp-up"
+        "expected_next_milestone": "installation and commissioning of lithography equipment"
       }
     },
     {
@@ -3058,6 +3188,49 @@
         "previous_stage": "no_change",
         "confidence": "high",
         "expected_next_milestone": "Further scientific analysis and public dissemination of findings"
+      }
+    },
+    {
+      "topic": "International Space Station Expedition 74",
+      "category": "Space",
+      "first_seen": "2026-07-10",
+      "last_reported": "2026-07-10",
+      "last_checked": "2026-07-10",
+      "status": "NEW",
+      "last_summary": "NASA astronaut Anil Menon will launch aboard the Roscosmos Soyuz MS-29 spacecraft to the International Space Station on July 14, 2026, joining Expedition 74 crew members. The launch will be from Baikonur Cosmodrome in Kazakhstan, with docking scheduled approximately three hours later. Menon will spe",
+      "expected_next_event": "successful docking and start of mission operations",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/news-release/nasa-sets-coverage-for-astronaut-anil-menon-launch-to-space-station/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-10",
+          "stage": "launch",
+          "summary": "NASA astronaut Anil Menon will launch aboard the Roscosmos Soyuz MS-29 spacecraft to the International Space Station on July 14, 2026, joining Expedition 74 crew members. The launch will be from Baikonur Cosmodrome in Ka",
+          "source_urls": [
+            "https://www.nasa.gov/news-release/nasa-sets-coverage-for-astronaut-anil-menon-launch-to-space-station/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "successful docking and start of mission operations",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "approval",
+        "confidence": "high",
+        "expected_next_milestone": "successful docking and start of mission operations"
       }
     },
     {
@@ -3747,6 +3920,46 @@
       }
     },
     {
+      "topic": "Lovable Vibe Coding Platform",
+      "category": "Startups",
+      "first_seen": "2026-07-10",
+      "last_reported": "2026-07-10",
+      "last_checked": "2026-07-10",
+      "status": "NEW",
+      "last_summary": "Lovable, a Swedish vibe-coding startup, is reportedly in talks to raise $300 million at a valuation of $13.2 billion, doubling its valuation from $6.6 billion in December 2025. The round is expected to be led by Menlo Ventures. Lovable’s platform enables users to build software through natural langu",
+      "expected_next_event": "closing of funding round and expansion of platform capabilities",
+      "importance": "high",
+      "source_urls": [
+        "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-10",
+          "stage": "funding",
+          "summary": "Lovable, a Swedish vibe-coding startup, is reportedly in talks to raise $300 million at a valuation of $13.2 billion, doubling its valuation from $6.6 billion in December 2025. The round is expected to be led by Menlo Ve",
+          "source_urls": [
+            "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "closing of funding round and expansion of platform capabilities",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "growth",
+        "confidence": "medium",
+        "expected_next_milestone": "closing of funding round and expansion of platform capabilities"
+      }
+    },
+    {
       "topic": "Prime Intellect AI Agent Platform",
       "category": "Startups",
       "first_seen": "2026-07-09",
@@ -4167,46 +4380,6 @@
         "previous_stage": "engineering samples",
         "confidence": "high",
         "expected_next_milestone": "Adoption of FlashAttention-4 in production AI models and frameworks"
-      }
-    },
-    {
-      "topic": "GPT-5.6 AI Model",
-      "category": "Technology",
-      "first_seen": "2026-06-28",
-      "last_reported": "2026-06-28",
-      "last_checked": "2026-06-28",
-      "status": "UPDATED",
-      "last_summary": "OpenAI announced a limited preview of the GPT-5.6 series, including the flagship Sol model with enhanced capabilities in coding, science, and cybersecurity, paired with the most advanced safety stack to date. The preview is initially available to a small group of trusted partners as part of governme",
-      "expected_next_event": "General availability of GPT-5.6 models",
-      "importance": "high",
-      "source_urls": [
-        "https://openai.com/index/previewing-gpt-5-6-sol"
-      ],
-      "times_mentioned": 1,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "announcement",
-      "stage_history": [
-        {
-          "date": "2026-06-28",
-          "stage": "announcement",
-          "summary": "OpenAI announced a limited preview of the GPT-5.6 series, including the flagship Sol model with enhanced capabilities in coding, science, and cybersecurity, paired with the most advanced safety stack to date. The preview",
-          "source_urls": [
-            "https://openai.com/index/previewing-gpt-5-6-sol"
-          ]
-        }
-      ],
-      "expected_next_milestone": "General availability of GPT-5.6 models",
-      "emerging_story": {
-        "stage": "announcement",
-        "previous_stage": "development",
-        "confidence": "high",
-        "expected_next_milestone": "General availability of GPT-5.6 models"
       }
     },
     {
