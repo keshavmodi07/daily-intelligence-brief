@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-10",
+  "last_updated": "2026-07-11",
   "suppression_days": 14,
   "topics": [
     {
@@ -43,6 +43,54 @@
         "previous_stage": "announcement",
         "confidence": "high",
         "expected_next_milestone": "Wider adoption and feature enhancements"
+      }
+    },
+    {
+      "topic": "AI Native Cloud",
+      "category": "AI",
+      "first_seen": "2026-07-11",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "status": "NEW",
+      "last_summary": "Together AI announced an $800 million Series C funding round led by investors including Aramco Ventures and NVIDIA. The company also launched new AI infrastructure products such as GPU clusters powered by NVIDIA Blackwell HGX B200, FlashAttention-4 kernel optimizations, and efficient inference servi",
+      "expected_next_event": "Widespread adoption of new AI infrastructure and models",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/announcing-our-series-c",
+        "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
+        "https://www.together.ai/blog/flashattention-4",
+        "https://www.together.ai/blog/nvidia-hgx-b200-with-together-kernel-collection",
+        "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-11",
+          "stage": "funding",
+          "summary": "Together AI announced an $800 million Series C funding round led by investors including Aramco Ventures and NVIDIA. The company also launched new AI infrastructure products such as GPU clusters powered by NVIDIA Blackwel",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c",
+            "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
+            "https://www.together.ai/blog/flashattention-4"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Widespread adoption of new AI infrastructure and models",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Widespread adoption of new AI infrastructure and models"
       }
     },
     {
@@ -332,6 +380,48 @@
       }
     },
     {
+      "topic": "GPT-5.6 Model",
+      "category": "AI",
+      "first_seen": "2026-07-11",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "status": "UPDATED",
+      "last_summary": "OpenAI announced GPT-5.6 as the new preferred AI model powering Microsoft 365 Copilot across Word, Excel, PowerPoint, Chat, and Cowork. GPT-5.6 delivers stronger AI capabilities, improved reasoning, and higher-quality outputs with better cost efficiency, enabling users to create, analyze, and collab",
+      "expected_next_event": "Widespread enterprise adoption and feature expansion",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-11",
+          "stage": "launch",
+          "summary": "OpenAI announced GPT-5.6 as the new preferred AI model powering Microsoft 365 Copilot across Word, Excel, PowerPoint, Chat, and Cowork. GPT-5.6 delivers stronger AI capabilities, improved reasoning, and higher-quality ou",
+          "source_urls": [
+            "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Widespread enterprise adoption and feature expansion",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Widespread enterprise adoption and feature expansion"
+      }
+    },
+    {
       "topic": "GPT-Live Voice Model",
       "category": "AI",
       "first_seen": "2026-07-09",
@@ -421,16 +511,16 @@
       "topic": "Grok AI Model",
       "category": "AI",
       "first_seen": "2026-07-09",
-      "last_reported": "2026-07-10",
-      "last_checked": "2026-07-10",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
       "status": "UPDATED",
-      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets across coding, science, engineering, and math, Grok 4.5 excels at real engineering tasks and outperforms comparable leading models. The model wa",
-      "expected_next_event": "mass production and adoption in developer tools",
+      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. The model was trained on extensive datasets covering coding, science, engineering, and math, using tens of thousands of NVIDIA GB300 GPUs. Grok 4.5 excels at real engineering",
+      "expected_next_event": "Adoption and integration in developer tools",
       "importance": "high",
       "source_urls": [
         "https://x.ai/news/grok-4-5"
       ],
-      "times_mentioned": 2,
+      "times_mentioned": 3,
       "timeline": [
         "rumor",
         "announcement",
@@ -451,12 +541,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "mass production and adoption in developer tools",
+      "expected_next_milestone": "Adoption and integration in developer tools",
       "emerging_story": {
         "stage": "launch",
-        "previous_stage": "engineering samples",
+        "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "mass production and adoption in developer tools"
+        "expected_next_milestone": "Adoption and integration in developer tools"
       }
     },
     {
@@ -547,6 +637,48 @@
         "previous_stage": "funding",
         "confidence": "high",
         "expected_next_milestone": "Wider adoption and integration of Grok Build in developer tools"
+      }
+    },
+    {
+      "topic": "Lovable AI Agent",
+      "category": "AI",
+      "first_seen": "2026-07-11",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "status": "NEW",
+      "last_summary": "Lovable launched support for Skills, a reusable instruction format for AI agents that allows users to save instructions as markdown files. This reduces repetitive explanations by enabling AI agents to recall user preferences and conventions for specific tasks. The Skills format is portable, readable",
+      "expected_next_event": "Broader adoption and integration of Skills across AI platforms",
+      "importance": "high",
+      "source_urls": [
+        "https://lovable.dev/blog/introducing-skills"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-11",
+          "stage": "launch",
+          "summary": "Lovable launched support for Skills, a reusable instruction format for AI agents that allows users to save instructions as markdown files. This reduces repetitive explanations by enabling AI agents to recall user prefere",
+          "source_urls": [
+            "https://lovable.dev/blog/introducing-skills"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Broader adoption and integration of Skills across AI platforms",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Broader adoption and integration of Skills across AI platforms"
       }
     },
     {
@@ -762,6 +894,46 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Lovable Enterprise Security",
+      "category": "Developer Tools",
+      "first_seen": "2026-07-11",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "status": "NEW",
+      "last_summary": "Lovable introduced Workspace Insights, a new feature in Security Center that provides administrators with a comprehensive view of all enterprise projects. It enables visibility into project status, exposure to sensitive data, security findings, and ownership, facilitating governance and risk managem",
+      "expected_next_event": "Enterprise adoption and integration with compliance workflows",
+      "importance": "high",
+      "source_urls": [
+        "https://lovable.dev/blog/workspace-insights-govern-your-workspace"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-11",
+          "stage": "launch",
+          "summary": "Lovable introduced Workspace Insights, a new feature in Security Center that provides administrators with a comprehensive view of all enterprise projects. It enables visibility into project status, exposure to sensitive ",
+          "source_urls": [
+            "https://lovable.dev/blog/workspace-insights-govern-your-workspace"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Enterprise adoption and integration with compliance workflows",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Enterprise adoption and integration with compliance workflows"
+      }
     },
     {
       "topic": "Disaster Response",
@@ -1449,6 +1621,48 @@
       }
     },
     {
+      "topic": "Maritime Security in Gulf Region",
+      "category": "Geopolitics",
+      "first_seen": "2026-07-11",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "status": "NEW",
+      "last_summary": "Renewed hostilities between the United States and Iran have brought shipping to a near-standstill in the Strait of Hormuz, stranding around 6,000 seafarers aboard hundreds of vessels. Gulf countries remain on high alert amid ongoing attacks and counterattacks, with significant impacts on global ener",
+      "expected_next_event": "De-escalation or further military incidents",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/07/1167905"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-07-11",
+          "stage": "escalation",
+          "summary": "Renewed hostilities between the United States and Iran have brought shipping to a near-standstill in the Strait of Hormuz, stranding around 6,000 seafarers aboard hundreds of vessels. Gulf countries remain on high alert ",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167905"
+          ]
+        }
+      ],
+      "expected_next_milestone": "De-escalation or further military incidents",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "De-escalation or further military incidents"
+      }
+    },
+    {
       "topic": "Middle East Peace Process",
       "category": "Geopolitics",
       "first_seen": "2026-06-26",
@@ -1494,16 +1708,16 @@
       "topic": "Peace and Stability in Eastern DRC",
       "category": "Geopolitics",
       "first_seen": "2026-07-10",
-      "last_reported": "2026-07-10",
-      "last_checked": "2026-07-10",
-      "status": "NEW",
-      "last_summary": "UN High Commissioner for Human Rights Volker Türk urged the armed forces of the Democratic Republic of the Congo and the Rwanda-backed M23 armed group to cease hostilities amid recent civilian deaths. The conflict, which escalated in 2021, has displaced over eight million people and involved the use",
-      "expected_next_event": "renewed peace negotiations or ceasefire enforcement",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "status": "UPDATED",
+      "last_summary": "UN High Commissioner for Human Rights Volker Türk urged the armed forces of the Democratic Republic of the Congo and the Rwanda-backed M23 armed group to cease hostilities amid escalating clashes in South Kivu province. The conflict has displaced over eight million people and involved the use of hea",
+      "expected_next_event": "Ceasefire agreement or peace negotiations",
       "importance": "high",
       "source_urls": [
         "https://news.un.org/feed/view/en/story/2026/07/1167906"
       ],
-      "times_mentioned": 1,
+      "times_mentioned": 2,
       "timeline": [
         "stable",
         "tension",
@@ -1524,12 +1738,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "renewed peace negotiations or ceasefire enforcement",
+      "expected_next_milestone": "Ceasefire agreement or peace negotiations",
       "emerging_story": {
         "stage": "escalation",
-        "previous_stage": "ongoing conflict",
+        "previous_stage": "no_change",
         "confidence": "high",
-        "expected_next_milestone": "renewed peace negotiations or ceasefire enforcement"
+        "expected_next_milestone": "Ceasefire agreement or peace negotiations"
       }
     },
     {
@@ -2569,16 +2783,16 @@
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-07-10",
-      "last_checked": "2026-07-10",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics’ upcoming 300mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lithography tools and solutions, and both companies will cooperate on talent dev",
-      "expected_next_event": "installation and commissioning of lithography equipment",
+      "last_summary": "Tata Electronics and ASML announced a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership focuses on deploying ASML’s advanced lithography tools and solutions, developing domest",
+      "expected_next_event": "Deployment of ASML lithography tools and fab ramp-up",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
       ],
-      "times_mentioned": 8,
+      "times_mentioned": 9,
       "timeline": [
         "announcement",
         "approval",
@@ -2639,12 +2853,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "installation and commissioning of lithography equipment",
+      "expected_next_milestone": "Deployment of ASML lithography tools and fab ramp-up",
       "emerging_story": {
         "stage": "consultation",
-        "previous_stage": "planning",
+        "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "installation and commissioning of lithography equipment"
+        "expected_next_milestone": "Deployment of ASML lithography tools and fab ramp-up"
       }
     },
     {
@@ -3194,16 +3408,16 @@
       "topic": "International Space Station Expedition 74",
       "category": "Space",
       "first_seen": "2026-07-10",
-      "last_reported": "2026-07-10",
-      "last_checked": "2026-07-10",
-      "status": "NEW",
-      "last_summary": "NASA astronaut Anil Menon will launch aboard the Roscosmos Soyuz MS-29 spacecraft to the International Space Station on July 14, 2026, joining Expedition 74 crew members. The launch will be from Baikonur Cosmodrome in Kazakhstan, with docking scheduled approximately three hours later. Menon will spe",
-      "expected_next_event": "successful docking and start of mission operations",
+      "last_reported": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "status": "UPDATED",
+      "last_summary": "NASA astronaut Anil Menon will launch aboard the Roscosmos Soyuz MS-29 spacecraft to the International Space Station on July 14, 2026, accompanied by cosmonauts Pyotr Dubrov and Anna Kikina. The crew will join Expedition 74 and conduct scientific research and technology demonstrations during an appr",
+      "expected_next_event": "Successful docking and start of ISS mission",
       "importance": "high",
       "source_urls": [
         "https://www.nasa.gov/news-release/nasa-sets-coverage-for-astronaut-anil-menon-launch-to-space-station/"
       ],
-      "times_mentioned": 1,
+      "times_mentioned": 2,
       "timeline": [
         "announcement",
         "design",
@@ -3225,12 +3439,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "successful docking and start of mission operations",
+      "expected_next_milestone": "Successful docking and start of ISS mission",
       "emerging_story": {
         "stage": "launch",
-        "previous_stage": "approval",
+        "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "successful docking and start of mission operations"
+        "expected_next_milestone": "Successful docking and start of ISS mission"
       }
     },
     {
