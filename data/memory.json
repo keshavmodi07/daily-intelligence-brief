@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-11",
+  "last_updated": "2026-07-12",
   "suppression_days": 14,
   "topics": [
     {
@@ -290,6 +290,48 @@
       }
     },
     {
+      "topic": "Deutsche Telekom AI Transformation",
+      "category": "AI",
+      "first_seen": "2026-07-12",
+      "last_reported": "2026-07-12",
+      "last_checked": "2026-07-12",
+      "status": "NEW",
+      "last_summary": "Deutsche Telekom is undergoing a fundamental transformation to become an AI-native telco by integrating OpenAI's generative AI capabilities across customer service, employee workflows, and network operations. The company aims to redesign decision-making and service delivery processes rather than jus",
+      "expected_next_event": "full integration of AI across key operational areas",
+      "importance": "high",
+      "source_urls": [
+        "https://openai.com/index/deutsche-telekom"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "adoption",
+      "stage_history": [
+        {
+          "date": "2026-07-12",
+          "stage": "adoption",
+          "summary": "Deutsche Telekom is undergoing a fundamental transformation to become an AI-native telco by integrating OpenAI's generative AI capabilities across customer service, employee workflows, and network operations. The company",
+          "source_urls": [
+            "https://openai.com/index/deutsche-telekom"
+          ]
+        }
+      ],
+      "expected_next_milestone": "full integration of AI across key operational areas",
+      "emerging_story": {
+        "stage": "adoption",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "full integration of AI across key operational areas"
+      }
+    },
+    {
       "topic": "GPT-5.6",
       "category": "AI",
       "first_seen": "2026-06-27",
@@ -511,16 +553,16 @@
       "topic": "Grok AI Model",
       "category": "AI",
       "first_seen": "2026-07-09",
-      "last_reported": "2026-07-11",
-      "last_checked": "2026-07-11",
+      "last_reported": "2026-07-12",
+      "last_checked": "2026-07-12",
       "status": "UPDATED",
-      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. The model was trained on extensive datasets covering coding, science, engineering, and math, using tens of thousands of NVIDIA GB300 GPUs. Grok 4.5 excels at real engineering",
-      "expected_next_event": "Adoption and integration in developer tools",
+      "last_summary": "xAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets across coding, science, engineering, and math, Grok 4.5 excels at real engineering tasks and outperforms comparable leading models. It was trained on",
+      "expected_next_event": "widespread adoption and integration into developer tools",
       "importance": "high",
       "source_urls": [
         "https://x.ai/news/grok-4-5"
       ],
-      "times_mentioned": 3,
+      "times_mentioned": 4,
       "timeline": [
         "rumor",
         "announcement",
@@ -541,12 +583,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Adoption and integration in developer tools",
+      "expected_next_milestone": "widespread adoption and integration into developer tools",
       "emerging_story": {
         "stage": "launch",
         "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "Adoption and integration in developer tools"
+        "expected_next_milestone": "widespread adoption and integration into developer tools"
       }
     },
     {
@@ -595,6 +637,46 @@
         "previous_stage": "announcement",
         "confidence": "high",
         "expected_next_milestone": "Broader adoption and new integrations"
+      }
+    },
+    {
+      "topic": "Grok Build",
+      "category": "AI",
+      "first_seen": "2026-06-28",
+      "last_reported": "2026-07-12",
+      "last_checked": "2026-07-12",
+      "status": "NEW",
+      "last_summary": "xAI launched the Grok Build Plugin Marketplace, a built-in platform within Grok Build that allows users to browse, install, and update plugins that bundle skills, commands, agents, and other tools to extend AI coding capabilities. The marketplace supports plugins from multiple partners and ensures s",
+      "expected_next_event": "growth of plugin ecosystem and increased developer adoption",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-plugin-marketplace"
+      ],
+      "times_mentioned": 4,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-06-28",
+          "stage": "launch",
+          "summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partner",
+          "source_urls": [
+            "https://x.ai/news/grok-plugin-marketplace"
+          ]
+        }
+      ],
+      "expected_next_milestone": "growth of plugin ecosystem and increased developer adoption",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "growth of plugin ecosystem and increased developer adoption"
       }
     },
     {
@@ -679,6 +761,50 @@
         "previous_stage": "announcement",
         "confidence": "high",
         "expected_next_milestone": "Broader adoption and integration of Skills across AI platforms"
+      }
+    },
+    {
+      "topic": "Lovable AI Platform",
+      "category": "AI",
+      "first_seen": "2026-07-12",
+      "last_reported": "2026-07-12",
+      "last_checked": "2026-07-12",
+      "status": "NEW",
+      "last_summary": "Lovable has adopted the Skills format, allowing users to save reusable instructions as markdown files to reduce repetitive prompts in AI agentic coding. Additionally, Lovable introduced subagents that can perform parallel tasks such as research and exploration within projects, improving build speed ",
+      "expected_next_event": "wider adoption and integration of Skills and subagents in user projects",
+      "importance": "high",
+      "source_urls": [
+        "https://lovable.dev/blog/introducing-skills",
+        "https://lovable.dev/blog/subagents-in-lovable"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-12",
+          "stage": "launch",
+          "summary": "Lovable has adopted the Skills format, allowing users to save reusable instructions as markdown files to reduce repetitive prompts in AI agentic coding. Additionally, Lovable introduced subagents that can perform paralle",
+          "source_urls": [
+            "https://lovable.dev/blog/introducing-skills",
+            "https://lovable.dev/blog/subagents-in-lovable"
+          ]
+        }
+      ],
+      "expected_next_milestone": "wider adoption and integration of Skills and subagents in user projects",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "wider adoption and integration of Skills and subagents in user projects"
       }
     },
     {
@@ -811,16 +937,20 @@
       "topic": "Together AI Platform",
       "category": "AI",
       "first_seen": "2026-07-04",
-      "last_reported": "2026-07-10",
-      "last_checked": "2026-07-10",
+      "last_reported": "2026-07-12",
+      "last_checked": "2026-07-12",
       "status": "UPDATED",
-      "last_summary": "Together AI announced the closing of an $800 million Series C funding round led by investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The funding will support the expansion of compute capacity and development of their AI platform focused on open-source AI, efficient inference, an",
-      "expected_next_event": "deployment of expanded GPU clusters and new AI model releases",
+      "last_summary": "Together AI announced an $800 million Series C funding round led by investors including Aramco Ventures, NVIDIA, and Salesforce Ventures. The company also revealed multiple AI infrastructure innovations such as FlashAttention-4 optimized for NVIDIA Blackwell GPUs, deployment of NVIDIA HGX B200 GPU c",
+      "expected_next_event": "widespread adoption of new AI infrastructure and model deployments",
       "importance": "high",
       "source_urls": [
-        "https://www.together.ai/blog/announcing-our-series-c"
+        "https://www.together.ai/blog/announcing-our-series-c",
+        "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
+        "https://www.together.ai/blog/flashattention-4",
+        "https://www.together.ai/blog/nvidia-hgx-b200-with-together-kernel-collection",
+        "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets"
       ],
-      "times_mentioned": 7,
+      "times_mentioned": 8,
       "timeline": [
         "announcement",
         "development",
@@ -855,12 +985,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "deployment of expanded GPU clusters and new AI model releases",
+      "expected_next_milestone": "widespread adoption of new AI infrastructure and model deployments",
       "emerging_story": {
         "stage": "funding",
         "previous_stage": "consultation",
         "confidence": "high",
-        "expected_next_milestone": "deployment of expanded GPU clusters and new AI model releases"
+        "expected_next_milestone": "widespread adoption of new AI infrastructure and model deployments"
       }
     },
     {
@@ -2469,6 +2599,54 @@
       "emerging_story": {}
     },
     {
+      "topic": "Eastern and Western Dedicated Freight Corridors",
+      "category": "India Infrastructure",
+      "first_seen": "2026-07-12",
+      "last_reported": "2026-07-12",
+      "last_checked": "2026-07-12",
+      "status": "UPDATED",
+      "last_summary": "The Dedicated Freight Corridor Corporation of India Limited (DFCCIL) continues development of the Eastern and Western Dedicated Freight Corridors with approved funding including loans from the World Bank and equity from the Ministry of Railways. New corridors such as East West, East Coast, and North",
+      "expected_next_event": "completion of corridor sections and operationalization of cargo terminals",
+      "importance": "high",
+      "source_urls": [
+        "https://dfccil.com/Home/DynemicPages?MenuId=78",
+        "https://dfccil.com/Home/DynemicPages?MenuId=3",
+        "https://dfccil.com/Home/DynemicPages?MenuId=284",
+        "https://www.ireps.gov.in/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "proposal",
+        "DPR",
+        "approval",
+        "land acquisition",
+        "tender",
+        "construction",
+        "trial",
+        "operations"
+      ],
+      "current_stage": "construction",
+      "stage_history": [
+        {
+          "date": "2026-07-12",
+          "stage": "construction",
+          "summary": "The Dedicated Freight Corridor Corporation of India Limited (DFCCIL) continues development of the Eastern and Western Dedicated Freight Corridors with approved funding including loans from the World Bank and equity from ",
+          "source_urls": [
+            "https://dfccil.com/Home/DynemicPages?MenuId=78",
+            "https://dfccil.com/Home/DynemicPages?MenuId=3",
+            "https://dfccil.com/Home/DynemicPages?MenuId=284"
+          ]
+        }
+      ],
+      "expected_next_milestone": "completion of corridor sections and operationalization of cargo terminals",
+      "emerging_story": {
+        "stage": "construction",
+        "previous_stage": "funding",
+        "confidence": "high",
+        "expected_next_milestone": "completion of corridor sections and operationalization of cargo terminals"
+      }
+    },
+    {
       "topic": "Eastern and Western Dedicated Freight Corridors cost estimate approved with funding detail",
       "category": "India Infrastructure",
       "first_seen": "2026-06-23",
@@ -2783,16 +2961,16 @@
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-07-11",
-      "last_checked": "2026-07-11",
+      "last_reported": "2026-07-12",
+      "last_checked": "2026-07-12",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML announced a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership focuses on deploying ASML’s advanced lithography tools and solutions, developing domest",
-      "expected_next_event": "Deployment of ASML lithography tools and fab ramp-up",
+      "last_summary": "Tata Electronics and ASML announced a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership focuses on deploying ASML’s advanced lithography tools and solutions, developing domestic ta",
+      "expected_next_event": "deployment and ramp-up of lithography tools at Dholera fab",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
       ],
-      "times_mentioned": 9,
+      "times_mentioned": 10,
       "timeline": [
         "announcement",
         "approval",
@@ -2853,12 +3031,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Deployment of ASML lithography tools and fab ramp-up",
+      "expected_next_milestone": "deployment and ramp-up of lithography tools at Dholera fab",
       "emerging_story": {
         "stage": "consultation",
         "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "Deployment of ASML lithography tools and fab ramp-up"
+        "expected_next_milestone": "deployment and ramp-up of lithography tools at Dholera fab"
       }
     },
     {
@@ -3408,16 +3586,16 @@
       "topic": "International Space Station Expedition 74",
       "category": "Space",
       "first_seen": "2026-07-10",
-      "last_reported": "2026-07-11",
-      "last_checked": "2026-07-11",
+      "last_reported": "2026-07-12",
+      "last_checked": "2026-07-12",
       "status": "UPDATED",
-      "last_summary": "NASA astronaut Anil Menon will launch aboard the Roscosmos Soyuz MS-29 spacecraft to the International Space Station on July 14, 2026, accompanied by cosmonauts Pyotr Dubrov and Anna Kikina. The crew will join Expedition 74 and conduct scientific research and technology demonstrations during an appr",
-      "expected_next_event": "Successful docking and start of ISS mission",
+      "last_summary": "NASA astronaut Anil Menon will launch aboard the Roscosmos Soyuz MS-29 spacecraft to the International Space Station on July 14, 2026, alongside cosmonauts Pyotr Dubrov and Anna Kikina. The crew will join Expedition 74 and conduct scientific research and technology demonstrations during an approxima",
+      "expected_next_event": "successful docking and start of mission operations",
       "importance": "high",
       "source_urls": [
         "https://www.nasa.gov/news-release/nasa-sets-coverage-for-astronaut-anil-menon-launch-to-space-station/"
       ],
-      "times_mentioned": 2,
+      "times_mentioned": 3,
       "timeline": [
         "announcement",
         "design",
@@ -3439,12 +3617,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Successful docking and start of ISS mission",
+      "expected_next_milestone": "successful docking and start of mission operations",
       "emerging_story": {
         "stage": "launch",
         "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "Successful docking and start of ISS mission"
+        "expected_next_milestone": "successful docking and start of mission operations"
       }
     },
     {
@@ -4594,46 +4772,6 @@
         "previous_stage": "engineering samples",
         "confidence": "high",
         "expected_next_milestone": "Adoption of FlashAttention-4 in production AI models and frameworks"
-      }
-    },
-    {
-      "topic": "Grok Build",
-      "category": "Technology",
-      "first_seen": "2026-06-28",
-      "last_reported": "2026-07-07",
-      "last_checked": "2026-07-07",
-      "status": "UPDATED",
-      "last_summary": "xAI announced the public beta release of Grok Build 0.1, a fast coding model optimized for agentic coding tasks such as web development, debugging, and MCP support. The model delivers over 100 tokens per second and is priced competitively. It powers the Grok Build CLI and is also suitable for genera",
-      "expected_next_event": "Wider adoption and integration with developer tools",
-      "importance": "high",
-      "source_urls": [
-        "https://x.ai/news/grok-build-0-1"
-      ],
-      "times_mentioned": 3,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "launch",
-      "stage_history": [
-        {
-          "date": "2026-06-28",
-          "stage": "launch",
-          "summary": "xAI launched the Grok Build Plugin Marketplace, integrated into the Grok Build coding agent, enabling users to browse, install, and update plugins directly from the terminal. The marketplace features plugins from partner",
-          "source_urls": [
-            "https://x.ai/news/grok-plugin-marketplace"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Wider adoption and integration with developer tools",
-      "emerging_story": {
-        "stage": "launch",
-        "previous_stage": "no_change",
-        "confidence": "high",
-        "expected_next_milestone": "Wider adoption and integration with developer tools"
       }
     },
     {
