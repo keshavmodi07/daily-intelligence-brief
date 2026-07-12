@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-12",
+  "last_updated": "2026-07-13",
   "suppression_days": 14,
   "topics": [
     {
@@ -550,48 +550,6 @@
       }
     },
     {
-      "topic": "Grok AI Model",
-      "category": "AI",
-      "first_seen": "2026-07-09",
-      "last_reported": "2026-07-12",
-      "last_checked": "2026-07-12",
-      "status": "UPDATED",
-      "last_summary": "xAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets across coding, science, engineering, and math, Grok 4.5 excels at real engineering tasks and outperforms comparable leading models. It was trained on",
-      "expected_next_event": "widespread adoption and integration into developer tools",
-      "importance": "high",
-      "source_urls": [
-        "https://x.ai/news/grok-4-5"
-      ],
-      "times_mentioned": 4,
-      "timeline": [
-        "rumor",
-        "announcement",
-        "preview",
-        "developer access",
-        "enterprise rollout",
-        "customer adoption",
-        "second generation"
-      ],
-      "current_stage": "launch",
-      "stage_history": [
-        {
-          "date": "2026-07-09",
-          "stage": "launch",
-          "summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels",
-          "source_urls": [
-            "https://x.ai/news/grok-4-5"
-          ]
-        }
-      ],
-      "expected_next_milestone": "widespread adoption and integration into developer tools",
-      "emerging_story": {
-        "stage": "launch",
-        "previous_stage": "announcement",
-        "confidence": "high",
-        "expected_next_milestone": "widespread adoption and integration into developer tools"
-      }
-    },
-    {
       "topic": "Grok AI Platform Expansion",
       "category": "AI",
       "first_seen": "2026-06-30",
@@ -932,66 +890,6 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
-    },
-    {
-      "topic": "Together AI Platform",
-      "category": "AI",
-      "first_seen": "2026-07-04",
-      "last_reported": "2026-07-12",
-      "last_checked": "2026-07-12",
-      "status": "UPDATED",
-      "last_summary": "Together AI announced an $800 million Series C funding round led by investors including Aramco Ventures, NVIDIA, and Salesforce Ventures. The company also revealed multiple AI infrastructure innovations such as FlashAttention-4 optimized for NVIDIA Blackwell GPUs, deployment of NVIDIA HGX B200 GPU c",
-      "expected_next_event": "widespread adoption of new AI infrastructure and model deployments",
-      "importance": "high",
-      "source_urls": [
-        "https://www.together.ai/blog/announcing-our-series-c",
-        "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
-        "https://www.together.ai/blog/flashattention-4",
-        "https://www.together.ai/blog/nvidia-hgx-b200-with-together-kernel-collection",
-        "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets"
-      ],
-      "times_mentioned": 8,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "funding",
-      "stage_history": [
-        {
-          "date": "2026-07-04",
-          "stage": "funding",
-          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
-          "source_urls": [
-            "https://www.together.ai/blog/announcing-our-series-c"
-          ]
-        },
-        {
-          "date": "2026-07-08",
-          "stage": "approval",
-          "summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloa",
-          "source_urls": [
-            "https://www.together.ai/blog/iso-27001-2022-certification"
-          ]
-        },
-        {
-          "date": "2026-07-09",
-          "stage": "funding",
-          "summary": "Together AI raised $800 million in Series C funding led by Aramco Ventures, NVIDIA, Vista Equity, and others. The company provides a full-stack AI platform for open-source AI, delivering fast and efficient inference for ",
-          "source_urls": [
-            "https://www.together.ai/blog/announcing-our-series-c"
-          ]
-        }
-      ],
-      "expected_next_milestone": "widespread adoption of new AI infrastructure and model deployments",
-      "emerging_story": {
-        "stage": "funding",
-        "previous_stage": "consultation",
-        "confidence": "high",
-        "expected_next_milestone": "widespread adoption of new AI infrastructure and model deployments"
-      }
     },
     {
       "topic": "xAI",
@@ -1457,6 +1355,62 @@
       }
     },
     {
+      "topic": "Together AI Platform",
+      "category": "Finance",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-13",
+      "last_checked": "2026-07-13",
+      "status": "UPDATED",
+      "last_summary": "Together AI raised $800 million in Series C funding from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of compute capacity to support its AI platform growth, focusing on open-source AI and efficient inference for productio",
+      "expected_next_event": "Expansion of compute infrastructure and platform adoption",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/announcing-our-series-c"
+      ],
+      "times_mentioned": 9,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "funding",
+          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c"
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "stage": "approval",
+          "summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloa",
+          "source_urls": [
+            "https://www.together.ai/blog/iso-27001-2022-certification"
+          ]
+        },
+        {
+          "date": "2026-07-09",
+          "stage": "funding",
+          "summary": "Together AI raised $800 million in Series C funding led by Aramco Ventures, NVIDIA, Vista Equity, and others. The company provides a full-stack AI platform for open-source AI, delivering fast and efficient inference for ",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Expansion of compute infrastructure and platform adoption",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Expansion of compute infrastructure and platform adoption"
+      }
+    },
+    {
       "topic": "Conflict Impact Monitoring",
       "category": "Geopolitics",
       "first_seen": "2026-07-01",
@@ -1680,6 +1634,48 @@
         "previous_stage": "no_change",
         "confidence": "high",
         "expected_next_milestone": "International agreements on AI regulation and safety standards"
+      }
+    },
+    {
+      "topic": "Gulf Regional Security",
+      "category": "Geopolitics",
+      "first_seen": "2026-07-13",
+      "last_reported": "2026-07-13",
+      "last_checked": "2026-07-13",
+      "status": "NEW",
+      "last_summary": "Renewed strikes and counterstrikes between Iran and the United States in the Gulf region have raised fears of all-out war. The US struck around 140 targets in response to Iranian attacks on a vessel in the Strait of Hormuz. Iran launched attacks on a US base in Jordan and missile/drone attacks on UA",
+      "expected_next_event": "Negotiations or further military escalation",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/07/1167923"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-07-13",
+          "stage": "escalation",
+          "summary": "Renewed strikes and counterstrikes between Iran and the United States in the Gulf region have raised fears of all-out war. The US struck around 140 targets in response to Iranian attacks on a vessel in the Strait of Horm",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167923"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Negotiations or further military escalation",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Negotiations or further military escalation"
       }
     },
     {
@@ -4563,6 +4559,46 @@
       }
     },
     {
+      "topic": "Dholera 300 mm Semiconductor Fab",
+      "category": "Technology",
+      "first_seen": "2026-07-13",
+      "last_reported": "2026-07-13",
+      "last_checked": "2026-07-13",
+      "status": "UPDATED",
+      "last_summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes deployment of ASML’s advanced lithography tools and joint efforts to develop domestic talent ",
+      "expected_next_event": "Deployment of lithography tools and fab ramp-up",
+      "importance": "high",
+      "source_urls": [
+        "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "consultation",
+      "stage_history": [
+        {
+          "date": "2026-07-13",
+          "stage": "consultation",
+          "summary": "Tata Electronics and ASML signed a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat. The partnership includes deployment of",
+          "source_urls": [
+            "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Deployment of lithography tools and fab ramp-up",
+      "emerging_story": {
+        "stage": "consultation",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Deployment of lithography tools and fab ramp-up"
+      }
+    },
+    {
       "topic": "Dholera Fab",
       "category": "Technology",
       "first_seen": "2026-06-26",
@@ -4775,6 +4811,48 @@
       }
     },
     {
+      "topic": "Grok AI Model",
+      "category": "Technology",
+      "first_seen": "2026-07-09",
+      "last_reported": "2026-07-13",
+      "last_checked": "2026-07-13",
+      "status": "UPDATED",
+      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets in coding, science, engineering, and math using tens of thousands of NVIDIA GB300 GPUs, Grok 4.5 delivers superior performance on real engineeri",
+      "expected_next_event": "widespread adoption and integration in developer tools",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-4-5"
+      ],
+      "times_mentioned": 5,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-09",
+          "stage": "launch",
+          "summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels",
+          "source_urls": [
+            "https://x.ai/news/grok-4-5"
+          ]
+        }
+      ],
+      "expected_next_milestone": "widespread adoption and integration in developer tools",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "widespread adoption and integration in developer tools"
+      }
+    },
+    {
       "topic": "Monetization Gateway",
       "category": "Technology",
       "first_seen": "2026-07-03",
@@ -4919,6 +4997,48 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Samsung PM1763 SSD",
+      "category": "Technology",
+      "first_seen": "2026-07-13",
+      "last_reported": "2026-07-13",
+      "last_checked": "2026-07-13",
+      "status": "NEW",
+      "last_summary": "Samsung Electronics announced the mass production of PM1763, a PCIe 6.0-based enterprise SSD optimized for AI and HPC server environments. Featuring Samsung’s 9th-generation V-NAND and a 4nm controller, the PM1763 delivers high-speed data transfer, enhanced power efficiency, and liquid-cooling optim",
+      "expected_next_event": "Widespread adoption in AI and HPC data centers",
+      "importance": "high",
+      "source_urls": [
+        "https://news.samsungsemiconductor.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure",
+        "https://news.samsungsemiconductor.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "mass production",
+      "stage_history": [
+        {
+          "date": "2026-07-13",
+          "stage": "mass production",
+          "summary": "Samsung Electronics announced the mass production of PM1763, a PCIe 6.0-based enterprise SSD optimized for AI and HPC server environments. Featuring Samsung’s 9th-generation V-NAND and a 4nm controller, the PM1763 delive",
+          "source_urls": [
+            "https://news.samsungsemiconductor.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure",
+            "https://news.samsungsemiconductor.com/global/samsung-begins-mass-production-of-pm1763-ssd-optimized-for-next-generation-ai-infrastructure/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Widespread adoption in AI and HPC data centers",
+      "emerging_story": {
+        "stage": "mass production",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "Widespread adoption in AI and HPC data centers"
+      }
     },
     {
       "topic": "Semiconductors",
