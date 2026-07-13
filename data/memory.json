@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-14",
   "suppression_days": 14,
   "topics": [
     {
@@ -332,6 +332,63 @@
       }
     },
     {
+      "topic": "FlashAttention Kernel",
+      "category": "AI",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "UPDATED",
+      "last_summary": "Together AI announced FlashAttention-4, a new GPU kernel for Transformer attention that improves performance on modern hardware like NVIDIA Blackwell GPUs. The kernel uses algorithmic and kernel pipelining co-design to address asymmetric hardware scaling, achieving up to 2.7x speedup over previous v",
+      "expected_next_event": "Adoption by AI model developers and integration into AI frameworks",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/flashattention-4"
+      ],
+      "times_mentioned": 3,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "launch",
+          "summary": "Together AI released FlashAttention-4, an improved attention kernel co-designed with algorithms and hardware optimizations for asymmetric hardware scaling on NVIDIA Blackwell GPUs. It achieves up to 2.7x speed improvemen",
+          "source_urls": [
+            "https://www.together.ai/blog/flashattention-4"
+          ]
+        },
+        {
+          "date": "2026-07-07",
+          "stage": "announcement",
+          "summary": "Together AI announced FlashAttention-4, a new algorithm and kernel co-design that optimizes attention mechanisms for asymmetric hardware scaling on NVIDIA Blackwell GPUs. FlashAttention-4 improves GPU utilization by over",
+          "source_urls": [
+            "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
+            "https://www.together.ai/blog/flashattention-4"
+          ]
+        },
+        {
+          "date": "2026-07-14",
+          "stage": "launch",
+          "summary": "Together AI announced FlashAttention-4, a new GPU kernel for Transformer attention that improves performance on modern hardware like NVIDIA Blackwell GPUs. The kernel uses algorithmic and kernel pipelining co-design to a",
+          "source_urls": [
+            "https://www.together.ai/blog/flashattention-4"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Adoption by AI model developers and integration into AI frameworks",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "engineering samples",
+        "confidence": "high",
+        "expected_next_milestone": "Adoption by AI model developers and integration into AI frameworks"
+      }
+    },
+    {
       "topic": "GPT-5.6",
       "category": "AI",
       "first_seen": "2026-06-27",
@@ -550,6 +607,48 @@
       }
     },
     {
+      "topic": "Grok AI Model",
+      "category": "AI",
+      "first_seen": "2026-07-09",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "UPDATED",
+      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels at real engineering tasks and outperforms comparable leading models. The model ",
+      "expected_next_event": "widespread adoption and integration into developer tools",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-4-5"
+      ],
+      "times_mentioned": 6,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-09",
+          "stage": "launch",
+          "summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels",
+          "source_urls": [
+            "https://x.ai/news/grok-4-5"
+          ]
+        }
+      ],
+      "expected_next_milestone": "widespread adoption and integration into developer tools",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "widespread adoption and integration into developer tools"
+      }
+    },
+    {
       "topic": "Grok AI Platform Expansion",
       "category": "AI",
       "first_seen": "2026-06-30",
@@ -601,16 +700,16 @@
       "topic": "Grok Build",
       "category": "AI",
       "first_seen": "2026-06-28",
-      "last_reported": "2026-07-12",
-      "last_checked": "2026-07-12",
-      "status": "NEW",
-      "last_summary": "xAI launched the Grok Build Plugin Marketplace, a built-in platform within Grok Build that allows users to browse, install, and update plugins that bundle skills, commands, agents, and other tools to extend AI coding capabilities. The marketplace supports plugins from multiple partners and ensures s",
-      "expected_next_event": "growth of plugin ecosystem and increased developer adoption",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "UPDATED",
+      "last_summary": "xAI announced the launch of the Grok Build Plugin Marketplace, a built-in platform within Grok Build that allows users to browse, install, and update plugins that bundle skills, commands, agents, and servers to extend coding capabilities. The marketplace supports easy discovery and installation of p",
+      "expected_next_event": "Growth of plugin ecosystem and increased user adoption",
       "importance": "high",
       "source_urls": [
         "https://x.ai/news/grok-plugin-marketplace"
       ],
-      "times_mentioned": 4,
+      "times_mentioned": 5,
       "timeline": [
         "announcement",
         "development",
@@ -629,12 +728,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "growth of plugin ecosystem and increased developer adoption",
+      "expected_next_milestone": "Growth of plugin ecosystem and increased user adoption",
       "emerging_story": {
         "stage": "launch",
         "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "growth of plugin ecosystem and increased developer adoption"
+        "expected_next_milestone": "Growth of plugin ecosystem and increased user adoption"
       }
     },
     {
@@ -890,6 +989,62 @@
       "stage_history": [],
       "expected_next_milestone": "Watch for the next official update, funding, policy decision, milestone, or measurable consequence.",
       "emerging_story": {}
+    },
+    {
+      "topic": "Together AI Platform",
+      "category": "AI",
+      "first_seen": "2026-07-04",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "UPDATED",
+      "last_summary": "Together AI announced the closing of its $800 million Series C funding round led by investors including Aramco Ventures, NVIDIA, Vista Equity, and others. Additionally, the company secured commitments for over 500 MW of compute capacity to support its expected growth in AI compute demand. Together A",
+      "expected_next_event": "Expansion of compute infrastructure and scaling of AI services",
+      "importance": "high",
+      "source_urls": [
+        "https://www.together.ai/blog/announcing-our-series-c"
+      ],
+      "times_mentioned": 10,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "funding",
+      "stage_history": [
+        {
+          "date": "2026-07-04",
+          "stage": "funding",
+          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c"
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "stage": "approval",
+          "summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloa",
+          "source_urls": [
+            "https://www.together.ai/blog/iso-27001-2022-certification"
+          ]
+        },
+        {
+          "date": "2026-07-09",
+          "stage": "funding",
+          "summary": "Together AI raised $800 million in Series C funding led by Aramco Ventures, NVIDIA, Vista Equity, and others. The company provides a full-stack AI platform for open-source AI, delivering fast and efficient inference for ",
+          "source_urls": [
+            "https://www.together.ai/blog/announcing-our-series-c"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Expansion of compute infrastructure and scaling of AI services",
+      "emerging_story": {
+        "stage": "funding",
+        "previous_stage": "consultation",
+        "confidence": "high",
+        "expected_next_milestone": "Expansion of compute infrastructure and scaling of AI services"
+      }
     },
     {
       "topic": "xAI",
@@ -1355,62 +1510,6 @@
       }
     },
     {
-      "topic": "Together AI Platform",
-      "category": "Finance",
-      "first_seen": "2026-07-04",
-      "last_reported": "2026-07-13",
-      "last_checked": "2026-07-13",
-      "status": "UPDATED",
-      "last_summary": "Together AI raised $800 million in Series C funding from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of compute capacity to support its AI platform growth, focusing on open-source AI and efficient inference for productio",
-      "expected_next_event": "Expansion of compute infrastructure and platform adoption",
-      "importance": "high",
-      "source_urls": [
-        "https://www.together.ai/blog/announcing-our-series-c"
-      ],
-      "times_mentioned": 9,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "funding",
-      "stage_history": [
-        {
-          "date": "2026-07-04",
-          "stage": "funding",
-          "summary": "Together AI announced the closing of its Series C funding round, raising $800 million from investors including Aramco Ventures, NVIDIA, Vista Equity, and others. The company also secured commitments for over 500 MW of co",
-          "source_urls": [
-            "https://www.together.ai/blog/announcing-our-series-c"
-          ]
-        },
-        {
-          "date": "2026-07-08",
-          "stage": "approval",
-          "summary": "Together AI received ISO 27001:2022 certification from A-LIGN Compliance and Security, validating its Information Security Management System for secure, well-governed infrastructure supporting production-grade AI workloa",
-          "source_urls": [
-            "https://www.together.ai/blog/iso-27001-2022-certification"
-          ]
-        },
-        {
-          "date": "2026-07-09",
-          "stage": "funding",
-          "summary": "Together AI raised $800 million in Series C funding led by Aramco Ventures, NVIDIA, Vista Equity, and others. The company provides a full-stack AI platform for open-source AI, delivering fast and efficient inference for ",
-          "source_urls": [
-            "https://www.together.ai/blog/announcing-our-series-c"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Expansion of compute infrastructure and platform adoption",
-      "emerging_story": {
-        "stage": "funding",
-        "previous_stage": "consultation",
-        "confidence": "high",
-        "expected_next_milestone": "Expansion of compute infrastructure and platform adoption"
-      }
-    },
-    {
       "topic": "Conflict Impact Monitoring",
       "category": "Geopolitics",
       "first_seen": "2026-07-01",
@@ -1676,6 +1775,48 @@
         "previous_stage": "no_change",
         "confidence": "high",
         "expected_next_milestone": "Negotiations or further military escalation"
+      }
+    },
+    {
+      "topic": "Iran-US Gulf Conflict",
+      "category": "Geopolitics",
+      "first_seen": "2026-07-14",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "UPDATED",
+      "last_summary": "Renewed strikes and counterstrikes between Iran and the United States in the Gulf region have raised fears of a return to all-out war. The US struck around 140 targets in response to Iranian attacks on a vessel in the Strait of Hormuz. Iran retaliated with attacks on a US base in Jordan and missile ",
+      "expected_next_event": "Diplomatic negotiations or further military actions",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/07/1167923"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-07-14",
+          "stage": "escalation",
+          "summary": "Renewed strikes and counterstrikes between Iran and the United States in the Gulf region have raised fears of a return to all-out war. The US struck around 140 targets in response to Iranian attacks on a vessel in the St",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167923"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Diplomatic negotiations or further military actions",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Diplomatic negotiations or further military actions"
       }
     },
     {
@@ -2753,6 +2894,52 @@
       "emerging_story": {}
     },
     {
+      "topic": "Banking Regulation Enforcement",
+      "category": "India Official",
+      "first_seen": "2026-07-14",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "UPDATED",
+      "last_summary": "The Reserve Bank of India imposed monetary penalties ranging from ₹50,000 to ₹13.3 lakh on several cooperative banks including Surat People’s Co-operative Bank, Ashok Sahakari Bank, Sambalpur District Co-operative Central Bank, Nawada Central Co-operative Bank, and Chikhli Urban Co-operative Bank fo",
+      "expected_next_event": "Improved compliance and governance in penalized banks",
+      "importance": "high",
+      "source_urls": [
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63136",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63135",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63134",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63133",
+        "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63132"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "regulatory action",
+      "stage_history": [
+        {
+          "date": "2026-07-14",
+          "stage": "regulatory action",
+          "summary": "The Reserve Bank of India imposed monetary penalties ranging from ₹50,000 to ₹13.3 lakh on several cooperative banks including Surat People’s Co-operative Bank, Ashok Sahakari Bank, Sambalpur District Co-operative Centra",
+          "source_urls": [
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63136",
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63135",
+            "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63134"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Improved compliance and governance in penalized banks",
+      "emerging_story": {
+        "stage": "regulatory action",
+        "previous_stage": "inspection",
+        "confidence": "high",
+        "expected_next_milestone": "Improved compliance and governance in penalized banks"
+      }
+    },
+    {
       "topic": "Reserve Bank of India imposes monetary penalties on cooperative banks for regulatory non",
       "category": "India Official",
       "first_seen": "2026-06-23",
@@ -2957,16 +3144,16 @@
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-07-12",
-      "last_checked": "2026-07-12",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML announced a Memorandum of Understanding to collaborate on establishing and ramping up Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership focuses on deploying ASML’s advanced lithography tools and solutions, developing domestic ta",
-      "expected_next_event": "deployment and ramp-up of lithography tools at Dholera fab",
+      "last_summary": "Tata Electronics and ASML announced a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership will focus on deploying ASML's advanced lithography tools and solutions, developing dom",
+      "expected_next_event": "Deployment of ASML lithography tools and fab ramp-up",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
       ],
-      "times_mentioned": 10,
+      "times_mentioned": 11,
       "timeline": [
         "announcement",
         "approval",
@@ -3027,12 +3214,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "deployment and ramp-up of lithography tools at Dholera fab",
+      "expected_next_milestone": "Deployment of ASML lithography tools and fab ramp-up",
       "emerging_story": {
         "stage": "consultation",
-        "previous_stage": "announcement",
+        "previous_stage": "planning",
         "confidence": "high",
-        "expected_next_milestone": "deployment and ramp-up of lithography tools at Dholera fab"
+        "expected_next_milestone": "Deployment of ASML lithography tools and fab ramp-up"
       }
     },
     {
@@ -3132,6 +3319,56 @@
       }
     },
     {
+      "topic": "TSMC Semiconductor Manufacturing",
+      "category": "Semiconductors",
+      "first_seen": "2026-06-26",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "NEW",
+      "last_summary": "TSMC announced consolidated net revenue of approximately NT$442.68 billion for June 2026, a 6.2% increase from May 2026 and a 67.9% increase from June 2025. The strong revenue growth reflects continued demand for advanced semiconductor manufacturing services.",
+      "expected_next_event": "Continued revenue growth and technology node advancements",
+      "importance": "high",
+      "source_urls": [
+        "https://pr.tsmc.com/english/news/3323"
+      ],
+      "times_mentioned": 2,
+      "timeline": [
+        "announcement",
+        "development",
+        "milestone",
+        "adoption",
+        "next generation"
+      ],
+      "current_stage": "financial report",
+      "stage_history": [
+        {
+          "date": "2026-06-26",
+          "stage": "announcement",
+          "summary": "TSMC announced record consolidated revenue of NT$1,134.10 billion and net income of NT$572.48 billion for Q1 2026, driven by strong demand for leading-edge process technologies including 3nm, 5nm, and 7nm nodes. The comp",
+          "source_urls": [
+            "https://pr.tsmc.com/english/news/3297",
+            "https://pr.tsmc.com/english/news/3311",
+            "https://pr.tsmc.com/english/news/3305"
+          ]
+        },
+        {
+          "date": "2026-07-14",
+          "stage": "financial report",
+          "summary": "TSMC announced consolidated net revenue of approximately NT$442.68 billion for June 2026, a 6.2% increase from May 2026 and a 67.9% increase from June 2025. The strong revenue growth reflects continued demand for advance",
+          "source_urls": [
+            "https://pr.tsmc.com/english/news/3323"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Continued revenue growth and technology node advancements",
+      "emerging_story": {
+        "stage": "financial report",
+        "previous_stage": "financial report",
+        "confidence": "high",
+        "expected_next_milestone": "Continued revenue growth and technology node advancements"
+      }
+    },
+    {
       "topic": "Tata Electronics and ASML Announce Strategic Partnership for Dholera 300mm Semiconductor F",
       "category": "Semiconductors",
       "first_seen": "2026-06-25",
@@ -3199,6 +3436,49 @@
         "previous_stage": "engineering samples",
         "confidence": "high",
         "expected_next_milestone": "Mass production and adoption in mobile devices"
+      }
+    },
+    {
+      "topic": "Air Taxi Comfort Research",
+      "category": "Space",
+      "first_seen": "2026-07-14",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "NEW",
+      "last_summary": "NASA researchers at Armstrong Flight Research Center conducted virtual reality motion simulator studies with employees to understand passenger comfort thresholds in air taxis, small vertical-takeoff-and-landing aircraft for short trips. The study identified that large, sudden movements during flight",
+      "expected_next_event": "Application of findings in air taxi design and operations",
+      "importance": "high",
+      "source_urls": [
+        "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-study-points-to-smoother-air-taxi-rides/"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "research",
+      "stage_history": [
+        {
+          "date": "2026-07-14",
+          "stage": "research",
+          "summary": "NASA researchers at Armstrong Flight Research Center conducted virtual reality motion simulator studies with employees to understand passenger comfort thresholds in air taxis, small vertical-takeoff-and-landing aircraft ",
+          "source_urls": [
+            "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-study-points-to-smoother-air-taxi-rides/"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Application of findings in air taxi design and operations",
+      "emerging_story": {
+        "stage": "research",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Application of findings in air taxi design and operations"
       }
     },
     {
@@ -3529,6 +3809,49 @@
         "previous_stage": "development",
         "confidence": "high",
         "expected_next_milestone": "Demonstration of in-orbit refueling with cryocoupler"
+      }
+    },
+    {
+      "topic": "ESA Civil Security Centre",
+      "category": "Space",
+      "first_seen": "2026-07-14",
+      "last_reported": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "status": "NEW",
+      "last_summary": "The European Space Agency and the Republic of Poland announced the establishment of a new ESA centre in Warsaw focused on civil security and resilience. The centre will support coordinated development of European capabilities in security and resilience, complementing existing ESA centres and contrib",
+      "expected_next_event": "Operational setup and capability development",
+      "importance": "high",
+      "source_urls": [
+        "https://www.esa.int/About_Us/Corporate_news/ESA_and_Poland_to_establish_a_new_civil_security_and_resilience_centre_in_Warsaw"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "announcement",
+        "design",
+        "assembly",
+        "testing",
+        "launch window",
+        "launch",
+        "operations",
+        "follow-on mission"
+      ],
+      "current_stage": "announcement",
+      "stage_history": [
+        {
+          "date": "2026-07-14",
+          "stage": "announcement",
+          "summary": "The European Space Agency and the Republic of Poland announced the establishment of a new ESA centre in Warsaw focused on civil security and resilience. The centre will support coordinated development of European capabil",
+          "source_urls": [
+            "https://www.esa.int/About_Us/Corporate_news/ESA_and_Poland_to_establish_a_new_civil_security_and_resilience_centre_in_Warsaw"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Operational setup and capability development",
+      "emerging_story": {
+        "stage": "announcement",
+        "previous_stage": "planning",
+        "confidence": "high",
+        "expected_next_milestone": "Operational setup and capability development"
       }
     },
     {
@@ -4681,56 +5004,6 @@
       }
     },
     {
-      "topic": "FlashAttention Kernel",
-      "category": "Technology",
-      "first_seen": "2026-07-04",
-      "last_reported": "2026-07-07",
-      "last_checked": "2026-07-07",
-      "status": "UPDATED",
-      "last_summary": "Together AI announced FlashAttention-4, a new algorithm and kernel co-design that optimizes attention mechanisms for asymmetric hardware scaling on NVIDIA Blackwell GPUs. FlashAttention-4 improves GPU utilization by overlapping computation and data movement, reducing memory traffic, and using hardwa",
-      "expected_next_event": "Adoption in production AI models and frameworks",
-      "importance": "high",
-      "source_urls": [
-        "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
-        "https://www.together.ai/blog/flashattention-4"
-      ],
-      "times_mentioned": 2,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "announcement",
-      "stage_history": [
-        {
-          "date": "2026-07-04",
-          "stage": "launch",
-          "summary": "Together AI released FlashAttention-4, an improved attention kernel co-designed with algorithms and hardware optimizations for asymmetric hardware scaling on NVIDIA Blackwell GPUs. It achieves up to 2.7x speed improvemen",
-          "source_urls": [
-            "https://www.together.ai/blog/flashattention-4"
-          ]
-        },
-        {
-          "date": "2026-07-07",
-          "stage": "announcement",
-          "summary": "Together AI announced FlashAttention-4, a new algorithm and kernel co-design that optimizes attention mechanisms for asymmetric hardware scaling on NVIDIA Blackwell GPUs. FlashAttention-4 improves GPU utilization by over",
-          "source_urls": [
-            "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
-            "https://www.together.ai/blog/flashattention-4"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Adoption in production AI models and frameworks",
-      "emerging_story": {
-        "stage": "announcement",
-        "previous_stage": "no_change",
-        "confidence": "high",
-        "expected_next_milestone": "Adoption in production AI models and frameworks"
-      }
-    },
-    {
       "topic": "FlashAttention Kernel Series",
       "category": "Technology",
       "first_seen": "2026-07-06",
@@ -4808,48 +5081,6 @@
         "previous_stage": "engineering samples",
         "confidence": "high",
         "expected_next_milestone": "Adoption of FlashAttention-4 in production AI models and frameworks"
-      }
-    },
-    {
-      "topic": "Grok AI Model",
-      "category": "Technology",
-      "first_seen": "2026-07-09",
-      "last_reported": "2026-07-13",
-      "last_checked": "2026-07-13",
-      "status": "UPDATED",
-      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets in coding, science, engineering, and math using tens of thousands of NVIDIA GB300 GPUs, Grok 4.5 delivers superior performance on real engineeri",
-      "expected_next_event": "widespread adoption and integration in developer tools",
-      "importance": "high",
-      "source_urls": [
-        "https://x.ai/news/grok-4-5"
-      ],
-      "times_mentioned": 5,
-      "timeline": [
-        "rumor",
-        "announcement",
-        "preview",
-        "developer access",
-        "enterprise rollout",
-        "customer adoption",
-        "second generation"
-      ],
-      "current_stage": "launch",
-      "stage_history": [
-        {
-          "date": "2026-07-09",
-          "stage": "launch",
-          "summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels",
-          "source_urls": [
-            "https://x.ai/news/grok-4-5"
-          ]
-        }
-      ],
-      "expected_next_milestone": "widespread adoption and integration in developer tools",
-      "emerging_story": {
-        "stage": "launch",
-        "previous_stage": "announcement",
-        "confidence": "high",
-        "expected_next_milestone": "widespread adoption and integration in developer tools"
       }
     },
     {
@@ -5078,52 +5309,6 @@
         "previous_stage": "no_change",
         "confidence": "high",
         "expected_next_milestone": "Continued growth in AI-related semiconductor demand and product launches"
-      }
-    },
-    {
-      "topic": "TSMC Semiconductor Manufacturing",
-      "category": "Technology",
-      "first_seen": "2026-06-26",
-      "last_reported": "2026-06-26",
-      "last_checked": "2026-06-26",
-      "status": "NEW",
-      "last_summary": "TSMC announced record consolidated revenue of NT$1,134.10 billion and net income of NT$572.48 billion for Q1 2026, driven by strong demand for leading-edge process technologies including 3nm, 5nm, and 7nm nodes. The company also approved a capital injection of up to US$20 billion for its Arizona fab",
-      "expected_next_event": "Ramp-up of A13 technology and Arizona fab construction",
-      "importance": "high",
-      "source_urls": [
-        "https://pr.tsmc.com/english/news/3297",
-        "https://pr.tsmc.com/english/news/3311",
-        "https://pr.tsmc.com/english/news/3305",
-        "https://pr.tsmc.com/english/news/3302",
-        "https://pr.tsmc.com/english/news/3294"
-      ],
-      "times_mentioned": 1,
-      "timeline": [
-        "announcement",
-        "development",
-        "milestone",
-        "adoption",
-        "next generation"
-      ],
-      "current_stage": "announcement",
-      "stage_history": [
-        {
-          "date": "2026-06-26",
-          "stage": "announcement",
-          "summary": "TSMC announced record consolidated revenue of NT$1,134.10 billion and net income of NT$572.48 billion for Q1 2026, driven by strong demand for leading-edge process technologies including 3nm, 5nm, and 7nm nodes. The comp",
-          "source_urls": [
-            "https://pr.tsmc.com/english/news/3297",
-            "https://pr.tsmc.com/english/news/3311",
-            "https://pr.tsmc.com/english/news/3305"
-          ]
-        }
-      ],
-      "expected_next_milestone": "Ramp-up of A13 technology and Arizona fab construction",
-      "emerging_story": {
-        "stage": "announcement",
-        "previous_stage": "funding",
-        "confidence": "high",
-        "expected_next_milestone": "Ramp-up of A13 technology and Arizona fab construction"
       }
     },
     {
