@@ -1,6 +1,6 @@
 {
   "project": "personal-intelligence-platform",
-  "last_updated": "2026-07-14",
+  "last_updated": "2026-07-15",
   "suppression_days": 14,
   "topics": [
     {
@@ -649,6 +649,48 @@
       }
     },
     {
+      "topic": "Grok AI Models",
+      "category": "AI",
+      "first_seen": "2026-07-15",
+      "last_reported": "2026-07-15",
+      "last_checked": "2026-07-15",
+      "status": "UPDATED",
+      "last_summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels in real engineering tasks and outperforms comparable leading models. The model ",
+      "expected_next_event": "widespread adoption and integration into developer tools",
+      "importance": "high",
+      "source_urls": [
+        "https://x.ai/news/grok-4-5"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "rumor",
+        "announcement",
+        "preview",
+        "developer access",
+        "enterprise rollout",
+        "customer adoption",
+        "second generation"
+      ],
+      "current_stage": "launch",
+      "stage_history": [
+        {
+          "date": "2026-07-15",
+          "stage": "launch",
+          "summary": "SpaceXAI announced the launch of Grok 4.5, its most advanced AI model designed for coding, agentic tasks, and knowledge work. Trained on extensive datasets covering coding, science, engineering, and math, Grok 4.5 excels",
+          "source_urls": [
+            "https://x.ai/news/grok-4-5"
+          ]
+        }
+      ],
+      "expected_next_milestone": "widespread adoption and integration into developer tools",
+      "emerging_story": {
+        "stage": "launch",
+        "previous_stage": "announcement",
+        "confidence": "high",
+        "expected_next_milestone": "widespread adoption and integration into developer tools"
+      }
+    },
+    {
       "topic": "Grok AI Platform Expansion",
       "category": "AI",
       "first_seen": "2026-06-30",
@@ -994,16 +1036,20 @@
       "topic": "Together AI Platform",
       "category": "AI",
       "first_seen": "2026-07-04",
-      "last_reported": "2026-07-14",
-      "last_checked": "2026-07-14",
+      "last_reported": "2026-07-15",
+      "last_checked": "2026-07-15",
       "status": "UPDATED",
-      "last_summary": "Together AI announced the closing of its $800 million Series C funding round led by investors including Aramco Ventures, NVIDIA, Vista Equity, and others. Additionally, the company secured commitments for over 500 MW of compute capacity to support its expected growth in AI compute demand. Together A",
-      "expected_next_event": "Expansion of compute infrastructure and scaling of AI services",
+      "last_summary": "Together AI announced the closing of an $800 million Series C funding round from investors including Aramco Ventures, NVIDIA, and Salesforce Ventures. The company also launched new AI infrastructure products including GPU clusters powered by NVIDIA Blackwell HGX B200, the MiniMax-M3 model for effici",
+      "expected_next_event": "mass adoption of Together AI infrastructure by AI-native companies",
       "importance": "high",
       "source_urls": [
-        "https://www.together.ai/blog/announcing-our-series-c"
+        "https://www.together.ai/blog/announcing-our-series-c",
+        "https://www.together.ai/blog/ai-native-conf-research-and-product-announcements",
+        "https://www.together.ai/blog/serving-minimax-m3-for-efficient-inference-unlocking-1m-token-context-and-multimodality-without-regrets",
+        "https://www.together.ai/blog/coding-agent-benchmarks",
+        "https://www.together.ai/blog/iso-27001-2022-certification"
       ],
-      "times_mentioned": 10,
+      "times_mentioned": 11,
       "timeline": [
         "announcement",
         "development",
@@ -1038,12 +1084,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Expansion of compute infrastructure and scaling of AI services",
+      "expected_next_milestone": "mass adoption of Together AI infrastructure by AI-native companies",
       "emerging_story": {
         "stage": "funding",
-        "previous_stage": "consultation",
+        "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "Expansion of compute infrastructure and scaling of AI services"
+        "expected_next_milestone": "mass adoption of Together AI infrastructure by AI-native companies"
       }
     },
     {
@@ -1549,6 +1595,48 @@
         "previous_stage": "no_change",
         "confidence": "high",
         "expected_next_milestone": "Further humanitarian assessments and aid delivery"
+      }
+    },
+    {
+      "topic": "Counterterrorism and Regional Security",
+      "category": "Geopolitics",
+      "first_seen": "2026-07-15",
+      "last_reported": "2026-07-15",
+      "last_checked": "2026-07-15",
+      "status": "NEW",
+      "last_summary": "Jihadist groups in West Africa and the Sahel are increasingly administering territories, controlling trade routes, exploiting new technologies like drones and cryptocurrencies, and expanding their influence towards the Gulf of Guinea. Governments are struggling to respond effectively, while regional",
+      "expected_next_event": "Increased regional security cooperation and counterterrorism operations",
+      "importance": "high",
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/07/1167940"
+      ],
+      "times_mentioned": 1,
+      "timeline": [
+        "stable",
+        "tension",
+        "escalating",
+        "crisis",
+        "ceasefire talks",
+        "de-escalating",
+        "settlement"
+      ],
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-07-15",
+          "stage": "escalation",
+          "summary": "Jihadist groups in West Africa and the Sahel are increasingly administering territories, controlling trade routes, exploiting new technologies like drones and cryptocurrencies, and expanding their influence towards the G",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167940"
+          ]
+        }
+      ],
+      "expected_next_milestone": "Increased regional security cooperation and counterterrorism operations",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "Increased regional security cooperation and counterterrorism operations"
       }
     },
     {
@@ -2098,17 +2186,19 @@
       }
     },
     {
-      "topic": "Russia-Ukraine war",
+      "topic": "Russia-Ukraine War",
       "category": "Geopolitics",
-      "first_seen": "",
-      "last_reported": "",
-      "last_checked": "2026-06-23",
-      "status": "monitoring",
-      "last_summary": "",
-      "expected_next_event": "Military, sanctions, energy, or diplomatic shift",
+      "first_seen": "2026-07-15",
+      "last_reported": "2026-07-15",
+      "last_checked": "2026-07-15",
+      "status": "NEW",
+      "last_summary": "The UN human rights monitoring mission reports a sharp increase in civilian casualties in Ukraine during the first half of 2026, with June being the deadliest month since April 2022. The rise is driven by intensified Russian attacks using long-range weapons and drones, particularly in urban centers ",
+      "expected_next_event": "International diplomatic efforts and humanitarian interventions",
       "importance": "high",
-      "source_urls": [],
-      "times_mentioned": 1,
+      "source_urls": [
+        "https://news.un.org/feed/view/en/story/2026/07/1167935"
+      ],
+      "times_mentioned": 2,
       "timeline": [
         "stable",
         "tension",
@@ -2118,10 +2208,24 @@
         "de-escalating",
         "settlement"
       ],
-      "current_stage": "",
-      "stage_history": [],
-      "expected_next_milestone": "Military, sanctions, energy, or diplomatic shift",
-      "emerging_story": {}
+      "current_stage": "escalation",
+      "stage_history": [
+        {
+          "date": "2026-07-15",
+          "stage": "escalation",
+          "summary": "The UN human rights monitoring mission reports a sharp increase in civilian casualties in Ukraine during the first half of 2026, with June being the deadliest month since April 2022. The rise is driven by intensified Rus",
+          "source_urls": [
+            "https://news.un.org/feed/view/en/story/2026/07/1167935"
+          ]
+        }
+      ],
+      "expected_next_milestone": "International diplomatic efforts and humanitarian interventions",
+      "emerging_story": {
+        "stage": "escalation",
+        "previous_stage": "no_change",
+        "confidence": "high",
+        "expected_next_milestone": "International diplomatic efforts and humanitarian interventions"
+      }
     },
     {
       "topic": "State Duma condemns Kiev regime for drone attack on pedagogical college in Starobelsk, cal",
@@ -2739,19 +2843,16 @@
       "topic": "Eastern and Western Dedicated Freight Corridors",
       "category": "India Infrastructure",
       "first_seen": "2026-07-12",
-      "last_reported": "2026-07-12",
-      "last_checked": "2026-07-12",
+      "last_reported": "2026-07-15",
+      "last_checked": "2026-07-15",
       "status": "UPDATED",
-      "last_summary": "The Dedicated Freight Corridor Corporation of India Limited (DFCCIL) continues development of the Eastern and Western Dedicated Freight Corridors with approved funding including loans from the World Bank and equity from the Ministry of Railways. New corridors such as East West, East Coast, and North",
-      "expected_next_event": "completion of corridor sections and operationalization of cargo terminals",
+      "last_summary": "The Cabinet Committee on Economic Affairs approved a total cost estimate of Rs. 81,459 Crores for the Eastern and Western Dedicated Freight Corridors, including land cost. The funding structure includes debt from bilateral/multilateral agencies, equity from the Ministry of Railways, and Public Priva",
+      "expected_next_event": "Construction and commissioning of freight corridors",
       "importance": "high",
       "source_urls": [
-        "https://dfccil.com/Home/DynemicPages?MenuId=78",
-        "https://dfccil.com/Home/DynemicPages?MenuId=3",
-        "https://dfccil.com/Home/DynemicPages?MenuId=284",
-        "https://www.ireps.gov.in/"
+        "https://dfccil.com/Home/DynemicPages?MenuId=78"
       ],
-      "times_mentioned": 1,
+      "times_mentioned": 2,
       "timeline": [
         "proposal",
         "DPR",
@@ -2762,7 +2863,7 @@
         "trial",
         "operations"
       ],
-      "current_stage": "construction",
+      "current_stage": "approval",
       "stage_history": [
         {
           "date": "2026-07-12",
@@ -2773,14 +2874,22 @@
             "https://dfccil.com/Home/DynemicPages?MenuId=3",
             "https://dfccil.com/Home/DynemicPages?MenuId=284"
           ]
+        },
+        {
+          "date": "2026-07-15",
+          "stage": "approval",
+          "summary": "The Cabinet Committee on Economic Affairs approved a total cost estimate of Rs. 81,459 Crores for the Eastern and Western Dedicated Freight Corridors, including land cost. The funding structure includes debt from bilater",
+          "source_urls": [
+            "https://dfccil.com/Home/DynemicPages?MenuId=78"
+          ]
         }
       ],
-      "expected_next_milestone": "completion of corridor sections and operationalization of cargo terminals",
+      "expected_next_milestone": "Construction and commissioning of freight corridors",
       "emerging_story": {
-        "stage": "construction",
-        "previous_stage": "funding",
+        "stage": "approval",
+        "previous_stage": "consultation",
         "confidence": "high",
-        "expected_next_milestone": "completion of corridor sections and operationalization of cargo terminals"
+        "expected_next_milestone": "Construction and commissioning of freight corridors"
       }
     },
     {
@@ -3144,16 +3253,16 @@
       "topic": "Dholera Semiconductor Fab",
       "category": "Semiconductors",
       "first_seen": "2026-06-27",
-      "last_reported": "2026-07-14",
-      "last_checked": "2026-07-14",
+      "last_reported": "2026-07-15",
+      "last_checked": "2026-07-15",
       "status": "UPDATED",
-      "last_summary": "Tata Electronics and ASML announced a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics' upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. The partnership will focus on deploying ASML's advanced lithography tools and solutions, developing dom",
-      "expected_next_event": "Deployment of ASML lithography tools and fab ramp-up",
+      "last_summary": "Tata Electronics and ASML announced a Memorandum of Understanding to collaborate on the establishment and ramp-up of Tata Electronics’ upcoming 300 mm semiconductor fab in Dholera, Gujarat, India. ASML will provide advanced lithography tools and solutions, support talent development, supply chain, a",
+      "expected_next_event": "deployment of ASML lithography tools and commencement of fab ramp-up",
       "importance": "high",
       "source_urls": [
         "https://www.asml.com/en/news/press-releases/2026/tata-electronics-and-asml-announce-strategic-partnership"
       ],
-      "times_mentioned": 11,
+      "times_mentioned": 12,
       "timeline": [
         "announcement",
         "approval",
@@ -3214,12 +3323,12 @@
           ]
         }
       ],
-      "expected_next_milestone": "Deployment of ASML lithography tools and fab ramp-up",
+      "expected_next_milestone": "deployment of ASML lithography tools and commencement of fab ramp-up",
       "emerging_story": {
         "stage": "consultation",
-        "previous_stage": "planning",
+        "previous_stage": "announcement",
         "confidence": "high",
-        "expected_next_milestone": "Deployment of ASML lithography tools and fab ramp-up"
+        "expected_next_milestone": "deployment of ASML lithography tools and commencement of fab ramp-up"
       }
     },
     {
@@ -3614,16 +3723,16 @@
       "topic": "Artemis Program",
       "category": "Space",
       "first_seen": "2026-07-03",
-      "last_reported": "2026-07-04",
-      "last_checked": "2026-07-04",
+      "last_reported": "2026-07-15",
+      "last_checked": "2026-07-15",
       "status": "UPDATED",
-      "last_summary": "NASA's live coverage of the Artemis II mission, including launch, lunar flyby, and splashdown, drew over 149 million views across NASA platforms, setting new agency streaming records and demonstrating strong global public engagement.",
-      "expected_next_event": "Artemis III lunar landing mission",
+      "last_summary": "The Republic of Serbia will sign the Artemis Accords at a ceremony hosted by NASA at its Washington headquarters on July 16, 2026. Serbia will become the 69th country to join the international agreement that establishes principles for safe, transparent, and coordinated civil space exploration on the",
+      "expected_next_event": "Serbia’s active participation in Artemis missions and related space activities",
       "importance": "high",
       "source_urls": [
-        "https://www.nasa.gov/general/nasas-artemis-ii-breaks-agency-streaming-record/"
+        "https://www.nasa.gov/news-release/nasa-invites-media-to-serbia-artemis-accords-signing-ceremony/"
       ],
-      "times_mentioned": 2,
+      "times_mentioned": 3,
       "timeline": [
         "announcement",
         "design",
@@ -3634,7 +3743,7 @@
         "operations",
         "follow-on mission"
       ],
-      "current_stage": "launch",
+      "current_stage": "approval",
       "stage_history": [
         {
           "date": "2026-07-03",
@@ -3643,14 +3752,22 @@
           "source_urls": [
             "https://www.nasa.gov/general/nasas-artemis-ii-breaks-agency-streaming-record/"
           ]
+        },
+        {
+          "date": "2026-07-15",
+          "stage": "approval",
+          "summary": "The Republic of Serbia will sign the Artemis Accords at a ceremony hosted by NASA at its Washington headquarters on July 16, 2026. Serbia will become the 69th country to join the international agreement that establishes ",
+          "source_urls": [
+            "https://www.nasa.gov/news-release/nasa-invites-media-to-serbia-artemis-accords-signing-ceremony/"
+          ]
         }
       ],
-      "expected_next_milestone": "Artemis III lunar landing mission",
+      "expected_next_milestone": "Serbia’s active participation in Artemis missions and related space activities",
       "emerging_story": {
-        "stage": "launch",
-        "previous_stage": "construction",
+        "stage": "approval",
+        "previous_stage": "consultation",
         "confidence": "high",
-        "expected_next_milestone": "Artemis III lunar landing mission"
+        "expected_next_milestone": "Serbia’s active participation in Artemis missions and related space activities"
       }
     },
     {
