@@ -1,11 +1,6 @@
 name: Personal Intelligence Platform
 
 on:
-  schedule:
-    # GitHub cron is UTC. 21:30 UTC is 03:00 IST, scheduled early to offset Actions queue delays.
-    - cron: "30 21 * * *"
-    # Backup run at 23:30 UTC / 05:00 IST; cache prevents duplicate scheduled sends.
-    - cron: "30 23 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
